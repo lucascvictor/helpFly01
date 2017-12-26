@@ -4,41 +4,54 @@
 
 @section('content')
 
-<main role="main">
 
-       <div class="jumbotron">
-       <table class="table table-striped">
-       <thead>
+<div class="col-md-8" id="callout-navvar-js" style="margin-top: 50px; width: 80%;">
+
+       <table class="display striped responsive nowrap dataTable no-footer dtr-inline table">
+       <thead class="thead-dark">
          <tr>
            <th scope="col">Código da rejeição</th>
            <th scope="col">Descrição</th>
          </tr>
        </thead>
        <tbody>
-         <tr>
-           <td>211</td>
-           <td>IE do substituto inválido</td>
+<?php
+$i = 1;
+?>
+@foreach($rejeicoes as $rejeicao)
+         <tr class="h-table">
+             <td><a class="waves-effect waves-light modal-trigger" href="#modal{{$i}}">{{ $rejeicao->n_rejeicao }}</a></td>
+             <td><a class="waves-effect waves-light modal-trigger" href="#modal{{$i}}">{{ $rejeicao->titulo }}</a></td>
          </tr>
-         <tr>
-           <td>213</td>
-           <td>CNPJ-Base do Emitente difere do CNPJ-Base do Certificado Digital</td>
-         </tr>
-         <tr>
-           <td>219</td>
-           <td>Circulação da NF-e verificada</td>
-         </tr>
-         <tr>
-           <td>232</td>
-           <td>IE do destinatário não vínculad ao CNPJ</td>
-         </tr>
-         <tr>
-           <td>302</td>
-           <td>Uso Denegado - Irregularidade fiscal do destinatário</td>
-         </tr>
+
+           <!-- Modal Structure -->
+           <div id="modal{{$i}}" class="modal modal-fixed-footer">
+             <div class="modal-content">
+               {{ $rejeicao->resolucao }}
+            </div>
+             <div class="modal-footer">
+                   <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Voltar</a>
+                 </div>
+               </div>
+<?php $i++; ?>
+@endforeach
+
        </tbody>
      </table>
-       </div>
+</div>
 
-     </main>
+
+@endsection
+
+@section('extrascript')
+<script type="text/javascript">
+$(document).ready(function(){
+  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+  $('.modal').modal();
+  $('.modal').modal('open');
+  $('.modal').modal('close');
+});
+
+</script>
 
 @endsection
