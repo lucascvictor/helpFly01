@@ -24,23 +24,17 @@ $('#start-tour').on('click', PageTour.open);
 @endsection
 
 @section('content')
+
 <style media="screen">
-img {
-  max-width:100%;
-  max-height:100%;
-  width: auto;
-  height: auto;
-}
-.slider {
-  max-width: 100%;
-  height: 1000px;
+.teste {
+  width: 300px;
 }
 </style>
+
 <div class="row">
   <center><button id="start-tour" class="btn btn-warning">Iniciar o Tour</button></center>
 </div>
-<div clas="row">
-  <div id="headTop" class="z-depth-0-half"><div class="container"><div class="row"><div class="col s12 fly01-main-header"><h4 class="thin inline-block">Dados do Cliente</h4><ul class="right valign-wrapper fly01-buttons"><li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li><li><a id="save" class="btn " onclick="fnSalvar(&quot;#C00000&quot;);">Salvar</a></li></ul></div></div></div></div><div class="container"><div class="row"><form id="fly01frm" class="col s12" action="https://novofaturamento.fly01.com.br/RegisterPerson/Edit" method="post" novalidate="novalidate" data-vivaldi-spatnav-clickable="1">
+<h4 class="thin inline-block">Dados do Cliente</h4><ul class="right valign-wrapper fly01-buttons"><li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li><li><a id="save" class="btn " onclick="fnSalvar(&quot;#C00000&quot;);">Salvar</a></li></ul></div></div></div></div><div class="container"><div class="row"><form id="fly01frm" class="col s12" action="https://novofaturamento.fly01.com.br/RegisterPerson/Edit" method="post" novalidate="novalidate" data-vivaldi-spatnav-clickable="1">
     <input id="id" type="hidden" name="id" value="C00000">
   </input>
   <div id="documentField" class="input-field col s12 l4">
@@ -131,7 +125,83 @@ img {
 </div>
 <div id="municipalInscriptionField" class="input-field col s12 l4">
   <input id="municipalInscription" type="text" name="municipalInscription" class="masked numbers" style="text-align: right;"></input>
-  <label class="truncate" for="municipalInscription">Inscrição Municipal</label></div><div id="simplesNacionalBoolField" class="input-field col s12 l4"><p><input id="simplesNacionalBool" type="checkbox" name="simplesNacionalBool" value="true"></input><label class="truncate" for="simplesNacionalBool">Sim, é optante pelo Simples Nacional</label></p></div><div id="otherCityField" class="input-field col s12 m6 l4"><input type="hidden" name="otherCity" id="otherCity" value=""></input><input type="text" class="autocomplete ui-autocomplete-input" id="otherCityAutoComplete" name="otherCityAutoComplete" data-url="/AutoComplete/CityIbgeCode" data-target="otherCity" autocomplete="off"></input><label class="truncate" for="otherCityAutoComplete">Outra Cidade NFS-e</label></div><div id="emailField" class="input-field col s12 m6 l3"><input id="email" type="email" name="email"></input><label class="truncate" for="email">E-mail</label></div><div id="phoneField" class="input-field col s6 m3"><input id="phone" type="text" name="phone" class="masked tel"></input><label class="truncate" for="phone">Telefone</label></div><div id="cellPhoneField" class="input-field col s6 m3"><input id="cellPhone" type="text" name="cellPhone" class="masked tel"></input><label class="truncate" for="cellPhone">Celular</label></div><div id="zipCodeField" class="input-field col s6 m3"><input id="zipCode" type="text" name="zipCode" class="masked cep"></input><label class="truncate active" for="zipCode">CEP</label></div><div id="stateField" class="input-field col s12 m6 l3"><div class="select-wrapper"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-8zjnwk8" value="SÃO PAULO"><ul id="select-options-8zjnwk8" class="dropdown-content select-dropdown "><li class="" data-vivaldi-spatnav-clickable="1"><span>ACRE</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>ALAGOAS</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>AMAPÁ</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>AMAZONAS</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>BAHIA</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>CEARÁ</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>DISTRITO FEDERAL</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>ESPIRITO SANTO</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>GOIÁS</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>MARANHÃO</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>MATO GROSSO</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>MATO GROSSO DO SUL</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>MINAS GERAIS</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>PARÁ</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>PARAÍBA</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>PARANÁ</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>PERNAMBUCO</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>PIAUÍ</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>RIO DE JANEIRO</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>RIO GRANDE DO NORTE</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>RIO GRANDE DO SUL</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>RONDÔNIA</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>RORAIMA</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>SANTA CATARINA</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>SÃO PAULO</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>SERGIPE</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>TOCANTINS</span></li><li class="" data-vivaldi-spatnav-clickable="1"><span>EXTERIOR</span></li></ul><select id="state" name="state" data-select-id="8zjnwk8" class="initialized"><option value="AC">ACRE</option><option value="AL">ALAGOAS</option><option value="AP">AMAPÁ</option><option value="AM">AMAZONAS</option><option value="BA">BAHIA</option><option value="CE">CEARÁ</option><option value="DF">DISTRITO FEDERAL</option><option value="ES">ESPIRITO SANTO</option><option value="GO">GOIÁS</option><option value="MA">MARANHÃO</option><option value="MT">MATO GROSSO</option><option value="MS">MATO GROSSO DO SUL</option><option value="MG">MINAS GERAIS</option><option value="PA">PARÁ</option><option value="PB">PARAÍBA</option><option value="PR">PARANÁ</option><option value="PE">PERNAMBUCO</option><option value="PI">PIAUÍ</option><option value="RJ">RIO DE JANEIRO</option><option value="RN">RIO GRANDE DO NORTE</option><option value="RS">RIO GRANDE DO SUL</option><option value="RO">RONDÔNIA</option><option value="RR">RORAIMA</option><option value="SC">SANTA CATARINA</option><option value="SP">SÃO PAULO</option><option value="SE">SERGIPE</option><option value="TO">TOCANTINS</option><option value="EX">EXTERIOR</option></select></div><label class="truncate active" for="state">Estado</label></div><div id="cityField" class="input-field col s12 m6 l6"><input type="hidden" name="city" id="city" value="GUARULHOS"></input><input type="text" class="autocomplete ui-autocomplete-input" id="cityDescricao" name="cityDescricao" data-url="/AutoComplete/CityDescription" data-target="city" data-prefilter="state" autocomplete="off"></input><label class="truncate active" for="cityDescricao">Cidade (Escolha o estado antes)</label></div><div id="neighborhoodField" class="input-field col s6 m3"><input id="neighborhood" type="text" name="neighborhood"></input><label class="truncate active" for="neighborhood">Bairro</label></div><div id="addressField" class="input-field col s12"><input id="address" type="text" name="address"></input><label class="truncate active" for="address">Endereço (com número e complemento)</label></div><div id="observationField" class="input-field col s12"><textarea id="observation" name="observation" class="materialize-textarea"></textarea><label class="truncate" for="observation">Observação</label></div><div id="isSupplierBoolField" class="input-field col s12 l4"><p><input id="isSupplierBool" type="checkbox" name="isSupplierBool" value="true"></input><label class="truncate" for="isSupplierBool">É Fornecedor</label></p></div><div id="isCarrierBoolField" class="input-field col s12 l4"><p><input id="isCarrierBool" type="checkbox" name="isCarrierBool" value="true"></input><label class="truncate" for="isCarrierBool">É Transportadora
+  <label class="truncate" for="municipalInscription">Inscrição Municipal</label>
+</div>
+<div id="simplesNacionalBoolField" class="input-field col s12 l4">
+  <p><input id="simplesNacionalBool" type="checkbox" name="simplesNacionalBool" value="true"></input>
+    <label class="truncate" for="simplesNacionalBool">Sim, é optante pelo Simples Nacional</label>
+  </p>
+</div>
+<div id="otherCityField" class="input-field col s12 m6 l4">
+  <input type="hidden" name="otherCity" id="otherCity" value=""></input>
+  <input type="text" class="autocomplete ui-autocomplete-input" id="otherCityAutoComplete" name="otherCityAutoComplete" data-url="/AutoComplete/CityIbgeCode" data-target="otherCity" autocomplete="off"></input>
+  <label class="truncate" for="otherCityAutoComplete">Outra Cidade NFS-e</label>
+</div>
+<div id="emailField" class="input-field col s12 m6 l3">
+  <input id="email" type="email" name="email"></input>
+  <label class="truncate" for="email">E-mail</label>
+</div>
+<div id="phoneField" class="input-field col s6 m3">
+  <input id="phone" type="text" name="phone" class="masked tel"></input>
+  <label class="truncate" for="phone">Telefone</label>
+</div>
+<div id="cellPhoneField" class="input-field col s6 m3">
+  <input id="cellPhone" type="text" name="cellPhone" class="masked tel"></input>
+  <label class="truncate" for="cellPhone">Celular</label>
+</div>
+<div id="zipCodeField" class="input-field col s6 m3">
+  <input id="zipCode" type="text" name="zipCode" class="masked cep"></input>
+  <label class="truncate active" for="zipCode">CEP</label>
+</div>
+<div id="stateField" class="input-field col s12 m6 l3">
+  <div class="select-wrapper"><span class="caret">▼</span>
+    <input type="text" class="select-dropdown" readonly="true" data-activates="select-options-8zjnwk8" value="SÃO PAULO">
+    <ul id="select-options-8zjnwk8" class="dropdown-content select-dropdown ">
+      <li class="" data-vivaldi-spatnav-clickable="1">
+      <span>ACRE</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>ALAGOAS</span>
+      </li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>AMAPÁ</span>
+      </li><li class="" data-vivaldi-spatnav-clickable="1"><span>AMAZONAS</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>BAHIA</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>CEARÁ</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>DISTRITO FEDERAL</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>ESPIRITO SANTO</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>GOIÁS</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>MARANHÃO</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>MATO GROSSO</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>MATO GROSSO DO SUL</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>MINAS GERAIS</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>PARÁ</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>PARAÍBA</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>PARANÁ</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>PERNAMBUCO</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>PIAUÍ</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>RIO DE JANEIRO</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>RIO GRANDE DO NORTE</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>RIO GRANDE DO SUL</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>RONDÔNIA</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>RORAIMA</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>SANTA CATARINA</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>SÃO PAULO</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>SERGIPE</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>TOCANTINS</span></li>
+      <li class="" data-vivaldi-spatnav-clickable="1"><span>EXTERIOR</span></li>
+    </ul>
+    <select id="state" name="state" data-select-id="8zjnwk8" class="initialized">
+      <option value="AC">ACRE</option>
+      <option value="AL">ALAGOAS</option>
+      <option value="AP">AMAPÁ</option>
+      <option value="AM">AMAZONAS</option>
+      <option value="BA">BAHIA</option>
+      <option value="CE">CEARÁ</option>
+      <option value="DF">DISTRITO FEDERAL</option>
+      <option value="ES">ESPIRITO SANTO</option>
+      <option value="GO">GOIÁS</option>
+      <option value="MA">MARANHÃO</option>
+      <option value="MT">MATO GROSSO</option>
+      <option value="MS">MATO GROSSO DO SUL</option>
+      <option value="MG">MINAS GERAIS</option><option value="PA">PARÁ</option><option value="PB">PARAÍBA</option><option value="PR">PARANÁ</option><option value="PE">PERNAMBUCO</option><option value="PI">PIAUÍ</option><option value="RJ">RIO DE JANEIRO</option><option value="RN">RIO GRANDE DO NORTE</option><option value="RS">RIO GRANDE DO SUL</option><option value="RO">RONDÔNIA</option><option value="RR">RORAIMA</option><option value="SC">SANTA CATARINA</option><option value="SP">SÃO PAULO</option><option value="SE">SERGIPE</option><option value="TO">TOCANTINS</option><option value="EX">EXTERIOR</option></select></div><label class="truncate active" for="state">Estado</label></div><div id="cityField" class="input-field col s12 m6 l6"><input type="hidden" name="city" id="city" value="GUARULHOS"></input><input type="text" class="autocomplete ui-autocomplete-input" id="cityDescricao" name="cityDescricao" data-url="/AutoComplete/CityDescription" data-target="city" data-prefilter="state" autocomplete="off"></input><label class="truncate active" for="cityDescricao">Cidade (Escolha o estado antes)</label></div><div id="neighborhoodField" class="input-field col s6 m3"><input id="neighborhood" type="text" name="neighborhood"></input><label class="truncate active" for="neighborhood">Bairro</label></div><div id="addressField" class="input-field col s12"><input id="address" type="text" name="address"></input><label class="truncate active" for="address">Endereço (com número e complemento)</label></div><div id="observationField" class="input-field col s12"><textarea id="observation" name="observation" class="materialize-textarea"></textarea><label class="truncate" for="observation">Observação</label></div><div id="isSupplierBoolField" class="input-field col s12 l4"><p><input id="isSupplierBool" type="checkbox" name="isSupplierBool" value="true"></input><label class="truncate" for="isSupplierBool">É Fornecedor</label></p></div><div id="isCarrierBoolField" class="input-field col s12 l4"><p><input id="isCarrierBool" type="checkbox" name="isCarrierBool" value="true"></input><label class="truncate" for="isCarrierBool">É Transportadora
       </label>
     </p>
   </div>

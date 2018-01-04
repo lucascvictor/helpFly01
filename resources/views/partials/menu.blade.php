@@ -1,9 +1,9 @@
 <nav class="top-nav z-depth-0">
   <div class="container">
     <div class="nav-wrapper">
-      <a id="page-title" class="page-title" style="margin-left: 20%;">Faturamento</a>
+      <a id="page-title" class="page-title">Faturamento</a>
       <ul class="right">
-        <li><a class="dropdown-button" href="#!" data-activates="user-menu" data-beloworigin="true" data-alignment="right"><i class="material-icons right">perm_identity</i></a>
+        <li><a class="dropdown-button" href="https://novofaturamento.fly01.com.br/#!" data-activates="user-menu" data-beloworigin="true" data-alignment="right" data-vivaldi-spatnav-clickable="1"><i class="material-icons right">perm_identity</i></a>
           <ul id="user-menu" class="dropdown-content">
             <li class="">
             <a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/FormRegisterCompany&quot;,&quot;01&quot;)">Empresa</a></li>
