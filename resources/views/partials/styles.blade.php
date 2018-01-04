@@ -13,8 +13,14 @@
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-     <link type="text/css" rel="stylesheet" href="{{ url('css/fly01ui.css') }}">
+<!-- <link type="text/css" rel="stylesheet" href="{{ url('css/fly01ui.css') }}"> -->
 
+     <link href="https://cdnfly01.azureedge.net/fly/1.0.2/fly01ui.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+          
      <style type="text/css">
 
        .item ul a{

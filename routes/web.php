@@ -12,3 +12,4 @@ Route::get('/produtos/resolucao/{idResolucao}', 'RejeicoesController@getResoluca
 Route::get('/teste', 'HomeController@teste');
 
 Route::get('/cadastros/clientes', 'ClientesController@index');
+Route::get('/cadastros/fornecedores', 'FornecedoresController@index');

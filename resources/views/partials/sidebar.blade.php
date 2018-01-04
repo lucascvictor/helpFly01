@@ -10,6 +10,13 @@
   <li class="no-padding" style="border-top: solid #222222;">
     <ul class="collapsible collapsible-accordion">
       <li class="active">
+        <a class="collapsible-header">Inicio</a>
+      </li>
+    </ul>
+  </li>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li class="active">
         <a class="collapsible-header">Vendas<i class="material-icons expand right">expand_more</i></a>
         <div class="collapsible-body" style="display: block;">
           <ul>
@@ -38,7 +45,7 @@
         <div class="collapsible-body" style="display: none;">
           <ul>
             <li class=""><a href="{{ url('/cadastros/clientes') }}" onclick="fly01.go(&quot;/Json/RegisterPerson&quot;)">Clientes</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/RegisterSupplier&quot;)">Fornecedores</a></li>
+            <li class=""><a href="{{ url('/cadastros/fornecedores') }}" onclick="fly01.go(&quot;/Json/RegisterSupplier&quot;)">Fornecedores</a></li>
             <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/RegisterTaxGroup&quot;)">Grupos Tributários</a></li>
             <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/RegisterProduct&quot;)">Produtos</a></li>
             <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/GroupProduct&quot;)">Grupos de Produtos</a></li>

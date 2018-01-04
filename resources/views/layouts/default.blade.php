@@ -23,6 +23,7 @@
       @yield('content')
     </div>
     @include('partials.footer')
+    @include('partials.scripts')
     @yield('extrascript')
 
 </body>
