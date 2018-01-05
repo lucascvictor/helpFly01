@@ -25,16 +25,17 @@ $('#start-tour').on('click', PageTour.open);
 
 @section('content')
 
-<style media="screen">
-.teste {
-  width: 300px;
-}
-</style>
 
 <div class="row">
   <center><button id="start-tour" class="btn btn-warning">Iniciar o Tour</button></center>
 </div>
-<h4 class="thin inline-block">Dados do Cliente</h4><ul class="right valign-wrapper fly01-buttons"><li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li><li><a id="save" class="btn " onclick="fnSalvar(&quot;#C00000&quot;);">Salvar</a></li></ul></div></div></div></div><div class="container"><div class="row"><form id="fly01frm" class="col s12" action="https://novofaturamento.fly01.com.br/RegisterPerson/Edit" method="post" novalidate="novalidate" data-vivaldi-spatnav-clickable="1">
+
+<div id="headTop" class="z-depth-0-half"><div class="container"><div class="row"><div class="col s12 fly01-main-header"><h4 class="thin inline-block">Dados do Cliente</h4><ul class="right valign-wrapper fly01-buttons"><li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li><li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li></ul></div></div></div></div>
+
+
+<div class="container">
+  <div class="row">
+  <form id="fly01frm" class="col s12" action="https://novofaturamento.fly01.com.br/RegisterPerson/Edit" method="post" novalidate="novalidate" data-vivaldi-spatnav-clickable="1">
     <input id="id" type="hidden" name="id" value="C00000">
   </input>
   <div id="documentField" class="input-field col s12 l4">

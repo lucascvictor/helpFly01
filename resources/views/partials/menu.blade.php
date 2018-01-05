@@ -26,3 +26,4 @@
   </div>
 </div>
 </nav>
+<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>

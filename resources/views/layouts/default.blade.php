@@ -14,17 +14,21 @@
 
 </head>
 
-<body class="loaded">
+<body>
+  <header>
     @include('partials.menu')
     @include('partials.sidebar')
+  </header>
 
+  <div class="container">
+      <div style="margin-top: 5%; margin-left: 20%;">
+        @yield('content')
+      </div>
+  </div>
 
-    <div style="margin-top: 5%; margin-left: 20%;">
-      @yield('content')
-    </div>
-    @include('partials.footer')
-    @include('partials.scripts')
-    @yield('extrascript')
+  @include('partials.footer')
+  @include('partials.scripts')
+  @yield('extrascript')
 
 </body>
 
