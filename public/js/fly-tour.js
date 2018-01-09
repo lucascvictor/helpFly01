@@ -27,10 +27,12 @@ $.fn.PageTour = function (opts) {
       overlay : $('<div></div>', { id : _o.prefix + '_overlay' }),
       tour : $('<div></div>', { id : _o.prefix + '_tour' }),
       title : $('<div></div>', {
-        class : _o.prefix + '_title ' + _o.prefix + '_box_transition'
+        class : _o.prefix + '_title ' + _o.prefix + '_box_transition',
+        style : 'z-index:10001;'
       }),
       description : $('<div></div>', {
-        class : _o.prefix + '_description ' + _o.prefix + '_box_transition'
+        class : _o.prefix + '_description ' + _o.prefix + '_box_transition',
+        style : 'z-index:10001;'
       }),
       descriptionText : $('<span></span>'),
       controls : $('<div></div>', {
@@ -435,7 +437,7 @@ $.fn.PageTour = function (opts) {
       },
       'controls' : {
         selector : '.' + _o.prefix + '_controls',
-        style : 'top: 0; left: 0; margin: 8px 0; text-align: right; padding: 11px; color: white; font-size: 20px; position: absolute; z-index: 10000; transition: all 0.75s; transition-timing-function: ease-in-out;'
+        style : 'top: 0; left: 0; margin: 8px 0; text-align: right; padding: 11px; color: white; font-size: 20px; position: absolute; z-index: 10001; transition: all 0.75s; transition-timing-function: ease-in-out;'
       },
       'control_buttons' : {
         selector : '.' + _o.prefix + '_controls .btn',

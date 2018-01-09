@@ -33,6 +33,7 @@ $('#start-tour').on('click', PageTour.open);
   <ul class="right valign-wrapper fly01-buttons">
   <li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li>
   <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
+  <li><button id="start-tour" class="btn">Iniciar o Tour</button></li>
 </ul>
 </div></div></div></div>
 
@@ -42,15 +43,21 @@ $('#start-tour').on('click', PageTour.open);
   <form id="" class="col s9" action="https://novofaturamento.fly01.com.br/RegisterPerson/Edit" method="post" novalidate="novalidate" data-vivaldi-spatnav-clickable="1">
     <input id="id" type="hidden" name="id" value="C00000">
   </input>
+  <!-- Criar uma modal para exibir o print dentro do tour com grupo de campos -->
+  <div data-tour-index="0" data-tour-title="Grupo" data-tour-description="Grupo de carinhas agrupados" height="200px">
+
   <div id="documentField" class="input-field col s9 l4">
-    <input id="document" type="text" name="document" class="masked cpfcnpj" data-tour-index="0" data-tour-title="Campo CNPJ" data-tour-description="Aqui você coloca o seu CNPJ">
+    <input id="document" type="text" name="document" class="masked cpfcnpj" data-tour-index="1" data-tour-title="Campo CNPJ" data-tour-description="Aqui você coloca o seu CNPJ">
   </input>
   <label class="truncate active" for="document">CPF / CNPJ</label>
 </div>
 <div id="nameField" class="input-field col s9 l8">
-  <input id="name" type="text" name="name" data-tour-index="1" data-tour-title="Campo Razão Social / Nome completo" data-tour-description="Aqui você coloca o seu Nome completo/Razão social sem abreviações">
+  <input id="name" type="text" name="name" data-tour-index="2" data-tour-title="Campo Razão Social / Nome completo" data-tour-description="Aqui você coloca o seu Nome completo/Razão social sem abreviações">
 </input>
-<label class="truncate active" for="name">Razão Social / Nome Completo</label></div>
+<label class="truncate active" for="name">Razão Social / Nome Completo</label>
+</div>
+</div>
+
 <div id="traddingNameField" class="input-field col s9 l6">
   <input id="traddingName" type="text" name="traddingName">
 </input>

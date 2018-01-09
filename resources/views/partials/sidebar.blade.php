@@ -1,7 +1,7 @@
 <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
 
 
-<ul id="nav-mobile" class="side-nav fixed item" style="transform: translateX(0%);">
+<ul id="nav-mobile" class="side-nav fixed item" style="transform: translateX(0%); z-index: 500;">
   <li class="logo">
     <a id="logo-container" href="/" class="brand-logo">
     <img src="{{ url('images/fly01logobranco.png') }}">
