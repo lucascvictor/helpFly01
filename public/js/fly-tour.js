@@ -260,7 +260,7 @@ $.fn.PageTour = function (opts) {
       dom = doms[ elId ]
 
     elements.title.css({
-      'left' : dims[ 'title_x' ] + 100,
+      'left' : dims[ 'title_x' ] + 300,
       'top' : dims[ 'title_y' ] - 35
     });
 
@@ -275,8 +275,8 @@ $.fn.PageTour = function (opts) {
     });
 
     var
-      offset = dom.offset().top - 120,
-      title = dims[ 'title_y' ] - 10;
+      offset = dom.offset().top,
+      title = dims[ 'title_y' ];
 
     $('html, body').animate({
       scrollTop : offset > title ? offset : title
@@ -429,11 +429,11 @@ $.fn.PageTour = function (opts) {
       },
       'title' : {
         selector : '.' + _o.prefix + '_title',
-        style : 'top: 0; left: 0; text-shadow: 0 0 10px #aaa; color: white; font-size: 2em; position: absolute; font-weight: bold !important; width: 20rem;'
+        style : 'margin-top: 20px; top: 0; left: 0; text-shadow: 0 0 10px #aaa; color: white; font-size: 2em; position: absolute; font-weight: bold !important; width: 20rem;'
       },
       'description' : {
         selector : '.' + _o.prefix + '_description',
-        style : 'top: 0; left: 0; box-shadow: 0 0 7px #666; border-radius: 7px; padding: 11px; color: white; font-size: 20px; position: absolute; width: 35rem; font-weight: normal !important;'
+        style : 'margin-top: 20px; top: 0; left: 0; box-shadow: 0 0 7px #666; border-radius: 7px; padding: 11px; color: white; font-size: 20px; position: absolute; width: 35rem; font-weight: normal !important;'
       },
       'controls' : {
         selector : '.' + _o.prefix + '_controls',
