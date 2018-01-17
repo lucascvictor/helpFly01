@@ -7,16 +7,16 @@ use App\Http\Models\Product;
 
 use DB;
 
-class ClientesController extends Controller
+class GruposTributariosController extends Controller
 {
     public function index()
     {
-    	return view('cadastros.clientes.index');
+    	return view('cadastros.gruposTributarios.index');
     }
 
     public function new()
     {
-      return view('cadastros.clientes.new');
+      return view('cadastros.gruposTributarios.new');
     }
 
 

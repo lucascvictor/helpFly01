@@ -1,5 +1,3 @@
-<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
-
 
 <ul id="nav-mobile" class="side-nav fixed item" style="transform: translateX(0%); z-index: 500;">
   <li class="logo">
@@ -46,16 +44,16 @@
           <ul>
             <li class=""><a href="{{ url('/cadastros/clientes') }}" onclick="fly01.go(&quot;/Json/RegisterPerson&quot;)">Clientes</a></li>
             <li class=""><a href="{{ url('/cadastros/fornecedores') }}" onclick="fly01.go(&quot;/Json/RegisterSupplier&quot;)">Fornecedores</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/RegisterTaxGroup&quot;)">Grupos Tributários</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/RegisterProduct&quot;)">Produtos</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/GroupProduct&quot;)">Grupos de Produtos</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/RegisterService&quot;)">Serviços</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/RegisterCarrier&quot;)">Transportadoras</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/CondicaoParcelamento&quot;)">Condições de Parcelamento</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/CategoriaFinanceira&quot;)">Categorias Financeiras</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/FormaPagamento&quot;)">Formas de Pagamento</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/NCM&quot;)">NCM</a></li>
-            <li class=""><a href="javascript:void(0)" onclick="fly01.go(&quot;/Json/NBS&quot;)">NBS</a>
+            <li class=""><a href="{{ url('/cadastros/grupostributarios') }}" onclick="fly01.go(&quot;/Json/RegisterTaxGroup&quot;)">Grupos Tributários</a></li>
+            <li class=""><a href="{{ url('/cadastros/produtos') }}" onclick="fly01.go(&quot;/Json/RegisterProduct&quot;)">Produtos</a></li>
+            <li class=""><a href="{{ url('/cadastros/gruposdeprodutos') }}" onclick="fly01.go(&quot;/Json/GroupProduct&quot;)">Grupos de Produtos</a></li>
+            <li class=""><a href="{{ url('/cadastros/servicos') }}" onclick="fly01.go(&quot;/Json/RegisterService&quot;)">Serviços</a></li>
+            <li class=""><a href="{{ url('/cadastros/transportadoras') }}" onclick="fly01.go(&quot;/Json/RegisterCarrier&quot;)">Transportadoras</a></li>
+            <li class=""><a href="{{ url('/cadastros/condicoesdeparcelamento') }}" onclick="fly01.go(&quot;/Json/CondicaoParcelamento&quot;)">Condições de Parcelamento</a></li>
+            <li class=""><a href="{{ url('/cadastros/categoriasfinanceiras') }}" onclick="fly01.go(&quot;/Json/CategoriaFinanceira&quot;)">Categorias Financeiras</a></li>
+            <li class=""><a href="{{ url('/cadastros/formasdepagamento') }}" onclick="fly01.go(&quot;/Json/FormaPagamento&quot;)">Formas de Pagamento</a></li>
+            <li class=""><a href="{{ url('/cadastros/ncm') }}" onclick="fly01.go(&quot;/Json/NCM&quot;)">NCM</a></li>
+            <li class=""><a href="{{ url('/cadastros/nbs') }}" onclick="fly01.go(&quot;/Json/NBS&quot;)">NBS</a>
             </li>
           </ul>
         </div>

@@ -260,8 +260,8 @@ $.fn.PageTour = function (opts) {
       dom = doms[ elId ]
 
     elements.title.css({
-      'left' : dims[ 'title_x' ],
-      'top' : dims[ 'title_y' ]
+      'left' : dims[ 'title_x' ] + 100,
+      'top' : dims[ 'title_y' ] - 35
     });
 
     elements.description.css({

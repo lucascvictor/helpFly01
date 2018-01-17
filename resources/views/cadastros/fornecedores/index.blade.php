@@ -6,10 +6,10 @@
 <div id="headTop" class="z-depth-0-half">
   <div class="container">
     <div class="row">
-      <div class="col s8 fly01-main-header">
+      <div class="col s12 fly01-main-header">
         <h4 class="thin inline-block">Fornecedores</h4>
         <ul class="right valign-wrapper fly01-buttons">
-          <li><a id="new" class="btn " onclick="fnNovo();">Novo</a>
+          <li><a id="new" class="btn " href="{{ url('/cadastros/fornecedores/new') }}">Novo</a>
           </li>
           <li>
           <button id="start-tour" class="btn">Iniciar o Tour</button>
@@ -21,7 +21,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div id="fly01dt_wrapper" class="col s8 no-footer">
+    <div id="fly01dt_wrapper" class="col s12 no-footer">
       <div class=""></div>
       <div id="fly01dt_processing" class="dataTables_processing" style="display: none;">
       </div>

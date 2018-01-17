@@ -19,17 +19,14 @@
     @include('partials.menu')
     @include('partials.sidebar')
   </header>
-
-  <div class="container">
-      <div style="margin-top: 5%; margin-left: 20%;">
+  <main>
         @yield('content')
-      </div>
-  </div>
-
-  @include('partials.footer')
-  @include('partials.scripts')
-  @yield('extrascript')
-
+  </main>
+  <footer>
+    @include('partials.footer')
+    @include('partials.scripts')
+    @yield('extrascript')
+  </footer>
 </body>
 
 </html>

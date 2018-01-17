@@ -12,4 +12,10 @@ Route::get('/produtos/resolucao/{idResolucao}', 'RejeicoesController@getResoluca
 Route::get('/teste', 'HomeController@teste');
 
 Route::get('/cadastros/clientes', 'ClientesController@index');
+Route::get('/cadastros/clientes/new', 'ClientesController@new');
+
 Route::get('/cadastros/fornecedores', 'FornecedoresController@index');
+Route::get('/cadastros/fornecedores/new', 'FornecedoresController@new');
+
+Route::get('/cadastros/grupostributarios', 'GruposTributariosController@index');
+Route::get('/cadastros/grupostributarios/new', 'GruposTributariosController@new');
