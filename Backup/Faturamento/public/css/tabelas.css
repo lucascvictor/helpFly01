@@ -1,0 +1,11 @@
+.h-table:hover {
+  background-color: #696969;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a{
+  color: #000;
+}
