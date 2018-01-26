@@ -19,5 +19,4 @@ class FluxoDeCaixaController extends Controller
       return view('financeiro.chart');
     }
 
-
 }
