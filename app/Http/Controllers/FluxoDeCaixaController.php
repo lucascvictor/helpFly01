@@ -11,12 +11,13 @@ class FluxoDeCaixaController extends Controller
 {
     public function index()
     {
-    	return view('cadastros.gruposTributarios.index');
+    	return view('financeiro.fluxodecaixa.index');
     }
 
     public function getChart()
     {
       return view('financeiro.chart');
     }
+
 
 }

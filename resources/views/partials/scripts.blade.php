@@ -5,3 +5,5 @@
   <script type="text/javascript">
   $(".button-collapse").sideNav();
   </script>
+
+  <script src="https://cdnjs.com/libraries/Chart.js"> </script>
