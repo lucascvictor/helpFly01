@@ -27,3 +27,6 @@ Route::get('/cadastros/condicaodeparcelamento', 'CondicaoDeParcelamentoControlle
 Route::get('/cadastros/categoriaFinanceira/', 'CategoriaFinanceiraController@new');
 Route::get('/cadastros/formasdepagamento', 'FormasDePagamentoController@getRejeicoes')->name('rejeicoes');
 Route::get('/cadastros/contasbancarias', 'ContasBancariasController@getRejeicoes')->name('rejeicoes');
+
+
+Route::get('/chart', 'FluxoDeCaixaController@getChart')->name('chart');

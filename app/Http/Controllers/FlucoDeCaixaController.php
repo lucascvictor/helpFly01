@@ -7,16 +7,16 @@ use App\Http\Models\Product;
 
 use DB;
 
-class GruposTributariosController extends Controller
+class FluxoDeCaixaController extends Controller
 {
     public function index()
     {
     	return view('cadastros.gruposTributarios.index');
     }
 
-    public function new()
+    public function getChart()
     {
-      return view('cadastros.gruposTributarios.new');
+      return view('financeiro.chart');
     }
 
 
