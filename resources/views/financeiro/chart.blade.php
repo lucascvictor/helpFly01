@@ -3,7 +3,7 @@
 @section('title', 'Help Fly01')
 
 @section('content')
-
+<div id="headTop" class="z-depth-0-half"><div class="container"><div class="row"><div class="col s12 fly01-main-header">
 <canvas id="myChart" width="400" height="400"></canvas>
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
@@ -44,5 +44,6 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
+</div></div></div></div>
 
 @endsection
