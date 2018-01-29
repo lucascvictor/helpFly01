@@ -4,9 +4,9 @@
 
 @section('content')
 <div id="headTop" class="z-depth-0-half"><div class="container"><div class="row"><div class="col s12 fly01-main-header">
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="fly01chart" width="239" height="119" class="chartjs-render-monitor" style="display: block; width: 239px; height: 119px;"></canvas>
 <script>
-var ctx = document.getElementById("myChart").getContext('2d');
+var ctx = document.getElementById("fly01chart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {

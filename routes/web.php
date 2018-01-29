@@ -24,7 +24,7 @@ Route::get('/cadastros/fornecedores', 'FornecedoresController@index');
 Route::get('/cadastros/fornecedores/new', 'FornecedoresController@new');
 
 Route::get('/cadastros/condicaodeparcelamento', 'CondicaoDeParcelamentoController@index');
-Route::get('/cadastros/categoriaFinanceira/', 'CategoriaFinanceiraController@new');
+Route::get('/cadastros/categoriafinanceira/', 'CategoriaFinanceiraController@new');
 Route::get('/cadastros/formasdepagamento', 'FormasDePagamentoController@getRejeicoes')->name('rejeicoes');
 Route::get('/cadastros/contasbancarias', 'ContasBancariasController@getRejeicoes')->name('rejeicoes');
 
