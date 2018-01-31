@@ -2,62 +2,56 @@
 
 @section('title', 'Help Fly01')
 
-@section('extrascript')
-
-
-
-@endsection
-
 @section('content')
-<canvas id="myChart" width="200" height="100"></canvas>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
-<script>
-  var myChart = new Chart(ctx, {...});
-</script>
+
+<canvas id="fly01chart" width="200" height="100"></canvas>
 
 <script>
-var ctx = document.getElementById("myChart").getContext('2d');
+var ctx = document.getElementById("fly01chart");
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["30/01/2018", "11/02/2018", "15/02/2018", "24/02/2018", "27/02/2018"],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Recebimentos',
+            data: [1081.62, 166.68, 0.00, 700.00, 0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                '#4BC0C0',
+                '#4BC0C0',
+                '#4BC0C0',
+                '#4BC0C0',
+                '#4BC0C0',
             ],
             borderWidth: 1
-        }]
+          },{
+            label: 'Pagamentos',
+            data: [-1081.62, -166.68, 0.00, -700.00, 0],
+            backgroundColor: [
+                '#FF6384',
+                '#FF6384',
+                '#FF6384',
+                '#FF6384',
+                '#FF6384',
+            ],
+            borderWidth: 1,
+          }]
     },
     options: {
         scales: {
+            scales: {
+            xAxes: [{
+                stacked: true
+
+            }],
             yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
+                stacked: true
             }]
+        }
         }
     }
 });
 </script>
-
-
-
-
+</div></div></div></div>
 
 @endsection
