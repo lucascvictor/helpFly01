@@ -1,10 +1,21 @@
-
+@extends('layouts.default')
 
 @section('title', 'Help Fly01')
 
-@section('content')
+@section('extrascript')
 
-<canvas id="myChart" width="400" height="400"></canvas>
+
+
+@endsection
+
+@section('content')
+<canvas id="myChart" width="200" height="100"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+<script>
+  var myChart = new Chart(ctx, {...});
+</script>
+
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
@@ -44,5 +55,9 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
+
+
+
+
 
 @endsection
