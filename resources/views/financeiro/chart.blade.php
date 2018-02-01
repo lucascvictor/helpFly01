@@ -8,6 +8,7 @@
 <canvas id="fly01chart" width="1182" height="591" class="chartjs-render-monitor" style="display: block; width: 1182px; height: 591px;"></canvas>
 
 <script>
+<?php $saldo=2000; ?>
  var barChartData = {
             labels: ["31/01/2018", "11/02/2018", "15/02/2018", "24/02/2018", "2702/2018"],
             datasets: [{
@@ -15,22 +16,22 @@
                 label: 'Recebimentos',
                 backgroundColor: "#4BC0C0",
                 data: [
-                    1081.66,
-                    166.68,
-                    0,
-                    700.00,
-                    0
+                    <?=$rec1=rand(2000, 5000);?>,
+                    <?=$rec2=rand(2000, 5000);?>,
+                    <?=$rec3=rand(2000, 5000);?>,
+                    <?=$rec4=rand(2000, 5000);?>,
+                    <?=$rec5=rand(2000, 5000);?>
                 ]
             }, {
                 type: 'bar',
                 label: 'Pagamentos',
                 backgroundColor: "#FF6384",
                 data: [
-                    -1200,
-                    0,
-                    -1200,
-                    0,
-                    -500
+                    <?=$pag1=-rand(0, 2000);?>,
+                    <?=$pag2=-rand(0, 2000);?>,
+                    <?=$pag3=-rand(0, 2000);?>,
+                    <?=$pag4=-rand(0, 2000);?>,
+                    <?=$pag5=-rand(0, 2000);?>
                 ]
             }, {
                 type: 'line',
@@ -39,7 +40,8 @@
                 borderWidth: 3,
                 fill: false,
                 data: [
-                    -2776.68,
+                    <?php $saldo1 = $saldo + $rec1 - $pag1; ?>
+                    <?=$saldo1?>,
                     -2610,
                     -3810,
                     -3110,
@@ -48,9 +50,9 @@
             }]
         };
 
-        
 
-      
+
+
             var ctx = document.getElementById("fly01chart");
             var myBar = new Chart(ctx, {
                 type: 'bar',
