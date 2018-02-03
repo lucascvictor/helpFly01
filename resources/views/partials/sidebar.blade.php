@@ -18,13 +18,13 @@
         <a class="collapsible-header">Financeiro<i class="material-icons expand right">expand_more</i></a>
         <div class="collapsible-body" style="display: block;">
           <ul>
-            <li class=""><a href="{{ url('/produtos') }}" >Fluxo de Caixa</a></li>
-            <li class=""><a href="#" >Extrato</a></li>
-            <li class=""><a href="#" >Contas a Pagar</a></li>
-            <li class=""><a href="#" >Contas a Receber</a></li>
-            <li class=""><a href="#" >RelatÛrio DRE</a></li>
-            <li class=""><a href="#" >ConciliaÁ„o Banc·ria</a></li>
-                        
+            <li class=""><a href="{{ url('/financeiro/fluxodecaixa') }}" >Fluxo de Caixa</a></li>
+            <li class=""><a href="{{ url('/financeiro/extrato') }}" >Extrato</a></li>
+            <li class=""><a href="{{ url('/financeiro/contasapagar') }}" >Contas a Pagar</a></li>
+            <li class=""><a href="{{ url('/financeiro/contasareceber') }}" >Contas a Receber</a></li>
+            <li class=""><a href="{{ url('/financeiro/relatoriodre') }}" >Relat√≥rio DRE</a></li>
+            <li class=""><a href="{{ url('/financeiro/conciliacaobancaria') }}" >Concilia√ß√£o Banc√°ria</a></li>
+
           </ul>
         </div>
       </li>
@@ -37,10 +37,10 @@
           <ul>
             <li class=""><a href="{{ url('/cadastros/clientes') }}" >Clientes</a></li>
             <li class=""><a href="{{ url('/cadastros/fornecedores') }}" >Fornecedores</a></li>
-            <li class=""><a href="{{ url('/cadastros/grupostributarios') }}" >ConciÁıes de Parcelamento</a></li>
-            <li class=""><a href="{{ url('/cadastros/produtos') }}" >Categorias Financeiras</a></li>
-            <li class=""><a href="{{ url('/cadastros/gruposdeprodutos') }}" >Formas de Pagamento</a></li>
-            <li class=""><a href="{{ url('/cadastros/servicos') }}" >Contas Banc·rias</a></li>
+            <li class=""><a href="{{ url('/cadastros/condicoesdeparcelamento') }}" >Condi√ß√µes de Parcelamento</a></li>
+            <li class=""><a href="{{ url('/cadastros/categoriasfinanceiras') }}" >Categorias Financeiras</a></li>
+            <li class=""><a href="{{ url('/cadastros/formasdepagamento') }}" >Formas de Pagamento</a></li>
+            <li class=""><a href="{{ url('/cadastros/contasbancarias') }}" >Contas Banc√°rias</a></li>
           </ul>
         </div>
       </li>

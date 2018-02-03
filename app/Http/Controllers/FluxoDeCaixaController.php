@@ -11,13 +11,7 @@ class FluxoDeCaixaController extends Controller
 {
     public function index()
     {
-    	return view('financeiro.fluxodecaixa.index');
+    	return view('financeiro.fluxo_de_caixa.index');
     }
-
-    public function getChart()
-    {
-      return view('financeiro.chart');
-    }
-
 
 }
