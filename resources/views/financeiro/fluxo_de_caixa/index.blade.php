@@ -44,50 +44,43 @@ name="btnSemana" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;7&quot;)"
 @section('extrascript')
 
 <script>
-$(document).ready(function(){
-     $('.tap-target').tapTarget('open');
-     $('.tap-target').tapTarget('close');
-});
-</script>
-
-<script>
      var barChartData = {
             labels: ["31/01/2018", "11/02/2018", "15/02/2018", "24/02/2018", "2702/2018"],
-            datasets: [{
+           datasets: [{
                 type: 'bar',
                 label: 'Recebimentos',
                 backgroundColor: "#4BC0C0",
                 data: [
-                    1081.66,
-                    166.68,
-                    0,
-                    700.00,
-                    0
+                    <?php $i = 0; ?>
+                    @while($i <= 3)
+                    {{ $rec[$i] }},
+                    <?php $i++; ?>
+                    @endwhile
                 ]
             }, {
                 type: 'bar',
                 label: 'Pagamentos',
                 backgroundColor: "#FF6384",
                 data: [
-                    -1200,
-                    0,
-                    -1200,
-                    0,
-                    -500
+                    <?php $i = 0; ?>
+                    @while($i <= 3)
+                    {{ $pag[$i] }},
+                    <?php $i++; ?>
+                    @endwhile
                 ]
             }, {
                 type: 'line',
                 label: 'Saldo',
                 backgroundColor: "#000000",
-                borderColor: "#000000",  
                 borderWidth: 3,
+                borderColor: "#000000",
                 fill: false,
                 data: [
-                    -2776.68,
-                    -2610,
-                    -3810,
-                    -3110,
-                    -3610
+                    <?php $i = 0; ?>
+                    @while($i <= 3)
+                    {{ $saldo[$i] }},
+                    <?php $i++; ?>
+                    @endwhile
                 ]
             }]
         };

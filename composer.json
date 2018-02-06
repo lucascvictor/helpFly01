@@ -25,9 +25,9 @@
             "App\\": "app/",
             "Database\\": "database/",
             "Controllers\\": "app/Http/Controllers",
-            "Classes\\": "app/Apemesp/Classes",
-            "Models\\": "app/Apemesp/Models",
-            "Repositories\\": "app/Apemesp/Repositories"
+            "Classes\\": "app/Fly01/Classes",
+            "Models\\": "app/Fly01/Models",
+            "Repositories\\": "app/Fly01/Repositories"
         }
     },
     "autoload-dev": {
