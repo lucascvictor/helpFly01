@@ -8,7 +8,7 @@
   <li class="no-padding" style="border-top: solid #222222;">
     <ul class="collapsible collapsible-accordion">
       <li class="active">
-        <a class="collapsible-header">Inicio</a>
+        <a class="collapsible-header" href="{{ url('/') }}">Inicio</a>
       </li>
     </ul>
   </li>
