@@ -50,11 +50,11 @@
 													<tr>
 														<th class="picker__weekday" scope="col" title="Domingo">D</th>
 														<th class="picker__weekday" scope="col" title="Segunda">S</th>
-														<th class="picker__weekday" scope="col" title="Ter�a">T</th>
+														<th class="picker__weekday" scope="col" title="Terï¿½a">T</th>
 														<th class="picker__weekday" scope="col" title="Quarta">Q</th>
 														<th class="picker__weekday" scope="col" title="Quinta">Q</th>
 														<th class="picker__weekday" scope="col" title="Sexta">S</th>
-														<th class="picker__weekday" scope="col" title="S�bado">S</th>
+														<th class="picker__weekday" scope="col" title="Sï¿½bado">S</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -241,11 +241,11 @@ type="button" data-close="true" disabled="" aria-controls="dataInicial">Fechar</
 														<tr>
 															<th class="picker__weekday" scope="col" title="Domingo">D</th>
 															<th class="picker__weekday" scope="col" title="Segunda">S</th>
-															<th class="picker__weekday" scope="col" title="Ter�a">T</th>
+															<th class="picker__weekday" scope="col" title="Terï¿½a">T</th>
 															<th class="picker__weekday" scope="col" title="Quarta">Q</th>
 															<th class="picker__weekday" scope="col" title="Quinta">Q</th>
 															<th class="picker__weekday" scope="col" title="Sexta">S</th>
-															<th class="picker__weekday" scope="col" title="S�bado">S</th>
+															<th class="picker__weekday" scope="col" title="Sï¿½bado">S</th>
 														</tr>
 													</thead>
 													<tbody>
@@ -405,12 +405,12 @@ type="button" data-close="true" disabled="" aria-controls="dataInicial">Fechar</
 						<label class="truncate active" for="dataFinal">Data Final</label>
 					</div>
 					<div id="fly01btngrpField" class="input-field col s12 m6 l4">
-						<label class="truncate active" for="fly01btngrp">Selecione o per�odo</label>
+						<label class="truncate active" for="fly01btngrp">Selecione o perï¿½odo</label>
 						<div id="fly01btngrp" class="btn-group input-field">
 							<input id="btnDia" type="button" name="btnDia" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;1&quot;)" value="Dia">
 								<input id="btnSemana" type="button"
 name="btnSemana" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;7&quot;)" value="Semana">
-									<input id="btnMes" type="button" name="btnMes" class="btn col s4 active" onclick="fnAtualizarPeriodo(&quot;30&quot;)" value="M�s">
+									<input id="btnMes" type="button" name="btnMes" class="btn col s4 active" onclick="fnAtualizarPeriodo(&quot;30&quot;)" value="Mï¿½s">
 									</div>
 								</div>
 							</form>
@@ -519,7 +519,7 @@ name="btnSemana" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;7&quot;)"
 													<a class="paginate_button previous disabled" aria-controls="fly01dt" data-dt-idx="0" tabindex="0" id="fly01dt_previous">Anterior</a>
 													<span>
 														<a class="paginate_button current" aria-controls="fly01dt" data-dt-idx="1" tabindex="0">1</a>
-													</span><a class="paginate_button next disabled" aria-controls="fly01dt" data-dt-idx="2" tabindex="0" id="fly01dt_next">Pr�ximo</a>
+													</span><a class="paginate_button next disabled" aria-controls="fly01dt" data-dt-idx="2" tabindex="0" id="fly01dt_next">Prï¿½ximo</a>
 												</div>
 											</div>
 										</div>
