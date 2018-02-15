@@ -2,14 +2,33 @@
 
 @section('title', 'Help Fly01')
 
+ @section('extrascript')
+    <script>
+		var PageTour;
+		try {
+		PageTour = $.fn.PageTour();
+		} catch (e) {
+		console.error('Não foi possivel iniciar o tour: ', e);
+		}
+	</script>
+
+
+	<script>
+		// Script to add dynamic "cities" for testing.
+		$('#start-tour').on('click', PageTour.open);
+    </script>
+
+ @endsection
+
 @section('content')
    <div id="headTop" class="z-depth-0-half pinned">
       <div class="container">
          <div class="row">
             <div class="col s12 fly01-main-header">
-               <h4 class="thin inline-block">Fluxo de Caixa</h4>
+               <h4 class="thin inline-block"  data-tour-index="1" data-tour-description="<h2>Descrição</h2>Texto teste para Fluxo de caixa">Fluxo de Caixa</h4>
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="save" class="btn " onclick="fnAtualizar();">Atualizar</a></li>
+				  <li><a id="start-tour" class="btn">Tour</a></li>
                </ul>
             </div>
          </div>
