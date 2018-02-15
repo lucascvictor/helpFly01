@@ -578,7 +578,7 @@
 
 		var enjoyhint_script_steps = [
 		{
-			'click .new_btn' : 'Click the "New" button to start creating your project'
+			'click .new_btn' : 'Clique aqui para iniciar o Tour'
 		}  
 		];
 
