@@ -390,6 +390,7 @@
                <div id="fly01btngrp" class="btn-group input-field"><input id="btnDia" name="btnDia" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;1&quot;)" value="Dia" type="button"><input id="btnSemana" name="btnSemana" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;7&quot;)" value="Semana" type="button"><input id="btnMes" name="btnMes" class="btn col s4 active" onclick="fnAtualizarPeriodo(&quot;30&quot;)" value="Mês" type="button"></div>
             </div>
          </form>
+		 <div class="areageral">
          <div id="dfly01cardSaldo" class="col s12 m4 saldo_atual">
             <div class="card" id="fly01cardSaldo" data-color="orange">
                <div class="card-content white-text orange lighten-2">
@@ -417,6 +418,7 @@
                <div class="card-action right-align green lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaReceber/List&quot;)" class="white-text ">Ver mais</a></div>
             </div>
          </div>
+		 </div>
          <div id="dfly01chart" class="col s12">
             <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor">
                <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
@@ -578,7 +580,7 @@
 
 		var enjoyhint_script_steps = [
 		{
-			'click .new_btn' : 'Clique aqui para iniciar o Tour'
+			'click .areageral' : 'Clique aqui para iniciar o Tour'
 		},
 		{
 			'click .saldo_atual': 'Este é o seu Saldo atual'
