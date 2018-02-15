@@ -6,7 +6,7 @@ class Fluxo
     public function getPagamentos()
     {
         $i = 0;
-        while ($i <= 3) {
+        while ($i <= 4) {
             $pag[$i]=rand(-2000, -1000);
             $i++; 
         }
@@ -16,7 +16,7 @@ class Fluxo
     public function getRecebimentos()
     {
         $i = 0;
-        while($i <= 3) {
+        while($i <= 4) {
              $rec[$i]=rand(2000, 5000);
              $i++; 
         }
@@ -27,7 +27,7 @@ class Fluxo
     {
         $saldo[-1] = 0;
         $i = 0;
-        while($i <= 3) {
+        while($i <= 4) {
             $saldo[$i] = $rec[$i] - $pag[$i];
             $i++; 
         }
