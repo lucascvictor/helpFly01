@@ -25,7 +25,7 @@ class Fluxo
 
     public function getSaldo($rec, $pag)
     {
-        $saldo[-1] = 0;
+        $saldo[0] = 0;
         $i = 0;
         while($i <= 4) {
             $saldo[$i] = $rec[$i] - $pag[$i];

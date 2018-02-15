@@ -393,7 +393,7 @@
             <div class="card" id="fly01cardSaldo" data-color="orange">
                <div class="card-content white-text orange lighten-2">
                   <span class="card-title condensed">Saldo atual</span>
-                  <h5 class="center">-R$ 87.512,47</h5>
+                  <h5 class="center">{{ $saldo[4] }}</h5>
                </div>
                <div class="card-action right-align orange lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/Extrato/List&quot;)" class="white-text ">Ver mais</a></div>
             </div>
@@ -402,7 +402,7 @@
             <div class="card" id="fly01cardCP" data-color="red">
                <div class="card-content white-text red lighten-2">
                   <span class="card-title condensed">A pagar</span>
-                  <h5 class="center">R$ 29.037,03</h5>
+                  <h5 class="center">{{ ($pag[4]) }}</h5>
                </div>
                <div class="card-action right-align red lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaPagar/List&quot;)" class="white-text ">Ver mais</a></div>
             </div>
@@ -411,7 +411,7 @@
             <div class="card" id="fly01cardCR" data-color="green">
                <div class="card-content white-text green lighten-2">
                   <span class="card-title condensed">A receber</span>
-                  <h5 class="center">R$ 101.600,00</h5>
+                  <h5 class="center">{{ $rec[4] }}</h5>
                </div>
                <div class="card-action right-align green lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaReceber/List&quot;)" class="white-text ">Ver mais</a></div>
             </div>
@@ -454,37 +454,37 @@
                   <tbody>
                      <tr role="row" class="odd">
                         <td tabindex="0">31/01/2018</td>
-                        <td>R$ 101.600,00</td>
-                        <td>-R$ 22.868,23</td>
-                        <td>-R$ 8.780,70</td>
+                        <td>{{ $rec[0] }}</td>
+                        <td>{{ $pag[0] }}</td>
+                        <td>{{ $saldo[0] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="even">
                         <td tabindex="0">11/02/2018</td>
-                        <td>R$ 0,00</td>
-                        <td>-R$ 0,50</td>
-                        <td>-R$ 8.781,20</td>
+                        <td>{{ $rec[1] }}</td>
+                        <td>{{ $pag[1] }}</td>
+                        <td>{{ $saldo[1] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="odd">
                         <td tabindex="0">15/02/2018</td>
-                        <td>R$ 800,00</td>
-                        <td>R$ 0,00</td>
-                        <td>-R$ 7.981,20</td>
+                        <td>{{ $rec[2] }}</td>
+                        <td>{{ $pag[2] }}</td>
+                        <td>{{ $saldo[2] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="even">
                         <td tabindex="0">24/02/2018</td>
-                        <td>R$ 0,00</td>
-                        <td>-R$ 50,00</td>
-                        <td>-R$ 8.031,20</td>
+                        <td>{{ $rec[3] }}</td>
+                        <td>{{ $pag[3] }}</td>
+                        <td>{{ $saldo[3] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="odd">
                         <td tabindex="0">27/02/2018</td>
-                        <td>R$ 0,00</td>
-                        <td>-R$ 1.500,00</td>
-                        <td>-R$ 9.531,20</td>
+                        <td>{{ $rec[4] }}</td>
+                        <td>{{ $pag[4] }}</td>
+                        <td>{{ $saldo[4] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                   </tbody>
@@ -513,7 +513,7 @@
                 data: [
 					<?php $i = 0; ?>
                     @while($i <= 4)
-                    {{ $rec[$i] }},
+                    {{ $vRec[$i] }},
 					<?php $i++; ?>
                     @endwhile
                 ]
@@ -524,7 +524,7 @@
                 data: [
 					<?php $i = 0; ?>
                     @while($i <= 4)
-                    {{ $pag[$i] }},
+                    {{ $vPag[$i] }},
 					<?php $i++; ?>
                     @endwhile
                 ]
@@ -538,7 +538,7 @@
                 data: [
 					<?php $i = 0; ?>
                     @while($i <= 4)
-                    {{ $saldo[$i] }},
+                    {{ $vSaldo[$i] }},
 					<?php $i++; ?>
                     @endwhile
                 ]
