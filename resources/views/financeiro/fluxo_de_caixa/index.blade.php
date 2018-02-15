@@ -2,33 +2,17 @@
 
 @section('title', 'Help Fly01')
 
- @section('extrascript')
-    <script>
-		var PageTour;
-		try {
-		PageTour = $.fn.PageTour();
-		} catch (e) {
-		console.error('Não foi possivel iniciar o tour: ', e);
-		}
-	</script>
 
-
-	<script>
-		// Script to add dynamic "cities" for testing.
-		$('#start-tour').on('click', PageTour.open);
-    </script>
-
- @endsection
 
 @section('content')
    <div id="headTop" class="z-depth-0-half pinned">
       <div class="container">
          <div class="row">
             <div class="col s12 fly01-main-header">
-               <h4 class="thin inline-block"  data-tour-index="1" data-tour-description="<h2>Descrição</h2>Texto teste para Fluxo de caixa">Fluxo de Caixa</h4>
+               <h4 class="thin inline-block" data-intro="Hello step one!">Fluxo de Caixa</h4>
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="save" class="btn " onclick="fnAtualizar();">Atualizar</a></li>
-				  <li><a id="start-tour" class="btn">Tour</a></li>
+				  <li><button class="btn new_btn">Tour</button></li>
                </ul>
             </div>
          </div>
@@ -417,7 +401,7 @@
                <div class="card-action right-align orange lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/Extrato/List&quot;)" class="white-text ">Ver mais</a></div>
             </div>
          </div>
-         <div id="dfly01cardCP" class="col s12 m4">
+         <div id="dfly01cardCP" class="col s12 m4" data-step="<h2>Descrição</h2> Um texto sugestivo para o conjunto de 'regras' do grupo tributário">
             <div class="card" id="fly01cardCP" data-color="red">
                <div class="card-content white-text red lighten-2">
                   <span class="card-title condensed">A pagar</span>
@@ -588,6 +572,5 @@
                 }
             });
 </script>
-
 @endsection
 														
