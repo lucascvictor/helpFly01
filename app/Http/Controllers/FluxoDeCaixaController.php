@@ -15,18 +15,27 @@ class FluxoDeCaixaController extends Controller
         $fluxo = new Fluxo;
         $rec = $fluxo->getRecebimentos();
         $pag = $fluxo->getPagamentos();
+        $saldo = $fluxo->getSaldo($rec, $pag);
         return view('financeiro.fluxo_de_caixa.index')
-        ->with('pag', $pag)
-        ->with('rec', $rec)
-        ->with('saldo', $fluxo->getSaldo($rec, $pag));
+        ->with('pag', $this->mask($pag))
+        ->with('rec', $this->mask($rec))
+        ->with('saldo', $this->mask($saldo))
+        ->with('vPag', $pag)
+        ->with('vRec', $rec)
+        ->with('vSaldo', $saldo);
     }
 
-    public function getChart()
-    {
-        $fluxo = new Fluxo;
-        return view('financeiro.chart')
-        ->with('pag', $fluxo->getPagamentos())
-        ->with('rec', $fluxo->getRecebimentos());
-    }
+
+    function mask($aValores)
+	{
+    $i = 0;
+     While ($i <= count($aValores)-1) {
+        $aMasks[$i] = 'R$' . number_format($aValores[$i], 2, ',', '.');
+        $i++;
+     }
+	 return $aMasks;
+	}
+
+	 
 
 }
