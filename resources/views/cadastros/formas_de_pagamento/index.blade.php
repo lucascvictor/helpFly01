@@ -10,7 +10,7 @@
 				<h4 class="thin inline-block">Forma de Pagamento</h4>
 				<ul class="right valign-wrapper fly01-buttons">
 					<li>
-						<a id="new" class="btn " onclick="fnNovo();">Novo</a>
+						<a id="new" class="btn " href="{{ url('/cadastros/formasdepagamento/new') }}">Novo</a>
 					</li>
 				</ul>
 			</div>
