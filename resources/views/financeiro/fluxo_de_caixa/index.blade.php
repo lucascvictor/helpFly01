@@ -10,7 +10,7 @@
                <h4 class="thin inline-block" data-intro="Hello step one!">Fluxo de Caixa</h4>
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="todo-list" class="btn">Atualizar</a></li>
-				  <li><button class="btn new_btn">Tour</button></li>
+				  <li><button class="btn new_btn" onclick="enjoyhint_instance.runScript()">Tour</button></li>
                </ul>
             </div>
          </div>

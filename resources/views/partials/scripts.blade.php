@@ -22,7 +22,6 @@
           selector:'#todo-list',
           event:'click',
           description:'Atualize os dados da tela',
-          shape:'circle',
           timeout:100
         },
         {
