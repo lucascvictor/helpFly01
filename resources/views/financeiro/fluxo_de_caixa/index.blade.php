@@ -390,7 +390,7 @@
                <div id="fly01btngrp" class="btn-group input-field"><input id="btnDia" name="btnDia" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;1&quot;)" value="Dia" type="button"><input id="btnSemana" name="btnSemana" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;7&quot;)" value="Semana" type="button"><input id="btnMes" name="btnMes" class="btn col s4 active" onclick="fnAtualizarPeriodo(&quot;30&quot;)" value="Mês" type="button"></div>
             </div>
          </form>
-		 <div class="areageral" style="heigth: 30%;">
+		 <div class="areageral" style="heigth: 300px;">
          <div id="dfly01cardSaldo" class="col s12 m4 saldo_atual">
             <div class="card" id="fly01cardSaldo" data-color="orange">
                <div class="card-content white-text orange lighten-2">
