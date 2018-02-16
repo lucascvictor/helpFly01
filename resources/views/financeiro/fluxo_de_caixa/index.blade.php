@@ -9,7 +9,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block" data-intro="Hello step one!">Fluxo de Caixa</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="save" class="btn " onclick="fnAtualizar();">Atualizar</a></li>
+                  <li><a id="todo-list" class="btn">Atualizar</a></li>
 				  <li><button class="btn new_btn">Tour</button></li>
                </ul>
             </div>
@@ -572,34 +572,6 @@
                 }
             });
 </script>
-
-	<script>
-
-		var enjoyhint_instance = new EnjoyHint({});
-
-		var enjoyhint_script_steps = [
-		{
-			'click .new_btn' : 'Clique aqui para iniciar o Tour'
-		},
-		{
-			'click .saldo_atual': 'Este é o seu Saldo atual'
-		}
-		];
-
-		var options = {
-                    "next #block": 'Hello.',
-                    "nextButton" : {className: "myNext", text: "NEXT"},
-                    "skipButton" : {className: "mySkip", text: "SKIP"},
-
-                }
-
-
-		enjoyhint_instance.set(enjoyhint_script_steps);
-
-
-		enjoyhint_instance.run();
-
-	</script>
 
 
 @endsection
