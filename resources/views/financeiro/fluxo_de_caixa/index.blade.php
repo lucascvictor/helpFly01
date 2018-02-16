@@ -579,7 +579,7 @@
 
 		var enjoyhint_script_steps = [
 		{
-			'click .areageral' : 'Clique aqui para iniciar o Tour'
+			'click .new_btn' : 'Clique aqui para iniciar o Tour'
 		},
 		{
 			'click .saldo_atual': 'Este é o seu Saldo atual'
