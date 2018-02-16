@@ -11,27 +11,38 @@
 
   <script type="text/javascript">
   $(".button-collapse").sideNav();
+
   </script>
-
-
-
+ 
  <script>
-		//initialize instance
-var enjoyhint_instance = new EnjoyHint({});
+	   localStorage.clear();
+      var enjoyhint_script_data = [
+        
+        {
+          selector:'#todo-list',
+          event:'click',
+          description:'Atualize os dados da tela',
+          timeout:100
+        },
+        {
+          selector:'.new_btn',
+          event:'click',
+          description:'Inicie seu tour agora mesmo',
+  
+        },
+        {
+          selector:'#dfly01cardSaldo',
+          event:'click',
+          description:'Seu saldo total',
+  
+        },
+        
+      ];
+      var enjoyhint_instance = null;
+      $(document).ready(function(){
+        enjoyhint_instance = new EnjoyHint({});
+        enjoyhint_instance.setScript(enjoyhint_script_data);
+        enjoyhint_instance.runScript();
+      });
 
-//simple config. 
-//Only one step - highlighting(with description) "New" button 
-//hide EnjoyHint after a click on the button.
-var enjoyhint_script_steps = [
-  {
-    'click .new_btn' : 'Click the "New" button to start creating your project'
-  }  
-];
-
-//set script config
-enjoyhint_instance.set(enjoyhint_script_steps);
-
-//run Enjoyhint script
-enjoyhint_instance.run();
-
- </script>
+	</script>
