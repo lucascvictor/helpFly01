@@ -67,3 +67,10 @@
 										</div>
 									</div>
 @endsection
+
+
+@section('extrascript')
+
+@yield('cadastros.formas_de_pagamento.tour')
+
+@endsection
