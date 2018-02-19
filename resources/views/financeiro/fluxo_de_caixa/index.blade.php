@@ -507,9 +507,9 @@
 
 @section('extrascript')
 
-@include('financeiro.fluxo_de_caixa.datachart')
+    @include('financeiro.fluxo_de_caixa.datachart')
 
-@include('financeiro.fluxo_de_caixa.tour')
+    @include('financeiro.fluxo_de_caixa.tour')
 
 @endsection
 										
