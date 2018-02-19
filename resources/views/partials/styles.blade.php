@@ -20,8 +20,6 @@
          font-size: 18px;
        }
 
-
-
        .item li{
        background-color: #222222;
 
@@ -29,3 +27,40 @@
       }
 
      </style>
+
+
+     <style type="text/css">
+
+      .enjoyhint_skip_btn:hover {
+          background-color: #F79B64;
+      }
+      .enjoyhint_skip_btn:active {
+          border-color: #F79B64;
+      }
+      .enjoyhint_skip_btn {
+        color: #F79B64;
+        border-color: #F79B64;
+      }
+
+      .enjoyhint_close_btn:hover {
+          background-color: #F79B64;
+      }
+      .enjoyhint_close_btn {
+          border-color: #F79B64;
+      }
+      .enjoyhint_close_btn:active {
+          border-color: #F79B64;
+      }
+
+
+      .enjoyhint_next_btn:hover {
+          background-color: #F79B64;
+      }
+      .enjoyhint_next_btn:active {
+          border-color: #F79B64;
+      }
+      .enjoyhint_next_btn {
+        color: #F79B64;
+        border-color: #F79B64;
+      }
+    </style>

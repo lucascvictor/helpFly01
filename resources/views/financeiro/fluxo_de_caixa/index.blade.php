@@ -2,6 +2,7 @@
 
 @section('title', 'Help Fly01')
 
+
 @section('content')
    <div id="headTop" class="z-depth-0-half pinned">
       <div class="container">
@@ -17,7 +18,7 @@
       </div>
    </div>
    <div class="container">
-      <div class="row">
+      <div class="row fly01areatotal">
          <form id="fly01frm" class="col s12" method="post" novalidate="novalidate">
             <div id="dataInicialField" class="input-field col s6 m3 l4">
                <div class="picker" id="dataInicial_root" tabindex="0" aria-hidden="true">
@@ -200,7 +201,7 @@
                      </div>
                   </div>
                </div>
-               <input id="dataInicial" name="dataInicial" class="datepicker picker__input" value="14/02/2018" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataInicial_root" type="text"><label class="truncate active" for="dataInicial">Data Inicial</label>
+               <input id="dataInicial" name="dataInicial" class="datepicker picker__input" value="31/01/2018" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataInicial_root" type="text"><label class="truncate active" for="dataInicial">Data Inicial</label>
             </div>
             <div id="dataFinalField" class="input-field col s6 m3 l4">
                <div class="picker" id="dataFinal_root" tabindex="0" aria-hidden="true">
@@ -383,7 +384,7 @@
                      </div>
                   </div>
                </div>
-               <input id="dataFinal" name="dataFinal" class="datepicker picker__input" value="31/03/2018" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataFinal_root" type="text"><label class="truncate active" for="dataFinal">Data Final</label>
+               <input id="dataFinal" name="dataFinal" class="datepicker picker__input" value="27/02/2018" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataFinal_root" type="text"><label class="truncate active" for="dataFinal">Data Final</label>
             </div>
             <div id="fly01btngrpField" class="input-field col s12 m6 l4">
                <label class="truncate active" for="fly01btngrp">Selecione o período</label>
@@ -506,73 +507,9 @@
 
 @section('extrascript')
 
-<script>
-     var barChartData = {
-            labels: ["31/01/2018", "11/02/2018", "15/02/2018", "24/02/2018", "27/02/2018"],
-           datasets: [{
-                type: 'bar',
-                label: 'Recebimentos',
-                backgroundColor: "#4BC0C0",
-                data: [
-					<?php $i = 0; ?>
-                    @while($i <= 4)
-                    {{ $vRec[$i] }},
-					<?php $i++; ?>
-                    @endwhile
-                ]
-            }, {
-                type: 'bar',
-                label: 'Pagamentos',
-                backgroundColor: "#FF6384",
-                data: [
-					<?php $i = 0; ?>
-                    @while($i <= 4)
-                    {{ $vPag[$i] }},
-					<?php $i++; ?>
-                    @endwhile
-                ]
-            }, {
-                type: 'line',
-                label: 'Saldo',
-                backgroundColor: "#000000",
-                borderWidth: 3,
-                borderColor: "#000000",
-                fill: false,
-                data: [
-					<?php $i = 0; ?>
-                    @while($i <= 4)
-                    {{ $vSaldo[$i] }},
-					<?php $i++; ?>
-                    @endwhile
-                ]
-            }]
-        };
-            var ctx = document.getElementById("fly01chart");
-            var myBar = new Chart(ctx, {
-                type: 'bar',
-                data: barChartData,
-                options: {
-                    title:{
-                        display:true,
-                        text:"Fluxo de Caixa"
-                    },
-                    tooltips: {
-                        mode: 'index',
-                        intersect: false
-                    },
-                    responsive: true,
-                    scales: {
-                        xAxes: [{
-                            stacked: true,
-                        }],
-                        yAxes: [{
-                            stacked: true
-                        }]
-                    }
-                }
-            });
-</script>
+@include('financeiro.fluxo_de_caixa.datachart')
 
+@include('financeiro.fluxo_de_caixa.tour')
 
 @endsection
-														
+										
