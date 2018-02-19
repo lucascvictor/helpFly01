@@ -14,9 +14,9 @@ class FornecedoresController extends Controller
     	return view('cadastros.fornecedores.index');
     }
 
-    public function new()
+    public function create()
     {
-      return view('cadastros.fornecedores.new');
+      return view('cadastros.fornecedores.create');
     }
 
 

@@ -10,7 +10,7 @@ class ContasBancariasController extends Controller
     return view('cadastros.contas_bancarias.index');
   }
 
-  public function new(){
-    return view('cadastros.contas_bancarias.new');
+  public function create(){
+    return view('cadastros.contas_bancarias.create');
   }
 }

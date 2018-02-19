@@ -10,7 +10,7 @@ class CondicoesDeParcelamentoController extends Controller
     return view('cadastros.condicoes_de_parcelamento.index');
   }
 
-  public function new(){
-    return view('cadastros.condicoes_de_parcelamento.new');
+  public function create(){
+    return view('cadastros.condicoes_de_parcelamento.create');
   }
 }

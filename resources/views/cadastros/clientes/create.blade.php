@@ -2,26 +2,7 @@
 
 @section('title', 'Help Fly01')
 
-@section('extrascript')
-<!-- Instantiate the page tour library -->
-<script>
-// Instantiate the actual page tour object.
-var PageTour;
-try {
-  PageTour = $.fn.PageTour();
-} catch (e) {
-  console.error('Não foi possivel iniciar o tour: ', e);
-}
-</script>
 
-<!-- Just some extra testing functionality -->
-<script>
-// Script to add dynamic "cities" for testing.
-$('#start-tour').on('click', PageTour.open);
-
-</script>
-
-@endsection
 
 @section('content')
 

@@ -14,9 +14,9 @@ class ClientesController extends Controller
     	return view('cadastros.clientes.index');
     }
 
-    public function new()
+    public function create()
     {
-      return view('cadastros.clientes.new');
+      return view('cadastros.clientes.create');
     }
 
 

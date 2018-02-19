@@ -10,7 +10,7 @@
 				<h4 class="thin inline-block">Condições de Parcelamento</h4>
 				<ul class="right valign-wrapper fly01-buttons">
 					<li>
-						<a id="new" class="btn " href="{{ url('/cadastros/condicoesdeparcelamento/new') }}"">Novo</a>
+						<a id="new" class="btn " href="{{ url('/cadastros/condicoesdeparcelamento/create') }}"">Novo</a>
 					</li>
 				</ul>
 			</div>

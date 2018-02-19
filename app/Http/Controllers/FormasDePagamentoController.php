@@ -10,7 +10,7 @@ class FormasDePagamentoController extends Controller
     return view('cadastros.formas_de_pagamento.index');
   }
 
-  public function new(){
-    return view('cadastros.formas_de_pagamento.new');
+  public function create(){
+    return view('cadastros.formas_de_pagamento.create');
   }
 }

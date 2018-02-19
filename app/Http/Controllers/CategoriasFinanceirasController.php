@@ -10,7 +10,7 @@ class CategoriasFinanceirasController extends Controller
       return view('cadastros.categorias_financeiras.index');
     }
 
-    public function new(){
-      return view('cadastros.categorias_financeiras.new');
+    public function create(){
+      return view('cadastros.categorias_financeiras.create');
     }
 }

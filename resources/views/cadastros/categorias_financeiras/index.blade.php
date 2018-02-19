@@ -11,7 +11,7 @@
 					<h4 class="thin inline-block">Categorias Financeiras</h4>
 					<ul class="right valign-wrapper fly01-buttons">
 						<li>
-							<a id="new" class="btn "  href="{{ url('/cadastros/categoriasfinanceiras/new') }}">Novo</a>
+							<a id="new" class="btn "  href="{{ url('/cadastros/categoriasfinanceiras/create') }}">Novo</a>
 						</li>
 					</ul>
 				</div>
