@@ -2,6 +2,21 @@
      var barChartData = {
             labels: ["31/01/2018", "11/02/2018", "15/02/2018", "24/02/2018", "27/02/2018"],
            datasets: [{
+                type: 'line',
+                label: 'Saldo',
+                backgroundColor: "#000000",
+                borderWidth: 3,
+                borderColor: "#000000",
+                fill: false,
+                data: [
+					<?php $i = 0; ?>
+                    @while($i <= 4)
+                    {{ $vSaldo[$i] }},
+					<?php $i++; ?>
+                    @endwhile
+                ]
+            },
+            {
                 type: 'bar',
                 label: 'Recebimentos',
                 backgroundColor: "#4BC0C0",
@@ -20,20 +35,6 @@
 					<?php $i = 0; ?>
                     @while($i <= 4)
                     {{ $vPag[$i] }},
-					<?php $i++; ?>
-                    @endwhile
-                ]
-            }, {
-                type: 'line',
-                label: 'Saldo',
-                backgroundColor: "#000000",
-                borderWidth: 3,
-                borderColor: "#000000",
-                fill: false,
-                data: [
-					<?php $i = 0; ?>
-                    @while($i <= 4)
-                    {{ $vSaldo[$i] }},
 					<?php $i++; ?>
                     @endwhile
                 ]

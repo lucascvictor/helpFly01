@@ -27,9 +27,18 @@ class Fluxo
     {
         $saldo[0] = 0;
         $i = 0;
+        $j = 0;
         while($i <= 4) {
-            $saldo[$i] = $rec[$i] - $pag[$i];
+            if (!$i)
+                $j=1;
+
+            $saldo[$i] = $saldo[$j-1] + $rec[$i] + $pag[$i];
+
+            if (!$i)
+                $j=0;
+
             $i++; 
+            $j++;
         }
         return $saldo;
     }
