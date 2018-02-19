@@ -4,7 +4,6 @@
 
 @section('content')
 
-<main>
 	<div id="headTop" class="z-depth-0-half">
 		<div class="container">
 			<div class="row">
@@ -12,7 +11,7 @@
 					<h4 class="thin inline-block">Categorias Financeiras</h4>
 					<ul class="right valign-wrapper fly01-buttons">
 						<li>
-							<a id="new" class="btn " onclick="fnNovo();">Novo</a>
+							<a id="new" class="btn "  href="{{ url('/cadastros/categoriasfinanceiras/new') }}">Novo</a>
 						</li>
 					</ul>
 				</div>
@@ -293,6 +292,5 @@
 																	</div>
 																</div>
 															</div>
-														</main>
 @endsection
 														

@@ -1,6 +1,0 @@
-
-    function fnChangeEstado() {
-        $("#cidadeNome").val("");
-        $("#cidadeId").val("");
-    }
-

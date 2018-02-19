@@ -6,7 +6,6 @@
 	  localStorage.clear();
 
       var enjoyhint_script_data = [
-
         {
           'next .fly01areatotal': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
           'top': 120,
@@ -53,7 +52,6 @@
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          scrollAnimationSpeed: 0,
         },
 
         {
@@ -61,8 +59,8 @@
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'}
         },
-        
       ];
+
       
       var enjoyhint_instance = null;
       $(document).ready(function(){
