@@ -17,14 +17,17 @@
         {
           'next #dataInicialField': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'}
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+          right: -370,
+          top: -30
   
         },
         
         {
           'next #fly01btngrpField':'Ou selecionar através dos botões o dia, semana ou do mês atual.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'}
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+           top: -30
         },
 
          {
