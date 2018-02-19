@@ -27,7 +27,7 @@
           'next #fly01btngrpField':'Ou selecionar através dos botões o dia, semana ou do mês atual.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-           top: -30
+          top: -30
         },
 
          {

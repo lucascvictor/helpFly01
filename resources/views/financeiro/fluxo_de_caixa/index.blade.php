@@ -10,8 +10,8 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block" data-intro="Hello step one!">Fluxo de Caixa</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="todo-list" class="btn" onCLick="location.reload();">Atualizar</a></li>
-				  <li><button class="btn new_btn" onclick="enjoyhint_instance.runScript()">Tour</button></li>
+                  <li><a id="todo-list" class="btn" onCLick="reload()">Atualizar</a></li>
+				  <li><button class="btn new_btn" onclick="tour()">Tour</button></li>
                </ul>
             </div>
          </div>
@@ -398,7 +398,7 @@
                   <span class="card-title condensed">Saldo atual</span>
                   <h5 class="center">{{ $saldo[4] }}</h5>
                </div>
-               <div class="card-action right-align orange lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/Extrato/List&quot;)" class="white-text ">Ver mais</a></div>
+               <div class="card-action right-align orange lighten-1"><a href="{{ url('/financeiro/extrato') }}" class="white-text ">Ver mais</a></div>
             </div>
          </div>
          <div id="dfly01cardCP" class="col s12 m4" data-step="<h2>Descrição</h2> Um texto sugestivo para o conjunto de 'regras' do grupo tributário">
@@ -407,7 +407,7 @@
                   <span class="card-title condensed">A pagar</span>
                   <h5 class="center">{{ ($pag[4]) }}</h5>
                </div>
-               <div class="card-action right-align red lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaPagar/List&quot;)" class="white-text ">Ver mais</a></div>
+               <div class="card-action right-align red lighten-1"><a href="{{ url('/financeiro/contasapagar') }}" class="white-text ">Ver mais</a></div>
             </div>
          </div>
          <div id="dfly01cardCR" class="col s12 m4">
@@ -416,7 +416,7 @@
                   <span class="card-title condensed">A receber</span>
                   <h5 class="center">{{ $rec[4] }}</h5>
                </div>
-               <div class="card-action right-align green lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaReceber/List&quot;)" class="white-text ">Ver mais</a></div>
+               <div class="card-action right-align green lighten-1"><a href="{{ url('/financeiro/contasareceber') }}" class="white-text ">Ver mais</a></div>
             </div>
          </div>
 		 </div>
@@ -507,9 +507,9 @@
 
 @section('extrascript')
 
-    @include('financeiro.fluxo_de_caixa.datachart')
+@include('financeiro.fluxo_de_caixa.datachart')
 
-    @include('financeiro.fluxo_de_caixa.tour')
+@include('financeiro.fluxo_de_caixa.tour')
 
 @endsection
 										
