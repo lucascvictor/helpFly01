@@ -2,16 +2,7 @@
  <script>
 	   localStorage.clear();
       var enjoyhint_script_data = [
-
-      {      
-        'next .tipoFormaPagamentoField': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
-          'top': 120,
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-  
-      }
        {
-          
           'next #tipoFormaPagamentoField': 'No campo “Tipo” temos a opção de selecionar a forma do pagamento a qual vamos selecionar, basta clicar em cima e ver as opções.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
