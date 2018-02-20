@@ -1,7 +1,3 @@
-<script type="text/javascript">
-  $(".button-collapse").sideNav();
-
-  </script>
  
  <script>
 	   localStorage.clear();
@@ -37,7 +33,7 @@
         },
         
       ];
-      var enjoyhint_instance = null;
+        var enjoyhint_instance = null;
         enjoyhint_instance = new EnjoyHint({});
         enjoyhint_instance.setScript(enjoyhint_script_data);
    

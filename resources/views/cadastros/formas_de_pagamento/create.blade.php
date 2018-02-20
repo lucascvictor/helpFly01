@@ -10,7 +10,7 @@
 												<h4 class="thin inline-block">Dados da forma de pagamento</h4>
 												<ul class="right valign-wrapper fly01-buttons">
 													<li>
-														<a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a>
+														<a id="cancel" class="btn " onclick="reload();">Cancelar</a>
 														<a id="new" class="btn pulse" onclick="enjoyhint_instance.runScript();">Tour</a>
 													</li>
 													<li>
@@ -72,6 +72,6 @@
 
 @section('extrascript')
 
-@include('cadastros.formas_de_pagamento.tour')
+	@include('cadastros.formas_de_pagamento.tour')
 
 @endsection
