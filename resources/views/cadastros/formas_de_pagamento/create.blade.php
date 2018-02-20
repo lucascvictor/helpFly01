@@ -11,6 +11,7 @@
 												<ul class="right valign-wrapper fly01-buttons">
 													<li>
 														<a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a>
+														<a id="new" class="btn pulse" onclick="enjoyhint_instance.runScript();">Tour</a>
 													</li>
 													<li>
 														<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
@@ -71,6 +72,6 @@
 
 @section('extrascript')
 
-@yield('cadastros.formas_de_pagamento.tour')
+@include('cadastros.formas_de_pagamento.tour')
 
 @endsection
