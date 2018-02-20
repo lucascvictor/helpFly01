@@ -8,21 +8,21 @@
       var enjoyhint_script_data = [
         
         {
-          selector:'#todo-list',
+          selector:'#tipoFormaPagamentoField',
           event:'click',
-          description:'Atualize os dados da tela',
+          description:'No campo “Tipo” temos a opção de selecionar a forma do pagamento a qual vamos selecionar, basta clicar em cima e ver as opções.',
           timeout:100
         },
         {
-          selector:'.new_btn',
+          selector:'#descricaoField',
           event:'click',
-          description:'Inicie seu tour agora mesmo',
+          description:'Em “Descrição” preenchemos a que se referencia aquela forma. Ex: Caso você selecione o Tipo “Transferência”, em descrição é possível especificar a qual conta foi feita o pagamento.',
   
         },
         {
-          selector:'#dfly01cardSaldo',
+          selector:'#fly01frm',
           event:'click',
-          description:'Seu saldo total',
+          description:'**ATENÇÃO** É importante ter um bom controle das formas de pagamentos, pois elas serão sempre utilizadas na inclusão de títulos financeiros no sistema.',
   
         },
         
