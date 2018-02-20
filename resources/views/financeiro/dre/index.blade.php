@@ -566,4 +566,11 @@
 			</div>
 		</div>
 @endsection
-	
+
+
+
+@section('extrascript')
+
+@include('financeiro.dre.tour')
+
+@endsection
