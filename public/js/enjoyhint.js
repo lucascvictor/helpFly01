@@ -40,7 +40,7 @@ var EnjoyHint = function (_options) {
 
         $body.css({'overflow':'hidden'});
 
-        $(document).on("touchmove",lockTouch);
+    
 
         $body.enjoyhint({
 

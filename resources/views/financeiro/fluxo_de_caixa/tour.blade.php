@@ -55,6 +55,7 @@
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+           scrollAnimationSpeed: 10
         },
 
         {
