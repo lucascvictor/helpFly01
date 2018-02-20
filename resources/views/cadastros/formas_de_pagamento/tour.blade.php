@@ -18,7 +18,7 @@
           'next #salvar':'Com ambos os dados inseridos basta apenas clicar em “SALVAR”.”, em descrição é possível especificar a qual conta foi feita o pagamento.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-        }
+        },
 
         {
           'next #fly01frm': '**ATENÇÃO** É importante ter um bom controle das formas de pagamentos, pois elas serão sempre utilizadas na inclusão de títulos financeiros no sistema.',
@@ -26,12 +26,12 @@
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
-        /** {
+       {
           'next #fly01frm': 'Restou alguma dúvida? Mande um e-mail para suporte.fly01gestao@totvs.com.br e iremos respondê-la para você.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
-        **/
+        
       ];
         var enjoyhint_instance = null;
         enjoyhint_instance = new EnjoyHint({});
