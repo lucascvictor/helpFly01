@@ -9,7 +9,8 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block">Extrato</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="save" class="btn " onclick="fnAtualizar();">Atualizar</a></li>
+                  <li><a id="save" class="btn" onclick="reload();">Atualizar</a></li>
+                  <li><a id="save" class="btn pulse" onclick="enjoyhint_instance.runScript();">Tour</a></li>
                </ul>
             </div>
          </div>
