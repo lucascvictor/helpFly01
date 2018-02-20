@@ -11,6 +11,7 @@
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="new" class="btn " href="{{ url('/cadastros/clientes/create') }}">Novo</a></li>
                   <li><a id="import" class="btn " onclick="fnImportarCadastro();">Importar clientes</a></li>
+                  <li><a id="import" class="btn pulse" onclick="">Tour</a></li>
                </ul>
             </div>
          </div>

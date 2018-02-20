@@ -269,4 +269,12 @@
       </div>
    </div>
    @endsection
+
+
+
+@section('extrascript')
+
+@include('financeiro.contas_a_pagar.tour')
+
+@endsection
 																	

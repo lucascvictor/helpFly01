@@ -13,7 +13,7 @@
 						<a id="new" class="btn " href="{{ url('/cadastros/fornecedores/create') }}">Novo</a>
 					</li>
 					<li>
-						<button id="start-tour" class="btn">Iniciar o Tour</button>
+						<button id="start-tour" class="btn pulse">Tour</button>
 					</li>
 				</ul>
 

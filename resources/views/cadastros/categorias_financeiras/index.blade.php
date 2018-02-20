@@ -12,6 +12,7 @@
 					<ul class="right valign-wrapper fly01-buttons">
 						<li>
 							<a id="new" class="btn "  href="{{ url('/cadastros/categoriasfinanceiras/create') }}">Novo</a>
+							<a id="new" class="btn pulse"  href="">Tour</a>
 						</li>
 					</ul>
 				</div>

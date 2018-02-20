@@ -91,4 +91,10 @@
 						</div>
 					</div>
 @endsection
-					
+
+
+@section('extrascript')
+
+@include('financeiro.conciliacao.tour')
+
+@endsection	
