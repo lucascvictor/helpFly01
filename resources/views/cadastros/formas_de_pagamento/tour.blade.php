@@ -15,7 +15,7 @@
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
         {
-          'next #save':'Com ambos os dados inseridos basta apenas clicar em “SALVAR”.”, em descrição é possível especificar a qual conta foi feita o pagamento.',
+          'next #salvar':'Com ambos os dados inseridos basta apenas clicar em “SALVAR”.”, em descrição é possível especificar a qual conta foi feita o pagamento.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         }

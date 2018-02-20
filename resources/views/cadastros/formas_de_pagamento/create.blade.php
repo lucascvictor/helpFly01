@@ -14,7 +14,7 @@
 														<a id="new" class="btn pulse" onclick="enjoyhint_instance.runScript();">Tour</a>
 													</li>
 													<li>
-														<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
+														<a id="salvar" class="btn" onclick="fnSalvar();">Salvar</a>
 													</li>
 												</ul>
 											</div>
