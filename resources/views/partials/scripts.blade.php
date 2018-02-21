@@ -4,6 +4,10 @@
   <script src="{{ url('js/enjoyhint.js') }}"></script>
   <script src="https://cdnfly01.azureedge.net/fly/1.0.3/fly01ui.js"></script>
 
+  <script type="text/javascript">
+    $(".button-collapse").sideNav();
+  </script>
+
   <script>
     function initTour() {
       var element = document.getElementById("tour");
