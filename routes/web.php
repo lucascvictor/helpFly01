@@ -11,7 +11,7 @@ Route::group(['prefix' => 'financeiro'], function () {
     Route::get('/contasapagar', 'ContasAPagarController@index')->name('contasapagar');
     Route::get('/contasareceber', 'ContasAReceberController@index')->name('contasareceber');
     Route::get('/dre', 'DreController@index')->name('dre');
-    Route::get('/conciliacao', 'ConciliacaoController@index')->name('conciliacao');
+    Route::get('/conciliacaobancaria', 'ConciliacaoController@index')->name('conciliacao');
 });
 
 Route::get('/produtos/resolucao/{idResolucao}', 'RejeicoesController@getResolucao')->name('resolucao');
