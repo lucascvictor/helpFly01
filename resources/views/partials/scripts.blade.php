@@ -16,8 +16,8 @@
         
       enjoyhint_instance.runScript();
     }
-    
-  </scritp>
+
+  </script>
 
 
 
