@@ -12,6 +12,9 @@
 					<li>
 						<a id="new" class="btn " onclick="fnNovo();">Novo</a>
 					</li>
+					<li>
+						<a id="tour" class="btn pulse" onclick="fnNovo();">Tour</a>
+					</li>
 				</ul>
 			</div>
 		</div>

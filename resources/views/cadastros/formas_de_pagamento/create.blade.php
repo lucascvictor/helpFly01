@@ -11,7 +11,7 @@
 												<ul class="right valign-wrapper fly01-buttons">
 													<li>
 														<a id="cancel" class="btn " onclick="reload();">Cancelar</a>
-														<a id="new" class="btn pulse" onclick="enjoyhint_instance.runScript();">Tour</a>
+														<a id="tour" class="btn pulse" onclick="initTour();">Tour</a>
 													</li>
 													<li>
 														<a id="salvar" class="btn" onclick="fnSalvar();">Salvar</a>

@@ -15,6 +15,9 @@
 					<li>
 						<a id="new" class="btn " onclick="fnNovaRenegociacaoCR();">Renegocia��o</a>
 					</li>
+					<li>
+						<a id="tour" class="btn " onclick="fnNovaRenegociacaoCR();">Tour</a>
+					</li>
 				</ul>
 			</div>
 		</div>

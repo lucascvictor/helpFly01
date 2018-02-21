@@ -64,13 +64,7 @@
           'skipButton' : {className: 'mySkip', text: 'Sair'}
         },
       ];
-
       
-        var enjoyhint_instance = null;
-      
-        enjoyhint_instance = new EnjoyHint({});
-        enjoyhint_instance.setScript(enjoyhint_script_data);
-        
     
 
 	</script>

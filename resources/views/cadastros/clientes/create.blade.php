@@ -19,7 +19,7 @@
 						<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
 					</li>
 					<li>
-						<button id="start-tour" class="btn">Iniciar o Tour</button>
+						<button id="tour" class="btn" onclick="initTour();">Iniciar o Tour</button>
 					</li>
 				</ul>
 			</div>
@@ -185,7 +185,7 @@
 										<span>ALAGOAS</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
-										<span>AMAPÁ</span>
+										<span>AMAPÝ</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
 										<span>AMAZONAS</span>
@@ -194,7 +194,7 @@
 										<span>BAHIA</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
-										<span>CEARÁ</span>
+										<span>CEARÝ</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
 										<span>DISTRITO FEDERAL</span>
@@ -203,7 +203,7 @@
 										<span>ESPIRITO SANTO</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
-										<span>GOIÁS</span>
+										<span>GOIÝS</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
 										<span>MARANHÃO</span>
@@ -218,19 +218,19 @@
 										<span>MINAS GERAIS</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
-										<span>PARÁ</span>
+										<span>PARÝ</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
-										<span>PARAÍBA</span>
+										<span>PARAÝBA</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
-										<span>PARANÁ</span>
+										<span>PARANÝ</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
 										<span>PERNAMBUCO</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
-										<span>PIAUÍ</span>
+										<span>PIAUÝ</span>
 									</li>
 									<li class="" data-vivaldi-spatnav-clickable="1">
 										<span>RIO DE JANEIRO</span>
@@ -266,22 +266,22 @@
 								<select id="state" name="state" data-select-id="8zjnwk8" class="initialized">
 									<option value="AC">ACRE</option>
 									<option value="AL">ALAGOAS</option>
-									<option value="AP">AMAPÁ</option>
+									<option value="AP">AMAPÝ</option>
 									<option value="AM">AMAZONAS</option>
 									<option value="BA">BAHIA</option>
-									<option value="CE">CEARÁ</option>
+									<option value="CE">CEARÝ</option>
 									<option value="DF">DISTRITO FEDERAL</option>
 									<option value="ES">ESPIRITO SANTO</option>
-									<option value="GO">GOIÁS</option>
+									<option value="GO">GOIÝS</option>
 									<option value="MA">MARANHÃO</option>
 									<option value="MT">MATO GROSSO</option>
 									<option value="MS">MATO GROSSO DO SUL</option>
 									<option value="MG">MINAS GERAIS</option>
-									<option value="PA">PARÁ</option>
-									<option value="PB">PARAÍBA</option>
-									<option value="PR">PARANÁ</option>
+									<option value="PA">PARÝ</option>
+									<option value="PB">PARAÝBA</option>
+									<option value="PR">PARANÝ</option>
 									<option value="PE">PERNAMBUCO</option>
-									<option value="PI">PIAUÍ</option>
+									<option value="PI">PIAUÝ</option>
 									<option value="RJ">RIO DE JANEIRO</option>
 									<option value="RN">RIO GRANDE DO NORTE</option>
 									<option value="RS">RIO GRANDE DO SUL</option>

@@ -4,6 +4,21 @@
   <script src="{{ url('js/enjoyhint.js') }}"></script>
   <script src="https://cdnfly01.azureedge.net/fly/1.0.3/fly01ui.js"></script>
 
+  <script>
+    function initTour() {
+      var element = document.getElementById("tour");
+      element.classList.remove("pulse");
+      
+      var enjoyhint_instance = null;
+    
+      enjoyhint_instance = new EnjoyHint({});
+      enjoyhint_instance.setScript(enjoyhint_script_data);
+        
+      enjoyhint_instance.runScript();
+    }
+    
+  </scritp>
+
 
 
  

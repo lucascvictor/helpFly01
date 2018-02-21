@@ -15,6 +15,9 @@
 					<li>
 						<a id="print" class="btn " onclick="fnImprimirDRE();">Imprimir</a>
 					</li>
+					<li>
+						<a id="tour" class="btn pulse" onclick="fnImprimirDRE();">Tour</a>
+					</li>
 				</ul>
 			</div>
 		</div>

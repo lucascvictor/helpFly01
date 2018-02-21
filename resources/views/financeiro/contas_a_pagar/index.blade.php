@@ -11,6 +11,7 @@
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="new" class="btn " onclick="fnNovo();">Novo</a></li>
                   <li><a id="new" class="btn " onclick="fnNovaRenegociacaoCP();">Renegociação</a></li>
+                  <li><a id="tour" class="btn pulse" onclick="fnNovaRenegociacaoCP();">Tour</a></li>
                </ul>
             </div>
          </div>

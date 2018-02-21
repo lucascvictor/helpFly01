@@ -15,6 +15,9 @@
 													<li>
 														<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
 													</li>
+													<li>
+														<a id="tour" class="btn pulse" onclick="initTour();">Tour</a>
+													</li>
 												</ul>
 											</div>
 										</div>
