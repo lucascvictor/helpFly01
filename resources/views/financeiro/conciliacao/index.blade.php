@@ -3,21 +3,13 @@
 @section('title', 'Help Fly01')
 
 @section('content')
-
-@endsection
-
-
-@section('extrascript')
-
-@include('financeiro.conciliacao.tour')
-<main>
-   <div id="headTop" class="z-depth-0-half">
+<div id="headTop" class="z-depth-0-half">
       <div class="container">
          <div class="row">
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block">Conciliação Bancária</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="new" class="btn " onclick="fnNovo();">Novo</a></li>
+                  <li><a id="new" class="btn " href="{{ url('/financeiro/conciliacaobancaria/create') }}">Novo</a></li>
                </ul>
             </div>
          </div>
@@ -80,5 +72,11 @@
          </div>
       </div>
    </div>
-</main>
+@endsection
+
+
+@section('extrascript')
+
+@include('financeiro.conciliacao.tour')
+ 
 @endsection	
