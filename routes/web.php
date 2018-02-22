@@ -6,12 +6,26 @@ Route::get('/import', 'HomeController@getImport')->name('import.get');
 
 Route::group(['prefix' => 'financeiro'], function () {
     Route::get('', 'HomeController@getProdutos')->name('produtos');
-    Route::get('/fluxodecaixa', 'FluxoDeCaixaController@index')->name('fluodecaixa');
-    Route::get('/extrato', 'ExtratoController@index')->name('extrato');
-    Route::get('/contasapagar', 'ContasAPagarController@index')->name('contasapagar');
-    Route::get('/contasareceber', 'ContasAReceberController@index')->name('contasareceber');
-    Route::get('/dre', 'DreController@index')->name('dre');
-    Route::get('/conciliacaobancaria', 'ConciliacaoController@index')->name('conciliacao');
+    Route::group(['prefix' => 'fluxodecaixa'], function () {
+        Route::get('/', 'FluxoDeCaixaController@index')->name('fluodecaixa');
+    });
+    Route::group(['prefix' => 'extrato'], function () {
+        Route::get('/', 'ExtratoController@index')->name('extrato');
+    });
+    Route::group(['prefix' => 'contasapagar'], function () {
+     Route::get('/', 'ContasAPagarController@index')->name('contasapagar');
+    });
+    
+    Route::group(['prefix' => 'contasareceber'], function () {
+        Route::get('/', 'ContasAReceberController@index')->name('contasareceber');
+    });
+    Route::group(['prefix' => 'dre'], function () {
+        Route::get('/', 'DreController@index')->name('dre');
+    });
+    Route::group(['prefix' => 'conciliacaobancaria'], function () {
+        Route::get('/', 'ConciliacaoController@index')->name('conciliacao');
+        Route::get('/create', 'ConciliacaoController@create')->name('concilicao.create');
+    });
 });
 
 Route::get('/produtos/resolucao/{idResolucao}', 'RejeicoesController@getResolucao')->name('resolucao');
