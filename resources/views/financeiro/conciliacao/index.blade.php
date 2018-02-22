@@ -93,10 +93,8 @@
 
 <script>
 
-      $(document).ready(function(){
             $('#menu').tapTarget('open');
             $('#menu').tapTarget('close');
-      });
      
 </script>
  
