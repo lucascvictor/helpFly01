@@ -20,12 +20,14 @@
 
         {
           'next #TipoSimulacaoField':'É neste campo onde é definido qual o tipo de condição você deseja inserir.',
+          'top': -20,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
         
         {
           'next #TipoSimulacaoField':'De forma mais precisa, o Fly01 Gestão oferece dois tipos de condições, por quantidade de parcelas, ou por intervalo de dias',
+          'top': -20,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
@@ -37,7 +39,7 @@
         },
 
         {
-          'next #qtdParcelasField': 'Vale ressaltar que esta opção irá fazer com que as parcelas sejam feitas com um intervalo fixo de 30 dias, caso queira um controle mais específico a opção "Cond. Parcelamento"',
+          'next #qtdParcelasField': 'Vale ressaltar que esta opção irá fazer com que as parcelas sejam feitas com um intervalo fixo de 30 dias, caso queira um controle mais específico selecione a opção "Cond. Parcelamento"',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
@@ -49,7 +51,8 @@
         },
 
         {
-          'next #dadosCondParc':'Com todos os campos preenchidos, já é possível salvar sua condição, entretanto, antes de salvar a condição, é possível realizar a simulação desta condição.',
+          'next #dadosCondParc':'Com todos os campos preenchidos, já é possível salvar sua condição, entretanto, antes de salvá-la, é possível realizar uma simulação com os dados inseridos no sistema.',
+          'bottom': -200,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
