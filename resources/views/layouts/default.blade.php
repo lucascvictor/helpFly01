@@ -24,8 +24,8 @@
   </main>
   <footer>
     @include('partials.footer')
-    @yield('extrascript')
     @include('partials.scripts')
+    @yield('extrascript')
   </footer>
 </body>
 
