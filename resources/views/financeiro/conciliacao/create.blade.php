@@ -12,6 +12,7 @@
                      <ul class="right valign-wrapper fly01-buttons">
                         <li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li>
                         <li><a id="save" class="btn " onclick="fnSalvar();">Importar Extrato</a></li>
+                        <li><a id="tour" class="btn pulse" onclick="initTour();">Tour</a></li>
                      </ul>
                   </div>
                </div>
@@ -55,3 +56,9 @@
             </div>
          </div>
          @endsection
+
+ @section('extrascript')
+
+@include('financeiro.conciliacao.tour')
+
+@endsection
