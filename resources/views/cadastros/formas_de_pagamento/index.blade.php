@@ -9,7 +9,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block">Forma de Pagamento</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="new" class="btn " onclick="fnNovo();">Novo</a></li>
+                  <li><a id="new" class="btn " href="{{ url('/cadastros/formasdepagamento/create') }}">Novo</a></li>
                </ul>
             </div>
          </div>
