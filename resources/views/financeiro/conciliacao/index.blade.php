@@ -74,7 +74,7 @@
    </div>
 
 <!-- Element Showed -->
-<a id="menu" class="waves-effect waves-light btn btn-floating canova" ><i class="material-icons">menu</i></a>
+<a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
 
 <!-- Tap Target Structure -->
 <div class="tap-target" data-activates="menu">
@@ -94,8 +94,8 @@
 <script>
 
       $(document).ready(function(){
-            $('.canova').tapTarget('open');
-            $('.canova').tapTarget('close');
+            $('#menu').tapTarget('open');
+            $('#menu').tapTarget('close');
       });
      
 </script>
