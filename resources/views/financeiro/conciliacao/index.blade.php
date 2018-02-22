@@ -94,8 +94,7 @@
 <script>
 
       $(document).ready(function(){
-            $('.tap-target').tapTarget('open');
-            $('.tap-target').tapTarget('close');
+            tapTarget('open');
       });
      
 </script>
