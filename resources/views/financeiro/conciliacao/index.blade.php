@@ -90,5 +90,14 @@
 @section('extrascript')
 
 @include('financeiro.conciliacao.tour')
+
+<script>
+
+      $(document).ready(function(){
+            $('.tap-target').tapTarget('open');
+            $('.tap-target').tapTarget('close');
+      });
+     
+</script>
  
 @endsection	
