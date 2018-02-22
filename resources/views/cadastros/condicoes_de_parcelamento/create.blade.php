@@ -15,6 +15,9 @@
 													<li>
 														<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
 													</li>
+													<li>
+													<a id="tour" class="btn pulse" onclick="initTour();">Tour</a>
+													</li>
 												</ul>
 											</div>
 										</div>
@@ -23,6 +26,7 @@
 								<div class="container">
 									<div class="row">
 										<form id="fly01frm" class="col s12" action="https://novofinanceiro.fly01.com.br/CondicaoParcelamento/Create" method="post" novalidate="novalidate" data-vivaldi-spatnav-clickable="1">
+											<div id="dadosCondParc">
 											<input id="id" type="hidden" name="id"/>
 											<div id="descricaoField" class="input-field col s6 l9">
 												<input id="descricao" type="text" name="descricao"/>
@@ -55,6 +59,7 @@
 													<input id="condicoesParcelamento" type="text" name="condicoesParcelamento" disabled="disabled"/>
 													<label class="truncate" for="condicoesParcelamento">Intervalo de dias</label>
 												</div>
+										</div>
 												<div id="simulatorLabelField" class="input-field col s12">
 													<h5 id="simulatorLabel" class="thin-bordered">Simular Condição de Parcelamento</h5>
 												</div>
@@ -269,4 +274,10 @@
 											</form>
 										</div>
 									</div>
+@endsection
+
+@section('extrascript')
+
+@include('cadastros.condicoes_de_parcelamento.tour')
+
 @endsection

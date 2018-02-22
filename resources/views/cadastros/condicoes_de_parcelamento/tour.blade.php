@@ -18,7 +18,6 @@
 
         },
 
-
         {
           'next #TipoSimulacaoField':'É neste campo onde é definido qual o tipo de condição você deseja inserir.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
@@ -56,25 +55,31 @@
         },
 
            {
-          'next #fly01frm': '',
+          'next #valorReferenciaField': 'Insira um valor para realizar a simulação',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
         {
-          'next #fly01frm': '',
+          'next #dataReferenciaField': 'Insira a data de referência de sua venda ou compra',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
            {
-          'next #fly01frm': '',
+          'next #btnRefresh': 'Com o valor e a data preenchida, basta apenas clicar em simular',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
            {
-          'next #fly01frm': '',
+          'next #simulatorDataTableField': 'A simulação irá aparecer nesta tabela',
+          'nextButton' : {className: 'myNext', text: 'Próximo'},
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+        },
+       
+        {
+          'next #save': 'Caso tudo esteja certo, basta clicar em salvar.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
@@ -86,4 +91,5 @@
         },
         
       ];
-	</script>
+  </script>
+  
