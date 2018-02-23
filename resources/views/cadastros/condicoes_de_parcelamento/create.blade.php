@@ -15,7 +15,7 @@
 													<li>
 														<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
 														<div class="fixed-action-btn"> 
-														<a id="tour" class="btn pulse orange" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons prefix">live_help</i>Tour</a>
+														<a href="#" id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left">help</i>Iniciar Tour</a>
 														</div>
 													</li>
 												</ul>
