@@ -75,16 +75,15 @@
 
 <!-- Element Showed -->
 <div class="fixed-action-btn">
-<a id="menu" class="waves-effect waves-light btn-large btn-floating" ><i class="material-icons">menu</i></a>
+<a id="menu" class="waves-effect waves-light btn-large btn-floating orange" ><i class="material-icons">menu</i></a>
 </div>
 
 <!-- Tap Target Structure -->
-<div class="tap-target green" data-activates="menu">
+<div class="tap-target orange lighten-2" data-activates="menu">
       <div class="tap-target-content">
-            <h5 style="float: right;">Conciliação Bancária</h5>
-            <p style="float: right;">A Rotina de conciliação bancária consiste em fazer o upload de seu extrato bancário
-            dentro do sistema, isso permite com que você dê múltiplas baixas de títulos dentro do sistema
-            e que obtenha um controle preciso de suas finanças. <a onClick=";" class="btn btn-small"> Clique aqui</a> para aprender como
+            <h5 style="color:black" class="right">Conciliação Bancária</h5>
+            <p style="color:black" class="right">A Rotina de conciliação bancária consiste em fazer o upload de seu extrato bancário
+            dentro do sistema, isso permite com que você dê múltiplas baixas de títulos e que obtenha um controle preciso de suas finanças. <a onClick=";" class="btn btn-small orange"> Clique aqui</a> para aprender como
             realizar a conciliação bancária.</p>
       </div>
 </div>

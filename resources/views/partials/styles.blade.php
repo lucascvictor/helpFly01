@@ -68,8 +68,9 @@
 
     <style tyle="text/css">
         .btn-small {
-            height: 24px;
-            line-height: 24px;
+            height: 22px;
+            line-height: 18px;
             padding: 0 0.5rem;
+            font-size: 12px;
         }
     </style>
