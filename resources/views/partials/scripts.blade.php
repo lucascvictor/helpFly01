@@ -10,7 +10,9 @@
 
   <script>
     function initTour() {
-            
+     /* var element = document.getElementById("tour");
+      element.classList.remove("pulse"); */
+      
       var enjoyhint_instance = null;
     
       enjoyhint_instance = new EnjoyHint({});
