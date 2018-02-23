@@ -88,8 +88,6 @@
             realizar a conciliação bancária.</p>
       </div>
 </div>
-
-<a class="btn-white" id="Abrir"></a> 
 @endsection
 
 
