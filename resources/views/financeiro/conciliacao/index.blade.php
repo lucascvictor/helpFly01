@@ -96,8 +96,6 @@
 @include('financeiro.conciliacao.tourIndex')
 
 
-<<<<<<< HEAD
-=======
 window.onload = function()
 {
       document.getElementById("menu").click();
@@ -109,6 +107,5 @@ $("#menu").click(function(){
           
      
 </script>
->>>>>>> adfd632cb66acb72a963553b7e7228501ee54e35
  
 @endsection	
