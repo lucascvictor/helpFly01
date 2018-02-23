@@ -14,6 +14,9 @@
 													</li>
 													<li>
 														<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
+														<div class="fixed-action-btn"> 
+														<a id="tour" class="btn pulse orange" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons prefix">live_help</i>Tour</a>
+														</div>
 													</li>
 												</ul>
 											</div>
@@ -269,12 +272,6 @@
 													</table>
 												</div>
 											</form>
-										</div>
-										<div class="fixed-action-btn">
-										<div id="Embed">	
-											<a class="btn pulse orange" style="border-radius: 80px;" onclick="initTour();">
-											<i class="small material-icons">live_help</i>Tour</a>
-										</div>
 										</div>
 									</div>
 @endsection
