@@ -101,13 +101,8 @@
 
 window.onload = function()
 {
-      $("#Abrir").hide();
-      document.getElementById("Abrir").click();
+      document.getElementById("menu").click();
 }
-
-$("#Abrir").click(function(){
-      $('.tap-target').tapTarget('open');
-});
 
 $("#menu").click(function(){
       $('.tap-target').tapTarget('open');
