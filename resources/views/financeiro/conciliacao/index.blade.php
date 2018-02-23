@@ -81,7 +81,7 @@
 <!-- Tap Target Structure -->
 <div class="tap-target green" data-activates="menu">
       <div class="tap-target-content">
-            <h5 style="float: right;">        Conciliação Bancária</h5>
+            <h5 style="float: right;">Conciliação Bancária</h5>
             <p style="float: right;">A Rotina de conciliação bancária consiste em fazer o upload de seu extrato bancário
             dentro do sistema, isso permite com que você dê múltiplas baixas de títulos dentro do sistema
             e que obtenha um controle preciso de suas finanças. <Clique aqui> para aprender como
