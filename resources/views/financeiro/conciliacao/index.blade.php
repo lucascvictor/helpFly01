@@ -95,7 +95,7 @@
 
 @include('financeiro.conciliacao.tourIndex')
 
-
+<script>
 window.onload = function()
 {
       document.getElementById("menu").click();
