@@ -95,7 +95,7 @@
 
 @section('extrascript')
 
-@include('financeiro.conciliacao.tour')
+@include('financeiro.conciliacao.tourIndex')
 
 <script>
 
