@@ -74,16 +74,22 @@
    </div>
 
 <!-- Element Showed -->
-<a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+<div class="fixed-action-btn">
+<a id="menu" class="waves-effect waves-light btn-large btn-floating" ><i class="material-icons">menu</i></a>
+</div>
 
 <!-- Tap Target Structure -->
-<div class="tap-target" data-activates="menu">
+<div class="tap-target green" data-activates="menu">
       <div class="tap-target-content">
-            <h5>Title</h5>
-            <p>A bunch of text</p>
+            <h5>        Conciliação Bancária</h5>
+            <p>A Rotina de conciliação bancária consiste em fazer o upload de seu extrato bancário
+            dentro do sistema, isso permite com que você dê múltiplas baixas de títulos dentro do sistema
+            e que obtenha um controle preciso de suas finanças. <Clique aqui> para aprender como
+            realizar a conciliação bancária.</p>
       </div>
 </div>
-        
+
+<a class="btn-white" id="Abrir"></a> 
 @endsection
 
 
@@ -93,8 +99,15 @@
 
 <script>
 
-            $('#menu').tapTarget('open');
-            $('#menu').tapTarget('close');
+window.onload = function()
+{
+      $("#Abrir").hide();
+    document.getElementById("Abrir").click();
+}
+$("#Abrir").click(function(){
+      $('.tap-target').tapTarget('open');
+});
+          
      
 </script>
  
