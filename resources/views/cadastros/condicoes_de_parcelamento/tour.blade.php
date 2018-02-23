@@ -88,7 +88,8 @@
         },
 
         {
-          'next #fly01frm': 'Restou alguma dúvida? Mande um e-mail para suporte.fly01gestao@totvs.com.br e iremos respondê-la para você.',
+          'next #dadosCondParc': 'Restou alguma dúvida? Mande um e-mail para suporte.fly01gestao@totvs.com.br e iremos respondê-la para você.',
+          'bottom': -400,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
