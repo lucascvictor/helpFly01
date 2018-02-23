@@ -84,7 +84,7 @@
             <h5 style="float: right;">Conciliação Bancária</h5>
             <p style="float: right;">A Rotina de conciliação bancária consiste em fazer o upload de seu extrato bancário
             dentro do sistema, isso permite com que você dê múltiplas baixas de títulos dentro do sistema
-            e que obtenha um controle preciso de suas finanças. <a onClick=";" class="btn"> Clique aqui</a> para aprender como
+            e que obtenha um controle preciso de suas finanças. <a onClick=";" class="waves-effect waves-teal btn-flat"> Clique aqui</a> para aprender como
             realizar a conciliação bancária.</p>
       </div>
 </div>
