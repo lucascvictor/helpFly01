@@ -64,3 +64,12 @@
         border-color: #F79B64;
       }
     </style>
+
+
+    <style tyle="text/css">
+        .btn-small {
+            height: 24px;
+            line-height: 24px;
+            padding: 0 0.5rem;
+        }
+    </style>

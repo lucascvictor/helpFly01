@@ -81,15 +81,13 @@
 <!-- Tap Target Structure -->
 <div class="tap-target green" data-activates="menu">
       <div class="tap-target-content">
-            <h5>        Conciliação Bancária</h5>
-            <p>A Rotina de conciliação bancária consiste em fazer o upload de seu extrato bancário
+            <h5 style="float: right;">Conciliação Bancária</h5>
+            <p style="float: right;">A Rotina de conciliação bancária consiste em fazer o upload de seu extrato bancário
             dentro do sistema, isso permite com que você dê múltiplas baixas de títulos dentro do sistema
-            e que obtenha um controle preciso de suas finanças. <Clique aqui> para aprender como
+            e que obtenha um controle preciso de suas finanças. <a onClick=";" class="btn btn-small"> Clique aqui</a> para aprender como
             realizar a conciliação bancária.</p>
       </div>
 </div>
-
-<a class="btn-white" id="Abrir"></a> 
 @endsection
 
 
@@ -98,5 +96,19 @@
 @include('financeiro.conciliacao.tourIndex')
 
 
+<<<<<<< HEAD
+=======
+window.onload = function()
+{
+      document.getElementById("menu").click();
+}
+
+$("#menu").click(function(){
+      $('.tap-target').tapTarget('open');
+});
+          
+     
+</script>
+>>>>>>> adfd632cb66acb72a963553b7e7228501ee54e35
  
 @endsection	
