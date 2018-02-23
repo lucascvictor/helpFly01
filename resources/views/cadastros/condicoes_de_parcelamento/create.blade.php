@@ -272,7 +272,7 @@
 										</div>
 										<div class="fixed-action-btn">
 										<div id="Embed">	
-											<a class="btn pulse orange" style="border-radius: 80px;">
+											<a class="btn pulse orange" style="border-radius: 80px;" onclick="initTour();">
 											<i class="small material-icons">live_help</i>Tour</a>
 										</div>
 										</div>
