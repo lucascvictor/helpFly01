@@ -1,7 +1,7 @@
 <?php
 
 
-Route::get('/', 'HomeController@getIndex')->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 Route::get('/import', 'HomeController@getImport')->name('import.get');
 
 Route::group(['prefix' => 'financeiro'], function () {
