@@ -10,7 +10,7 @@
 												<h4 class="thin inline-block">Dados da forma de pagamento</h4>
 												<ul class="right valign-wrapper fly01-buttons">
 													<li>
-														<a id="cancel" class="btn " onclick="reload();">Cancelar</a>
+														<a id="cancel" class="btn " href="{{ url('/voltar') }}">Cancelar</a>
 														<div class="fixed-action-btn"> 
 														<a id="tour" class="btn pulse orange" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons prefix">live_help</i>Tour</a>
 														</div>

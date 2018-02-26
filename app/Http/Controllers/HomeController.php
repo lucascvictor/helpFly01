@@ -44,4 +44,9 @@ class HomeController extends Controller
       return view('vendas.produtos.rejeicoes.rej211');
     }
 
+    public function voltar()
+    {
+      return redirect()->back();
+    }
+
 }

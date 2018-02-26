@@ -10,7 +10,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block">Dados do título a receber</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li>
+                  <li><a id="cancel" class="btn " href="{{ url('/voltar') }}">Cancelar</a></li>
                   <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
                </ul>
             </div>
