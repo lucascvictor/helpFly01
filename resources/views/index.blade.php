@@ -28,11 +28,8 @@ $(document).ready(function() {
 
     //Quando o campo cep perde o foco.
     $("#bitcoin").blur(function() {
-            //Expressão regular para validar o CEP.
-            var validacep = /^[0-9]{8}$/;
+                var cotacao = 0;
 
-            //Valida o formato do CEP.
-            if(validacep.test(cep)) {
 
                 //Preenche os campos com "..." enquanto consulta webservice.
                 $("#bitcoin").val("...");
@@ -44,12 +41,15 @@ $(document).ready(function() {
                     if (!("erro" in dados)) {
                         //Atualiza os campos com os valores da consulta.
                         $("#bitcoin").val(BTC.valores);
-
+                        
                     } else {
                         limpa_formulário();
                     }
                 }
-            }
+
+                cotacao = $.getJSON("http://api.promasters.net.br/cotacao/v1/valores");
+
+
     });
 </script>
 
