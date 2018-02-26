@@ -6,15 +6,23 @@ use Illuminate\Http\Request;
 use App\Http\Models\Product;
 
 use DB;
+use GuzzleHttp\Client;
 
 class HomeController extends Controller
 {
-    public function getIndex()
-    {
+ 
+    public function index() {
+      $client = new Client([
+          // Base URI is used with relative requests
+          'base_uri' => 'http://api.promasters.net.br/cotacao/v1/',
+          // You can set any number of default request options.
+          'timeout'  => 2.0,
+      ]);
 
-    	//$products = Product::select('*')->paginate(6);
-    	return view('index');//>with('products', $products);
-    }
+      $response = $client->request('GET', 'valores');
+
+      return view('index')->with('response', $response->getBody());
+  }
 
     public function getProdutos()
     {
