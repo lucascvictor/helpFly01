@@ -13,15 +13,19 @@ class HomeController extends Controller
  
     public function index() {
       $client = new Client([
-          // Base URI is used with relative requests
+          
           'base_uri' => 'http://api.promasters.net.br/cotacao/v1/',
-          // You can set any number of default request options.
+          
           'timeout'  => 2.0,
       ]);
 
       $response = $client->request('GET', 'valores');
+     
+      $response  = $response->getBody();
 
-      return view('index')->with('response', $response->getBody());
+      $valores = json_decode($response, true);
+      
+      return view('index')->with('valores', $valores);
   }
 
     public function getProdutos()
