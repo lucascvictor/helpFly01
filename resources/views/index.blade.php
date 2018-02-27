@@ -5,10 +5,10 @@
 @section('content')
 
 <div class="row"> 
-    @foreach($response as $item)
-    <p>BITCOIN: {{ $item }}</p>
+    
+    <p>BITCOIN: {{ $response }}</p>
     <p id="bitcoin"></p>
-    @endforeach
+  
 </div>
 
 @endsection

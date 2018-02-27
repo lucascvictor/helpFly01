@@ -67,7 +67,9 @@ Route::group(['prefix' => 'cadastros'], function () {
 
 Route::get('/chart', 'FluxoDeCaixaController@getChart')->name('chart');
 
-Route::get('/voltar', 'HomeController@boltar')->name('voltar');
+Route::get('/voltar', 'HomeController@voltar')->name('voltar');
+
+Route::get('/suporte', 'HomeController@suporte')->name('suporte');
 
 
 

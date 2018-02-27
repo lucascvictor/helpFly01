@@ -29,11 +29,6 @@ class HomeController extends Controller
       return view('vendas.produtos.produtos');
     }
 
-    public function teste()
-    {
-      return view('teste');
-    }
-
     public function getRejeicoes()
     {
       return view('vendas.produtos.rejeicoes.rejeicoes');
@@ -47,6 +42,11 @@ class HomeController extends Controller
     public function voltar()
     {
       return redirect()->back();
+    }
+
+    public function suporte()
+    {
+      return view('ajuda.index');
     }
 
 }

@@ -48,7 +48,7 @@
   </li>
   <li class="no-padding"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header">Ajuda<i class="material-icons expand right">expand_more</i></a>
     <div class="collapsible-body"><ul>
-            <li class=""><a href="#" onclick="">Solicitar Suporte</a>
+            <li class=""><a href="{{ url('/suporte') }}" onclick="">Solicitar Suporte</a>
             </li>
           </ul>
         </div>
