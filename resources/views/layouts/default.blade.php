@@ -26,6 +26,7 @@
     @include('partials.footer')
     @include('partials.scripts')
     @yield('extrascript')
+    @yield('footer')
   </footer>
 </body>
 

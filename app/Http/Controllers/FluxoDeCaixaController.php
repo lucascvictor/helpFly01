@@ -36,6 +36,4 @@ class FluxoDeCaixaController extends Controller
 	 return $aMasks;
 	}
 
-	 
-
 }
