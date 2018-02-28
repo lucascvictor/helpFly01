@@ -10,7 +10,11 @@
                <h4 class="thin inline-block">Extrato</h4>
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="save" class="btn" onclick="reload();">Atualizar</a></li>
-                  <li><a id="tour" class="btn pulse" onclick="enjoyhint_instance.runScript();">Tour</a></li>
+                  <li>
+                        <div class="fixed-action-btn"> 
+				      <a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+				</div>
+			</li>
                </ul>
             </div>
          </div>

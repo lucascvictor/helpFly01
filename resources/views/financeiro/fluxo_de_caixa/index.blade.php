@@ -11,7 +11,11 @@
                <h4 class="thin inline-block" data-intro="Hello step one!">Fluxo de Caixa</h4>
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="todo-list" class="btn" onCLick="reload()">Atualizar</a></li>
-				  <li><button id="tour" class="btn new_btn pulse" onclick="initTour();">Tour</button></li>
+                  <li>
+						<div class="fixed-action-btn"> 
+							<a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+						</div>
+			      </li>
                </ul>
             </div>
          </div>

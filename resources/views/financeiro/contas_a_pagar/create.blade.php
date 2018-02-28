@@ -10,8 +10,13 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block">Dados do título a receber</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="cancel" class="btn " href="{{ url('/voltar') }}">Cancelar</a></li>
-                  <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
+                <li><a id="cancel" class="btn " href="{{ url('/voltar') }}">Cancelar</a></li>
+                <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
+                <li>
+					<div class="fixed-action-btn"> 
+						<a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+					</div>
+				</li>
                </ul>
             </div>
          </div>

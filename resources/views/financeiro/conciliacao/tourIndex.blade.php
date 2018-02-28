@@ -9,7 +9,7 @@
 
         },
         {
-          'next #new': 'Vá em < NOVO >',
+          'click #new': 'Vá em < NOVO >',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },        

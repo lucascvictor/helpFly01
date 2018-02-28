@@ -11,12 +11,14 @@
 												<ul class="right valign-wrapper fly01-buttons">
 													<li>
 														<a id="cancel" class="btn " href="{{ url('/voltar') }}">Cancelar</a>
-														<div class="fixed-action-btn"> 
-														<a id="tour" class="btn pulse orange" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons prefix">live_help</i>Tour</a>
-														</div>
 													</li>
 													<li>
 														<a id="salvar" class="btn" onclick="fnSalvar();">Salvar</a>
+													</li>
+													<li>
+													<div class="fixed-action-btn"> 
+														<a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+													</div>
 													</li>
 												</ul>
 											</div>
