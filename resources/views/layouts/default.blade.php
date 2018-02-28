@@ -22,6 +22,9 @@
   <main>
         @yield('content')
   </main>
+
+@include('partials.modal')
+
   <footer>
     @include('partials.footer')
     @include('partials.scripts')

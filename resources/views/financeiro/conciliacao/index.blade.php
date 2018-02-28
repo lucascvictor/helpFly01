@@ -87,6 +87,19 @@
             realizar a conciliação bancária.</p>
       </div>
 </div>
+
+<a href="#modal1" class="btn modal-trigger">Abrir Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Tour Cadastro de Contas Bancárias (Cadastros > Contas Bancárias)</h4>
+      <iframe src="{{ url('/cadastros/contasbancarias/create')}}" widht="600px" height="600px"></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 @endsection
 
 
@@ -103,7 +116,14 @@ window.onload = function()
 $("#menu").click(function(){
       $('.tap-target').tapTarget('open');
 });
-      
+           
+</script>
+
+<script>
+$(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
 </script>
  
 @endsection	
