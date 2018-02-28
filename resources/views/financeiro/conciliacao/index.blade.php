@@ -91,13 +91,13 @@
 <a href="#modal1" class="btn modal-trigger">Abrir Modal</a>
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
+  <div id="modal1" class="modal" style=height: 100%;">
+    
       <h4>Tour Cadastro de Contas Bancárias (Cadastros > Contas Bancárias)</h4>
-      <iframe src="{{ url('/cadastros/contasbancarias/create')}}" widht="600px" height="600px"></iframe>
-    </div>
+      <iframe src="{{ url('/cadastros/contasbancarias/create')}}" width="700" height="769" allowfullscreen></iframe>
+ 
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
     </div>
   </div>
 @endsection
