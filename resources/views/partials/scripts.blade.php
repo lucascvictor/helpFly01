@@ -5,7 +5,12 @@
   <script src="https://cdnfly01.azureedge.net/fly/1.0.3/fly01ui.js"></script>
 
   <script type="text/javascript">
+
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
     $(".button-collapse").sideNav();
+  });
+        
   </script>
 
   <script>
@@ -20,6 +25,9 @@
         
       enjoyhint_instance.runScript();
     }
+
+
+
 
   </script>
 
