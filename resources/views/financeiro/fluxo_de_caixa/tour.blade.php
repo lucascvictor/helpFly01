@@ -50,7 +50,7 @@
          {
 
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
+          'nextButton' : {className: 'myNext7', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
            scrollAnimationSpeed: 10
         },
@@ -61,5 +61,11 @@
           'skipButton' : {className: 'mySkip', text: 'Sair'}
         },
       ];
+
+
+        $('.myNext').click( function(){
+          window.location.href = "#fly01dt_wrapper";
+        });
+
       
 	</script>
