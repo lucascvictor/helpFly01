@@ -22,10 +22,9 @@
                   <div class="col s12 m3">
                     <div class="card pink accent-3">
                         <div class="card-content white-text">
-                              <i class="material-icons">monetization_on</i>
-                            <span class="card-title"></span>
+                            <span class="card-title"><i class="material-icons">monetization_on</i>Informações financeiras</span>
                             <p class="bounceEffect animated bounceIn">
-                                Informa��es financeiras
+                                Card sobre informações do UOL.
                             </p>
                         </div>
                     </div>
