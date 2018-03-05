@@ -53,9 +53,7 @@
       </div>
 
     <div class="col m2" style="width: 20%; heigth: 100%">
-    <iframe width="100%" height="20%"
-src="https://www.youtube.com/watch?v=KuxLypSoIWo&list=PL47PHJrTrdVjDzeUxnjUnds_Cl_93jHt_">
-</iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
    </div>
 
