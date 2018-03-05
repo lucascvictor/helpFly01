@@ -95,7 +95,8 @@
     player = new YT.Player('ytplayer', {
       height: '360',
       width: '640',
-      playlistId: 'PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH'
+      list: 'PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH',
+      listType: 'playlist'
     });
   }
 
