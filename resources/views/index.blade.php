@@ -22,10 +22,10 @@
                   <div class="col s12 m3">
                     <div class="card pink accent-3">
                         <div class="card-content white-text">
-                            <i class="fa fa-tachometer"></i>
+                              <i class="material-icons">monetization_on</i>
                             <span class="card-title"></span>
                             <p class="bounceEffect animated bounceIn">
-                                Steps Walk
+                                Informações financeiras
                             </p>
                         </div>
                     </div>
