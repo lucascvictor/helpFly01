@@ -52,7 +52,6 @@
 		 </div>
       </div>
 
-    <div class="col m2" style="width: 20%; heigth: 100%">
     <div class="col s12 m3">
                     <div class="card orange accent-3">
                         <div class="card-content white-text">
@@ -62,8 +61,6 @@
                         </div>
                     </div>
                 </div>
-		 </div>
-    
 
    </div>
 
