@@ -57,6 +57,8 @@
     <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/watch?v=ysow_oB5PXQ&list=PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH" frameborder="0"/>
 
    </div>
+
+   <div id="ytplayer"></div>
           
 
  
