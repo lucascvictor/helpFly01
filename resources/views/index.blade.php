@@ -54,11 +54,11 @@
 
     <div class="col m2" style="width: 20%; heigth: 100%">
         
-    <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/watch?v=ysow_oB5PXQ&list=PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH" frameborder="0"/>
+    <div id="ytplayer"></div>
 
    </div>
 
-   <div id="ytplayer"></div>
+ 
           
 
  
@@ -95,7 +95,7 @@
     player = new YT.Player('ytplayer', {
       height: '360',
       width: '640',
-      videoId: 'M7lc1UVf-VE'
+      playlistId: 'PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH'
     });
   }
 
