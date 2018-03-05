@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="col s12 m3">
-                    <div class="card green accent-3">
+                    <div class="card orange accent-3">
                         <div class="card-content white-text">
                             <span class="card-title"><i class="material-icons">monetization_on</i>Informações financeiras</span>
                             <p class="bounceEffect animated bounceIn">
@@ -50,41 +50,18 @@
                     </div>
                 </div>
 		 </div>
-
+      </div>
 
     <div class="col m2" style="width: 20%; heigth: 100%">
  
 
     <div class="areageral" style="heigth: 300px;">
        
-            <div class="card" id="fly01cardSaldo" data-color="orange">
-               <div class="card-content white-text orange lighten-2">
-                  <span class="card-title condensed">Titulo UOL</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align orange lighten-1"><a href="http://localhost:8000/financeiro/extrato" class="white-text ">Saiba mais</a></div>
-            </div>
-       
-        
-            <div class="card" id="fly01cardCP" data-color="red">
-               <div class="card-content white-text red lighten-2">
-                  <span class="card-title condensed">Titulo bolsa de valores</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align red lighten-1"><a href="http://localhost:8000/financeiro/contasapagar" class="white-text ">Saiba mais</a></div>
-          
-         </div>
-         
-            <div class="card" id="fly01cardCR" data-color="green">
-               <div class="card-content white-text green lighten-2">
-                  <span class="card-title condensed">Titulo Sefaz</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align green lighten-1"><a href="http://localhost:8000/financeiro/contasareceber" class="white-text ">Saiba mais</a></div>
-           
-		 </div>
+    <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/watch?v=ysow_oB5PXQ&list=PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH"
+  frameborder="0"/>
 
-  
+      </div>
           
 
  
