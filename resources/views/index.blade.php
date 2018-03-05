@@ -101,6 +101,10 @@
       videoId: 'M7lc1UVf-VE'
     });
   }
+
+  window.onLoad( function(){
+      onYouTubePlayerAPIReady();
+  });
 </script>
 
 @endsection
