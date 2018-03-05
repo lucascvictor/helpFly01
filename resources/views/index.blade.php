@@ -53,8 +53,12 @@
       </div>
 
     <div class="col m2" style="width: 20%; heigth: 100%">
-        
-      <video src="https://www.youtube.com/watch?v=KuxLypSoIWo&list=PL47PHJrTrdVjDzeUxnjUnds_Cl_93jHt_"></video>
+    <video width="100%" height="10%" controls>
+      <source src="https://www.youtube.com/watch?v=KuxLypSoIWo&list=PL47PHJrTrdVjDzeUxnjUnds_Cl_93jHt_" >
+      <source src="https://www.youtube.com/watch?v=KuxLypSoIWo&list=PL47PHJrTrdVjDzeUxnjUnds_Cl_93jHt_" >
+      Your browser does not support the video tag.
+    </video>
+
 
    </div>
 
