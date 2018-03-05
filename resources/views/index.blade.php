@@ -19,15 +19,17 @@
       <div class="row">
 
     <div class="areageral" style="heigth: 300px;">
-         <div id="dfly01cardSaldo" class="col s8 m2 saldo_atual">
-            <div class="card" id="fly01cardSaldo" data-color="orange">
-               <div class="card-content white-text orange lighten-2">
-                  <span class="card-title condensed">Titulo UOL</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align orange lighten-1"><a href="http://localhost:8000/financeiro/extrato" class="white-text ">Saiba mais</a></div>
-            </div>
-         </div>
+                  <div class="col s12 m3">
+                    <div class="card pink accent-3">
+                        <div class="card-content white-text">
+                            <i class="fa fa-tachometer"></i>
+                            <span class="card-title"></span>
+                            <p class="bounceEffect animated bounceIn">
+                                Steps Walk
+                            </p>
+                        </div>
+                    </div>
+                </div>
          <div id="dfly01cardCP" class="col s8 m2" data-step="<h2>Descrição</h2> Um texto sugestivo para o conjunto de 'regras' do grupo tributário">
             <div class="card" id="fly01cardCP" data-color="red">
                <div class="card-content white-text red lighten-2">
