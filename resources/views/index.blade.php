@@ -52,7 +52,7 @@
 		 </div>
       </div>
 
-    <div class="col s12 m3">
+            <div class="col s8 m2">
                     <div class="card orange accent-3">
                         <div class="card-content white-text">
                             <p class="bounceEffect animated bounceIn">
@@ -62,6 +62,28 @@
                     </div>
                 </div>
 
+                <div class="col s8 m2">
+                    <div class="card orange accent-3">
+                        <div class="card-content white-text">
+                            <p class="bounceEffect animated bounceIn">
+                            <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s8 m2">
+                    <div class="card orange accent-3">
+                        <div class="card-content white-text">
+                            <p class="bounceEffect animated bounceIn">
+                            <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+   </div>
+   </div>
    </div>
 
  
