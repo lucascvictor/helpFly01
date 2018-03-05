@@ -19,74 +19,78 @@
       <div class="row">
 
     <div class="areageral" style="heigth: 300px;">
-                  <div class="col s12 m3">
-                    <div class="card pink accent-3">
-                        <div class="card-content white-text">
-                            <span class="card-title"><i class="material-icons">monetization_on</i>Informações financeiras</span>
-                            <p class="bounceEffect animated bounceIn">
-                                Card sobre informações do UOL.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card blue accent-3">
-                        <div class="card-content white-text">
-                            <span class="card-title"><i class="material-icons">monetization_on</i>Informações financeiras</span>
-                            <p class="bounceEffect animated bounceIn">
-                                Card sobre informações do UOL.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card orange accent-3">
-                        <div class="card-content white-text">
-                            <span class="card-title"><i class="material-icons">monetization_on</i>Informações financeiras</span>
-                            <p class="bounceEffect animated bounceIn">
-                                Card sobre informações do UOL.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+         <div id="dfly01cardSaldo" class="col s8 m2 saldo_atual">
+            <div class="card" id="fly01cardSaldo" data-color="orange">
+               <div class="card-content white-text orange lighten-2">
+                  <span class="card-title condensed">Titulo UOL</span>
+                  <h5 class="center">InformaÃ§Ã£o financeira</h5>
+               </div>
+               <div class="card-action right-align orange lighten-1"><a href="http://localhost:8000/financeiro/extrato" class="white-text ">Saiba mais</a></div>
+            </div>
+         </div>
+         <div id="dfly01cardCP" class="col s8 m2" data-step="<h2>DescriÃ§Ã£o</h2> Um texto sugestivo para o conjunto de 'regras' do grupo tributÃ¡rio">
+            <div class="card" id="fly01cardCP" data-color="red">
+               <div class="card-content white-text red lighten-2">
+                  <span class="card-title condensed">Titulo bolsa de valores</span>
+                  <h5 class="center">InformaÃ§Ã£o financeira</h5>
+               </div>
+               <div class="card-action right-align red lighten-1"><a href="http://localhost:8000/financeiro/contasapagar" class="white-text ">Saiba mais</a></div>
+            </div>
+         </div>
+         <div id="dfly01cardCR" class="col s8 m2">
+            <div class="card" id="fly01cardCR" data-color="green">
+               <div class="card-content white-text green lighten-2">
+                  <span class="card-title condensed">Titulo Sefaz</span>
+                  <h5 class="center">InformaÃ§Ã£o financeira</h5>
+               </div>
+               <div class="card-action right-align green lighten-1"><a href="http://localhost:8000/financeiro/contasareceber" class="white-text ">Saiba mais</a></div>
+            </div>
+         </div>
+         <div id="dfly01cardCR" class="col s8 m2">
+            <div class="card" id="fly01cardCR" data-color="green">
+               <div class="card-content white-text green lighten-2">
+                  <span class="card-title condensed">Titulo Sefaz</span>
+                  <h5 class="center">InformaÃ§Ã£o financeira</h5>
+               </div>
+               <div class="card-action right-align green lighten-1"><a href="http://localhost:8000/financeiro/contasareceber" class="white-text ">Saiba mais</a></div>
+            </div>
+         </div>
 		 </div>
-      </div>
-      <div class="areageral" style="heigth: 300px;">
-            <div class="col s8 m2">
-                    <div class="card orange accent-3">
-                        <div class="card-content white-text">
-                            <p class="bounceEffect animated bounceIn">
-                            <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col s8 m2">
-                    <div class="card orange accent-3">
-                        <div class="card-content white-text">
-                            <p class="bounceEffect animated bounceIn">
-                            <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col s8 m2">
-                    <div class="card orange accent-3">
-                        <div class="card-content white-text">
-                            <p class="bounceEffect animated bounceIn">
-                            <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-      </div>
-   </div>
-   </div>
-   </div>
-
+    <div class="col m2" style="width: 20%; heigth: 100%">
  
+
+    <div class="areageral" style="heigth: 300px;">
+       
+            <div class="card" id="fly01cardSaldo" data-color="orange">
+               <div class="card-content white-text orange lighten-2">
+                  <span class="card-title condensed">Titulo UOL</span>
+                  <h5 class="center">InformaÃ§Ã£o financeira</h5>
+               </div>
+               <div class="card-action right-align orange lighten-1"><a href="http://localhost:8000/financeiro/extrato" class="white-text ">Saiba mais</a></div>
+            </div>
+       
+        
+            <div class="card" id="fly01cardCP" data-color="red">
+               <div class="card-content white-text red lighten-2">
+                  <span class="card-title condensed">Titulo bolsa de valores</span>
+                  <h5 class="center">InformaÃ§Ã£o financeira</h5>
+               </div>
+               <div class="card-action right-align red lighten-1"><a href="http://localhost:8000/financeiro/contasapagar" class="white-text ">Saiba mais</a></div>
+          
+         </div>
+         
+            <div class="card" id="fly01cardCR" data-color="green">
+               <div class="card-content white-text green lighten-2">
+                  <span class="card-title condensed">Titulo Sefaz</span>
+                  <h5 class="center">InformaÃ§Ã£o financeira</h5>
+               </div>
+               <div class="card-action right-align green lighten-1"><a href="http://localhost:8000/financeiro/contasareceber" class="white-text ">Saiba mais</a></div>
+           
+		 </div>
+
+  
           
 
  
@@ -103,32 +107,6 @@
        <p> BTC: {{ $valores['valores']['BTC']['valor'] }} </p> &nbsp&nbsp
        </div>
 </footer>
-
-@endsection
-
-
-@section('extrascript')
-
-<script>
-  // Load the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  // Replace the 'ytplayer' element with an <iframe> and
-  // YouTube player after the API code downloads.
-  var player;
-  function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
-      height: '360',
-      width: '640',
-      list: 'PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH',
-      listType: 'playlist'
-    });
-  }
-
-</script>
 
 @endsection
 
