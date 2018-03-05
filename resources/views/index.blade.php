@@ -51,7 +51,7 @@
                 </div>
 		 </div>
       </div>
-
+      <div class="areageral" style="heigth: 300px;">
             <div class="col s8 m2">
                     <div class="card orange accent-3">
                         <div class="card-content white-text">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-
+      </div>
    </div>
    </div>
    </div>
