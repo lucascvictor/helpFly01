@@ -53,15 +53,10 @@
       </div>
 
     <div class="col m2" style="width: 20%; heigth: 100%">
- 
+        
+    <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/watch?v=ysow_oB5PXQ&list=PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH" frameborder="0"/>
 
-    <div class="areageral" style="heigth: 300px;">
-       
-    <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/watch?v=ysow_oB5PXQ&list=PL47PHJrTrdVj0ykW0v4v0LM2Ktav23foH"
-  frameborder="0"/>
-
-      </div>
+   </div>
           
 
  
@@ -102,9 +97,6 @@
     });
   }
 
-  window.onLoad( function(){
-      onYouTubePlayerAPIReady();
-  });
 </script>
 
 @endsection
