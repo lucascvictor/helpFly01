@@ -58,3 +58,9 @@
 									</div>
 								</div>
 @endsection
+
+@section('extrascript')
+
+@include('cadastros.contas_bancarias.tour')
+
+@endsection
