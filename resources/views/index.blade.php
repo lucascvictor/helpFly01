@@ -43,8 +43,7 @@
    </div>
 </div>
 <div class="col m2" style="width: 20%; heigth: 100%">
-<div class="areageral" style="heigth: 300px;">
-   <div class="areageral" style="heigth: 300px;">
+
       <div class="card orange accent-3">
          <div class="card-content white-text">
             <p class="bounceEffect animated bounceIn">
@@ -65,8 +64,6 @@
                <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </p>
          </div>
-      </div>
-   </div>
 </div>
 @endsection
 @section('footer')
