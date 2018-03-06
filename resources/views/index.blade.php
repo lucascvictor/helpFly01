@@ -1,113 +1,83 @@
 @extends('layouts.default')
-
 @section('title', 'Help Fly01')
-
 @section('content')
 <div id="headTop" class="z-depth-0-half">
-      <div class="container">
-         <div class="row">
-            <div class="col s8 fly01-main-header">
-               <h4 class="thin inline-block">Index</h4>
-               <ul class="right valign-wrapper fly01-buttons">
-                  
-               </ul>
-            </div>
+   <div class="container">
+      <div class="row">
+         <div class="col s8 fly01-main-header">
+            <h4 class="thin inline-block">Index</h4>
+            <ul class="right valign-wrapper fly01-buttons">
+            </ul>
          </div>
       </div>
    </div>
-   <div class="container">
-      <div class="row">
-
-    <div class="areageral" style="heigth: 300px;">
-         <div id="dfly01cardSaldo" class="col s8 m2 saldo_atual">
-            <div class="card" id="fly01cardSaldo" data-color="orange">
-               <div class="card-content white-text orange lighten-2">
-                  <span class="card-title condensed">Titulo UOL</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align orange lighten-1"><a href="http://localhost:8000/financeiro/extrato" class="white-text ">Saiba mais</a></div>
-            </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="areageral" style="heigth: 300px;">
+<div class="card orange accent-3">
+   <div class="s8 m2">
+      <div class="card-content white-text">
+         <p class="bounceEffect animated bounceIn">
+            <span>texto sobre finanças<i class="material-icons">fingerprint</i></span>
+         </p>
+      </div>
+   </div>
+   <div class="s8 m2">
+   </div>
+   <div class="card orange accent-3">
+      <div class="card-content white-text">
+         <p class="bounceEffect animated bounceIn">
+            <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </p>
+      </div>
+   </div>
+   <div class="s8 m2">
+      <div class="card orange accent-3">
+         <div class="card-content white-text">
+            <p class="bounceEffect animated bounceIn">
+               <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
          </div>
-         <div id="dfly01cardCP" class="col s8 m2" data-step="<h2>Descrição</h2> Um texto sugestivo para o conjunto de 'regras' do grupo tributário">
-            <div class="card" id="fly01cardCP" data-color="red">
-               <div class="card-content white-text red lighten-2">
-                  <span class="card-title condensed">Titulo bolsa de valores</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align red lighten-1"><a href="http://localhost:8000/financeiro/contasapagar" class="white-text ">Saiba mais</a></div>
-            </div>
+      </div>
+   </div>
+</div>
+<div class="col m2" style="width: 20%; heigth: 100%">
+<div class="areageral" style="heigth: 300px;">
+   <div class="areageral" style="heigth: 300px;">
+      <div class="card orange accent-3">
+         <div class="card-content white-text">
+            <p class="bounceEffect animated bounceIn">
+               <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
          </div>
-         <div id="dfly01cardCR" class="col s8 m2">
-            <div class="card" id="fly01cardCR" data-color="green">
-               <div class="card-content white-text green lighten-2">
-                  <span class="card-title condensed">Titulo Sefaz</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align green lighten-1"><a href="http://localhost:8000/financeiro/contasareceber" class="white-text ">Saiba mais</a></div>
-            </div>
+      </div>
+      <div class="card orange accent-3">
+         <div class="card-content white-text">
+            <p class="bounceEffect animated bounceIn">
+               <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
          </div>
-         <div id="dfly01cardCR" class="col s8 m2">
-            <div class="card" id="fly01cardCR" data-color="green">
-               <div class="card-content white-text green lighten-2">
-                  <span class="card-title condensed">Titulo Sefaz</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align green lighten-1"><a href="http://localhost:8000/financeiro/contasareceber" class="white-text ">Saiba mais</a></div>
-            </div>
+      </div>
+      <div class="card orange accent-3">
+         <div class="card-content white-text">
+            <p class="bounceEffect animated bounceIn">
+               <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
          </div>
-		 </div>
-
-
-    <div class="col m2" style="width: 20%; heigth: 100%">
- 
-
-    <div class="areageral" style="heigth: 300px;">
-       
-            <div class="card" id="fly01cardSaldo" data-color="orange">
-               <div class="card-content white-text orange lighten-2">
-                  <span class="card-title condensed">Titulo UOL</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align orange lighten-1"><a href="http://localhost:8000/financeiro/extrato" class="white-text ">Saiba mais</a></div>
-            </div>
-       
-        
-            <div class="card" id="fly01cardCP" data-color="red">
-               <div class="card-content white-text red lighten-2">
-                  <span class="card-title condensed">Titulo bolsa de valores</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align red lighten-1"><a href="http://localhost:8000/financeiro/contasapagar" class="white-text ">Saiba mais</a></div>
-          
-         </div>
-         
-            <div class="card" id="fly01cardCR" data-color="green">
-               <div class="card-content white-text green lighten-2">
-                  <span class="card-title condensed">Titulo Sefaz</span>
-                  <h5 class="center">Informação financeira</h5>
-               </div>
-               <div class="card-action right-align green lighten-1"><a href="http://localhost:8000/financeiro/contasareceber" class="white-text ">Saiba mais</a></div>
-           
-		 </div>
-
-  
-          
-
- 
+      </div>
+   </div>
+</div>
 @endsection
-
-
 @section('footer')
-
- <footer class="page-footer black">
-       
-       <div class="footer-copyright"> 
-       <p> USD: {{ $valores['valores']['USD']['valor'] }} </p> &nbsp&nbsp
-       <p> EUR: {{ $valores['valores']['EUR']['valor'] }} </p> &nbsp&nbsp
-       <p> BTC: {{ $valores['valores']['BTC']['valor'] }} </p> &nbsp&nbsp
-       </div>
+<footer class="page-footer black">
+   <div class="footer-copyright">
+      <p> USD: {{ $valores['valores']['USD']['valor'] }} </p>
+      &nbsp&nbsp
+      <p> EUR: {{ $valores['valores']['EUR']['valor'] }} </p>
+      &nbsp&nbsp
+      <p> BTC: {{ $valores['valores']['BTC']['valor'] }} </p>
+      &nbsp&nbsp
+   </div>
 </footer>
-
 @endsection
-
-
