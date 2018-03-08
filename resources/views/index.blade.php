@@ -42,8 +42,12 @@
       </div>
    </div>
 </div>
+
+
 <div class="col m2" style="width: 20%; heigth: 100%">
 
+<ul id="slide-out" class="side-nav">
+      <li>
       <div class="card orange accent-3">
          <div class="card-content white-text">
             <p class="bounceEffect animated bounceIn">
@@ -51,6 +55,8 @@
             </p>
          </div>
       </div>
+      </li>
+      <li>
       <div class="card orange accent-3">
          <div class="card-content white-text">
             <p class="bounceEffect animated bounceIn">
@@ -58,12 +64,19 @@
             </p>
          </div>
       </div>
+      </li>
+      <li>
       <div class="card orange accent-3">
          <div class="card-content white-text">
             <p class="bounceEffect animated bounceIn">
                <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </p>
          </div>
+      </div>
+      </li>
+  </ul>
+
+     
 </div>
 @endsection
 @section('footer')
