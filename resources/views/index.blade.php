@@ -1,3 +1,5 @@
+
+
 @extends('layouts.default')
 @section('title', 'Help Fly01')
 @section('content')
@@ -13,64 +15,54 @@
    </div>
 </div>
 <div class="container">
-<div class="row">
-<div class="areageral" style="heigth: 300px;">
-<div class="card orange accent-3">
-
-   <div class="s2 m2">
-      <div class="card-content white-text">
-         <p class="bounceEffect animated bounceIn">
-            <span>texto sobre finanças<i class="material-icons">fingerprint</i></span>
-         </p>
-      </div>
-   </div>
-   <div class="s2 m2">
-   
-   <div class="card orange accent-3">
-      <div class="card-content white-text">
-         <p class="bounceEffect animated bounceIn">
-            <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-         </p>
-      </div>
-   </div>
-   </div>
-</div>
-
-
-<div class="col m2" style="width: 20%; heigth: 100%">
-
-<ul id="slide-out" class="side-nav">
-      <li>
-      <div class="card orange accent-3">
-         <div class="card-content white-text">
-            <p class="bounceEffect animated bounceIn">
-               <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </p>
+   <div class="row">
+      <div class="col m4 s4" style="heigth: 300px;">
+         <div class="card orange accent-3">
+            <div class="card-content white-text">
+               <p class="bounceEffect animated bounceIn">
+                  <span>texto sobre finanças<i class="material-icons">fingerprint</i></span>
+               </p>
+            </div>
          </div>
       </div>
-      </li>
-      <li>
-      <div class="card orange accent-3">
-         <div class="card-content white-text">
-            <p class="bounceEffect animated bounceIn">
-               <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </p>
+      <div class="col m4 s4" style="heigth: 300px;">
+         <div class="card red accent-3">
+            <div class="card-content white-text">
+               <p class="bounceEffect animated bounceIn">
+                  <span>texto sobre finanças<i class="material-icons">fingerprint</i></span>
+               </p>
+            </div>
          </div>
       </div>
-      </li>
-      <li>
-      <div class="card orange accent-3">
-         <div class="card-content white-text">
-            <p class="bounceEffect animated bounceIn">
-               <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </p>
+   </div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="col m4 right" style="width: 20%; heigth: 100%">
+            <div class="card orange accent-3">
+               <div class="card-content white-text">
+                  <p class="bounceEffect animated bounceIn">
+                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </p>
+               </div>
+            </div>
+            <div class="card orange accent-3">
+               <div class="card-content white-text">
+                  <p class="bounceEffect animated bounceIn">
+                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </p>
+               </div>
+            </div>
+            <div class="card orange accent-3">
+               <div class="card-content white-text">
+                  <p class="bounceEffect animated bounceIn">
+                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </p>
+               </div>
+            </div>
          </div>
       </div>
-      </li>
-  </ul>
 
-     
-</div>
 @endsection
 @section('footer')
 <footer class="page-footer black">
@@ -84,3 +76,4 @@
    </div>
 </footer>
 @endsection
+
