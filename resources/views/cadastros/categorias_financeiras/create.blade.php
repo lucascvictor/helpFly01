@@ -81,3 +81,10 @@
 											</div>
 										</div>
 @endsection		
+
+
+@section('extrascript')
+
+@include('cadastros.categorias_financeiras.tour')
+					
+@endsection
