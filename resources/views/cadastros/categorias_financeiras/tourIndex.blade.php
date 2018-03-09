@@ -3,96 +3,69 @@
 	   localStorage.clear();
       var enjoyhint_script_data = [
        {
-          'next #descricao': 'Preencha o nome da condição a qual você vai criar',
+          'next #fly01dt_wrapper': 'Como dito antes, as categorias financeiras são usadas para serem usadas em títulos financeiros e consequentemente gerar o relatório DRE.',
           'top': -20,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
 
-        },
-
-        {
-          'next #descricao': 'Lembre-se que este é o nome da condição, você irá sempre referencia-la nas criações de títulos financeiro.',
-          'top': -20,
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-
-        },
-
-        {
-          'next #TipoSimulacaoField':'É neste campo onde é definido qual o tipo de condição você deseja inserir.',
-          'top': -20,
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
         
         {
-          'next #TipoSimulacaoField':'De forma mais precisa, o Fly01 Gestão oferece dois tipos de condições, por quantidade de parcelas, ou por intervalo de dias',
+          'next #fly01dt_wrapper': 'A primeira coisa a se entender a que as categorias financeiras poder ser usadas tanto em receitas quanto despesas.',
           'top': -20,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
 
-        {
-          'next #qtdParcelasField':'Caso você escolha "Quantidade de Parcelas, este campo será habilitado e nele você irá informar a quantidade de parcelas que seu título irá possuir.',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-        {
-          'next #qtdParcelasField': 'Vale ressaltar que esta opção irá fazer com que as parcelas sejam feitas com um intervalo fixo de 30 dias, caso queira um controle mais específico selecione a opção "Cond. Parcelamento"',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-       {
-          'next #condicoesParcelamentoField': 'Se a opção "Cond. Parcelamento for selecionada, este campo será habilitado, nele selecionamos o período das parcelas preenchendo o intervalo de dias como condição(Ex: 0,10,20,30).',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-        {
-          'next #dadosCondParc':'Com todos os campos preenchidos, já é possível salvar sua condição, entretanto, antes de salvá-la, é possível realizar uma simulação com os dados inseridos no sistema.',
-          'bottom': -200,
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-           {
-          'next #valorReferenciaField': 'Insira um valor para realizar a simulação',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-        {
-          'next #dataReferenciaField': 'Insira a data de referência de sua venda ou compra',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-           {
-          'next #btnRefresh': 'Com o valor e a data preenchida, basta apenas clicar em simular',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-           {
-          'next #simulatorDataTableField': 'A simulação irá aparecer nesta tabela',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
        
         {
-          'next #save': 'Caso tudo esteja certo, basta clicar em salvar.',
+          'next #fly01dt_wrapper': 'Entre elas, existem dois tipos de categorias que podemos ter.',
+          'top': -20,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+
+        },
+       
+        {
+          'next #CatSintVendas': 'A sintética, que funciona mais como agrupadora. Ela não é usada para criação títulos em si, mas é usada para criar um grupo onde inserioms o outro tipo de categoria, as analiticas.',
+          'top': -20,
+          'nextButton' : {className: 'myNext', text: 'Próximo'},
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+
+        },
+      
+        {
+          'next #CatAnalVendas': 'Então podemos concluir que são as Analiticas que possuem um real valor, vamos ver um exemplo.',
+          'top': -20,
+          'nextButton' : {className: 'myNext', text: 'Próximo'},
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+
         },
 
         {
-          'next #dadosCondParc': 'Restou alguma dúvida? Mande um e-mail para suporte.fly01gestao@totvs.com.br e iremos respondê-la para você.',
-          'bottom': -400,
+          'next #CatSintVendas': 'Neste temos como categoria Sintética a categoria "VENDAS", percebam que seu código é o 03, e que ela não possui nenhuma cateogria superior, pois ela é a categoria superior.',
+          'top': -20,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+
         },
+
+        {
+          'next #CatAnalVendas': 'Logo abaixo temos as categorias Analíticas, com os nomes VENDAS ELETRONICOS e VENDAS PERIFÉRICOS, respectivamentes elas possuem o código 03.01 e 03.02 isso quer dizer que elas pertencem ao grupo 03 que é a categoria Sintética "VENDAS".',
+          'top': -20,
+          'nextButton' : {className: 'myNext', text: 'Próximo'},
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+
+        },
+
+        {
+          'next #new': 'Agora para cadastrarmos uma nova categoria clique em "NOVO"',
+          'top': -20,
+          'nextButton' : {className: 'myNext', text: 'Próximo'},
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+
+        },
+        
         
       ];
   </script>

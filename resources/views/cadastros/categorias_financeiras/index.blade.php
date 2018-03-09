@@ -96,7 +96,7 @@
                         </ul>
                      </td>
                   </tr>
-                  <tr role="row" class="even">
+                  <tr role="row" class="even" id="CatSintVendas">
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">03</td>
                      <td nowrap="nowrap">VENDAS</td>
                      <td nowrap="nowrap">Sintético</td>
@@ -109,6 +109,7 @@
                         </ul>
                      </td>
                   </tr>
+                  <div id="CatAnalVendas">
                   <tr role="row" class="odd">
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">03.01</td>
                      <td nowrap="nowrap">VENDAS ELETRONICOS</td>
@@ -135,6 +136,7 @@
                         </ul>
                      </td>
                   </tr>
+                  </div>
                   <tr role="row" class="odd">
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">04</td>
                      <td nowrap="nowrap">RECEITAS</td>
@@ -202,7 +204,7 @@
 
 @section('extrascript')
 
-@include('financeiro.conciliacao.tourIndex')
+@include('cadastros.categorias_financeiras.tourIndex')
 
 <script>
 window.onload = function()
