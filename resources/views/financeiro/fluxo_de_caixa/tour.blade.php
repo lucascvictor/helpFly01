@@ -7,6 +7,7 @@
           'next .fly01areatotal': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+          'scrollAnimationSpeed': 1,
   
         },
         
@@ -14,22 +15,18 @@
           'next #dataInicialField': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
-  
         },
         
         {
           'next #fly01btngrpField':'Ou selecionar através dos botões o dia, semana ou do mês atual.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
         },
 
          {
           'next #dfly01cardCP' :'Nesta parte você visualiza os dados financeiros da sua empresa através do período selecionado.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
         },
 
         {
@@ -49,7 +46,6 @@
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
           'nextButton' : {className: 'myNext7', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
         },
 
         {
@@ -58,11 +54,5 @@
           'skipButton' : {className: 'mySkip', text: 'Sair'}
         },
       ];
-
-     function SizeChange()
-      {
-          var scale = 'scale(2)';
-          document.body.style.zoom = "200%" 
-      } 
 
  </script>
