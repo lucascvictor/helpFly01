@@ -21,7 +21,7 @@ Route::group(['prefix' => 'financeiro'], function () {
         Route::get('/', 'ContasAReceberController@index')->name('contasareceber');
         Route::get('/create', 'ContasAReceberController@create')->name('contasareceber.create');
     });
-    Route::group(['prefix' => 'dre'], function () {
+    Route::group(['prefix' => 'relatoriodre'], function () {
         Route::get('/', 'DreController@index')->name('dre');
     });
     Route::group(['prefix' => 'conciliacaobancaria'], function () {

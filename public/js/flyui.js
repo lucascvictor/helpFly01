@@ -9794,7 +9794,7 @@ $.fn.activateStepper = function (options) {
   const settings = $.extend({
     linearStepsNavigation: true,
     autoFocusInput: true,
-    showFeedbackLoader: false,
+    showFeedbackLoader: true,
     autoFormCreation: true
   }, options);
   $(document).on("click", e => {
