@@ -14,10 +14,12 @@ Route::group(['prefix' => 'financeiro'], function () {
     });
     Route::group(['prefix' => 'contasapagar'], function () {
      Route::get('/', 'ContasAPagarController@index')->name('contasapagar');
+     Route::get('/create', 'ContasAPagarController@create')->name('contasapagar.create');
     });
     
     Route::group(['prefix' => 'contasareceber'], function () {
         Route::get('/', 'ContasAReceberController@index')->name('contasareceber');
+        Route::get('/create', 'ContasAReceberController@create')->name('contasareceber.create');
     });
     Route::group(['prefix' => 'dre'], function () {
         Route::get('/', 'DreController@index')->name('dre');
