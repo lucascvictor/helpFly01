@@ -15,10 +15,13 @@ class EmailController extends Controller
     protected   $date;
 
     public function send(Request $request){
-    	$this->setEmail($request->email);
-       	$this->setNome($request->nome);
-    	$this->setTelefone($request->telefone);
-    	$this->setMensagem($request->mensagem);
+		$this->setEmail($request->email);
+		$this->setNome($request->nomeCompleto);
+		$this->setNomeEmpresa($request->nomeEmpresa);   
+		$this->setCPFeCNPJ($request->nmrDocumento); 
+		$this->setTelefone($request->telefone);
+		$this->setAssunto($request->assunto);
+    	$this->setMensagem($request->textarea1);
     	$this->setDate(date("m-d-Y H:i:s"));
 
 		$assunto = $request->assunto;

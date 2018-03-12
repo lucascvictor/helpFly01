@@ -8,16 +8,16 @@
         {{ csrf_field() }}
         <div class="row">
             <div class="input-field col s4">
-                <input placeholder="Digite seu nome" id="first_name" name="first_name" type="text" class="validate">
-                <label for="first_name" class="active">Nome Completo</label>        
+                <input placeholder="Digite seu nome" id="nomeCompleto" name="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto" class="active">Nome Completo</label>        
             </div>
             <div class="input-field col s4">
-                <input placeholder="Nome de sua empresa" id="empresa_nome" type="text" class="validate">
-                <label for="empresa_nome" class="active">Razão Social </label>
+                <input placeholder="Nome de sua empresa" id="empresaNome" name="empresaNome" type="text" class="validate">
+                <label for="empresaNome" class="active">Razão Social </label>
             </div>
             <div class="input-field col s4">
-                <input placeholder="CPF / CNPJ" id="empresa_nome" type="text" class="validate">
-                <label for="empresa_nome" class="active">CPF / CNPJ</label>
+                <input placeholder="CPF / CNPJ" id="nmrDocumento" name="nmrDocumento" type="text" class="validate">
+                <label for="nmrDocumento" class="active">CPF / CNPJ</label>
             </div>
         </div>
         <div class="row">
@@ -26,8 +26,8 @@
                 <label for="email" class="active">E-mail</label>
             </div>
             <div class="input-field col s4">
-                <input placeholder="Digite seu telefone" id="email" type="text">
-                <label for="email" class="active">Telefone</label>
+                <input placeholder="Digite seu telefone" id="telefone" name="telefone" type="text">
+                <label for="telefone" class="active">Telefone</label>
             </div>
             <div class="input-field col s4 m4">
                 <div class="select-wrapper">
@@ -53,7 +53,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="assunto" type="text" class="validate">
+                <input id="assunto" name="assunto" type="text" class="validate">
                 <label for="assunto" class="active">Assunto</label>
             </div>
         </div>
@@ -61,7 +61,7 @@
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
                     <label for="textarea1">Mensagem</label>
                 </div>
             </form>
