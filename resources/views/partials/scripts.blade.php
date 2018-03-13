@@ -7,7 +7,6 @@
   $(document).ready(function(){
     $('.scrollspy').scrollSpy();
     $(".button-collapse").sideNav();
-    $('select').material_select();
   });
         
   </script>
@@ -24,6 +23,11 @@
         
       enjoyhint_instance.runScript();
     }
+
+
+  $(document).ready(function(){
+    $('select').material_select();
+  });
 
   </script>
 

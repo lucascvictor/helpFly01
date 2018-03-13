@@ -7,7 +7,7 @@
    <li class="no-padding">
       <ul class="side collapsible">
          <li class="">
-            <a class="collapsible-header active"><i class="material-icons expand right">expand_more</i>Financeiro</a>
+            <a class="collapsible-header"><i class="material-icons expand right">expand_more</i>Financeiro</a>
             <div class="collapsible-body" style="display: block;">
                <ul>
                 <li class=""><a href="{{ url('/financeiro/fluxodecaixa') }}" >Fluxo de Caixa</a></li>

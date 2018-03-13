@@ -7,7 +7,8 @@
           'next .fly01areatotal': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          'scrollAnimationSpeed': 1,
+           'scrollAnimationSpeed': 3000,
+           'top': 200,
   
         },
         
@@ -38,7 +39,8 @@
         {
           'next #fly01chart' :'Você também pode escolher o que visualizar no gráfico. (Ex: Caso você deseje ver somente os recebimentos, basta clicar em saldo e pagamentos, pois clicando em cima de uma das opções você a elimina da visualização).',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'}
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+          'scrollAnimationSpeed': 3000,
         },
 
          {
@@ -54,5 +56,6 @@
           'skipButton' : {className: 'mySkip', text: 'Sair'}
         },
       ];
+
 
  </script>
