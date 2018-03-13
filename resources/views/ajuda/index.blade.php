@@ -40,7 +40,7 @@
                         <li class=""><span>Fly01 Faturamento</span></li>
                         <li class=""><span>Fly01 Financeiro</span></li>
                     </ul>
-                    <select data-select-id="6adfb441-7e09-3924-9c82-9f3db1fc713f" class="initialized">
+                    <select data-select-id="6adfb441-7e09-3924-9c82-9f3db1fc713f" name="escolhaDuvida" class="initialized">
                         <option value="" disabled="" selected="">Escolha o modulo</option>
                         <option value="1">Dúvida Geral</option>
                         <option value="2">Fly01 Compras</option>

@@ -13,6 +13,7 @@ class EmailController extends Controller
 	protected   $nomeEmpresa;
 	protected   $nmrDocumento;
 	protected   $telefone;
+	protected	$escolhaDuvida;
 	protected   $assunto;
     protected   $textarea1;
     protected   $date;
@@ -23,6 +24,7 @@ class EmailController extends Controller
 		$this->setNomeEmpresa($request->nomeEmpresa);   
 		$this->setCPF_CNPJ($request->nmrDocumento); 
 		$this->setTelefone($request->telefone);
+		$this->setDuvidaSobre($request->escolhaDuvida);
 		$this->setAssunto($request->assunto);
     	$this->setMensagem($request->textarea1);
 		$this->setDate(date("m-d-Y H:i:s"));
@@ -33,6 +35,7 @@ class EmailController extends Controller
 			'nomeEmpresa' => $this->getNomeEmpresa(),
 			'nmrDocumento' => $this->getCPF_CNPJ(),
 			'telefone' => $this->getTelefone(),
+			'escolhaDuvida' => $this->getDuvidaSobre(),
 			'assunto' => $this->getAssunto(),
 			'textarea1' => $this->getMensagem(), 
 			'data' => $this->getDate(),
@@ -102,6 +105,14 @@ class EmailController extends Controller
 
 	public function setTelefone($telefone){
 		$this->telefone = $telefone;
+	}
+
+	public function getDuvidaSobre(){
+		return $this->escolhaDuvida;
+	}
+
+	public function setDuvidaSobre($escolhaDuvida){
+		$this->escolhaDuvida = $escolhaDuvida;
 	}
 
 
