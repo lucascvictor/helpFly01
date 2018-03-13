@@ -39,7 +39,7 @@ class EmailController extends Controller
     	Mail::send('emails.send', $dados, function ($message) use ($oEmail)
     	{
     		$message->from($this->getEmail(), $this->getNome());
-    		$message->to("dev.luke7@gmail.com")->subject("Help Fly");
+    		$message->to("sptfly01@gmail.com")->subject("Help Fly");
     	});
          
         return redirect()->back();
