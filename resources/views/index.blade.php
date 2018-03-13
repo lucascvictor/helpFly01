@@ -14,55 +14,148 @@
       </div>
    </div>
 </div>
-<div class="container">
+<div class="container ">
    <div class="row">
-      <div class="col m4 s4" style="heigth: 300px;">
-         <div class="card orange accent-3">
-            <div class="card-content white-text">
-               <p class="bounceEffect animated bounceIn">
-                  <span>texto sobre finanças<i class="material-icons">fingerprint</i></span>
-               </p>
+       
+       <div class="col s12 m4">
+      <div class="card orange">
+        <div class="card-content white-text">
+            <span class="card-title">
+                 <a href="https://github.com/perminder-klair/design-blocks" target="_blank">design-blocks</a>
+            </span>
+
+            <div class="repo-icons">
+                <a href="https://github.com/perminder-klair/design-blocks/fork" target="_blank">
+                    <i class="fa fa-random"></i> 0
+                </a>
+                <a href="https://github.com/perminder-klair/design-blocks/stargazers" target="_blank">
+                    <i class="fa fa-star"></i> 0
+                </a>
+                <a href="https://github.com/perminder-klair/design-blocks/watchers" target="_blank">
+                    <i class="fa fa-eye"></i> 0
+                </a>
             </div>
-         </div>
-      </div>
-      <div class="col m4 s4" style="heigth: 300px;">
-         <div class="card red accent-3">
-            <div class="card-content white-text">
-               <p class="bounceEffect animated bounceIn">
-                  <span>texto sobre finanças<i class="material-icons">fingerprint</i></span>
-               </p>
+
+            <p>A set of 170+ Bootstrap based design blocks ready to be used to create clean modern websites.</p>
+        </div>
+        <div class="card-action">
+            <span class="updated-on">Updated on March 8, 2018</span>
+        </div>
+    </div>
+                    </div>
+   
+
+
+      <div class="col s12 m4">
+      <div class="card orange">
+        <div class="card-content white-text">
+            <span class="card-title">
+                 <a href="https://github.com/perminder-klair/design-blocks" target="_blank">design-blocks</a>
+            </span>
+
+            <div class="repo-icons">
+                <a href="https://github.com/perminder-klair/design-blocks/fork" target="_blank">
+                    <i class="fa fa-random"></i> 0
+                </a>
+                <a href="https://github.com/perminder-klair/design-blocks/stargazers" target="_blank">
+                    <i class="fa fa-star"></i> 0
+                </a>
+                <a href="https://github.com/perminder-klair/design-blocks/watchers" target="_blank">
+                    <i class="fa fa-eye"></i> 0
+                </a>
             </div>
-         </div>
-      </div>
-   </div>
-   </div>
-   <div class="container">
-      <div class="row">
-         <div class="col m4 right" style="width: 20%; heigth: 100%">
-            <div class="card orange accent-3">
+
+            <p>A set of 170+ Bootstrap based design blocks ready to be used to create clean modern websites.</p>
+        </div>
+        <div class="card-action">
+            <span class="updated-on">Updated on March 8, 2018</span>
+        </div>
+    </div>
+                    </div>
+   
+
+
+      <div class="col s12 m4">
+      <div class="card orange">
+        <div class="card-content white-text">
+            <span class="card-title">
+                 <a href="https://github.com/perminder-klair/design-blocks" target="_blank">design-blocks</a>
+            </span>
+
+            <div class="repo-icons">
+                <a href="https://github.com/perminder-klair/design-blocks/fork" target="_blank">
+                    <i class="fa fa-random"></i> 0
+                </a>
+                <a href="https://github.com/perminder-klair/design-blocks/stargazers" target="_blank">
+                    <i class="fa fa-star"></i> 0
+                </a>
+                <a href="https://github.com/perminder-klair/design-blocks/watchers" target="_blank">
+                    <i class="fa fa-eye"></i> 0
+                </a>
+            </div>
+
+            <p>A set of 170+ Bootstrap based design blocks ready to be used to create clean modern websites.</p>
+        </div>
+        <div class="card-action">
+            <span class="updated-on">Updated on March 8, 2018</span>
+        </div>
+    </div>
+                    </div>
+   
+
+
+      <div class="col s12 m4">
+        <div class="card-content white-text">
+     
+  <div class="card orange accent-3">
                <div class="card-content white-text">
                   <p class="bounceEffect animated bounceIn">
                      <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </p>
                </div>
             </div>
-            <div class="card orange accent-3">
-               <div class="card-content white-text">
-                  <p class="bounceEffect animated bounceIn">
-                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </p>
-               </div>
-            </div>
-            <div class="card orange accent-3">
-               <div class="card-content white-text">
-                  <p class="bounceEffect animated bounceIn">
-                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </p>
-               </div>
-            </div>
-         </div>
+  
+           </div>
       </div>
 
+
+
+
+   <div class="col s12 m4">
+        <div class="card-content white-text">
+     
+  <div class="card orange accent-3">
+               <div class="card-content white-text">
+                  <p class="bounceEffect animated bounceIn">
+                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </p>
+               </div>
+            </div>
+  
+           </div>
+      </div>
+
+
+   <div class="col s12 m4">
+        <div class="card-content white-text">
+     
+  <div class="card orange accent-3">
+               <div class="card-content white-text">
+                  <p class="bounceEffect animated bounceIn">
+                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </p>
+               </div>
+            </div>
+  
+           </div>
+      </div>
+
+     </div>
+                         </div>
+   
+   
+   
+   
 @endsection
 @section('footer')
 <footer class="page-footer black">
