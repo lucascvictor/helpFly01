@@ -3,7 +3,7 @@
 
 Route::get('/', 'HomeController@index')->name('index');
 Route::get('/import', 'HomeController@getImport')->name('import.get');
-Route::post('/send', 'EmailControler@send')->name('email.send');
+Route::post('/send', 'EmailController@send')->name('email.send');
 
 Route::group(['prefix' => 'financeiro'], function () {
     Route::get('', 'HomeController@getProdutos')->name('produtos');

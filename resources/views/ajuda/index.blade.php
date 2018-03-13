@@ -5,9 +5,10 @@
 @section('content')
 <div class="row">
     <form class= "col s12" method="POST" action="{{ url('/send')}}">
+        {{ csrf_field() }}
         <div class="row">
             <div class="input-field col s4">
-                <input placeholder="Digite seu nome" id="first_name" type="text" class="validate">
+                <input placeholder="Digite seu nome" id="first_name" name="first_name" type="text" class="validate">
                 <label for="first_name" class="active">Nome Completo</label>        
             </div>
             <div class="input-field col s4">
@@ -21,7 +22,7 @@
         </div>
         <div class="row">
             <div class="input-field col s4">
-                <input placeholder="Digite seu e-mail" id="email" type="email" class="validate">
+                <input placeholder="Digite seu e-mail" id="email" name="email" type="email" class="validate">
                 <label for="email" class="active">E-mail</label>
             </div>
             <div class="input-field col s4">
