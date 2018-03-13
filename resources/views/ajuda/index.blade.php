@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="row">
-    <form class= "col s12">
+    <form class= "col s12" method="POST" action="{{ url('/send')}}">
         <div class="row">
             <div class="input-field col s4">
                 <input placeholder="Digite seu nome" id="first_name" type="text" class="validate">
