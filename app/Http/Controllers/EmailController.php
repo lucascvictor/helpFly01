@@ -9,34 +9,36 @@ use Mail;
 class EmailController extends Controller
 {
 	protected	$email;
-    protected   $nome;
-    protected   $mensagem;
-    protected   $telefone;
+	protected   $nomeCompleto;
+	protected   $nomeEmpresa;
+	protected   $nmrDocumento;
+	protected   $telefone;
+	protected   $assunto;
+    protected   $textarea1;
     protected   $date;
 
     public function send(Request $request){
 		$this->setEmail($request->email);
 		$this->setNome($request->nomeCompleto);
 		$this->setNomeEmpresa($request->nomeEmpresa);   
-		$this->setCPFeCNPJ($request->nmrDocumento); 
+		$this->setCPF_CNPJ($request->nmrDocumento); 
 		$this->setTelefone($request->telefone);
 		$this->setAssunto($request->assunto);
     	$this->setMensagem($request->textarea1);
-    	$this->setDate(date("m-d-Y H:i:s"));
-
-		$assunto = $request->assunto;
-		$pagina = $request->pagina;
-
+		$this->setDate(date("m-d-Y H:i:s"));
+		
 		$dados = array(
-			'titulo' => $oEmail->assunto,
-			'mensagem' => $this->getMensagem(), 
-			'nome' => $this->getNome(),
-			'telefone' => $this->getTelefone(),
 			'email' => $this->getEmail(),
+			'nomeCompleto' => $this->getNome(),
+			'nomeEmpresa' => $this->getNomeEmpresa(),
+			'nmrDocumento' => $this->getCPF_CNPJ(),
+			'telefone' => $this->getTelefone(),
+			'assunto' => $this->getAssunto(),
+			'textarea1' => $this->getMensagem(), 
 			'data' => $this->getDate(),
 			);
 			
-    	Mail::send('emails.send', $dados, function ($message) use ($oEmail)
+    	Mail::send('emails.send', $dados, function ($message)
     	{
     		$message->from($this->getEmail(), $this->getNome());
     		$message->to("sptfly01@gmail.com")->subject("Help Fly");
@@ -46,11 +48,19 @@ class EmailController extends Controller
 	}
 
 	public function getNome(){
-		return $this->nome;
+		return $this->nomeCompleto;
 	}
 
-	public function setNome($nome){
-		$this->nome = $nome;
+	public function setNome($nomeCompleto){
+		$this->nomeCompleto = $nomeCompleto;
+	}
+
+	public function getNomeEmpresa(){
+		return $this->nomeEmpresa;
+	}
+
+	public function setNomeEmpresa($nomeEmpresa){
+		$this->nomeEmpresa = $nomeEmpresa;
 	}
 
 	public function getEmail(){
@@ -61,12 +71,29 @@ class EmailController extends Controller
 		$this->email = $email;
 	}
 
-	public function getMensagem(){
-		return $this->mensagem;
+	public function getCPF_CNPJ(){
+		return $this->nmrDocumento;
 	}
 
-	public function setMensagem($mensagem){
-		$this->mensagem = $mensagem;
+	public function setCPF_CNPJ($nmrDocumento){
+		$this->nmrDocumento = $nmrDocumento;
+	}
+
+
+	public function getAssunto(){
+		return $this->assunto;
+	}
+
+	public function setAssunto($assunto){
+		$this->assunto = $assunto;
+	}
+
+	public function getMensagem(){
+		return $this->textarea1;
+	}
+
+	public function setMensagem($textarea1){
+		$this->textarea1 = $textarea1;
 	}
 
 	public function getTelefone(){

@@ -12,8 +12,8 @@
                 <label for="nomeCompleto" class="active">Nome Completo</label>        
             </div>
             <div class="input-field col s4">
-                <input placeholder="Nome de sua empresa" id="empresaNome" name="empresaNome" type="text" class="validate">
-                <label for="empresaNome" class="active">Razão Social </label>
+                <input placeholder="Nome de sua empresa" id="nomeEmpresa" name="nomeEmpresa" type="text" class="validate">
+                <label for="nomeEmpresa" class="active">Razão Social </label>
             </div>
             <div class="input-field col s4">
                 <input placeholder="CPF / CNPJ" id="nmrDocumento" name="nmrDocumento" type="text" class="validate">
