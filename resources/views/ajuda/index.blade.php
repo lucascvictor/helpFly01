@@ -74,7 +74,7 @@
                         <input type="file" multiple>
                     </div>
                     <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Escolha um ou mais arquivos">
+                        <input class="file-path validate" type="text" placeholder="Escolha um ou mais arquivos" name="files">
                     </div>
                 </div>
             </form>

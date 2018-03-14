@@ -44,7 +44,8 @@ class EmailController extends Controller
     	Mail::send('emails.send', $dados, function ($message)
     	{
     		$message->from($this->getEmail(), $this->getNome());
-    		$message->to("sptfly01@gmail.com")->subject("Help Fly");
+			$message->to("sptfly01@gmail.com")->subject("Help Fly");
+			$message->attach($pathToFile, ['as' => $display, 'mime' => $mime]);
     	});
          
         return redirect()->back();
