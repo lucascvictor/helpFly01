@@ -82,8 +82,8 @@
 												<input id="complemento" type="text" name="complemento"/>
 												<label class="truncate" for="complemento">Complemento</label>
 											</div>
-											<div id="observacaoField" class="input-field col s12">
-												<textarea id="observacao" name="observacao" class="materialize-textarea"/>
+											<div id="observacaoField" class="input-field col s12 l12">
+												<textarea id="observacao" name="observacao" class="materialize-textarea"> </textarea>
 												<label class="truncate" for="observacao">Observação</label>
 											</div>
 											<div id="clienteField" class="input-field col s12 l4">
