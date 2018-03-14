@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="row">
-    <form class= "col s12" method="POST" action="{{ url('/send')}}">
+    <form class= "col s12" method="POST" action="{{ url('/send')}}" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="row">
             <div class="input-field col s4">
@@ -67,17 +67,17 @@
             </form>
         </div>
         <div class="row">
-            <form action="#">
+
                 <div class="file-field input-field">
                     <div class="btn">
                         <span>Arquivo</span>
-                        <input type="file" multiple>
+                        <input type="file" name="arquivos" id="arquivos" multiple>
                     </div>
                     <div class="file-path-wrapper">
                         <input class="file-path validate" type="text" placeholder="Escolha um ou mais arquivos">
                     </div>
                 </div>
-            </form>
+
         </div>
         <div>
         <button class="btn right" type="submit">Enviar</button>
