@@ -42,11 +42,11 @@
                     </ul>
                     <select data-select-id="6adfb441-7e09-3924-9c82-9f3db1fc713f" name="escolhaDuvida" class="initialized">
                         <option value="" disabled="" selected="">Escolha o modulo</option>
-                        <option value="1">Dúvida Geral</option>
-                        <option value="2">Fly01 Compras</option>
-                        <option value="3">Fly01 Estoque</option>
-                        <option value="4">Fly01 Faturamento</option>
-                        <option value="5">Fly01 Financeiro</option>
+                        <option value="Duvida Geral">Duvida Geral</option>
+                        <option value="Fly01 Compras">Fly01 Compras</option>
+                        <option value="Fly01 Estoque">Fly01 Estoque</option>
+                        <option value="Fly01 Faturamento">Fly01 Faturamento</option>
+                        <option value="Fly01 Financeiro">Fly01 Financeiro</option>
                     </select>
                 </div>
                 <label>Duvida sobre</label>
