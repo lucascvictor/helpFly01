@@ -13,8 +13,10 @@
 						<a id="new" class="btn " href="{{ url('/cadastros/fornecedores/create') }}">Novo</a>
 					</li>
 					<li>
-						<button id="tour" class="btn pulse" onclick="initTour();">Tour</button>
-					</li>
+						<div class="fixed-action-btn"> 
+							<a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+						</div>
+			      </li>
 				</ul>
 
 			</div>

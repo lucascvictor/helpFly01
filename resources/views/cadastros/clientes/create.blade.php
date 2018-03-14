@@ -18,8 +18,10 @@
 						<a id="save" class="btn " onclick="fnSalvar();">Salvar</a>
 					</li>
 					<li>
-						<button id="tour" class="btn" onclick="initTour();">Iniciar o Tour</button>
-					</li>
+						<div class="fixed-action-btn"> 
+							<a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+						</div>
+			      </li>
 				</ul>
 			</div>
 		</div>
