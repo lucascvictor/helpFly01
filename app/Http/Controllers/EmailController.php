@@ -16,7 +16,10 @@ class EmailController extends Controller
 	protected	$escolhaDuvida;
 	protected   $assunto;
     protected   $textarea1;
-    protected   $date;
+	protected   $date;
+	protected   $caminhoDoArquivo;
+	protected   $NomeArquivo;
+	protected   $mime;
 
     public function send(Request $request){
 		$this->setEmail($request->email);
@@ -26,7 +29,10 @@ class EmailController extends Controller
 		$this->setTelefone($request->telefone);
 		$this->setDuvidaSobre($request->escolhaDuvida);
 		$this->setAssunto($request->assunto);
-    	$this->setMensagem($request->textarea1);
+		$this->setMensagem($request->textarea1);
+		$this->setCaminhoArquivo($request->arquivos->path());
+		$this->setNomeArquivo($request->arquivos);
+		$this->setMime($request->arquivos->extension());
 		$this->setDate(date("m-d-Y H:i:s"));
 		
 		$dados = array(
@@ -44,7 +50,8 @@ class EmailController extends Controller
     	Mail::send('emails.send', $dados, function ($message)
     	{
     		$message->from($this->getEmail(), $this->getNome());
-    		$message->to("sptfly01@gmail.com")->subject("Help Fly");
+			$message->to("sptfly01@gmail.com")->subject("Help Fly");
+			$message->attach($this->getCaminhoDoArquivo(), ['as' => $this->getNomeArquivo(), 'mime' => $this->getMime()]);
     	});
          
         return redirect()->back();
@@ -121,5 +128,26 @@ class EmailController extends Controller
 
 	public function setDate($date){
 		$this->date = $date;
+	}
+
+	public function getCaminhoArquivo(){
+		return $this->caminhoArquivo;
+	}
+	public function setCaminhoArquivo($caminhoArquivo){
+		$this->caminhoArquivo = $caminhoArquivo;
+	}
+
+	public function getNomeArquivo(){
+		return $this->caminhoArquivo;
+	}
+	public function setNomeArquivo($nomeArquivo){
+		$this->nomeArquivo = $nomeArquivo;
+	}
+
+	public function getMime(){
+		return $this->mime;
+	}
+	public function setMime($mime){
+		$this->mime = $mime;
 	}
 }
