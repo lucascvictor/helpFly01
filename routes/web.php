@@ -45,6 +45,7 @@ Route::group(['prefix' => 'cadastros'], function () {
     Route::group(['prefix' => 'fornecedores'], function () {
         Route::get('', 'FornecedoresController@index')->name('fornecedores');
         Route::get('/create', 'FornecedoresController@create')->name('fornecedores.create');
+        Route::get('/pagetour', 'FornecedoresController@pageTour')->name('fornecedores.pagetour');
     });
 
     Route::group(['prefix' => 'condicoesdeparcelamento'], function () {

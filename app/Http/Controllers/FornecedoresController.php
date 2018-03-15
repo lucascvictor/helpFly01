@@ -19,5 +19,10 @@ class FornecedoresController extends Controller
       return view('cadastros.fornecedores.create');
     }
 
+    public function pageTour()
+    {
+      return view('cadastros.fornecedores.pagetour');
+    }
 
 }
+
