@@ -10,13 +10,13 @@
 				<h4 class="thin inline-block">Contas a Receber</h4>
 				<ul class="right valign-wrapper fly01-buttons">
 					<li>
-						<a id="new" class="btn " onclick="fnNovo();">Novo</a>
+						<a id="new" class="btn " href="{{ url('/financeiro/contasareceber/create') }}">Novo</a>
 					</li>
 					<li>
-						<a id="new" class="btn " onclick="fnNovaRenegociacaoCR();">Renegocia��o</a>
+						<a id="new" class="btn " onclick="fnNovaRenegociacaoCR();">Renegociação</a>
 					</li>
 					<li>
-						<a id="tour" class="btn " onclick="fnNovaRenegociacaoCR();">Tour</a>
+						<a id="tour" class="btn " onclick="initTour();">Tour</a>
 					</li>
 				</ul>
 			</div>

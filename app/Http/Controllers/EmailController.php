@@ -122,7 +122,6 @@ class EmailController extends Controller
 		$this->escolhaDuvida = $escolhaDuvida;
 	}
 
-
 	public function getDate(){
 		return $this->date;
 	}
