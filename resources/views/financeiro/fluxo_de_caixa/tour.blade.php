@@ -31,7 +31,7 @@
         {
           'next #fly01chart' : 'É possível visualizar também o fluxo de caixa através de um gráfico.',
           'nextButton' : {className: 'myNext', text: 'Próximo', onClick: 'SizeChange();'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'}
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
         {
@@ -41,7 +41,6 @@
         },
 
          {
-
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
           'nextButton' : {className: 'myNext7', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
@@ -53,6 +52,5 @@
           'skipButton' : {className: 'mySkip', text: 'Sair'}
         },
       ];
-
 
  </script>

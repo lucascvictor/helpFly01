@@ -41,7 +41,7 @@
             </div>
          </li>
          <li>
-            <a class="collapsible-header"><i class="material-icons expand right">expand_more</i>Ajuda</a>
+            <a class="collapsible-header ajuda"><i class="material-icons expand right">expand_more</i>Ajuda</a>
             <div class="collapsible-body">
                <ul>
                 <li class=""><a href="{{ url('/suporte') }}" onclick="">Solicitar Suporte</a>
