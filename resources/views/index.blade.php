@@ -27,63 +27,72 @@
     </div>
     
 
-      <div class="col s12 m4">
-      <div class="card orange">
-        <div class="card-content white-text">
-            <span class="card-title">
-                 <a href="https://github.com/perminder-klair/design-blocks" target="_blank">design-blocks</a>
-            </span>
-
-            <div class="repo-icons">
-                <a href="https://github.com/perminder-klair/design-blocks/fork" target="_blank">
-                    <i class="fa fa-random"></i> 0
-                </a>
-                <a href="https://github.com/perminder-klair/design-blocks/stargazers" target="_blank">
-                    <i class="fa fa-star"></i> 0
-                </a>
-                <a href="https://github.com/perminder-klair/design-blocks/watchers" target="_blank">
-                    <i class="fa fa-eye"></i> 0
-                </a>
+       <div class = "col s4 m4">
+            <div class = "card blue-orange lighten-4">
+               <div class = "card-image">
+                  <img src = "http://blog.safetec.com.br/wp-content/uploads/2017/03/como-fazer-planejamento-financeiro-1.jpg">                
+               </div>
+               
+               <div class = "card-content">                  
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                     HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                     structuring and presenting content on the World Wide Web.</p>
+               </div>
+               
+               <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                     <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                     www.tutorialspoint.com</a>
+               </div>
             </div>
-
-            <p>A set of 170+ Bootstrap based design blocks ready to be used to create clean modern websites.</p>
-        </div>
-        <div class="card-action">
-            <span class="updated-on">Updated on March 8, 2018</span>
-        </div>
-    </div>
-                    </div>
-   
-
-
-      <div class="col s12 m4">
-      <div class="card orange">
-        <div class="card-content white-text">
-            <span class="card-title">
-                 <a href="https://github.com/perminder-klair/design-blocks" target="_blank">design-blocks</a>
-            </span>
-
-            <div class="repo-icons">
-                <a href="https://github.com/perminder-klair/design-blocks/fork" target="_blank">
-                    <i class="fa fa-random"></i> 0
-                </a>
-                <a href="https://github.com/perminder-klair/design-blocks/stargazers" target="_blank">
-                    <i class="fa fa-star"></i> 0
-                </a>
-                <a href="https://github.com/perminder-klair/design-blocks/watchers" target="_blank">
-                    <i class="fa fa-eye"></i> 0
-                </a>
+      </div>
+      <div class = "col s4 m4">
+            <div class = "card blue-orange lighten-4">
+               <div class = "card-image">
+                  <img src = "http://blog.safetec.com.br/wp-content/uploads/2017/03/como-fazer-planejamento-financeiro-1.jpg">                
+               </div>
+               
+               <div class = "card-content">                  
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                     HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                     structuring and presenting content on the World Wide Web.</p>
+               </div>
+               
+               <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                     <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                     www.tutorialspoint.com</a>
+               </div>
             </div>
+      </div>
+      <div class = "col s4 m4">
+            <div class = "card blue-orange lighten-4">
+               <div class = "card-image">
+                  <img src = "http://blog.safetec.com.br/wp-content/uploads/2017/03/como-fazer-planejamento-financeiro-1.jpg">                
+               </div>
+               
+               <div class = "card-content">                  
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                     HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                     structuring and presenting content on the World Wide Web.</p>
+               </div>
+               
+               <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                     <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                     www.tutorialspoint.com</a>
+               </div>
+            </div>
+      </div>
+  
 
-            <p>A set of 170+ Bootstrap based design blocks ready to be used to create clean modern websites.</p>
-        </div>
-        <div class="card-action">
-            <span class="updated-on">Updated on March 8, 2018</span>
-        </div>
-    </div>
-                    </div>
-   
 
+
+
+     
 
       <div class="col s12 m4">
         <div class="card-content white-text">
