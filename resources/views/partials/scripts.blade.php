@@ -2,6 +2,8 @@
   <script src="{{ url('js/fly-tour.js') }}"></script>
   <script src="{{ url('js/kinetic.min.js') }}"></script>
   <script src="{{ url('js/enjoyhint.js') }}"></script>
+  <script src="{{ url('http://materializecss.com/bin/materialize.js') }}"></script>
+
 
   <script type="text/javascript">
 
