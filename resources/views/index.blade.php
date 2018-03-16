@@ -27,10 +27,10 @@
     </div>
     
 
-       <div class = "col s2 m2">
-            <div class = "card blue-grey lighten-4">
+       <div class = "col s4 m4">
+            <div class = "card blue-orange lighten-4">
                <div class = "card-image">
-                  <img src = "html5-mini-logo.jpg">                
+                  <img src = "http://blog.safetec.com.br/wp-content/uploads/2017/03/como-fazer-planejamento-financeiro-1.jpg">                
                </div>
                
                <div class = "card-content">                  
@@ -46,8 +46,48 @@
                      www.tutorialspoint.com</a>
                </div>
             </div>
-         </div>
       </div>
+      <div class = "col s4 m4">
+            <div class = "card blue-orange lighten-4">
+               <div class = "card-image">
+                  <img src = "http://blog.safetec.com.br/wp-content/uploads/2017/03/como-fazer-planejamento-financeiro-1.jpg">                
+               </div>
+               
+               <div class = "card-content">                  
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                     HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                     structuring and presenting content on the World Wide Web.</p>
+               </div>
+               
+               <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                     <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                     www.tutorialspoint.com</a>
+               </div>
+            </div>
+      </div>
+      <div class = "col s4 m4">
+            <div class = "card blue-orange lighten-4">
+               <div class = "card-image">
+                  <img src = "http://blog.safetec.com.br/wp-content/uploads/2017/03/como-fazer-planejamento-financeiro-1.jpg">                
+               </div>
+               
+               <div class = "card-content">                  
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                     HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                     structuring and presenting content on the World Wide Web.</p>
+               </div>
+               
+               <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                     <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                     www.tutorialspoint.com</a>
+               </div>
+            </div>
+      </div>
+  
 
 
 
