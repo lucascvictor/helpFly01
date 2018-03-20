@@ -96,6 +96,7 @@
 @include('financeiro.conciliacao.tourIndex')
 
 <script>
+
 window.onload = function()
 {
       document.getElementById("menu").click();
@@ -105,13 +106,6 @@ $("#menu").click(function(){
       $('.tap-target').tapTarget('open');
 });
            
-</script>
-
-<script>
-$(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-  });
 </script>
  
 @endsection	
