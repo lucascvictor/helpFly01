@@ -400,9 +400,9 @@
             <div id="categoriaFinanceiraIdField" class="input-field col s12 l6"><input type="hidden" name="categoriaFinanceiraId" id="categoriaFinanceiraId"><input type="text" class="autocomplete ui-autocomplete-input" id="categoriaFinanceiraDescricao" name="categoriaFinanceiraDescricao" data-url="/AutoComplete/CategoriaFinanceiraCR" data-target="categoriaFinanceiraId" autocomplete="off"><label class="truncate" for="categoriaFinanceiraDescricao">Categoria Financeira</label></div>
             <div id="observacaoField" class="input-field col s12"><textarea id="observacao" name="observacao" class="materialize-textarea"></textarea><label class="truncate" for="observacao">Observação</label></div>
             <div id="repetirField" class="input-field col s12">
-               <p><input id="repetir" type="checkbox" name="repetir" value="true"><label class="truncate" for="repetir">Repetir</label></p>
+               <p><input id="repetir" type="checkbox" name="repetir" value="false"><label class="truncate" for="repetir">Repetir</label></p>
             </div>
-            <div id="tipoPeriodicidadeField" class="input-field col s6 m3 l3">
+            <div id="tipoPeriodicidadeField" class="input-field col s6 m3 l3" style="display: none;">
                <div class="select-wrapper">
                   <span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-8530wd7" value="Mensal">
                   <ul id="select-options-8530wd7" class="dropdown-content select-dropdown ">
@@ -623,3 +623,25 @@
    </div>
 
    @endsection
+
+@section('extrascript')
+
+@include('financeiro.contas_a_pagar.tour')
+
+<script>
+
+$('#repetir').click( function(){
+    If ($('#repetir').val() == "false") {
+        $('#tipoPeriodicidadeField').removeAttr('style');
+        $('#tipoRepeticaoField').removeAttr('style');
+        $('#numeroRepeticoesField').removeAttr('style');
+    } else {
+        $('#tipoPeriodicidadeField').attr('style',"display: none;");
+        $('#tipoRepeticaoField').attr('style',"display: none;");
+        $('#numeroRepeticoesField').attr('style', "display: none;");
+    }
+});
+
+</script>
+
+@endsection
