@@ -132,9 +132,9 @@ var EnjoyHint = function (_options) {
 
                 that.clear();
             }, 250);
-
+       
             $(document.body).scrollTop(step_data.selector, step_data.scrollAnimationSpeed || 250, {offset: -100});
-
+            
             setTimeout(function () {
 
                 var $element = $(step_data.selector);
@@ -1359,16 +1359,13 @@ var EnjoyHint = function (_options) {
                     }
 
                     if (is_center) {
-
                         if (is_top) {
-
                             setArrowData('bottom', 'top', 'top');
                         } else if (is_bottom) {
-
                             setArrowData('top', 'bottom', 'bottom');
                         } else {
-
-                            return;
+                            that.enjoyhint.removeClass(that.cl.svg_transparent);
+                            return; // When elements are in smaller screens, they end up in this code segment which prevents them from drawing the rest of the labels.
                         }
 
                     } else if (is_left) {

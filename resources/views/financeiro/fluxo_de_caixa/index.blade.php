@@ -436,6 +436,7 @@
             </div>
             <h6></h6>
             <canvas id="fly01chart" style="display: block; width: 1142px; height: 571px;" width="1142" height="571" class="chartjs-render-monitor"></canvas>
+         
          </div>
          </div>
          <div class="input-field col s12">

@@ -55,4 +55,10 @@
         },
       ];
 
+
+      $('.myNext6').click(function(){
+              $("html, body").animate({ scrollTop: 500 }, 600);
+              return false;
+          });
+
  </script>
