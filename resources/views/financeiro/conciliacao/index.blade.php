@@ -86,20 +86,12 @@
             dentro do sistema, isso permite com que você dê múltiplas baixas de títulos e que obtenha um controle preciso de suas finanças. <a onclick="initTour();" class="btn btn-small orange"> Clique aqui</a> para aprender como
             realizar a conciliação bancária.</p>
       </div>
+<<<<<<< HEAD
+</div>  
+=======
 </div>
 
-<a href="#modal1" class="btn modal-trigger">Abrir Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal" style=height: 100%;">
-    
-      <h4>Tour Cadastro de Contas Bancárias (Cadastros > Contas Bancárias)</h4>
-      <iframe src="{{ url('/cadastros/contasbancarias/create')}}" width="700" height="769" allowfullscreen></iframe>
- 
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
-    </div>
-  </div>
+>>>>>>> a7e0c8b3380016ffa4ee42069312b8e9e285ba4a
 @endsection
 
 
@@ -108,6 +100,7 @@
 @include('financeiro.conciliacao.tourIndex')
 
 <script>
+
 window.onload = function()
 {
       document.getElementById("menu").click();
@@ -118,12 +111,9 @@ $("#menu").click(function(){
 });
            
 </script>
+<<<<<<< HEAD
 
-<script>
-$(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-  });
-</script>
+=======
+>>>>>>> a7e0c8b3380016ffa4ee42069312b8e9e285ba4a
  
 @endsection	

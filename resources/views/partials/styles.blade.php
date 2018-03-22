@@ -6,7 +6,7 @@
 
     <link href="{{ url('css/enjoyhint.css') }}" rel="stylesheet" type="text/css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{{ url('jquery_1.9.1/jquery.min.js') }}"></script>
 
        <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
