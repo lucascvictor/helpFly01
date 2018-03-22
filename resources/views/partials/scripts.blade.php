@@ -1,9 +1,8 @@
   <script src="{{ url('js/1.0.2/fly01ui.js') }}"></script>
-  <script src="{{ url('js/fly-tour.js') }}"></script>
+
   <script src="{{ url('js/enjoyhint.js') }}"></script>
   <script src="{{ url('js/materialize.js') }}"></script>
-
-
+  
   <script type="text/javascript">
 
   $(document).ready(function(){

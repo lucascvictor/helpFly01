@@ -19,7 +19,7 @@
     @include('partials.menu')
     @include('partials.sidebar')
   </header>
-  <main style="height: 2000px;">
+  <main>
         @yield('content')
   </main>
 

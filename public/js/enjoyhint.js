@@ -133,7 +133,8 @@ var EnjoyHint = function (_options) {
                 that.clear();
             }, 250);
        
-            $(document.body).scrollTop(step_data.selector, step_data.scrollAnimationSpeed || 250, {offset: -100});
+            //$(document.body).scrollTop(step_data.selector, step_data.scrollAnimationSpeed || 250, {offset: -100});
+            $("html, body").animate({scrollTop: $(step_data.selector).offset().top }, 2);
             
             setTimeout(function () {
 
