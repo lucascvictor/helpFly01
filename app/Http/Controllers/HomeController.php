@@ -53,4 +53,20 @@ class HomeController extends Controller
       return view('ajuda.index');
     }
 
+    public function teste(Request $request)
+    {
+      If($request->teste == "lucas") {
+        return view('testes.indexL');
+      }
+      If ($request->teste == "felipe") {
+        return view('testes.indexF');
+      }
+    }
+
+
+    public function testeFelipe()
+    {
+      
+    }
+
 }
