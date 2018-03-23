@@ -134,8 +134,17 @@ var EnjoyHint = function (_options) {
             }, 250);
        
             //$(document.body).scrollTop(step_data.selector, step_data.scrollAnimationSpeed || 250, {offset: -100});
-            $("html, body").animate({scrollTop: $(step_data.selector).offset().top }, 2);
-            
+            $("html, body").animate({scrollTop: $(step_data.selector).offset().top -90}, step_data.scrollAnimationSpeed);
+
+            /*
+                var timelength = 1000 || 1000;
+                $('html, body').animate({
+                    scrollTop: $(step_data.selector).offset().top-100
+                }, timelength, function(){
+                    window.location.hash = step_data.selector;
+                });
+                */
+
             setTimeout(function () {
 
                 var $element = $(step_data.selector);

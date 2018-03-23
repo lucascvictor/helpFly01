@@ -39,7 +39,7 @@
           'next #dfly01chart' :'Você também pode escolher o que visualizar no gráfico. (Ex: Caso você deseje ver somente os recebimentos, basta clicar em saldo e pagamentos, pois clicando em cima de uma das opções você a elimina da visualização).',
           'nextButton' : {className: 'myNext6', text: 'Próximo', href: "#fly01dt"},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          'scrollAnimationSpeed' : 2500,
+          'margin': 50,
 
         },
 
@@ -47,12 +47,14 @@
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
           'nextButton' : {className: 'myNext7', text: 'Próximo',href: ".thin"},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+          'margin': 50,
         },
 
         {
           'next .thin' :'Restou alguma dúvida? Contate-nos através do chat ou do e-mail suporte.fly01gestao@totvs.com.br que entraremos em contato com suas respostas.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'}
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+          'margin': 50,
         },
       ];
 
