@@ -62,14 +62,12 @@
             </div>
         </div>
         <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s12">
-                    <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Mensagem</label>
-                </div>
-            </form>
+            <div class="row">
+                <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Mensagem</label>
+            </div>
         </div>
         <div class="row">
 

@@ -312,9 +312,11 @@
 							<input id="address" type="text" name="address"/>
 							<label class="truncate active" for="address">Endereço (com número e complemento)</label>
 						</div>
-						<div id="observationField" class="input-field col s12">
-							<textarea id="observation" name="observation" class="materialize-textarea"/>
-							<label class="truncate" for="observation">Observação</label>
+						<div class="row">
+							<div id="observationField" class="input-field col s12">
+								<textarea id="observationField" name="observationField" class="materialize-textarea"></textarea>
+								<label class="truncate active" for="observationField">Observação</label>
+							</div>
 						</div>
 						<div id="isSupplierBoolField" class="input-field col s12 l4">
 							<p>
