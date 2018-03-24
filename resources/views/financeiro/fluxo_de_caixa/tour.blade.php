@@ -52,7 +52,7 @@
         },
 
         {
-          'next .thin' :'Restou alguma dúvida? Contate-nos através do chat ou do e-mail suporte.fly01gestao@totvs.com.br que entraremos em contato com suas respostas.',
+          'next #ajuda' :'Restou alguma dúvida? Contate-nos através do chat ou do e-mail suporte.fly01gestao@totvs.com.br que entraremos em contato com suas respostas.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
           'margin': 50,

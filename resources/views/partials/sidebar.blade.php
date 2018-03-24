@@ -36,7 +36,7 @@
                </ul>
             </div>
          </li>
-         <li>
+         <li id="ajuda">
             <a class="collapsible-header"><i class="material-icons expand right">expand_more</i>Ajuda</a>
             <div class="collapsible-body">
                <ul>
