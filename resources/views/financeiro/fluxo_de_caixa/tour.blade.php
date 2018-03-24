@@ -41,21 +41,23 @@
                                 ' pois clicando em cima de uma das opções você a elimina da visualização).',
           'nextButton' : {className: 'myNext', text: 'Próximo', href: "#fly01dt"},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          'top': 400,
+  
         },
 
          {
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
           'nextButton' : {className: 'myNext', text: 'Próximo',href: ".thin"},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          'margin': 50,
+          
         },
 
         {
-          'next #ajuda' :'Restou alguma dúvida? Contate-nos através do chat ou do e-mail suporte.fly01gestao@totvs.com.br que entraremos em contato com suas respostas.',
+          'next #ajuda' :'Restou alguma dúvida? Contate-nos através do e-mail<br>'+
+          'suporte.fly01gestao@totvs.com.br <br>' +
+          'ou entre em contato utilizado o menu Ajuda',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          'margin': 50,
+  
         },
       ];
 
