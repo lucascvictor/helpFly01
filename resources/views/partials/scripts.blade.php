@@ -1,5 +1,4 @@
   <script src="{{ url('js/1.0.2/fly01ui.js') }}"></script>
-
   <script src="{{ url('js/enjoyhint.js') }}"></script>
   <script src="{{ url('js/materialize.js') }}"></script>
   
@@ -35,7 +34,10 @@
         weekdaysLetter: [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S' ],
         today: 'Hoje',
         clear: 'Limpar',
-        close: 'Fechar'
+        close: 'Fechar',
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15, // Creates a dropdown of 15 years to control year
+        dateFormat: 'dd/MM/yy',
     });
 
 

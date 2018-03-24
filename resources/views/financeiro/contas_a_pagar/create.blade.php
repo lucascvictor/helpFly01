@@ -25,11 +25,11 @@
             <div id="valorPrevistoField" class="input-field col s6 l2"><input id="valorPrevisto" name="valorPrevisto" class="currency" value="0" style="text-align: right;" type="text"><label class="truncate active" for="valorPrevisto">Valor *</label></div>
             <div id="dataEmissaoField" class="input-field col s6 l2">
                <i class="material-icons picking">date_range</i>
-               <input type="text" id="dataEmissao" name="dataEmissao" class="datepicker" value="21/03/2018" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataEmissao_root" aria-invalid="false"><label class="truncate active" for="dataEmissao">Emissão *</label>
+               <input type="text" id="dataEmissao" name="dataEmissao" class="datepicker" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataEmissao_root" aria-invalid="false"><label class="truncate active" for="dataEmissao">Emissão *</label>
             </div>
             <div id="dataVencimentoField" class="input-field col s12 l2">
               <i class="material-icons picking">date_range</i>
-               <input type="text" id="dataVencimento" name="dataVencimento" class="datepicker" value="21/03/2018" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataValidade_root" aria-invalid="false"><label class="truncate active" for="dataEmissao">Validade *</label>
+               <input type="text" id="dataVencimento" name="dataVencimento" class="datepicker" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataValidade_root" aria-invalid="false"><label class="truncate active" for="dataEmissao">Validade *</label>
             </div>
             <div id="formaPagamentoIdField" class="input-field col s12 l6"><input class="autocomplete ui-autocomplete-input" id="formaPagamentoDescricao" name="formaPagamentoDescricao" data-url="/AutoComplete/FormaPagamento" data-url-post-modal="/FormaPagamento/FormModal" data-post-field="descricao" data-target="formaPagamentoId" autocomplete="off" type="text"><input name="formaPagamentoId" id="formaPagamentoId" type="hidden"><label class="truncate" for="formaPagamentoDescricao">Forma Pagamento *</label></div>
             <div id="condicaoParcelamentoIdField" class="input-field col s12 l6"><input class="autocomplete ui-autocomplete-input" id="condicaoParcelamentoDescricao" name="condicaoParcelamentoDescricao" data-url="/AutoComplete/CondicaoParcelamento" data-url-post-modal="/CondicaoParcelamento/FormModal" data-post-field="descricao" data-target="condicaoParcelamentoId" autocomplete="off" type="text"><input name="condicaoParcelamentoId" id="condicaoParcelamentoId" type="hidden"><label class="truncate" for="condicaoParcelamentoDescricao">Condição Parcelamento *</label></div>
@@ -99,7 +99,7 @@ $('#repetir').click(function() {
         $('#numeroRepeticoesField').show();
         $('#periodoFimField').show();
         
-    });
+});
 
      
  });
