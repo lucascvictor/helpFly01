@@ -100,25 +100,26 @@
         },
 
         {
-          'next #repetirField' : 'Já títulos repetidos são usados quando estes são frequentes, no caso, um aluguel fico a se receber ou pagar, serão 12 títulos ao longo do ano e ao invés de você cadastrar um por vez, existe a possibilidade de configurar apenas um e repetir os outros 11.',
+          'next #campoRepetir' : 'Já títulos repetidos são usados quando estes são frequentes, no caso, um aluguel fico a se receber ou pagar, serão 12 títulos ao longo do ano e ao invés de você cadastrar um por vez, existe a possibilidade de configurar apenas um e repetir os outros 11.',
+          'nextButton' : {className: 'myNext', text: 'Próximo'},
+          'skipButton' : {className: 'mySkip', text: 'Sair'},
+          'right': 100,
+        },
+
+        {
+          'next #tipoPeriodicidadeField' : 'Neste exemplo, vamos configurar apenas o de Mês Janeiro, ele será pago em dinheiro e a vista, por isso em “Condição de Parcelamento” marco a opção “A vista”.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
         {
-          'next #thin' : 'Neste exemplo, vamos configurar apenas o de Mês Janeiro, ele será pago em dinheiro e a vista, por isso em “Condição de Parcelamento” marco a opção “A vista”.',
+          'next #repetirBtn' : 'Agora selecionamos a opção “Repetir”.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
         {
-          'next .thin' : 'Agora selecionamos a opção “Repetir”.',
-          'nextButton' : {className: 'myNext', text: 'Próximo'},
-          'skipButton' : {className: 'mySkip', text: 'Sair'},
-        },
-
-        {
-          'next .thin' : 'Com as opções de repetições abertas, podemos ver que vamos apenas configurar quantas vezes mais o sistema irá repetir o título, não iremos alterar nada além das datas do mesmo.',
+          'next #tipoRepeticaoField' : 'Com as opções de repetições abertas, podemos ver que vamos apenas configurar quantas vezes mais o sistema irá repetir o título, não iremos alterar nada além das datas do mesmo.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
@@ -130,14 +131,14 @@
         },
 
         {
-          'next .thin' : 'Em Repetição podemos selecionar o modo em que consideraremos o número de repetições, tendo duas opções: informando o número por quantidade ou selecionando o período em que os títulos repetirão (Ex: 01/02/2018 à 01/12/2018). No nosso caso vamos selecionar a opção por quantidade.',
+          'next #tipoRepeticaoField' : 'Em Repetição podemos selecionar o modo em que consideraremos o número de repetições, tendo duas opções: informando o número por quantidade ou selecionando o período em que os títulos repetirão (Ex: 01/02/2018 à 01/12/2018). No nosso caso vamos selecionar a opção por quantidade.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
 
         {
-          'next .thin' : 'É preciso ficar bem atento ao número de repetições, pois muito se confundem aqui. Veja, precisamos gerar o título de Aluguel para o ano todo, logo serão 12 títulos, entretanto devemos entender que, já estamos criando um título e a partir dele criaremos outros 11 para somar os 12. Sendo assim colocamos 11 repetições.',
+          'next #tipoRepeticaoField' : 'É preciso ficar bem atento ao número de repetições, pois muito se confundem aqui. Veja, precisamos gerar o título de Aluguel para o ano todo, logo serão 12 títulos, entretanto devemos entender que, já estamos criando um título e a partir dele criaremos outros 11 para somar os 12. Sendo assim colocamos 11 repetições.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },

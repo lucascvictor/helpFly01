@@ -11,6 +11,11 @@
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li>
                   <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
+                  <li>
+		    <div class="fixed-action-btn"> 
+		        <a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+		    </div>
+		  </li>
                </ul>
             </div>
          </div>
@@ -35,7 +40,7 @@
             <div id="condicaoParcelamentoIdField" class="input-field col s12 l6"><input class="autocomplete ui-autocomplete-input" id="condicaoParcelamentoDescricao" name="condicaoParcelamentoDescricao" data-url="/AutoComplete/CondicaoParcelamento" data-url-post-modal="/CondicaoParcelamento/FormModal" data-post-field="descricao" data-target="condicaoParcelamentoId" autocomplete="off" type="text"><input name="condicaoParcelamentoId" id="condicaoParcelamentoId" type="hidden"><label class="truncate" for="condicaoParcelamentoDescricao">Condição Parcelamento *</label></div>
             <div id="categoriaIdField" class="input-field col s12 l6"><input class="autocomplete ui-autocomplete-input" id="categoriaDescricao" name="categoriaDescricao" data-url="/AutoComplete/CategoriaCP" data-url-post="/ContaPagar/NovaCategoriaDespesa" data-target="categoriaId" autocomplete="off" type="text"><input name="categoriaId" id="categoriaId" type="hidden"><label class="truncate" for="categoriaDescricao">Categoria Financeira *</label></div>
             <div id="observacaoField" class="input-field col s12"><textarea id="observacao" name="observacao" class="materialize-textarea"></textarea><label class="truncate" for="observacao">Observação</label></div>
-            <div id="repetirField" class="input-field col s12"><input id="repetir" name="repetir" value="true" type="checkbox"><label class="truncate" for="repetir">Repetir</label></div>
+            <div id="repetirField" class="input-field col s12"><input id="repetir" id="repetirBtn" name="repetir" value="true" type="checkbox"><label class="truncate" for="repetir">Repetir</label></div>
             <div id="tipoPeriodicidadeField" class="input-field col s6 m3 l3" >
                <div class="select-wrapper">
                   <span class="caret">▼</span><input class="select-dropdown" readonly="true" data-activates="select-options-1d9m3k8" value="Mensal" data-constrainwidth="undefined" type="text">
@@ -52,6 +57,7 @@
                      <option value="Anual">Anual</option>
                   </select>
                </div>
+            </div>
                <label class="truncate active" for="tipoPeriodicidade">Periodicidade</label>
             </div>
             <div id="tipoRepeticaoField" class="input-field col s6 m3 l3" >

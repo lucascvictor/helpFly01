@@ -24,6 +24,7 @@
       <div class="row">
          <form id="fly01frm" class="col s12" method="post" novalidate="novalidate">
             <input id="contaBancariaId" type="hidden" name="contaBancariaId">
+            <div id="periodoExtrato">
             <div id="dataInicialField" class="input-field col s6 m3 l4">
                <div class="picker" id="dataInicial_root" tabindex="0" aria-hidden="true">
                   <div class="picker__holder">
@@ -390,6 +391,7 @@
                </div>
                <input id="dataFinal" type="text" name="dataFinal" class="datepicker picker__input" value="19/02/2018" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataFinal_root"><label class="truncate active" for="dataFinal">Data Final</label>
             </div>
+            </div>
             <div id="fly01btngrpField" class="input-field col s12 m6 l4">
                <label class="truncate active" for="fly01btngrp">Selecione o período</label>
                <div id="fly01btngrp" class="btn-group input-field"><input id="btnDia" type="button" name="btnDia" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;0&quot;)" value="Dia"><input id="btnSemana" type="button" name="btnSemana" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;6&quot;)" value="Semana"><input id="btnMes" type="button" name="btnMes" class="btn col s4 active" onclick="fnAtualizarPeriodo(&quot;30&quot;)" value="Mês"></div>
@@ -539,6 +541,21 @@
          </div>
       </div>
    </div>
+
+<!-- Modal Trigger -->
+<a id="modalIndex" class="waves-effect waves-light btn modal-trigger hide " href="#modal1">Modal</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Rotina de Extrato</h4>
+    <p>A rotina de extrato possui uma função muito parecida com o fluxo de caixa, trazer as informações financeiras de seu sistema para você, porém a diferença é que desta vez você irá conseguir observar através de cada conta cadastrada<br><br>De forma mais específica você poderá selecionar o peŕiodo e a conta bancária e com isso poderá ver todas movimentações financeiras de sua conta.<br><br>Além disso na tela da rotina de extrato existem atalhos para outras rotinas, como conciliação bancária, importação de título e etc..<br>Caso queira aprender como usar esta rotina, basta clicar em >> <span class="orange lighten-1 white-text text-darken-2">Iniciar Tour</span> << na pŕopria tela.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Entendi</a>
+  </div>
+</div>
+
 @endsection
 
 @section('extrascript')
@@ -547,6 +564,18 @@
 
 	@include('financeiro.extrato.tour')
 
+<script>
+
+$(document).ready(function(){
+    $('.modal').modal();
+    document.getElementById("modalIndex").click();
+});
+
+
+
+           
+</script>
+
 @endsection
 
-											
+
