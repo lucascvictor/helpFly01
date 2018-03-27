@@ -21,10 +21,10 @@ class CreatePersonTable extends Migration
             $table->integer('type')->unsigned();
             $table->string('stateInscription');
             $table->bool('chkIsento');
-            $table->integer('personTypeNfseField')->unsigned();
+            $table->integer('personTypeNfse')->unsigned();
             $table->string('suframal');
             $table->string('municipalInscription');
-            $table->bool('simplesNacionalBool');
+            $table->bool('simplesNacional');
             $table->string('otherCityAutoComplete');
             $table->string('email');
             $table->string('phone');
@@ -35,11 +35,11 @@ class CreatePersonTable extends Migration
             $table->string('cityDescricao');
             $table->string('neighborhood');
             $table->string('adress');
-            $table->string('observationField');
-            $table->bool('isSupplierBool');   
-            $table->bool('isCarrierBool');
-            $table->bool('isCustomerBool');
-            $table->bool('isSalesManBool');
+            $table->string('observation');
+            $table->bool('isSupplier');   
+            $table->bool('isCarrier');
+            $table->bool('isCustomer');
+            $table->bool('isSalesMan');
 
             $table->rememberToken();
             $table->timestamps();
