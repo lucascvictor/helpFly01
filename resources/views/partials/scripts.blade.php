@@ -6,6 +6,7 @@
     function initTour() {
      /* var element = document.getElementById("tour");
       element.classList.remove("pulse"); */
+      $('html,body').scrollTop(0);
       
       var enjoyhint_instance = null;
     
