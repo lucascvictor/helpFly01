@@ -56,50 +56,19 @@
                   </tr>
                </thead>
                <tbody>
+                   @foreach($paymentsMethods as $paymentMethod)
                   <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">Dinheiro</td>
-                     <td nowrap="nowrap">Dinheiro</td>
+                     <td class="sorting_1" tabindex="0" nowrap="nowrap">{{ $paymentMethod->tipoFormaPagamentoField }}</td>
+                     <td nowrap="nowrap">{{ $paymentMethod->descricao }}</td>
                      <td nowrap="nowrap">
                         <input type="hidden" class="rowRecordId" value="34252f6a-f85a-4bc6-ac6d-482b886fa016"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown0"><i class="material-icons">more_vert</i></a>
                         <ul id="dropdown0" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('34252f6a-f85a-4bc6-ac6d-482b886fa016')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('34252f6a-f85a-4bc6-ac6d-482b886fa016')">Excluir</a></li>
+                           <li><a href="{{ url('/cadastros/formasdepagamento/edit')}}/{{ $paymentMethod->id }}">Editar</a></li>
+                           <li><a href="{{ url('/cadastros/formasdepagamento/delete')}}/{{ $paymentMethod->id }}">Excluir</a></li>
                         </ul>
                      </td>
                   </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">Cartão de Crédito</td>
-                     <td nowrap="nowrap">CARTÃO</td>
-                     <td nowrap="nowrap">
-                        <input type="hidden" class="rowRecordId" value="a00fe0c7-dc62-4ad9-ab79-7676f24c2acc"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown1"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropdown1" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('a00fe0c7-dc62-4ad9-ab79-7676f24c2acc')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('a00fe0c7-dc62-4ad9-ab79-7676f24c2acc')">Excluir</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">Transferência</td>
-                     <td nowrap="nowrap">Transferência Conta Banco do Brasil</td>
-                     <td nowrap="nowrap">
-                        <input type="hidden" class="rowRecordId" value="02f397a4-40d8-4ba4-9ce5-0959d9a8aff2"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown2"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropdown2" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('02f397a4-40d8-4ba4-9ce5-0959d9a8aff2')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('02f397a4-40d8-4ba4-9ce5-0959d9a8aff2')">Excluir</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">Transferência</td>
-                     <td nowrap="nowrap">Transferência Banco Itaú </td>
-                     <td nowrap="nowrap">
-                        <input type="hidden" class="rowRecordId" value="168af1ad-e1e0-417a-b811-4dd4d622f92c"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown3"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropdown3" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('168af1ad-e1e0-417a-b811-4dd4d622f92c')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('168af1ad-e1e0-417a-b811-4dd4d622f92c')">Excluir</a></li>
-                        </ul>
-                     </td>
-                  </tr>
+                  @endforeach              
                </tbody>
             </table>
             <div class="">

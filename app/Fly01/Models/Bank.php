@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Fly01\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Person extends Model
+class Bank extends Model
 {
     //
 }

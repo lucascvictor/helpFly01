@@ -18,12 +18,29 @@ class CreatePersonTable extends Migration
             $table->string('document')->unique();
             $table->string('name');
             $table->string('traddingName');
-            $table->integer('typeField')->unsigned();
+            $table->integer('type')->unsigned();
             $table->string('stateInscription');
-            $table->bool('chkIsento');
-            $table->integer('personTypeNfseField')->unsigned();
-            
-            
+            $table->boolean('chkIsento');
+            $table->integer('personTypeNfse')->unsigned();
+            $table->string('suframal');
+            $table->string('municipalInscription');
+            $table->boolean('simplesNacional');
+            $table->string('otherCityAutoComplete');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('contato');
+            $table->string('celPhone');
+            $table->string('zipCode');
+            $table->string('stateField');
+            $table->string('cityDescricao');
+            $table->string('neighborhood');
+            $table->string('adress');
+            $table->string('observation');
+            $table->boolean('isSupplier');   
+            $table->boolean('isCarrier');
+            $table->boolean('isCustomer');
+            $table->boolean('isSaller');
+
             $table->rememberToken();
             $table->timestamps();
         });
