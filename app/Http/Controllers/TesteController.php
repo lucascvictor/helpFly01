@@ -3,13 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Models\Product;
 
-use DB;
-
-class ClientesController extends Controller
+class TesteController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -17,7 +13,7 @@ class ClientesController extends Controller
      */
     public function index()
     {
-      return view('cadastros.clientes.index');
+        //
     }
 
     /**
@@ -27,7 +23,7 @@ class ClientesController extends Controller
      */
     public function create()
     {
-      return view('cadastros.clientes.create');
+        //
     }
 
     /**
@@ -85,6 +81,4 @@ class ClientesController extends Controller
     {
         //
     }
-
-
 }
