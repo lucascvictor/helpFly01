@@ -2,7 +2,6 @@
 
 namespace App\Fly01\Repositories;
 
-
 use App\Http\Requests;
 
 use App\Fly01\Models\PaymentMethod;

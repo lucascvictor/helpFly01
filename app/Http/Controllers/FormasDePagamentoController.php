@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use app\Fly01\Repositories\PaymentsMethodsRepository;
+use App\Fly01\Repositories\PaymentsMethodsRepository;
 
 class FormasDePagamentoController extends Controller
 {
