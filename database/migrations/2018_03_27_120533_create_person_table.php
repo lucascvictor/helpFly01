@@ -39,7 +39,7 @@ class CreatePersonTable extends Migration
             $table->bool('isSupplier');   
             $table->bool('isCarrier');
             $table->bool('isCustomer');
-            $table->bool('isSalesMan');
+            $table->bool('isSaller');
 
             $table->rememberToken();
             $table->timestamps();

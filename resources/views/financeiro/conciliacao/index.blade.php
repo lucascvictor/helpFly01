@@ -86,12 +86,7 @@
             dentro do sistema, isso permite com que você dê múltiplas baixas de títulos e que obtenha um controle preciso de suas finanças. <a onclick="initTour();" class="btn btn-small orange"> Clique aqui</a> para aprender como
             realizar a conciliação bancária.</p>
       </div>
-<<<<<<< HEAD
 </div>  
-=======
-</div>
-
->>>>>>> a7e0c8b3380016ffa4ee42069312b8e9e285ba4a
 @endsection
 
 
@@ -111,9 +106,5 @@ $("#menu").click(function(){
 });
            
 </script>
-<<<<<<< HEAD
-
-=======
->>>>>>> a7e0c8b3380016ffa4ee42069312b8e9e285ba4a
  
 @endsection	
