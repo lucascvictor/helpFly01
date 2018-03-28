@@ -40,22 +40,26 @@ Route::group(['prefix' => 'cadastros'], function () {
     Route::group(['prefix' => 'clientes'], function () {
         Route::get('/', 'ClientesController@index')->name('clientes');
         Route::get('/create', 'ClientesController@create')->name('clientes.create');
+        Route::get('/edit/{id}', 'ClientesController@edit')->name('clientes.edit');
     });
 
     Route::group(['prefix' => 'fornecedores'], function () {
         Route::get('', 'FornecedoresController@index')->name('fornecedores');
         Route::get('/create', 'FornecedoresController@create')->name('fornecedores.create');
+        Route::get('/edit/{id}', 'FornecedoresController@edit')->name('fornecedores.edit');
         Route::get('/pagetour', 'FornecedoresController@pageTour')->name('fornecedores.pagetour');
     });
 
     Route::group(['prefix' => 'condicoesdeparcelamento'], function () {
         Route::get('/', 'CondicoesDeParcelamentoController@index')->name('condicoesdeparcelamento');
         Route::get('/create', 'CondicoesDeParcelamentoController@create')->name('condicoesdeparcelamento.create');
+        Route::get('/edit/{id}', 'CondicoesDeParcelamentoController@edit')->name('condicoesdeparcelamento.edit');
     });
 
     Route::group(['prefix' => 'categoriasfinanceiras'], function () {
         Route::get('/', 'CategoriasFinanceirasController@index')->name('categoriasfinanceiras');
         Route::get('/create', 'CategoriasFinanceirasController@create')->name('categoriasfinanceiras.create');
+        Route::get('/edit/{id}', 'CategoriasFinanceirasController@edit')->name('categoriasfinanceiras.edit');
     });
 
     Route::group(['prefix' => 'formasdepagamento'], function () {    
@@ -67,6 +71,7 @@ Route::group(['prefix' => 'cadastros'], function () {
     Route::group(['prefix' => 'contasbancarias'], function () {   
         Route::get('/', 'ContasBancariasController@index')->name('contasbancarias');
         Route::get('/create', 'ContasBancariasController@create')->name('contasbancarias.create');
+        Route::get('/edit/{id}', 'ContasBancariasController@edit')->name('contasbancarias.edit');
     });
 });
 
