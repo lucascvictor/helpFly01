@@ -7,8 +7,7 @@
           'next #periodoExtrato': 'Em descrição, insira no nome do Título (Ex: Aluguel Sede).',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          'bottom': 20,
-
+          'bottom': -50,
   
         },
    
