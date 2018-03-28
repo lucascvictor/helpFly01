@@ -18,4 +18,9 @@ class PaymentsMethodsRepository
         return PaymentMethod::all();
     }
 
+    public function getPaymentMethod($id)
+    {
+        return PaymentMethod::select('*')->where('id', $id)->first()->get();
+    }
+
 }
