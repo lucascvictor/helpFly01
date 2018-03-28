@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class FinancialCategory extends Model
 {
-    //
+    protected $table = "financial_category";
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "039d1c219751700050809895c6a26cde",
+    "content-hash": "27756b88c67a743b47b2bc85287abecb",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -4142,7 +4142,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0.0"
+        "php": ">=7.0.0",
+        "ext-pdo_sqlite": "*"
     },
     "platform-dev": []
 }
