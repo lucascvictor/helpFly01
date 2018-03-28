@@ -61,7 +61,7 @@ Route::group(['prefix' => 'cadastros'], function () {
     Route::group(['prefix' => 'formasdepagamento'], function () {    
         Route::get('/', 'FormasDePagamentoController@index')->name('formasdepagamento');
         Route::get('/create', 'FormasDePagamentoController@create')->name('formasdepagamento.create');
-        Route::get('/edit', 'FormasDePagamentoController@edit')->name('formasdepagamento.edit');
+        Route::get('/edit/{id}', 'FormasDePagamentoController@edit')->name('formasdepagamento.edit');
     });
 
     Route::group(['prefix' => 'contasbancarias'], function () {   

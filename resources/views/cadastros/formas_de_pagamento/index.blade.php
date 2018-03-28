@@ -58,11 +58,11 @@
                <tbody>
                    @foreach($paymentsMethods as $paymentMethod)
                   <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">{{ $paymentMethod->tipoFormaPagamentoField }}</td>
+                     <td class="sorting_1" tabindex="{{$paymentMethod->id}}" nowrap="nowrap">{{ $paymentMethod->tipoFormaPagamentoField }}</td>
                      <td nowrap="nowrap">{{ $paymentMethod->descricao }}</td>
                      <td nowrap="nowrap">
-                        <input type="hidden" class="rowRecordId" value="34252f6a-f85a-4bc6-ac6d-482b886fa016"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown0"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropdown0" class="dropdown-content">
+                        <input type="hidden" class="rowRecordId" value="34252f6a-f85a-4bc6-ac6d-482b886fa016"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown{{$paymentMethod->id}}"><i class="material-icons">more_vert</i></a>
+                        <ul id="dropdown{{$paymentMethod->id}}" class="dropdown-content">
                            <li><a href="{{ url('/cadastros/formasdepagamento/edit')}}/{{ $paymentMethod->id }}">Editar</a></li>
                            <li><a href="{{ url('/cadastros/formasdepagamento/delete')}}/{{ $paymentMethod->id }}">Excluir</a></li>
                         </ul>

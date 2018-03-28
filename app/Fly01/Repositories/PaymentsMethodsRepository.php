@@ -20,7 +20,7 @@ class PaymentsMethodsRepository
 
     public function getPaymentMethod($id)
     {
-        return PaymentMethod::select('*')->where('id', $id)->first()->get();
+        return PaymentMethod::select('*')->where('id','=', $id)->first();
     }
 
 }
