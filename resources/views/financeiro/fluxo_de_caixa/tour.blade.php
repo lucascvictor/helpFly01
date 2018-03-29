@@ -4,25 +4,27 @@
 
       var enjoyhint_script_data = [
         {
-          'next #areageral': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
+          'next #areageral': 'Você pode visualizar o fluxo de caixa da data atual...',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
+          'top': -20,
         },
         
         {
-          'next #dataInicialField': 'Você pode visualizar o fluxo de caixa da data atual, ou selecionar um determinado período colocando a Data inicial e a Data Final.',
+          'next #dataInicialField': 'Também é possível selecionar um determinado período colocando a Data inicial e a Data Final..',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+          'top': -10,
         },
         
         {
           'next #fly01btngrpField':'Ou selecionar através dos botões o dia, semana ou do mês atual.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+          'top': -10,
         },
-
-         {
+          
+        {
           'next #dfly01cardCP' :'Nesta parte você visualiza os dados financeiros da sua empresa através do período selecionado.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
