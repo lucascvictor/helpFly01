@@ -21,6 +21,7 @@
 
 
         </style>
+          @include('partials.styles')
     </head>
     <body style="background-color: #ADCEDD;">
         <div class="container">
