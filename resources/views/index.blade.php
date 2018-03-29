@@ -141,7 +141,32 @@
       </div>
 
      </div>
-                         </div>
+     <div id="appMenu" class="">
+   <ul>
+      <li>
+         <a href="http://gestao.fly01dev.com.br/" target="_blank" style="">
+            <div class="app with-tooltip" id="gestao" data-tooltip="Fly01 Gestão" data-tooltip-id="xctc0cb">
+               <div class="app-content white-text" style="background:#f37021;"><p style="font-size: 9px">USSD: ${{ $valores['valores']['USD']['valor'] }} </p></div>
+            </div>
+         </a>
+      </li>
+      <li>
+         <a href="http://faturamento.fly01dev.com.br" target="_blank">
+            <div class="app with-tooltip" id="00ba2502-447e-4670-8885-b67d64496141" data-tooltip="Fly01 Faturamento" data-tooltip-id="f2svhod">
+               <div class="app-content white-text" style="background:#6f1200;"><p style="font-size: 9px">EUR: €{{ $valores['valores']['EUR']['valor'] }} </p></div>
+            </div>
+         </a>
+      </li>
+      <li>
+         <a href="http://compras.fly01dev.com.br" target="_blank">
+            <div class="app with-tooltip" id="65e3ba3e-6fcd-4527-b2a4-9dc37c80e285" data-tooltip="Fly01 Compras" data-tooltip-id="e9k129e">
+               <div class="app-content white-text" style="background:#bf311a;"><p style="font-size: 9px">BTC: ${{ $valores['valores']['BTC']['valor'] }} </p></div>
+            </div>
+         </a>
+      </li>
+   </ul>
+</div>
+   </div>
    
    
    
