@@ -119,7 +119,6 @@
             </div>
          </div>
       </div>
-<<<<<<< HEAD
    </div>
 </div>
 <div id="appMenu" class="">
@@ -127,61 +126,31 @@
       <li>
          <a href="http://gestao.fly01dev.com.br/" target="_blank">
             <div class="app with-tooltip" id="gestao" data-tooltip="Fly01 Gestão" data-tooltip-id="umbib5g">
-               <div class="app-content white-text" style="background:#f37021;"><img class="app-icon loaded" src="https://cdnfly01.azureedge.net/img/icon/gestao.png" onload="$(this).addClass('loaded')"></div>
-=======
-
-     </div>
-     <div id="appMenu" class="">
-   <ul>
-      <li>
-         <a href="http://gestao.fly01dev.com.br/" target="_blank" style="">
-            <div class="app with-tooltip" id="gestao" data-tooltip="Fly01 Gestão" data-tooltip-id="xctc0cb">
-               <div class="app-content white-text" style="background:#f37021;"><p style="font-size: 9px">USSD: ${{ $valores['valores']['USD']['valor'] }} </p></div>
->>>>>>> c30fc282f00dd388bb12b1a4a40b18f72865e4c8
+               <div class="app-content white-text" style="background:#f37021;"><p style="font-size: 9px">USD: ${{ $valores['valores']['USD']['valor'] }} </p></div>
             </div>
          </a>
       </li>
       <li>
          <a href="http://faturamento.fly01dev.com.br" target="_blank">
-<<<<<<< HEAD
             <div class="app with-tooltip" id="00ba2502-447e-4670-8885-b67d64496141" data-tooltip="Fly01 Faturamento" data-tooltip-id="4ze413h">
-               <div class="app-content white-text" style="background:#6f1200;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/faturamento.png" onload="$(this).addClass('loaded')"></div>
-=======
-            <div class="app with-tooltip" id="00ba2502-447e-4670-8885-b67d64496141" data-tooltip="Fly01 Faturamento" data-tooltip-id="f2svhod">
-               <div class="app-content white-text" style="background:#6f1200;"><p style="font-size: 9px">EUR: €{{ $valores['valores']['EUR']['valor'] }} </p></div>
->>>>>>> c30fc282f00dd388bb12b1a4a40b18f72865e4c8
+               <div class="app-content white-text" style="background:#6f1200;"><p style="font-size: 9px">EUR: ${{ $valores['valores']['EUR']['valor'] }} </p></div>
             </div>
          </a>
       </li>
       <li>
          <a href="http://compras.fly01dev.com.br" target="_blank">
-<<<<<<< HEAD
-            <div class="app with-tooltip" id="65e3ba3e-6fcd-4527-b2a4-9dc37c80e285" data-tooltip="Fly01 Compras" data-tooltip-id="g5pb31h">
-               <div class="app-content white-text" style="background:#bf311a;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/compras.png" onload="$(this).addClass('loaded')"></div>
-            </div>
-         </a>
-      </li>
-      <li>
-         <a href="http://estoque.fly01dev.com.br" target="_blank">
-            <div class="app with-tooltip" id="f259ea8b-f966-4c4f-8b18-97fa4bf2af87" data-tooltip="Fly01 Estoque" data-tooltip-id="far0sn1">
-               <div class="app-content white-text" style="background:#00b274;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/estoque.png" onload="$(this).addClass('loaded')"></div>
-=======
             <div class="app with-tooltip" id="65e3ba3e-6fcd-4527-b2a4-9dc37c80e285" data-tooltip="Fly01 Compras" data-tooltip-id="e9k129e">
                <div class="app-content white-text" style="background:#bf311a;"><p style="font-size: 9px">BTC: ${{ $valores['valores']['BTC']['valor'] }} </p></div>
->>>>>>> c30fc282f00dd388bb12b1a4a40b18f72865e4c8
             </div>
          </a>
       </li>
    </ul>
 </div>
-<<<<<<< HEAD
-=======
    </div>
    
    
    
    
->>>>>>> c30fc282f00dd388bb12b1a4a40b18f72865e4c8
 @endsection
 @section('footer')
 <footer class="page-footer black">
