@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Models\Product;
+
+use App\Fly01\Repositories\PersonsRepository;
 
 use DB;
 
@@ -17,7 +18,9 @@ class ClientesController extends Controller
      */
     public function index()
     {
-      return view('cadastros.clientes.index');
+        $personsRepository = new PersonsRepository;
+        $customers = $personsRepository->listCustomers();
+        return view('cadastros.clientes.index')->with('customers', $customers);
     }
 
     /**

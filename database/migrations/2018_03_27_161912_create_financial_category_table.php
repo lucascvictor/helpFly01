@@ -16,9 +16,10 @@ class CreateFinancialCategoryTable extends Migration
         Schema::create('financial_category', function (Blueprint $table) {
             $table->increments('id');
             $table->string('descricao');
+            $table->string('codigo');
             $table->integer('tipoCarteira')->unsigned();
             $table->integer('classe')->unsigned();
-            $table->integer('categoriaPaiId')->unsigned();
+            $table->integer('categoriaPaiId')->nullable();
             $table->timestamps();
         });
     }

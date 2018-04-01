@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Fly01\Repositories;
+
+
+use App\Http\Requests;
+
+use App\Fly01\Models\Person;
+
+use Auth;
+
+use DB;
+
+class PersonsRepository
+{
+
+public function listCustomers()
+{
+  return Person::select('*')->where('isCustomer', 1)->get();
+}
+
+
+}

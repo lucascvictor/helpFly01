@@ -124,27 +124,16 @@
 <div id="appMenu" class="">
    <ul>
       <li>
-<<<<<<< HEAD
-         <a href="http://gestao.fly01dev.com.br/" target="_blank" style="">
-            <div class="app with-tooltip z-depth-3" id="gestao" data-tooltip="Fly01 Gestão" data-tooltip-id="xctc0cb">
-               <div class="app-content white-text" style="background:#f37021;"><p style="font-size: 9px">USSD: ${{ $valores['valores']['USD']['valor'] }} </p></div>
-=======
          <a href="http://gestao.fly01dev.com.br/" target="_blank">
             <div class="app with-tooltip" id="gestao" data-tooltip="Fly01 Gestão" data-tooltip-id="umbib5g">
                <div class="app-content white-text" style="background:#f37021;"><p style="font-size: 9px">USD: ${{ $valores['valores']['USD']['valor'] }} </p></div>
->>>>>>> 94d3a4c03c60553ad0744a0cb1b3555d2a071f99
             </div>
          </a>
       </li>
       <li>
          <a href="http://faturamento.fly01dev.com.br" target="_blank">
-<<<<<<< HEAD
-            <div class="app with-tooltip z-depth-3" id="00ba2502-447e-4670-8885-b67d64496141" data-tooltip="Fly01 Faturamento" data-tooltip-id="f2svhod">
-               <div class="app-content white-text" style="background:#6f1200;"><p style="font-size: 9px">EUR: €{{ $valores['valores']['EUR']['valor'] }} </p></div>
-=======
             <div class="app with-tooltip" id="00ba2502-447e-4670-8885-b67d64496141" data-tooltip="Fly01 Faturamento" data-tooltip-id="4ze413h">
                <div class="app-content white-text" style="background:#6f1200;"><p style="font-size: 9px">EUR: ${{ $valores['valores']['EUR']['valor'] }} </p></div>
->>>>>>> 94d3a4c03c60553ad0744a0cb1b3555d2a071f99
             </div>
          </a>
       </li>

@@ -57,11 +57,12 @@
                   </tr>
                </thead>
                <tbody>
+                  @foreach($categories as $category)
                   <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">02</td>
-                     <td nowrap="nowrap">DESPESAS</td>
-                     <td nowrap="nowrap">Sintético</td>
-                     <td nowrap="nowrap"></td>
+                     <td class="sorting_1" tabindex="0" nowrap="nowrap">{{ $category->codigo }} </td>
+                     <td nowrap="nowrap">{{ $category->descricao }} </td>
+                     <td nowrap="nowrap">{{ $category->classe }} </td>
+                     <td nowrap="nowrap">{{ $category->categoriaPaiId }} </td>
                      <td nowrap="nowrap">
                         <input type="hidden" class="rowRecordId" value="742babcc-f879-4193-a009-7b14237557f2"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown0"><i class="material-icons">more_vert</i></a>
                         <ul id="dropdown0" class="dropdown-content">
@@ -70,32 +71,7 @@
                         </ul>
                      </td>
                   </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">02.01</td>
-                     <td nowrap="nowrap">PRODUTOS DE LIMPEZA</td>
-                     <td nowrap="nowrap">Analítico</td>
-                     <td nowrap="nowrap">DESPESAS</td>
-                     <td nowrap="nowrap">
-                        <input type="hidden" class="rowRecordId" value="a115a8de-7447-410c-8dc0-77e16bc5c486"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown1"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropdown1" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('a115a8de-7447-410c-8dc0-77e16bc5c486')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('a115a8de-7447-410c-8dc0-77e16bc5c486')">Excluir</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap">02.02</td>
-                     <td nowrap="nowrap">MATERIAIS ADMINISTRATIVOS</td>
-                     <td nowrap="nowrap">Analítico</td>
-                     <td nowrap="nowrap">DESPESAS</td>
-                     <td nowrap="nowrap">
-                        <input type="hidden" class="rowRecordId" value="f47a5e97-4b7e-4163-92f2-59a79edfcf47"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown2"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropdown2" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('f47a5e97-4b7e-4163-92f2-59a79edfcf47')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('f47a5e97-4b7e-4163-92f2-59a79edfcf47')">Excluir</a></li>
-                        </ul>
-                     </td>
-                  </tr>
+                  @endforeach
                   <tr role="row" class="even" id="CatSintVendas">
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">03</td>
                      <td nowrap="nowrap">VENDAS</td>
