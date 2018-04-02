@@ -69,8 +69,8 @@
             </div>
          </div>
 		 </div>
-
-         <div id="dfly01chart" class="col s12 m12">
+        <div class="col m1 l1"> </div>
+         <div id="dfly01chart" class="col s12 m10 l10">
             <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor">
                <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
                   <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
@@ -83,6 +83,7 @@
             <canvas id="fly01chart" style="display: block; width: 1142px; height: 571px;" width="1142" height="571" class="chartjs-render-monitor"></canvas>
          
          </div>
+         <div class="col m1 l1"> </div>
 
          <div class="input-field col s12">
             <div id="fly01dt_wrapper" class="col s12">

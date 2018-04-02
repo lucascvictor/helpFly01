@@ -43,7 +43,7 @@
                                 ' pois clicando em cima de uma das opções você a elimina da visualização).',
           'nextButton' : {className: 'myNext', text: 'Próximo', href: "#fly01dt"},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-  
+          'top': 300,
         },
 
          {
