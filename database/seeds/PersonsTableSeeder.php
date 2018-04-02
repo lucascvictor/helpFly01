@@ -13,9 +13,10 @@ class PersonsTableSeeder extends Seeder
     {
         DB::table('person')->delete();
         DB::table('person')->insert([
+            //clientes
             0=> [
                 "id" =>1,
-                "document" => '	37630811861',
+                "document" => '	37630811888',
                 "name" => 'Allan Rogge',
                 "email" => 'a.capinhas@tvglobo.com.br',
                 'type' => 1,
@@ -38,7 +39,7 @@ class PersonsTableSeeder extends Seeder
 
             2=> [
                 "id" =>3,
-                "document" => '	502285666855',
+                "document" => '	502285666815',
                 "name" => 'Luciano de Almeida',
                 "email" => 'a.luciano@rordkillo.com.br',
                 'type' => 1,
@@ -47,7 +48,19 @@ class PersonsTableSeeder extends Seeder
                 'isCustomer' => 1,
                 'isSaller' => 0,
                 ],
-  
+
+            //fornecedores
+            10=> [
+                "id" =>11,
+                "document" => '	37630811861',
+                "name" => 'Fornecedor 1',
+                "email" => 'a.fornecedor@fornecedor.com.br',
+                'type' => 1,
+                'isSupplier' => 1,
+                'isCarrier' => 0,
+                'isCustomer' => 0,
+                'isSaller' => 0,
+                ],
         ]);
     }
 
