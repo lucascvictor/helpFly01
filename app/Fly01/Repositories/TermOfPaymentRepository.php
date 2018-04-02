@@ -19,5 +19,4 @@ public function getCategories()
   return FinancialCategory::all();
 }
 
-
 }
