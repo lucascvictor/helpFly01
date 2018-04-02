@@ -31,8 +31,8 @@ class CreatePersonTable extends Migration
             $table->string('contato')->nullable();
             $table->string('celPhone')->nullable();
             $table->string('zipCode')->nullable();
-            $table->string('stateField')->nullable();
-            $table->string('cityDescricao')->nullable();
+            $table->string('state')->nullable();
+            $table->string('city')->nullable();
             $table->string('neighborhood')->nullable();
             $table->string('adress')->nullable();
             $table->string('observation')->nullable();
