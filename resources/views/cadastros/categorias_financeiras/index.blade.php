@@ -57,22 +57,24 @@
                   </tr>
                </thead>
                <tbody>
+                  <?php $i=0;?>
                   @foreach($categories as $category)
-                  <tr role="row" class="odd">
+                  <tr role="row" class="odd" @if($category->classe == 1)id="CatSintVendas" @else id="CatAnalVendas" @endif>
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">{{ $category->codigo }} </td>
                      <td nowrap="nowrap">{{ $category->descricao }} </td>
-                     <td nowrap="nowrap">{{ $category->classe }} </td>
-                     <td nowrap="nowrap">{{ $category->categoriaPaiId }} </td>
+                     <td nowrap="nowrap">@if($category->classe == 1) Sintético @else Analítico @endif</td>
+                     <td nowrap="nowrap">@if($category->classe == 1)  @else {{ $category->categoriaPaiId }} @endif </td>
                      <td nowrap="nowrap">
                         <input type="hidden" class="rowRecordId" value="742babcc-f879-4193-a009-7b14237557f2"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown0"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropdown0" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('742babcc-f879-4193-a009-7b14237557f2')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('742babcc-f879-4193-a009-7b14237557f2')">Excluir</a></li>
+                        <ul id="dropdown{{$category->id}}" class="dropdown-content">
+                           <li><a href="{{ url('/') }}">Editar</a></li>
+                           <li><a href="{{ url('/') }}">Excluir</a></li>
                         </ul>
                      </td>
                   </tr>
+                  <?php $i++; ?>
                   @endforeach
-                  <tr role="row" class="even" id="CatSintVendas">
+                  <tr role="row" class="even" >
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">03</td>
                      <td nowrap="nowrap">VENDAS</td>
                      <td nowrap="nowrap">Sintético</td>
@@ -85,7 +87,7 @@
                         </ul>
                      </td>
                   </tr>
-                  <div id="CatAnalVendas">
+                 
                   <tr role="row" class="odd">
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">03.01</td>
                      <td nowrap="nowrap">VENDAS ELETRONICOS</td>
@@ -112,7 +114,7 @@
                         </ul>
                      </td>
                   </tr>
-                  </div>
+                 
                   <tr role="row" class="odd">
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">04</td>
                      <td nowrap="nowrap">RECEITAS</td>

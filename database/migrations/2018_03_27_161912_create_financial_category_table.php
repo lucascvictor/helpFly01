@@ -19,7 +19,7 @@ class CreateFinancialCategoryTable extends Migration
             $table->string('codigo');
             $table->integer('tipoCarteira')->unsigned();
             $table->integer('classe')->unsigned();
-            $table->integer('categoriaPaiId')->nullable();
+            $table->string('categoriaPaiId')->nullable();
             $table->timestamps();
         });
     }
