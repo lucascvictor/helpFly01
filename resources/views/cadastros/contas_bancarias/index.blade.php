@@ -35,39 +35,19 @@
                </tr>
             </thead>
             <tbody>
+            @foreach($banks as $bank)
                <tr role="row" class="odd">
-                  <td class="sorting_1" tabindex="0" nowrap="nowrap">CONTA 1</td>
-                  <td nowrap="nowrap">BANCO DO BRASIL S.A.</td>
+                  <td class="sorting_{{$bank->id}}" tabindex="0" nowrap="nowrap">{{ $bank->nomeConta }}</td>
+                  <td nowrap="nowrap">{{ $bank->bancoNome }}</td>
                   <td nowrap="nowrap">
                      <input type="hidden" class="rowRecordId" value="d365c361-55d3-44f4-bdb5-d185486e27fe"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown0"><i class="material-icons">more_vert</i></a>
                      <ul id="dropdown0" class="dropdown-content">
-                        <li><a href="javascript:void(0)" onclick="fnEditar('d365c361-55d3-44f4-bdb5-d185486e27fe')">Editar</a></li>
-                        <li><a href="javascript:void(0)" onclick="fnExcluir('d365c361-55d3-44f4-bdb5-d185486e27fe')">Excluir</a></li>
+                        <li><a href="{{ url('') }}" >Editar</a></li>
+                        <li><a href="{{ url('') }}" >Excluir</a></li>
                      </ul>
                   </td>
                </tr>
-               <tr role="row" class="even">
-                  <td class="sorting_1" tabindex="0" nowrap="nowrap">Conta Demontrativa</td>
-                  <td nowrap="nowrap">ITAU UNIBANCO S.A.</td>
-                  <td nowrap="nowrap">
-                     <input type="hidden" class="rowRecordId" value="a8682cd6-415c-46bc-adc1-b0a3b422159f"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown3"><i class="material-icons">more_vert</i></a>
-                     <ul id="dropdown3" class="dropdown-content">
-                        <li><a href="javascript:void(0)" onclick="fnEditar('a8682cd6-415c-46bc-adc1-b0a3b422159f')">Editar</a></li>
-                        <li><a href="javascript:void(0)" onclick="fnExcluir('a8682cd6-415c-46bc-adc1-b0a3b422159f')">Excluir</a></li>
-                     </ul>
-                  </td>
-               </tr>
-               <tr role="row" class="odd">
-                  <td class="sorting_1" tabindex="0" nowrap="nowrap">Conta Suporte</td>
-                  <td nowrap="nowrap">BANCO ITAU BBA S.A.</td>
-                  <td nowrap="nowrap">
-                     <input type="hidden" class="rowRecordId" value="2d4d453f-f9e6-44e9-9993-fe4e0003d02b"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown4"><i class="material-icons">more_vert</i></a>
-                     <ul id="dropdown4" class="dropdown-content">
-                        <li><a href="javascript:void(0)" onclick="fnEditar('2d4d453f-f9e6-44e9-9993-fe4e0003d02b')">Editar</a></li>
-                        <li><a href="javascript:void(0)" onclick="fnExcluir('2d4d453f-f9e6-44e9-9993-fe4e0003d02b')">Excluir</a></li>
-                     </ul>
-                  </td>
-               </tr>
+            @endforeach
             </tbody>
          </table>
          <div class="">
