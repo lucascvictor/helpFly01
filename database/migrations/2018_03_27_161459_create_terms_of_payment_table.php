@@ -16,7 +16,7 @@ class CreateTermsOfPaymentTable extends Migration
         Schema::create('terms_of_payment', function (Blueprint $table) {
             $table->increments('id');
             $table->string('descricao');
-            $table->string('TipoSimulacaoField');
+            $table->string('TipoSimulacao');
             $table->string('qtdParcelas');
             $table->string('condicoesParcelamento');
             $table->timestamps();
