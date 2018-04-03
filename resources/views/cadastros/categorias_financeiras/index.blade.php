@@ -63,7 +63,7 @@
                      <td class="sorting_1" tabindex="0" nowrap="nowrap">{{ $category->codigo }} </td>
                      <td nowrap="nowrap">{{ $category->descricao }} </td>
                      <td nowrap="nowrap">@if($category->classe == 1) Sintético @else Analítico @endif</td>
-                     <td nowrap="nowrap">@if($category->classe == 1)  @else {{ $category->categoriaPaiId }} @endif </td>
+                     <td nowrap="nowrap">@if($category->classe == 1)  @else @foreach($categories as $cat)@if($cat->codigo == $category->categoriaPaiId){{ $cat->descricao }}@endif @endforeach @endif </td>
                      <td nowrap="nowrap">
                         <input type="hidden" class="rowRecordId" value="742babcc-f879-4193-a009-7b14237557f2"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown0"><i class="material-icons">more_vert</i></a>
                         <ul id="dropdown{{$category->id}}" class="dropdown-content">
