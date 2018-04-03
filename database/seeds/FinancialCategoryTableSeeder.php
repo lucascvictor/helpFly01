@@ -37,6 +37,56 @@ class FinancialCategoryTableSeeder extends Seeder
                 "classe" => 2,
                 'categoriaPaiId' => '02',
                 ],
+            3=> [
+                "id" =>4,
+                "codigo" => '03',
+                "descricao" => 'VENDAS',
+                "tipoCarteira" => 2,
+                "classe" => 1,
+                'categoriaPaiId' => '',
+                ],
+            4=> [
+                "id" =>5,
+                "codigo" => '03.01',
+                "descricao" => 'VENDAS ELETRONICOS',
+                "tipoCarteira" => 2,
+                "classe" => 2,
+                'categoriaPaiId' => '03',
+                ],
+            5=> [
+                "id" =>6,
+                "codigo" => '03.02',
+                "descricao" => 'VENDAS PERIFERICOS',
+                "tipoCarteira" => 2,
+                "classe" => 2,
+                'categoriaPaiId' => '03',
+                ],
+            6=> [
+                "id" =>7,
+                "codigo" => '04',
+                "descricao" => 'VENDAS',
+                "tipoCarteira" => 2,
+                "classe" => 1,
+                'categoriaPaiId' => '',
+                ],
+            7=> [
+                "id" =>8,
+                "codigo" => '04.01',
+                "descricao" => 'RECEITA DE COMISSÕES',
+                "tipoCarteira" => 2,
+                "classe" => 2,
+                'categoriaPaiId' => '03',
+                ],
+            8=> [
+                "id" =>9,
+                "codigo" => '04.02',
+                "descricao" => 'CATEGORIA EXEMPLO',
+                "tipoCarteira" => 2,
+                "classe" => 2,
+                'categoriaPaiId' => '03',
+                ],
+
+
         ]);
     }
 
