@@ -34,5 +34,11 @@ class PersonsRepository
     return Person::select('*')->where('isCarrier', 1)->get();
   }
 
+  public function searchByName($query)
+  {
+    return Person::select('*')->where('name', 'LIKE', '%'.$query.'%')->get();
+  }
+  
+
 
 }

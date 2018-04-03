@@ -90,4 +90,14 @@ class ClientesController extends Controller
     }
 
 
+    public function search()
+    {	
+        $data= Input::all();
+        $query = $data['query']; 
+        $personsRepository = new PersonsRepository;
+        $customers = $personsRepository->searchByName($query);       		
+        return Response::json(['result'   => $customers]); 
+    }
+
+
 }

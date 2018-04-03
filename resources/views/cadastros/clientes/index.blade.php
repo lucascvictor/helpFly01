@@ -30,7 +30,7 @@
                <thead>
                   <tr id="columns" role="row">
                      <th class="sorting_asc" tabindex="0" aria-controls="fly01dt" rowspan="1" colspan="1" style="width: 333px;" aria-sort="ascending" aria-label="searchCliente: Ordenar colunas de forma descendente">
-                        <div id="nomeField" class="input-field fly01dt-filter "><input id="nome" name="nome" type="search"><i class="material-icons">search</i><label class="truncate" for="nome">Cliente</label></div>
+                        <div id="nomeField" class="input-field fly01dt-filter "><input id="nomeSearch" name="nomeSearch" type="search"><i class="material-icons">search</i><label class="truncate" for="nome">Cliente</label></div>
                      </th>
                      <th class="sorting" tabindex="0" aria-controls="fly01dt" rowspan="1" colspan="1" style="width: 334px;" aria-label="CPF / CNPJ: Ordenar colunas de forma ascendente">
                         <div id="cpfcnpjField" class="input-field fly01dt-filter "><input id="cpfcnpj" name="cpfcnpj" type="text" class="masked cpfcnpj" data-index="1"><label class="truncate" for="cpfcnpj">CPF / CNPJ</label></div>
@@ -65,6 +65,13 @@
          </div>
       </div>
    </div>
+
+@endsection
+
+
+@section('extrascript')
+
+@include('cadastros.clientes.search')
 
 @endsection
 			
