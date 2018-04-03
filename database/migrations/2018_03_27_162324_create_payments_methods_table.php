@@ -15,7 +15,7 @@ class CreatePaymentsMethodsTable extends Migration
     {
         Schema::create('payments_methods', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('tipoFormaPagamentoField');
+            $table->integer('tipoFormaPagamento');
             $table->integer('descricao');
             $table->timestamps();
         });
