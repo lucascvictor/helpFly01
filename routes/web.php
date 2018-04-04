@@ -39,7 +39,7 @@ Route::group(['prefix' => 'cadastros'], function () {
 
     Route::group(['prefix' => 'clientes'], function () {
         Route::get('/', 'ClientesController@index')->name('clientes');
-        Route::post('/search', 'ClientesController@search')->name('clientes.search');
+        Route::get('/search', 'ClientesController@search')->name('clientes.search');
         Route::get('/create', 'ClientesController@create')->name('clientes.create');
         Route::get('/edit/{id}', 'ClientesController@edit')->name('clientes.edit');
     });

@@ -1,4 +1,6 @@
 
+    <meta name="_token" content="{{ csrf_token() }}">
+    
     <link href="{{ url('css/fly01ui103.css') }}" rel="stylesheet">
    
     <link href="{{ url('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
