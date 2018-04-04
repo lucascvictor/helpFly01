@@ -8,6 +8,8 @@ use App\Fly01\Repositories\PersonsRepository;
 
 use DB;
 
+use Response;
+
 class ClientesController extends Controller
 {
 
@@ -90,14 +92,12 @@ class ClientesController extends Controller
     }
 
     public function search(Request $request)
-    {
-        if ($request->ajax()) {
-            $data= Input::all();
-            $query = $data['query']; 
+    {     
+            $query= $request->search; 
             $personsRepository = new PersonsRepository;
-            $customers = $personsRepository->searchByName($query);       		
-            return Response::json(['result'   => $customers]); 
-        }
+            $customers = $personsRepository->searchByName($query);    
+            return Response::json(['customers'   => $customers]); 
+
     }
 
 

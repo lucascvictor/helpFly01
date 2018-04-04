@@ -10,11 +10,12 @@
         
         url : "{{ url('/cadastros/clientes/search') }}",
         
-        data:{'search':$value},
+        customers:{'search':$value},
         
-        success:function(data){
+        success:function(customers){
         
-         $('tbody').html(data);
+         $('#fly01dt').html('lucas');
+         
         
         }
         
