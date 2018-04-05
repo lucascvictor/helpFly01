@@ -443,7 +443,7 @@
             <div class="card" id="fly01cardReceitas" data-color="orange">
                <div class="card-content white-text orange lighten-2">
                   <span class="card-title condensed">Receitas</span>
-                  <h5 class="center">R$ 0,00</h5>
+                  <h5 class="center">R$ 12000,00</h5>
                </div>
                <div class="card-action right-align orange lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaReceber/List&quot;)" class="white-text ">Contas a receber</a></div>
             </div>
@@ -452,7 +452,7 @@
             <div class="card" id="fly01cardDespesas" data-color="red">
                <div class="card-content white-text red lighten-2">
                   <span class="card-title condensed">Despesas</span>
-                  <h5 class="center">R$ 0,00</h5>
+                  <h5 class="center">R$ 8000,00</h5>
                </div>
                <div class="card-action right-align red lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaPagar/List&quot;)" class="white-text ">Contas a pagar</a></div>
             </div>
@@ -461,7 +461,7 @@
             <div class="card" id="fly01cardTotal" data-color="green">
                <div class="card-content white-text green lighten-2">
                   <span class="card-title condensed">Total</span>
-                  <h5 class="center">R$ 0,00</h5>
+                  <h5 class="center">R$ 4000,00</h5>
                </div>
                <div class="card-action right-align green lighten-1"><a href="javascript:void(0)" class="white-text "></a></div>
             </div>
@@ -544,10 +544,6 @@
                   <tr class="group group-start">
                      <td colspan="2" nowrap="nowrap">(-) DESPESAS</td>
                   </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap"><span class="root">AS OUTRAS COISAS</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 100,00</span></td>
-                  </tr>
                   <tr role="row" class="even">
                      <td tabindex="0" nowrap="nowrap"><span class="root">CATEGORIA DESPESA</span></td>
                      <td nowrap="nowrap"><span class="right">R$ 3000,00</span></td>
@@ -560,17 +556,17 @@
                      <td tabindex="0" nowrap="nowrap"><span class="children">Outras Despesas</span></td>
                      <td nowrap="nowrap"><span class="right">R$ 2000,00</span></td>
                   </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap"><span class="root">CATEGORIA NOVA</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 100,00</span></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap"><span class="root">INICIALIZACAO</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 2000,00</span></td>
-                  </tr>
                   <tr role="row" class="even">
                      <td tabindex="0" nowrap="nowrap"><span class="root">PAGAMENTO A FORNECEDORES</span></td>
                      <td nowrap="nowrap"><span class="right">R$ 5000,00</span></td>
+                  </tr>
+                  <tr role="row" class="even">
+                     <td tabindex="0" nowrap="nowrap"><span class="children">Importações</span></td>
+                     <td nowrap="nowrap"><span class="right">R$ 4000,00</span></td>
+                  </tr>
+                  <tr role="row" class="even">
+                     <td tabindex="0" nowrap="nowrap"><span class="children">Juros</span></td>
+                     <td nowrap="nowrap"><span class="right">R$ 1000,00</span></td>
                   </tr>
                </tbody>
             </table>
