@@ -19,13 +19,11 @@
 
   $(document).ready(function(){
 
-    var elem = document.querySelector('.modal');
-    lvar instance = M.Modal.init(elem, options);
 
     $('.scrollspy').scrollSpy();
     $(".button-collapse").sideNav();
     $('select').material_select();
-    $('.modal').modal();
+    
 
 
     $('.datepicker').pickadate({
@@ -50,7 +48,9 @@
             }
         }
     });
+    
 
+    $('.modal').modal();
 
   });
 
