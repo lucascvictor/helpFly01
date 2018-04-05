@@ -488,21 +488,14 @@
                   </tr>
 
                   <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap"><span class="root">CATEGORIA RABBIT</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 1000,00</span></td>
+                     <td tabindex="0" nowrap="nowrap"><span class="root">Receita de prestação de serviços</span></td>
+                     <td nowrap="nowrap"><span class="right">R$ 5000,00</span></td>
                   </tr>
                   <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap"><span class="children">RECEITA</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 1000,00</span></td>
+                     <td tabindex="0" nowrap="nowrap"><span class="children">Manutenção de equipamentos</span></td>
+                     <td nowrap="nowrap"><span class="right">R$ 5000,00</span></td>
                   </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap"><span class="root">CATEGORIA RABBIT EXTRATO</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 200,00</span></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap"><span class="root">INICIALIZACAO </span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 300,00</span></td>
-                  </tr>
+
                   <tr role="row" class="even">
                      <td tabindex="0" nowrap="nowrap"><span class="root">Receita Vendas</span></td>
                      <td nowrap="nowrap"><span class="right">R$ 5000,00</span></td>
@@ -517,12 +510,13 @@
                   </tr>
                   <tr role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap"><span class="root">SEM CLASSIFICAÇÃO</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 1000,00</span></td>
+                     <td nowrap="nowrap"><span class="right">R$ 2000,00</span></td>
                   </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap"><span class="root">VENDAS</span></td>
-                     <td nowrap="nowrap"><span class="right">R$ 5000,00</span></td>
+                  <tr role="row" class="odd">
+                     <td tabindex="0" nowrap="nowrap"><span class="children">Receitas gerais</span></td>
+                     <td nowrap="nowrap"><span class="right">R$ 2000,00</span></td>
                   </tr>
+
                </tbody>
             </table>
             <div class="">
