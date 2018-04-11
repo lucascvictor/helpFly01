@@ -20,6 +20,11 @@
 
     }
 
+    function atualizar()
+    {
+      window.location.reload();
+    }
+
 
   $(document).ready(function(){
 

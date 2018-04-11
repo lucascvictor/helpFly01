@@ -10,7 +10,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block fly01-main-title">DRE</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="save" class="btn " onclick="fnAtualizar();">Atualizar</a></li>
+                  <li><a id="save" class="btn " onclick="atualizar();">Atualizar</a></li>
                   <li><a id="print" class="btn " onclick="fnImprimirDRE();">Imprimir</a></li>
                </ul>
             </div>
