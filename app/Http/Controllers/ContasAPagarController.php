@@ -13,4 +13,7 @@ class ContasAPagarController extends Controller
     public function create(){
       return view('financeiro.contas_a_pagar.create');
     }
+    public function renegotiation(){
+      return view('financeiro.contas_a_pagar.renegotiation');
+    }
 }

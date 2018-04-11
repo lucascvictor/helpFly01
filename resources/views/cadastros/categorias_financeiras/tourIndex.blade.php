@@ -4,7 +4,7 @@
       var enjoyhint_script_data = [
        {
           'next #fly01dt_wrapper': 'Como dito antes, as categorias financeiras são usadas para serem usadas em títulos financeiros e consequentemente gerar o relatório DRE.',
-          'bottom': 200,
+          'bottom': 350,
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
 
