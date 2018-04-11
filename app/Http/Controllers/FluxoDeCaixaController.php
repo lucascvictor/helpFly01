@@ -16,10 +16,12 @@ class FluxoDeCaixaController extends Controller
         $rec = $fluxo->getRecebimentos();
         $pag = $fluxo->getPagamentos();
         $saldo = $fluxo->getSaldo($rec, $pag);
+        $projetado = $fluxo->getProjetado($saldo,$rec, $pag);
         return view('financeiro.fluxo_de_caixa.index')
         ->with('pag', $this->mask($pag))
         ->with('rec', $this->mask($rec))
         ->with('saldo', $this->mask($saldo))
+        ->with('projetado', $this->mask($projetado))
         ->with('vPag', $pag)
         ->with('vRec', $rec)
         ->with('vSaldo', $saldo);

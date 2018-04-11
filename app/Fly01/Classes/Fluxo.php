@@ -42,4 +42,9 @@ class Fluxo
         }
         return $saldo;
     }
+
+    public function getProjetado($saldo, $rec, $pag)
+    {
+        return $saldo[4] + $rec[4] - $pag[4];
+    }
 }

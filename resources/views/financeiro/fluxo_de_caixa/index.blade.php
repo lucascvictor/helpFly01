@@ -41,7 +41,7 @@
 
 
 		 <div class="col s12 m12" id="areageral">
-         <div id="dfly01cardSaldo" class="col s12 m4 saldo_atual">
+         <div id="dfly01cardSaldo" class="col s12 m3 saldo_atual">
             <div class="card" id="fly01cardSaldo" data-color="orange">
                <div class="card-content white-text orange lighten-2">
                   <span class="card-title condensed">Saldo atual</span>
@@ -50,7 +50,7 @@
                <div class="card-action right-align orange lighten-1"><a href="{{ url('/financeiro/extrato') }}" class="white-text ">Ver mais</a></div>
             </div>
          </div>
-         <div id="dfly01cardCP" class="col s12 m4" data-step="<h2>Descrição</h2> Um texto sugestivo para o conjunto de 'regras' do grupo tributário">
+         <div id="dfly01cardCP" class="col s12 m3" data-step="<h2>Descrição</h2> Um texto sugestivo para o conjunto de 'regras' do grupo tributário">
             <div class="card" id="fly01cardCP" data-color="red">
                <div class="card-content white-text red lighten-2">
                   <span class="card-title condensed">A pagar</span>
@@ -59,7 +59,7 @@
                <div class="card-action right-align red lighten-1"><a href="{{ url('/financeiro/contasapagar') }}" class="white-text ">Ver mais</a></div>
             </div>
          </div>
-         <div id="dfly01cardCR" class="col s12 m4">
+         <div id="dfly01cardCR" class="col s12 m3">
             <div class="card" id="fly01cardCR" data-color="green">
                <div class="card-content white-text green lighten-2">
                   <span class="card-title condensed">A receber</span>
@@ -68,7 +68,19 @@
                <div class="card-action right-align green lighten-1"><a href="{{ url('/financeiro/contasareceber') }}" class="white-text ">Ver mais</a></div>
             </div>
          </div>
-		 </div>
+		 <div id="dfly01cardSC" class="col s12 m3">
+            <div class="card" id="fly01cardSC" data-color="blue">
+                <div class="card-content white-text blue lighten-2">
+                <span class="card-title condensed">Saldo Projetado</span>
+                <h5 class="center">{{ $projetado }}</h5>
+                </div>
+                <div class="card-action right-align blue lighten-1">
+            <a href="javascript:void(0)" class="white-text "></a>
+            </div>
+        </div>
+        </div>
+         </div>
+         
         <div class="col m1 l1"> </div>
          <div id="dfly01chart" class="col s12 m10 l10">
             <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor">
