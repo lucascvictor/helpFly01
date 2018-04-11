@@ -48,7 +48,7 @@
 
          {
           'next #fly01dt' :'E por fim temos como visualizar os últimos lançamentos em nosso sistema',
-          'nextButton' : {className: 'myNext', text: 'Próximo',href: ".thin"},
+          'nextButton' : {className: 'myNext', text: 'Próximo',idName: "passoAjuda"},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
           
         },
@@ -59,6 +59,9 @@
           'ou entre em contato utilizado o menu Ajuda',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
+          onBeforeStart:function(){
+            $('#menuMobile').click();
+          }
   
         },
       ];
