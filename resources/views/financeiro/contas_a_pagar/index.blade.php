@@ -13,7 +13,7 @@
                   <li>
                      <a class="btn btn-narrow dropdown-button green-text white" data-activates="headerDropdown"><i class="material-icons">expand_more</i></a>
                      <ul class="dropdown-content" id="headerDropdown">
-                        <li><a id="new" class=" " onclick="fnNovaRenegociacaoCP();">Renegociação</a></li>
+                        <li><a id="new" class=" " href="{{ url('financeiro/contasaoagar/renegociation')}}">Renegociação</a></li>
                         <li><a id="new" class=" " onclick="fnImprimirListContas();">Imprimir</a></li>
                      </ul>
                   </li>
