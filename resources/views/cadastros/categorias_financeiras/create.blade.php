@@ -86,5 +86,15 @@
 @section('extrascript')
 
 @include('cadastros.categorias_financeiras.tour')
+
+<script>
+var catTour = JSON.parse(sessionStorage.getItem('tour'));
+var catNova = JSON.parse(sessionStorage.getItem('novaCategoria'));
+window.onload = function() {
+	if (catNova == '1') {
+		initTour();
+	}
+}
+</script>
 					
 @endsection

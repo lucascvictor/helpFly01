@@ -6,6 +6,9 @@
     function initTour() {
      /* var element = document.getElementById("tour");
       element.classList.remove("pulse"); */
+      var tour = JSON.stringify('1');
+      sessionStorage.setItem('tour', tour);
+
       $('html,body').scrollTop(0);
       
       var enjoyhint_instance = null;
@@ -14,6 +17,7 @@
       enjoyhint_instance.setScript(enjoyhint_script_data);
         
       enjoyhint_instance.runScript();
+
     }
 
 

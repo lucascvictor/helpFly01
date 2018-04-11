@@ -11,7 +11,7 @@
                <h4 class="thin inline-block">Categorias Financeiras</h4>
                <ul class="right valign-wrapper fly01-buttons">
                 <li>
-				  	<a id="new" class="btn "  href="{{ url('/cadastros/categoriasfinanceiras/create') }}">Novo</a>
+				  	<a id="new" class="btn "  href="{{ url('/cadastros/categoriasfinanceiras/create') }}" onClick="proximo();">Novo</a>
 				</li>
                	</ul>
             </div>
@@ -55,7 +55,7 @@
                      </th>
                      <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 24px;" aria-label=""><span></span></th>
                   </tr>
-               </thead>
+               </thead>l
                <tbody>
                   <?php $i=0;?>
                   @foreach($categories as $category)
@@ -105,15 +105,22 @@
 @include('cadastros.categorias_financeiras.tourIndex')
 
 <script>
-window.onload = function()
-{
-      document.getElementById("menu").click();
-}
 
-$("#menu").click(function(){
-      $('.tap-target').tapTarget('open');
-});
-      
+      window.onload = function()
+      {
+            var btnNovo = 0;
+            document.getElementById("menu").click();
+      }
+
+      $("#menu").click(function(){
+            $('.tap-target').tapTarget('open');
+      });
+
+      function proximo(){
+            var novaCategoria = JSON.stringify('1');
+            sessionStorage.setItem('novaCategoria', novaCategoria );
+      }
+
 </script>
 
 					
