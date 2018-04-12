@@ -84,3 +84,5 @@ Route::get('/voltar', 'HomeController@voltar')->name('voltar');
 Route::get('/suporte', 'HomeController@suporte')->name('suporte');
 
 Route::get('/teste/{$teste}', 'HomeController@teste')->name('teste');
+
+Route::get('search/autocomplete', 'SearchController@autocomplete');

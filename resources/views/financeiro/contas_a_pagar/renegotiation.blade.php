@@ -21,6 +21,10 @@
       <div class="row">
          <form id="fly01frmCabecalho" class="col s12" method="post" novalidate="novalidate">
             <div id="renegociacaoPessoaIdField" class="input-field col s12 m10 l10"><input class="autocomplete ui-autocomplete-input valid" id="fornecedorNome" name="fornecedorNome" data-url="/AutoComplete/Fornecedor" data-target="renegociacaoPessoaId" autocomplete="off" aria-invalid="false" type="text"><input name="renegociacaoPessoaId" id="renegociacaoPessoaId" value="82e8f960-23d6-4bba-ad2e-b4ab3417f9b2" type="hidden"><label class="truncate active" for="fornecedorNome">Fornecedor *</label></div>
+            {{ Form::open(['action' => ['SearchController@searchUser'], 'method' => 'GET']) }}
+                {{ Form::text('q', '', ['id' =>  'q', 'placeholder' =>  'Enter name'])}}
+                {{ Form::submit('Search', array('class' => 'button expand')) }}
+            {{ Form::close() }}
             <div id="btnListaTitulosField" class="input-field col s12 m2 l2"><input id="btnListaTitulos" name="btnListaTitulos" class="btn undefined valid" value="Listar contas" aria-invalid="false" type="button"></div>
             <div id="selecaoTitulosLabelField" class="input-field col s12" style="">
                <h5 id="selecaoTitulosLabel" class="thin-bordered">Seleção das contas</h5>
@@ -632,6 +636,19 @@
 @section('extrascript')
 
 @include('financeiro.contas_a_pagar.tour')
+
+<script>
+$(function()
+{
+	 $( "#q" ).autocomplete({
+	  source: "search/autocomplete",
+	  minLength: 3,
+	  select: function(event, ui) {
+	  	$('#q').val(ui.item.value);
+	  }
+	});
+});
+</script>
 
 @endsection
 																	
