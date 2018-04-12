@@ -51,6 +51,7 @@ return array(
     'Database\\' => array($baseDir . '/database'),
     'Cron\\' => array($vendorDir . '/mtdowling/cron-expression/src/Cron'),
     'Controllers\\' => array($baseDir . '/app/Http/Controllers'),
+    'Collective\\Html\\' => array($vendorDir . '/laravelcollective/html/src'),
     'Classes\\' => array($baseDir . '/app/Fly01/Classes'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'App\\' => array($baseDir . '/app'),
