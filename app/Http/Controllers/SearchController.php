@@ -6,29 +6,26 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Input;
 
-use Auth;
+use App\Fly01\Repositories\PersonsRepository;
 
-use DB;
+use Auth;
 
 use Response;
 
 class SearchController extends Controller
 {
-    public function autocomplete(){
-        $term = Input::get('term');
+    public function autoComplete(Request $request) {
+        $query = $request->get('term','');
+        $personsRepository = new PersonsRepository;
+        $suppliers = $personsRepository->listSuppliers();
         
-        $results = array();
-        
-        $queries = DB::table('users')
-            ->where('first_name', 'LIKE', '%'.$term.'%')
-            ->orWhere('last_name', 'LIKE', '%'.$term.'%')
-            ->take(5)->get();
-
-        foreach ($queries as $query)
-        {
-            $results[] = [ 'id' => $query->id, 'value' => $query->first_name.' '.$query->last_name ];
+        $data=array();
+        foreach ($suppliers as $suplier) {
+                $data[]=array('value'=>$suppliers->name,'id'=>$suppliers->id);
         }
-
-        return Response::json($results);
+        if(count($data))
+             return $data;
+        else
+            return ['value'=>'No Result Found','id'=>''];
     }
 }

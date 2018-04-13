@@ -85,4 +85,7 @@ Route::get('/suporte', 'HomeController@suporte')->name('suporte');
 
 Route::get('/teste/{$teste}', 'HomeController@teste')->name('teste');
 
-Route::get('search/autocomplete', 'SearchController@autocomplete');
+Route::get('autocomplete',array('as'=>'autocomplete','uses'=>'SearchController@index'));
+
+Route::get('searchajax',array('as'=>'searchajax','uses'=>'SearchController@autoComplete'));
+
