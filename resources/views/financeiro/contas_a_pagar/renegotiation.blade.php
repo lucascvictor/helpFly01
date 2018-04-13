@@ -21,7 +21,8 @@
       <div class="row">
          <form id="fly01frmCabecalho" class="col s12" method="post" novalidate="novalidate">
             <div id="renegociacaoPessoaIdField" class="input-field col s12 m10 l10"><input class="autocomplete ui-autocomplete-input valid" id="fornecedorNome" name="fornecedorNome" data-url="/AutoComplete/Fornecedor" data-target="renegociacaoPessoaId" autocomplete="off" aria-invalid="false" type="text"><input name="renegociacaoPessoaId" id="renegociacaoPessoaId" value="82e8f960-23d6-4bba-ad2e-b4ab3417f9b2" type="hidden"><label class="truncate active" for="fornecedorNome">Fornecedor *</label></div>
-            {{ Form::open(['action' => ['SearchController@searchUser'], 'method' => 'GET']) }}
+            {{ Form::open(['action' => ['SearchController@autocomplete'], 'method' => 'GET']) }}
+                {{ Form::token() }}
                 {{ Form::text('q', '', ['id' =>  'q', 'placeholder' =>  'Enter name'])}}
                 {{ Form::submit('Search', array('class' => 'button expand')) }}
             {{ Form::close() }}

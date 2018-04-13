@@ -4,6 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Input;
+
+use Auth;
+
+use DB;
+
+use Response;
+
 class SearchController extends Controller
 {
     public function autocomplete(){
@@ -15,12 +23,12 @@ class SearchController extends Controller
             ->where('first_name', 'LIKE', '%'.$term.'%')
             ->orWhere('last_name', 'LIKE', '%'.$term.'%')
             ->take(5)->get();
-        
+
         foreach ($queries as $query)
         {
             $results[] = [ 'id' => $query->id, 'value' => $query->first_name.' '.$query->last_name ];
         }
-        
+
         return Response::json($results);
     }
 }
