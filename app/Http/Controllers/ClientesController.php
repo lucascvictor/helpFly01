@@ -35,6 +35,11 @@ class ClientesController extends Controller
       return view('cadastros.clientes.create');
     }
 
+    public function import()
+    {
+      return view('cadastros.clientes.import');
+    }
+
     /**
      * Store a newly created resource in storage.
      *

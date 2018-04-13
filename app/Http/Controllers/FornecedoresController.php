@@ -27,5 +27,12 @@ class FornecedoresController extends Controller
       return view('cadastros.fornecedores.pagetour');
     }
 
+
+    public function import()
+    {
+      return view('cadastros.fornecedores.import');
+    }
+
+
 }
 

@@ -42,6 +42,7 @@ Route::group(['prefix' => 'cadastros'], function () {
         Route::get('/', 'ClientesController@index')->name('clientes');
         Route::get('/search', 'ClientesController@search')->name('clientes.search');
         Route::get('/create', 'ClientesController@create')->name('clientes.create');
+        Route::get('/import', 'ClientesController@import')->name('clientes.import');
         Route::get('/edit/{id}', 'ClientesController@edit')->name('clientes.edit');
     });
 
@@ -49,6 +50,7 @@ Route::group(['prefix' => 'cadastros'], function () {
         Route::get('', 'FornecedoresController@index')->name('fornecedores');
         Route::get('/create', 'FornecedoresController@create')->name('fornecedores.create');
         Route::get('/edit/{id}', 'FornecedoresController@edit')->name('fornecedores.edit');
+        Route::get('/import', 'FornecedoresController@import')->name('fornecedores.import');
         Route::get('/pagetour', 'FornecedoresController@pageTour')->name('fornecedores.pagetour');
     });
 

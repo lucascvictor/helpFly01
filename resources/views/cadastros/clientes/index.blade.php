@@ -10,7 +10,7 @@
                <h4 class="thin inline-block">Clientes</h4>
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="new" class="btn " href="{{ url('/cadastros/clientes/create') }}">Novo</a></li>
-                  <li><a id="import" class="btn " onclick="fnImportarCadastro();">Importar clientes</a></li>
+                  <li><a id="import" class="btn " href="{{ url('/cadastros/clientes/import') }}">Importar clientes</a></li>
                   <li>
 						<div class="fixed-action-btn"> 
 							<a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
