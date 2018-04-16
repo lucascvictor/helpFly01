@@ -20,9 +20,18 @@
    <div class="container">
       <div class="row">
          <form id="fly01frmCabecalho" class="col s12" method="post" novalidate="novalidate">
-            <div id="renegociacaoPessoaIdField" class="input-field col s12 m10 l10"> {!! Form::text('search_text', null, array('class' => 'form-control','id'=>'search_text')) !!}<label class="truncate active" for="fornecedorNome">Fornecedor *</label></div>
-           
-            <div id="btnListaTitulosField" class="input-field col s12 m2 l2"><input id="btnListaTitulos" name="btnListaTitulos" class="btn undefined valid" value="Listar contas" aria-invalid="false" type="button"></div>
+         <div class="ui-widget">
+            <div id="renegociacaoPessoaIdField" class="input-field col s12 m10 l10"> 
+                {!! Form::open(['route' => 'person.autocomplete', 'method' => 'GET', 'role' => 'search']) !!}
+                {!! Form::text('search_text', Request::get('search_text'), ['class' => 'form-control', 'id' => 'search_text', 'name'=>'search_text']) !!} 
+                <div id="btnListaTitulosField" class="input-field col s12 m2 l2">
+                {!! Form::submit('Listar Contas', array('class'=>'btn'))!!}
+                </div>
+                {!! Form::close() !!}
+                <label class="truncate active" for="fornecedorNome">Fornecedor *</label>
+            </div>
+        </div>
+            
             <div id="selecaoTitulosLabelField" class="input-field col s12" style="">
                <h5 id="selecaoTitulosLabel" class="thin-bordered">Seleção das contas</h5>
             </div>
@@ -627,6 +636,27 @@
       </div>
    </div>
 
+
+@endsection
+
+
+@section('extrascript')
+<script>
+    $(document).ready(function(){
+        $('input:text').bind({ 
+
+        });
+
+        $("#search_text").autocomplete({
+            minLength: 3,
+            autofocus: true,
+            source: "{{ route('person.autocomplete') }}",
+            select: function(event, ui) {
+                $('#search_text').val(ui.item.value);
+            }
+        });
+    });
+</script>
 
 @endsection
 

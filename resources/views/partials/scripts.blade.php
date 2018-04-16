@@ -1,7 +1,14 @@
   <script src="{{ url('js/1.0.2/fly01ui.js') }}"></script>
   <script src="{{ url('js/enjoyhint.js') }}"></script>
   <script src="{{ url('js/materialize.js') }}"></script>
-  
+  <script src="{{ url('js/jquery_1.11.3/jquery.min.js') }}"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+  integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+  crossorigin="anonymous"></script>
+
+
+
   <script>
     function initTour() {
      /* var element = document.getElementById("tour");
@@ -57,30 +64,7 @@
             }
         }
     });
-    
-
-    $('.modal').modal();
-
-
-
-        src = "{{ route('searchajax') }}";
-        $("#search_text").autocomplete({
-            source: function(request, response) {
-                $.ajax({
-                    url: src,
-                    dataType: "json",
-                    data: {
-                        term : request.term
-                    },
-                    success: function(data) {
-                        response(data);
-                    }
-                });
-            },
-            minLength: 3,
-        });
         
-
   });
 
 

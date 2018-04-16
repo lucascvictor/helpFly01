@@ -6,12 +6,8 @@
     <link href="{{ url('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
     <link href="{{ url('css/enjoyhint3.css') }}" rel="stylesheet" type="text/css">
-
-    <link href="http://demo.expertphp.in/css/jquery.ui.autocomplete.css" rel="stylesheet">
     
-    <script src="http://demo.expertphp.in/js/jquery-ui.min.js"></script>
-    <script src="{{ url('js/jquery_1.11.2/jquery.min.js') }}"></script>
-
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
        <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
