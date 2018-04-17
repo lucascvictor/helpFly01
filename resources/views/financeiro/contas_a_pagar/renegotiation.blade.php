@@ -12,6 +12,11 @@
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li>
                   <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
+                  <li>
+                    <div class="fixed-action-btn"> 
+		            <a id="tour" class="btn pulse orange btn-medium" href="{{ url('/financeiro/contasapagar/pagetourrenegotiation')}}" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+		            </div>
+                  </li>
                </ul>
             </div>
          </div>
