@@ -3,21 +3,21 @@ namespace App\Fly01\Classes;
 
 class Fluxo 
 {
-    public function getPagamentos()
+    public function getPagamentos($inicio, $fim)
     {
         $i = 0;
         while ($i <= 4) {
-            $pag[$i]=rand(-2000, -1000);
+            $pag[$i]=rand($inicio, $fim);
             $i++; 
         }
         return $pag;
     }
 
-    public function getRecebimentos()
+    public function getRecebimentos($inicio, $fim)
     {
         $i = 0;
         while($i <= 4) {
-             $rec[$i]=rand(2000, 5000);
+             $rec[$i]=rand($inicio, $fim);
              $i++; 
         }
         return $rec;
@@ -47,4 +47,5 @@ class Fluxo
     {
         return $saldo[4] + $rec[4] + $pag[4];
     }
+
 }

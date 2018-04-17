@@ -9,6 +9,8 @@ Route::group(['prefix' => 'financeiro'], function () {
     Route::get('', 'HomeController@getProdutos')->name('produtos');
     Route::group(['prefix' => 'fluxodecaixa'], function () {
         Route::get('/', 'FluxoDeCaixaController@index')->name('fluodecaixa');
+        Route::get('/week', 'FluxoDeCaixaController@getByWeek')->name('fluodecaixa.week');
+        Route::get('/day', 'FluxoDeCaixaController@getByDay')->name('fluodecaixa.day');
     });
     Route::group(['prefix' => 'extrato'], function () {
         Route::get('/', 'ExtratoController@index')->name('extrato');

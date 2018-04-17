@@ -35,7 +35,11 @@
         </div>
         <div id="fly01btngrpField" class="input-field col s12 m6 l4">
             <label class="truncate active" for="fly01btngrp">Selecione o período</label>
-            <div id="fly01btngrp" class="btn-group input-field"><input id="btnDia" name="btnDia" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;1&quot;)" value="Dia" type="button"><input id="btnSemana" name="btnSemana" class="btn col s4 " onclick="fnAtualizarPeriodo(&quot;7&quot;)" value="Semana" type="button"><input id="btnMes" name="btnMes" class="btn col s4 active" onclick="fnAtualizarPeriodo(&quot;30&quot;)" value="Mês" type="button"></div>
+            <div id="fly01btngrp" class="btn-group input-field">
+            <a id="btnDia" name="btnDia" class="btn col s4 @if() active @endif" href="{{ url('/financeiro/fluxodecaixa/day') }}"  >Dia</a>
+            <a id="btnSemana" name="btnSemana" class="btn col s4 @if() active @endif" href="{{ url('/financeiro/fluxodecaixa/week') }}" >Semana</a>
+            <a id="btnMes" name="btnMes" class="btn col s4 @if() active @endif" href="{{ url('/financeiro/fluxodecaixa') }}" >Mês</a>
+            </div>
         </div>
         </form>
 
