@@ -17,7 +17,7 @@ Route::group(['prefix' => 'financeiro'], function () {
      Route::get('/', 'ContasAPagarController@index')->name('contasapagar');
      Route::get('/create', 'ContasAPagarController@create')->name('contasapagar.create');
      Route::get('/renegotiation', 'ContasAPagarController@renegotiation')->name('contasapagar.renegotiation');
-     Route::get('/pageTourRenegotiation', 'ContasAPagarController@pageTourRenegotiation')->name('contasapagar.pageTourRenegotiation');
+     Route::get('/pagetourrenegotiation', 'ContasAPagarController@pageTourRenegotiation')->name('contasapagar.pageTourRenegotiation');
     });
     
     Route::group(['prefix' => 'contasareceber'], function () {
