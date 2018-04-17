@@ -88,6 +88,6 @@ Route::get('/suporte', 'HomeController@suporte')->name('suporte');
 
 Route::get('/teste/{$teste}', 'HomeController@teste')->name('teste');
 
-Route::any('person/autocomplete','SearchController@autoComplete')->name('person.autocomplete');
+Route::post('autocomplete','SearchController@autoComplete')->name('autocomplete');
 
 

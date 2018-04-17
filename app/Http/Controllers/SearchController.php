@@ -14,30 +14,10 @@ use Response;
 
 class SearchController extends Controller
 {
-    public function autoComplete(Request $request) {
-        $array = [];
-        /* $query = $request->get('term','');
-      
-        $personsRepository = new PersonsRepository;
-        $suppliers = $personsRepository->listSuppliers();
-        
-        $data=array();
-        foreach ($suppliers as $suplier) {
-                $data[]=array('value'=>$suppliers->name,'id'=>$suppliers->id);
-        }
-        if(count($data))
-             return Response::json($data);
-        else
-            return ['value'=>'No Result Found','id'=>'']; */
-     $query = Str::lower(Input::get(''));
-     
-     $personsRepository = new PersonsRepository;
-     $suppliers = $personsRepository->listSuppliers();
 
-     foreach($suppliers as $supplier) {
-        $array[] = array('id' => $supplier->id, 'value' => $supplier->name);
-     }
-     
-     return response()->json($array);
+    public function autoComplete(Request $request)
+    {
+        return $request;
     }
+
 }

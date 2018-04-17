@@ -1,12 +1,6 @@
   <script src="{{ url('js/1.0.2/fly01ui.js') }}"></script>
   <script src="{{ url('js/enjoyhint.js') }}"></script>
   <script src="{{ url('js/materialize.js') }}"></script>
-  <script src="{{ url('js/jquery_1.11.3/jquery.min.js') }}"></script>
-  <script
-  src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
-  integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
-  crossorigin="anonymous"></script>
-
 
 
   <script>
@@ -63,6 +57,21 @@
                 this.close();
             }
         }
+    });
+
+     $('input.autocomplete').autocomplete({
+        data: {
+            @if(isset($dados))
+                @foreach($dados as $dado)
+                "{{ $dado->name }}": null,
+                @endforeach
+            @endif
+        },
+        limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+        onAutocomplete: function(val) {
+        // Callback function when value is autcompleted.
+        },
+        minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
     });
         
   });

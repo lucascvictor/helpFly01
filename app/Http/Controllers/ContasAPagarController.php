@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Fly01\Repositories\PersonsRepository;
+
 class ContasAPagarController extends Controller
 {
     public function index(){
@@ -14,7 +16,11 @@ class ContasAPagarController extends Controller
       return view('financeiro.contas_a_pagar.create');
     }
     public function renegotiation(){
-      return view('financeiro.contas_a_pagar.renegotiation');
+      $personsRepository = new PersonsRepository;
+      $suppliers = $personsRepository->listSuppliers();
+
+      return view('financeiro.contas_a_pagar.renegotiation')->with('dados', $suppliers);
+      //dados são para o filtro de nomes do autocompletar
     }
 
     public function pageTourRenegotiation(){

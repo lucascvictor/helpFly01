@@ -22,14 +22,14 @@
          <form id="fly01frmCabecalho" class="col s12" method="post" novalidate="novalidate">
          <div class="ui-widget">
             <div id="renegociacaoPessoaIdField" class="input-field col s12 m10 l10"> 
-                {!! Form::open(['route' => 'person.autocomplete', 'method' => 'GET', 'role' => 'search']) !!}
-                {!! Form::text('search_text', Request::get('search_text'), ['class' => 'form-control', 'id' => 'search_text', 'name'=>'search_text']) !!} 
-                <div id="btnListaTitulosField" class="input-field col s12 m2 l2">
-                {!! Form::submit('Listar Contas', array('class'=>'btn'))!!}
-                </div>
-                {!! Form::close() !!}
+                <input type="text" id="autocomplete-input" class="autocomplete">
                 <label class="truncate active" for="fornecedorNome">Fornecedor *</label>
             </div>
+
+            <div class="input-field col s2 m2 l2">
+            {!! Form::submit('Listar Contas', array('class'=>'btn'))!!}
+            </div>
+            
         </div>
             
             <div id="selecaoTitulosLabelField" class="input-field col s12" style="">
@@ -640,25 +640,7 @@
 @endsection
 
 
-@section('extrascript')
-<script>
-    $(document).ready(function(){
-        $('input:text').bind({ 
 
-        });
-
-        $("#search_text").autocomplete({
-            minLength: 3,
-            autofocus: true,
-            source: "{{ route('person.autocomplete') }}",
-            select: function(event, ui) {
-                $('#search_text').val(ui.item.value);
-            }
-        });
-    });
-</script>
-
-@endsection
 
 
 																	
