@@ -22,7 +22,7 @@
                     <div class="card-panel teal amber accent-2 app center">Vale ressaltar que após a lista de títulos aparecer, para selecionar os títulos  basta clicar em cima dos mesmos, podendo sempre escolher 1 ou mais títulos.</div>
                     <img class="responsive-img z-depth-5" src="{{ url('images/cadastros/contasAPagar/Renegotiation/Tela2.gif') }}">
                    
-                    <div class="card-panel teal amber accent-2 app center">Em "Informações da renegociação" preenchemos o motivo da renegociação, informamos se haverá acréscimo ou desconto,se a diferença será calculada diretamente por valor ou porcentagem e por fim informamos o porcentual ou valor da diferença.</div>
+                    <div class="card-panel teal amber accent-2 app center">Em "Informações da renegociação" preenchemos o motivo da renegociação, informamos se haverá acréscimo ou desconto,se a diferença será calculada diretamente por valor ou percentagem e por fim informamos o porcentual ou valor da diferença.</div>
                     <img class="responsive-img" src="{{ url('images/cadastros/contasAPagar/Renegotiation/Tela3.png') }}">
                     
                     <div class="card-panel teal amber accent-2 app center">Já em "Informações da nova conta a pagar", é necessário entender que as informações inseridas nestes campos serão usadas para criação de um novo título.</div>
