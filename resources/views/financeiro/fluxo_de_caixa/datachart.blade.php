@@ -1,6 +1,20 @@
 <script>
+    
      var barChartData = {
-            labels: ["31/01/2018", "11/02/2018", "15/02/2018", "24/02/2018", "27/02/2018"],
+            <?php $intervalo = 0;?>
+            @if($pagina == '/index.php/financeiro/fluxodecaixa/day')
+                <?php $intervalo = 0;?>
+            @elseif($pagina == '/index.php/financeiro/fluxodecaixa/week')
+                <?php $intervalo = 4;?>
+            @elseif($pagina == '/index.php/financeiro/fluxodecaixa')
+                <?php $intervalo = 4;?>
+            @endif
+            
+            <?php $i = 0; ?>
+            labels: [@while($i <= $intervalo)
+                      "{{ date("d/m/y") }}",
+                    <?php $i++; ?>
+                     @endwhile],
            datasets: [{
                 type: 'line',
                 label: 'Saldo',
@@ -10,7 +24,7 @@
                 fill: false,
                 data: [
 					<?php $i = 0; ?>
-                    @while($i <= 4)
+                    @while($i <= $intervalo)
                     {{ $vSaldo[$i] }},
 					<?php $i++; ?>
                     @endwhile
@@ -22,7 +36,7 @@
                 backgroundColor: "#4BC0C0",
                 data: [
 					<?php $i = 0; ?>
-                    @while($i <= 4)
+                    @while($i <= $intervalo)
                     {{ $vRec[$i] }},
 					<?php $i++; ?>
                     @endwhile
@@ -33,7 +47,7 @@
                 backgroundColor: "#FF6384",
                 data: [
 					<?php $i = 0; ?>
-                    @while($i <= 4)
+                    @while($i <= $intervalo)
                     {{ $vPag[$i] }},
 					<?php $i++; ?>
                     @endwhile

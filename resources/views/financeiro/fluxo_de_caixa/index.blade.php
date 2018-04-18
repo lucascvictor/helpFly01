@@ -2,7 +2,6 @@
 
 @section('title', 'Help Fly01')
 
-
 @section('content')
    <div id="headTop" class="z-depth-0-half pinned">
       <div class="container">
@@ -37,9 +36,9 @@
             <label class="truncate active" for="fly01btngrp">Selecione o período</label>
             <div id="fly01btngrp" class="btn-group input-field">
             <?php $pagina = $_SERVER['PHP_SELF'];?>
-            <a id="btnDia" name="btnDia" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/day') active @endif" href="{{ url('/financeiro/fluxodecaixa/day') }}"  >Dia</a>
-            <a id="btnSemana" name="btnSemana" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/week') active @endif" href="{{ url('/financeiro/fluxodecaixa/week') }}" >Semana</a>
-            <a id="btnMes" name="btnMes" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/') active @endif" href="{{ url('/financeiro/fluxodecaixa') }}" >Mês</a>
+            <a href="{{ url('/financeiro/fluxodecaixa/day') }}"   id="btnDia" name="btnDia" class="btn btn-default col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/day') active @endif" value="Dia">Dia</a>
+            <a href="{{ url('/financeiro/fluxodecaixa/week') }}"  id="btnSemana" name="btnSemana" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/week') active @endif" value="Semana" >Semana</a>
+            <a href="{{ url('/financeiro/fluxodecaixa') }}"  id="btnMes" name="btnMes" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa') active @endif" value="Mês">Mês</a>
             </div>
         </div>
         </form>
@@ -127,35 +126,35 @@
                   </tfoot>
                   <tbody>
                      <tr role="row" class="odd">
-                        <td tabindex="0">31/01/2018</td>
+                        <td tabindex="0">{{ date("d/m/y") }}</td>
                         <td>{{ $rec[0] }}</td>
                         <td>{{ $pag[0] }}</td>
                         <td>{{ $saldo[0] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="even">
-                        <td tabindex="0">11/02/2018</td>
+                        <td tabindex="0">{{ date("d/m/y") }}</td>
                         <td>{{ $rec[1] }}</td>
                         <td>{{ $pag[1] }}</td>
                         <td>{{ $saldo[1] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="odd">
-                        <td tabindex="0">15/02/2018</td>
+                        <td tabindex="0">{{ date("d/m/y") }}</td>
                         <td>{{ $rec[2] }}</td>
                         <td>{{ $pag[2] }}</td>
                         <td>{{ $saldo[2] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="even">
-                        <td tabindex="0">24/02/2018</td>
+                        <td tabindex="0">{{ date("d/m/y") }}</td>
                         <td>{{ $rec[3] }}</td>
                         <td>{{ $pag[3] }}</td>
                         <td>{{ $saldo[3] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
                      <tr role="row" class="odd">
-                        <td tabindex="0">27/02/2018</td>
+                        <td tabindex="0">{{ date("d/m/y") }}</td>
                         <td>{{ $rec[4] }}</td>
                         <td>{{ $pag[4] }}</td>
                         <td>{{ $saldo[4] }}</td>
