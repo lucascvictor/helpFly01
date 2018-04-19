@@ -65,76 +65,28 @@
                         </tr>
                      </tfoot>
                      <tbody>
-                        <tr role="row" class="odd">
+                     <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
                               <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
-                                 <span class="left">Todas as Contas</span><strong class="right green-text">R$ 1.598,34</strong>
+                                 <span class="left">Todas as contas</span><strong class="right green-text">R$ resultado da soma</strong>
                                  <div class="progress">
                                     <div class="determinate" style="width: 100%"></div>
                                  </div>
                               </div>
                            </td>
                         </tr>
-                        <tr role="row" class="even">
-                           <td tabindex="0" nowrap="nowrap">
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 30.74%" data-conta-id="379c79bd-fb9e-4dec-a38b-f9d8a78acb8d">
-                                 <span class="left">BANCO CNH</span><strong class="right green-text">-R$ 1.275,66</strong>
-                                 <div class="progress">
-                                    <div class="determinate" style="width: 30.74%"></div>
-                                 </div>
-                              </div>
-                           </td>
-                        </tr>
+                     @foreach($banks as $bank)
                         <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 24.1%" data-conta-id="c38b446d-38f3-40e1-a633-0533a94c2c87">
-                                 <span class="left">BANCO INICIALIZAÇÃO</span><strong class="right green-text">R$ 1.000,00</strong>
+                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
+                                 <span class="left">{{ $bank->nomeConta }}</span><strong class="right green-text">R$ 0</strong>
                                  <div class="progress">
-                                    <div class="determinate" style="width: 24.1%"></div>
+                                    <div class="determinate" style="width: 100%"></div>
                                  </div>
                               </div>
                            </td>
                         </tr>
-                        <tr role="row" class="even">
-                           <td tabindex="0" nowrap="nowrap">
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 22.75%" data-conta-id="9af38b02-8159-4623-9583-a5e96c89d358">
-                                 <span class="left">BANCO MODAL</span><strong class="right green-text">R$ 944,00</strong>
-                                 <div class="progress">
-                                    <div class="determinate" style="width: 22.75%"></div>
-                                 </div>
-                              </div>
-                           </td>
-                        </tr>
-                        <tr role="row" class="odd">
-                           <td tabindex="0" nowrap="nowrap">
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 22.41%" data-conta-id="c36cfe9c-e1ac-46df-8631-1fc58400b34f">
-                                 <span class="left">BANCO VOLVO</span><strong class="right green-text">R$ 930,00</strong>
-                                 <div class="progress">
-                                    <div class="determinate" style="width: 22.41%"></div>
-                                 </div>
-                              </div>
-                           </td>
-                        </tr>
-                        <tr role="row" class="even">
-                           <td tabindex="0" nowrap="nowrap">
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 0%" data-conta-id="f716049d-213f-4147-82bc-1f5eacea9a31">
-                                 <span class="left">ITAU</span><strong class="right green-text">R$ 0,00</strong>
-                                 <div class="progress">
-                                    <div class="determinate" style="width: 0%"></div>
-                                 </div>
-                              </div>
-                           </td>
-                        </tr>
-                        <tr role="row" class="odd">
-                           <td tabindex="0" nowrap="nowrap">
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 0%" data-conta-id="ca1a9e4b-af49-4073-95fa-839f671aa3c8">
-                                 <span class="left">Minha</span><strong class="right green-text">R$ 0,00</strong>
-                                 <div class="progress">
-                                    <div class="determinate" style="width: 0%"></div>
-                                 </div>
-                              </div>
-                           </td>
-                        </tr>
+                     @endforeach
                      </tbody>
                   </table>
                   <div style="position: relative; top: 0px; left: 0px; width: 1px; height: 458.5px;"></div>

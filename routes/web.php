@@ -6,7 +6,8 @@ Route::get('/import', 'HomeController@getImport')->name('import.get');
 Route::post('/send', 'EmailController@send')->name('email.send');
 
 Route::group(['prefix' => 'financeiro'], function () {
-    Route::get('', 'HomeController@getProdutos')->name('produtos');
+    Route::get('', 'FluxoDeCaixaController@index')->name('fluodecaixa');
+
     Route::group(['prefix' => 'fluxodecaixa'], function () {
         Route::get('/', 'FluxoDeCaixaController@index')->name('fluodecaixa');
         Route::get('/week', 'FluxoDeCaixaController@getByWeek')->name('fluodecaixa.week');
@@ -89,7 +90,5 @@ Route::get('/voltar', 'HomeController@voltar')->name('voltar');
 Route::get('/suporte', 'HomeController@suporte')->name('suporte');
 
 Route::get('/teste/{$teste}', 'HomeController@teste')->name('teste');
-
-Route::post('autocomplete','SearchController@autoComplete')->name('autocomplete');
 
 
