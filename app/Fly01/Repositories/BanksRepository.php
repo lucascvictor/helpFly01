@@ -14,9 +14,9 @@ use DB;
 class BanksRepository
 {
 
-public function listBanks()
-{
-  return Bank::all();
-}
+  public function listBanks()
+  {
+    return Bank::all();
+  }
 
 }

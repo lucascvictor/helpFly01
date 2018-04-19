@@ -25,7 +25,7 @@ class DRE
     {
         $total = 0;
         foreach($itens as $item) {
-            $total = $total = $item->valor;
+            $total = $item->valor;
         }
         return $total;
     }
