@@ -12,6 +12,9 @@
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="save" class="btn " onclick="atualizar();">Atualizar</a></li>
                   <li><a id="print" class="btn " onclick="fnImprimirDRE();">Imprimir</a></li>
+                  <li><div class="fixed-action-btn"> 
+                        <a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+                  </div></li>
                </ul>
             </div>
          </div>
@@ -439,33 +442,35 @@
                <input id="dataFinal" name="dataFinal" class="datepicker date picker__input" value="02/04/2018" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataFinal_root" type="text"><label class="truncate active" for="dataFinal">Data Final</label>
             </div>
          </form>
-         <div id="dfly01cardReceitas" class="col s12 m4">
-            <div class="card" id="fly01cardReceitas" data-color="orange">
-               <div class="card-content white-text orange lighten-2">
-                  <span class="card-title condensed">Receitas</span>
-                  <h5 class="center">R$ 12000,00</h5>
-               </div>
-               <div class="card-action right-align orange lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaReceber/List&quot;)" class="white-text ">Contas a receber</a></div>
+         <div id="fly01Cards">
+            <div id="dfly01cardReceitas" class="col s12 m4">
+                <div class="card" id="fly01cardReceitas" data-color="orange">
+                <div class="card-content white-text orange lighten-2">
+                    <span class="card-title condensed">Receitas</span>
+                    <h5 class="center">R$ 12000,00</h5>
+                </div>
+                <div class="card-action right-align orange lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaReceber/List&quot;)" class="white-text ">Contas a receber</a></div>
+                </div>
             </div>
-         </div>
-         <div id="dfly01cardDespesas" class="col s12 m4">
-            <div class="card" id="fly01cardDespesas" data-color="red">
-               <div class="card-content white-text red lighten-2">
-                  <span class="card-title condensed">Despesas</span>
-                  <h5 class="center">R$ 8000,00</h5>
-               </div>
-               <div class="card-action right-align red lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaPagar/List&quot;)" class="white-text ">Contas a pagar</a></div>
+            <div id="dfly01cardDespesas" class="col s12 m4">
+                <div class="card" id="fly01cardDespesas" data-color="red">
+                <div class="card-content white-text red lighten-2">
+                    <span class="card-title condensed">Despesas</span>
+                    <h5 class="center">R$ 8000,00</h5>
+                </div>
+                <div class="card-action right-align red lighten-1"><a href="javascript:void(0)" onclick="fly01.go(&quot;/ContaPagar/List&quot;)" class="white-text ">Contas a pagar</a></div>
+                </div>
             </div>
-         </div>
-         <div id="dfly01cardTotal" class="col s12 m4">
-            <div class="card" id="fly01cardTotal" data-color="green">
-               <div class="card-content white-text green lighten-2">
-                  <span class="card-title condensed">Total</span>
-                  <h5 class="center">R$ 4000,00</h5>
-               </div>
-               <div class="card-action right-align green lighten-1"><a href="javascript:void(0)" class="white-text "></a></div>
+            <div id="dfly01cardTotal" class="col s12 m4">
+                <div class="card" id="fly01cardTotal" data-color="green">
+                <div class="card-content white-text green lighten-2">
+                    <span class="card-title condensed">Total</span>
+                    <h5 class="center">R$ 4000,00</h5>
+                </div>
+                <div class="card-action right-align green lighten-1"><a href="javascript:void(0)" class="white-text "></a></div>
+                </div>
             </div>
-         </div>
+        </div>
          <div id="fly01dtreceitas_wrapper" class="col s12">
             <div class=""></div>
             <div id="fly01dtreceitas_processing" class="dataTables_processing" style="display: none;"></div>
@@ -496,16 +501,16 @@
                      <td nowrap="nowrap"><span class="right">R$ 5000,00</span></td>
                   </tr>
 
-                  <tr role="row" class="even">
+                  <tr id="ReceitaVendas" role="row" class="even">
                      <td tabindex="0" nowrap="nowrap"><span class="root">Receita Vendas</span></td>
                      <td nowrap="nowrap"><span class="right">R$ 5000,00</span></td>
                   </tr>
-                  <tr role="row" class="odd">
+                  <tr id="ReceitaVendasAlimentos" role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap"><span class="children">Vendas Alimentos</span></td>
                      <td nowrap="nowrap"><span class="right">R$ 2000,00</span></td>
                   </tr>
                   <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap"><span class="children">Vendas Eletronicos</span></td>
+                     <td id="ReceitaVendasEletrônicos" tabindex="0" nowrap="nowrap"><span class="children">Vendas Eletronicos</span></td>
                      <td nowrap="nowrap"><span class="right">R$ 3000,00</span></td>
                   </tr>
                   <tr role="row" class="odd">
