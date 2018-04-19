@@ -125,41 +125,17 @@
                      </tr>
                   </tfoot>
                   <tbody>
+                  <?php $i=0; ?>
+                    @while($i <= 4)
                      <tr role="row" class="odd">
-                        <td tabindex="0">{{ date("d/m/y") }}</td>
-                        <td>{{ $rec[0] }}</td>
-                        <td>{{ $pag[0] }}</td>
-                        <td>{{ $saldo[0] }}</td>
+                        <td tabindex="{{ $i }}">{{ date("d/m/y") }}</td>
+                        <td>{{ $rec[$i] }}</td>
+                        <td>{{ $pag[$i] }}</td>
+                        <td>{{ $saldo[$i] }}</td>
                         <td><input class="rowRecordId" value="undefined" type="hidden"></td>
                      </tr>
-                     <tr role="row" class="even">
-                        <td tabindex="0">{{ date("d/m/y") }}</td>
-                        <td>{{ $rec[1] }}</td>
-                        <td>{{ $pag[1] }}</td>
-                        <td>{{ $saldo[1] }}</td>
-                        <td><input class="rowRecordId" value="undefined" type="hidden"></td>
-                     </tr>
-                     <tr role="row" class="odd">
-                        <td tabindex="0">{{ date("d/m/y") }}</td>
-                        <td>{{ $rec[2] }}</td>
-                        <td>{{ $pag[2] }}</td>
-                        <td>{{ $saldo[2] }}</td>
-                        <td><input class="rowRecordId" value="undefined" type="hidden"></td>
-                     </tr>
-                     <tr role="row" class="even">
-                        <td tabindex="0">{{ date("d/m/y") }}</td>
-                        <td>{{ $rec[3] }}</td>
-                        <td>{{ $pag[3] }}</td>
-                        <td>{{ $saldo[3] }}</td>
-                        <td><input class="rowRecordId" value="undefined" type="hidden"></td>
-                     </tr>
-                     <tr role="row" class="odd">
-                        <td tabindex="0">{{ date("d/m/y") }}</td>
-                        <td>{{ $rec[4] }}</td>
-                        <td>{{ $pag[4] }}</td>
-                        <td>{{ $saldo[4] }}</td>
-                        <td><input class="rowRecordId" value="undefined" type="hidden"></td>
-                     </tr>
+                     <?php $i++; ?>
+                    @endwhile
                   </tbody>
                </table>
                <div class="">
