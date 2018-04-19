@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\BillToPay' => $baseDir . '/app/BillToPay.php',
+    'App\\BillToReceive' => $baseDir . '/app/BillToReceive.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Fly01\\Classes\\DRE' => $baseDir . '/app/Fly01/Classes/DRE.php',
@@ -27,6 +29,8 @@ return array(
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+    'App\\Http\\Controllers\\BillsToPayController' => $baseDir . '/app/Http/Controllers/BillsToPayController.php',
+    'App\\Http\\Controllers\\BillsToReceiveController' => $baseDir . '/app/Http/Controllers/BillsToReceiveController.php',
     'App\\Http\\Controllers\\CategoriasFinanceirasController' => $baseDir . '/app/Http/Controllers/CategoriasFinanceirasController.php',
     'App\\Http\\Controllers\\ClientesController' => $baseDir . '/app/Http/Controllers/ClientesController.php',
     'App\\Http\\Controllers\\ConciliacaoController' => $baseDir . '/app/Http/Controllers/ConciliacaoController.php',
@@ -58,6 +62,9 @@ return array(
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
     'BanksTableSeeder' => $baseDir . '/database/seeds/BanksTableSeeder.php',
+    'BillsToPay' => $baseDir . '/database/seeds/BillsToPay.php',
+    'BillsToPayTableSeeder' => $baseDir . '/database/seeds/BillsToPayTableSeeder.php',
+    'BillsToReceiveTableSeeder' => $baseDir . '/database/seeds/BillsToReceiveTableSeeder.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
     'Carbon\\Exceptions\\InvalidDateException' => $vendorDir . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
@@ -70,6 +77,8 @@ return array(
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
     'CreateBanksTable' => $baseDir . '/database/migrations/2018_03_27_162540_create_banks_table.php',
+    'CreateBillsToPay' => $baseDir . '/database/migrations/2018_04_19_214704_create_bills_to_pay.php',
+    'CreateBillsToReceive' => $baseDir . '/database/migrations/2018_04_19_214713_create_bills_to_receive.php',
     'CreateFinancialCategoryTable' => $baseDir . '/database/migrations/2018_03_27_161912_create_financial_category_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreatePaymentsMethodsTable' => $baseDir . '/database/migrations/2018_03_27_162324_create_payments_methods_table.php',
