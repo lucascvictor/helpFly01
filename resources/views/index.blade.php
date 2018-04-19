@@ -15,68 +15,81 @@
    </div>
 </div>
 <div class="container">
-   <div class="row">
-      <div id="dacc8b796-04a0-4f4f-b6a4-924d1ca4c27b" class="col s4 m2">
-         <a href="javascript:void(0)" onclick="fly01.go(&quot;http://financeiro.fly01dev.com.br&quot;)">
-            <div class="app" id="acc8b796-04a0-4f4f-b6a4-924d1ca4c27b">
-               <div class="app-content white-text" style="background:#c39d00;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/financeiro.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Financeiro</span></div>
+
+
+
+<div class="row">
+        <div id="dacc8b796-04a0-4f4f-b6a4-924d1ca4c27b" class="col s4 m2">
+            <a href="javascript:void(0)" onclick="fly01.go(&quot;http://financeiro.fly01dev.com.br&quot;)">
+                <div class="app" id="acc8b796-04a0-4f4f-b6a4-924d1ca4c27b">
+                    <div class="app-content white-text" style="background:#c39d00;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/financeiro.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Financeiro</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col s4 m7">
+        </div>
+        <div class="col s4 m3">
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
             </div>
-         </a>
-      </div>
-      <div class="col s4 m8">
-      </div>
-      <div class="col s4 m2">
-         <div class="card-content white-text">
-            <div class="card orange accent-3">
-               <div class="card-content white-text">
-                  <p class="bounceEffect animated bounceIn">
-                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </p>
-               </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div id="d00ba2502-447e-4670-8885-b67d64496141" class="col s4 m2">
+            <a href="javascript:void(0)" onclick="fly01.go(&quot;http://faturamento.fly01dev.com.br&quot;)">
+                <div class="app" id="00ba2502-447e-4670-8885-b67d64496141">
+                    <div class="app-content white-text" style="background:#6f1200;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/faturamento.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Faturamento</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col s4 m7">
+        </div>
+        <div class="col s4 m3">
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
             </div>
-         </div>
-      </div>
-   </div>
-   <div class="row">
-      <div id="d00ba2502-447e-4670-8885-b67d64496141" class="col s4 m2">
-         <a href="javascript:void(0)" onclick="fly01.go(&quot;http://faturamento.fly01dev.com.br&quot;)">
-            <div class="app" id="00ba2502-447e-4670-8885-b67d64496141">
-               <div class="app-content white-text" style="background:#6f1200;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/faturamento.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Faturamento</span></div>
-            </div>
-         </a>
-      </div>
-      <div class="col s4 m8">
-      </div>
-      <div class="col s4 m2">
-         <div class="card-content white-text">
-            <div class="card orange accent-3">
-               <div class="card-content white-text">
-                  <p class="bounceEffect animated bounceIn">
-                     <iframe width="100%" height="20%" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="row">
-         <div id="d65e3ba3e-6fcd-4527-b2a4-9dc37c80e285" class="col s4 m2">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div id="d65e3ba3e-6fcd-4527-b2a4-9dc37c80e285" class="col s4 m2">
             <a href="javascript:void(0)" onclick="fly01.go(&quot;http://compras.fly01dev.com.br&quot;)">
-               <div class="app" id="65e3ba3e-6fcd-4527-b2a4-9dc37c80e285">
-                  <div class="app-content white-text" style="background:#bf311a;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/compras.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Compras</span></div>
-               </div>
+                <div class="app" id="65e3ba3e-6fcd-4527-b2a4-9dc37c80e285">
+                    <div class="app-content white-text" style="background:#bf311a;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/compras.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Compras</span></div>
+                </div>
             </a>
-         </div>
-      </div>
-      <div class="row">
-         <div id="df259ea8b-f966-4c4f-8b18-97fa4bf2af87" class="col s4 m2">
+        </div>
+        <div class="col s4 m7">
+        </div>
+        <div class="col s4 m3">
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="df259ea8b-f966-4c4f-8b18-97fa4bf2af87" class="col s4 m2">
             <a href="javascript:void(0)" onclick="fly01.go(&quot;http://estoque.fly01dev.com.br&quot;)">
-               <div class="app" id="f259ea8b-f966-4c4f-8b18-97fa4bf2af87">
-                  <div class="app-content white-text" style="background:#00b274;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/estoque.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Estoque</span></div>
-               </div>
+                <div class="app" id="f259ea8b-f966-4c4f-8b18-97fa4bf2af87">
+                <div class="app-content white-text" style="background:#00b274;"><img class="app-icon loaded" src="https://cdnfly01.blob.core.windows.net/img/icon/estoque.png" onload="$(this).addClass('loaded')"><span class="app-title center">Fly01 Estoque</span></div>              </div>
             </a>
-         </div>
-      </div>
-   </div>
+        </div>
+        <div class="col s4 m7">
+        </div>
+        <div class="col s4 m3">
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 @endsection
 @section('footer')
