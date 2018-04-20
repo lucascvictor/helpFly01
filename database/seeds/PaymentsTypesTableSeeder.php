@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PaymentsMethodsTableSeeder extends Seeder
+class PaymentsTypesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,18 +15,15 @@ class PaymentsMethodsTableSeeder extends Seeder
         DB::table('payments_methods')->insert([
             0=> [
             "id" =>1,
-            "tipoFormaPagamento" => 1,
-            "descricao" => 'Dinheiro',
+            "description" => 'Dinheiro',
             ],
             1=> [
             "id" =>2,
-            "tipoFormaPagamento" => 2,
-            "descricao" => 'Transferência Conta Banco do Brasil',
+            "description" => 'Transferência',
             ],
             2=> [
             "id" =>3,
-            "tipoFormaPagamento" => 2,
-            "descricao" => 'Transferência Banco Itaú',
+            "description" => 'Cartão',
             ],
         ]);
     }
