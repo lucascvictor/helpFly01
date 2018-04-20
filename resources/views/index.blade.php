@@ -3,12 +3,9 @@
 @extends('layouts.index')
 @section('title', 'Help Fly01')
 @section('content')
-
-</div>
-
- <nav>
+ <nav class="z-depth-1">
     <div class="nav-wrapper">
-      <a href="#!" class="Módulos">Escolha seu Módulo</a>
+      <a href="#!" class="Módulos" style="margin-left:2%">Escolha seu Módulo</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="sass.html"><i class="material-icons left">shopping_cart</i>Fly01 Compras</a></li>
         <li><a href="badges.html"><i class="material-icons left">archive</i>Fly01 Estoque</a></li>
@@ -18,10 +15,7 @@
     </div>
   </nav>
 
-
-
-
-<div class="container">      
+<div class="container" style="margin-top:5%;">      
    <div class="row">
       <div class="col s4 m9">
       </div>
@@ -58,6 +52,7 @@
          </div>
       </div>
    </div>
+</div>
 </div>
 @endsection
 
