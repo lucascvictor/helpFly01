@@ -15,13 +15,13 @@ class CreateBillsToPay extends Migration
     {
         Schema::create('bills_to_pay', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('status');
-            $table->string('number');
-            $table->string('description');
-            $table->string('expiration');
-            $table->string('value');
-            $table->string('payment_method');
-            $table->timestamps();
+            $table->integer('status');
+            $table->integer('number')->nullable();
+            $table->text('description');
+            $table->date('duedate')->nullable();
+            $table->float('value')->nullable();
+            $table->integer('bank');
+            $table->integer('payment_method');
         });
     }
 
