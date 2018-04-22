@@ -5,6 +5,8 @@ Route::get('/', 'HomeController@index')->name('index');
 Route::get('/import', 'HomeController@getImport')->name('import.get');
 Route::post('/send', 'EmailController@send')->name('email.send');
 
+
+//Controle de rotas da parte finaceira
 Route::group(['prefix' => 'financeiro'], function () {
     Route::get('', 'FluxoDeCaixaController@index')->name('fluodecaixa');
 
@@ -36,10 +38,7 @@ Route::group(['prefix' => 'financeiro'], function () {
     });
 });
 
-Route::get('/produtos/resolucao/{idResolucao}', 'RejeicoesController@getResolucao')->name('resolucao');
-
-Route::get('/teste', 'HomeController@teste');
-
+//Controle de rotas para cadastros
 Route::group(['prefix' => 'cadastros'], function () {
 
     Route::group(['prefix' => 'clientes'], function () {
@@ -83,12 +82,27 @@ Route::group(['prefix' => 'cadastros'], function () {
     });
 });
 
+//Abaixo rotas para teste
+
 Route::get('/chart', 'FluxoDeCaixaController@getChart')->name('chart');
-
 Route::get('/voltar', 'HomeController@voltar')->name('voltar');
-
 Route::get('/suporte', 'HomeController@suporte')->name('suporte');
-
 Route::get('/teste/{$teste}', 'HomeController@teste')->name('teste');
+Route::get('/teste', 'HomeController@teste');
+
+//Abaixo controle de rotas para login em área do admin(criação de posts) e retorno dos posts
+
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login');
+Route::get('/logout', 'Auth\LoginController@logout');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', 'Controller@dashboard');
+    Route::get('/dashboard/posts/{id}/export', 'Api\PostController@export');
+    Route::any('/dashboard/{any}', 'Controller@dashboard')->where('any', '.*');
+});
 
 
+//Rotas utilizadas anteriormente em faturamento
+
+Route::get('/produtos/resolucao/{idResolucao}', 'RejeicoesController@getResolucao')->name('resolucao');

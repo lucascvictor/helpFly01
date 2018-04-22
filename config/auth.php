@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Fly01\Models\Blog\Admin::class,
         ],
 
         // 'users' => [

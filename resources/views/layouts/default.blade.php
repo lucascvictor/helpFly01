@@ -11,6 +11,7 @@
 
     <title>@yield('title')</title>
     @include('partials.styles')
+    @yield('extrastyle')
 
 </head>
 
