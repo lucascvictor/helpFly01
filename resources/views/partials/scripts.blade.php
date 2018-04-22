@@ -2,7 +2,6 @@
   <script src="{{ url('js/enjoyhint.js') }}"></script>
   <script src="{{ url('js/materialize.js') }}"></script>
 
-
   <script>
     function initTour() {
      /* var element = document.getElementById("tour");

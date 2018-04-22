@@ -47,7 +47,7 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $input = $request->all();
-
+        
         // Filter login with email or name.
         $logAccess = filter_var($input['log'], FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
 
