@@ -5,10 +5,10 @@
     <div class="nav-wrapper">
       <a href="#!" class="Módulos" style="margin-left:2%">Escolha seu Módulo</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons left">shopping_cart</i>Fly01 Compras</a></li>
+        <li><a href="{{ url('/financeiro/fluxodecaixa') }}"><i class="material-icons left">shopping_cart</i>Fly01 Compras</a></li>
         <li><a href="badges.html"><i class="material-icons left">archive</i>Fly01 Estoque</a></li>
         <li><a href="badges.html"><i class="material-icons left">insert_chart</i>Fly01 Faturamento</a></li>
-        <li><a href="badges.html"><i class="material-icons left">attach_money</i>Fly01 Financeiro</a></li>
+        <li><a href="{{ url('/financeiro/fluxodecaixa') }}"><i class="material-icons left">attach_money</i>Fly01 Financeiro</a></li>
       </ul>
     </div>
   </nav>
