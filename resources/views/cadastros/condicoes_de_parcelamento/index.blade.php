@@ -9,7 +9,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block">Condições de Parcelamento</h4>
                <ul class="right valign-wrapper fly01-buttons">
-			   <a id="new" class="btn " href="{{ url('/cadastros/condicoesdeparcelamento/create') }}">Novo</a>
+			   <a id="new" class="btn " href="{{ url('/financeiro/cadastros/condicoesdeparcelamento/create') }}">Novo</a>
                <div class="fixed-action-btn"> 
                     <a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
                 </div>

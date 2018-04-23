@@ -11,7 +11,7 @@
          <div class="col s12 fly01-main-header">
             <h4 class="thin inline-block">Contas Bancárias</h4>
             <ul class="right valign-wrapper fly01-buttons">
-               <li><a id="new" class="btn " href="{{ url('/cadastros/contasbancarias/create') }}">Novo</a></li>
+               <li><a id="new" class="btn " href="{{ url('/financeiro/cadastros/contasbancarias/create') }}">Novo</a></li>
             </ul>
          </div>
       </div>

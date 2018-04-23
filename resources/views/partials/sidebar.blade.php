@@ -19,12 +19,12 @@
             <a class="collapsible-header"><i class="material-icons expand right">expand_more</i>Cadastros</a>
             <div class="collapsible-body">
                <ul>
-                <li class=""><a href="{{ url('/cadastros/clientes') }}" >Clientes</a></li>
-                <li class=""><a href="{{ url('/cadastros/fornecedores') }}" >Fornecedores</a></li>
-                <li class=""><a href="{{ url('/cadastros/condicoesdeparcelamento') }}" >Condições de Parcelamento</a></li>
-                <li class=""><a href="{{ url('/cadastros/categoriasfinanceiras') }}" >Categorias Financeiras</a></li>
-                <li class=""><a href="{{ url('/cadastros/formasdepagamento') }}" >Formas de Pagamento</a></li>
-                <li class=""><a href="{{ url('/cadastros/contasbancarias') }}" >Contas Bancárias</a></li>
+                <li class=""><a href="{{ url('/financeiro/cadastros/clientes') }}" >Clientes</a></li>
+                <li class=""><a href="{{ url('/financeiro/cadastros/fornecedores') }}" >Fornecedores</a></li>
+                <li class=""><a href="{{ url('/financeiro/cadastros/condicoesdeparcelamento') }}" >Condições de Parcelamento</a></li>
+                <li class=""><a href="{{ url('/financeiro/cadastros/categoriasfinanceiras') }}" >Categorias Financeiras</a></li>
+                <li class=""><a href="{{ url('/financeiro/cadastros/formasdepagamento') }}" >Formas de Pagamento</a></li>
+                <li class=""><a href="{{ url('/financeiro/cadastros/contasbancarias') }}" >Contas Bancárias</a></li>
                </ul>
             </div>
          </li>

@@ -8,7 +8,7 @@
         
         type : 'get',
         
-        url : "{{ url('/cadastros/clientes/search') }}",
+        url : "{{ url('/financeiro/cadastros/clientes/search') }}",
         
         customers:{'search':$value},
         

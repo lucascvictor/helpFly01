@@ -9,7 +9,7 @@
       <div class="col s12 fly01-main-header">
         <h4 class="thin inline-block">Fornecedores</h4>
         <ul class="right valign-wrapper fly01-buttons">
-          <li><a id="new" class="btn " href="{{ url('/cadastros/fornecedores/new') }}">Novo</a>
+          <li><a id="new" class="btn " href="{{ url('/financeiro/cadastros/fornecedores/new') }}">Novo</a>
           </li>
           <li>
           <button id="start-tour" class="btn">Iniciar o Tour</button>

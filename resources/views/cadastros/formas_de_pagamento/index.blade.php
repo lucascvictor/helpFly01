@@ -9,7 +9,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block">Forma de Pagamento</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="new" class="btn " href="{{ url('/cadastros/formasdepagamento/create') }}">Novo</a></li>
+                  <li><a id="new" class="btn " href="{{ url('/financeiro/cadastros/formasdepagamento/create') }}">Novo</a></li>
                </ul>
             </div>
          </div>
@@ -63,8 +63,8 @@
                      <td nowrap="nowrap">
                         <input type="hidden" class="rowRecordId" value="34252f6a-f85a-4bc6-ac6d-482b886fa016"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown{{$paymentMethod->id}}"><i class="material-icons">more_vert</i></a>
                         <ul id="dropdown{{$paymentMethod->id}}" class="dropdown-content">
-                           <li><a href="{{ url('/cadastros/formasdepagamento/edit')}}/{{ $paymentMethod->id }}">Editar</a></li>
-                           <li><a href="{{ url('/cadastros/formasdepagamento/delete')}}/{{ $paymentMethod->id }}">Excluir</a></li>
+                           <li><a href="{{ url('/financeiro/cadastros/formasdepagamento/edit')}}/{{ $paymentMethod->id }}">Editar</a></li>
+                           <li><a href="{{ url('/financeiro/cadastros/formasdepagamento/delete')}}/{{ $paymentMethod->id }}">Excluir</a></li>
                         </ul>
                      </td>
                   </tr>

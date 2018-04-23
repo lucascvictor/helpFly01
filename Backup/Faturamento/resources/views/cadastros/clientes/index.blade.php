@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col s12 fly01-main-header">
         <h4 class="thin inline-block">Clientes</h4><ul class="right valign-wrapper fly01-buttons"><li>
-          <a id="new" class="btn " href="{{ url('/cadastros/clientes/new') }}">Novo</a>
+          <a id="new" class="btn " href="{{ url('/financeiro/cadastros/clientes/new') }}">Novo</a>
         </li></ul></div></div></div></div>
         <div class="container"><div class="row">
           <div id="fly01dt_wrapper" class="col s12 no-footer" data-vivaldi-spatnav-clickable="1">
