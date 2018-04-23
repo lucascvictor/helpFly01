@@ -71,7 +71,7 @@
 
 @section('extrascript')
 
-@include('cadastros.clientes.search')
+@include('cadastros.gerais.clientes.search')
 
 @endsection
 			
