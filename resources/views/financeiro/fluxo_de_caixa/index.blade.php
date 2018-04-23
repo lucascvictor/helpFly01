@@ -36,9 +36,11 @@
             <label class="truncate active" for="fly01btngrp">Selecione o período</label>
             <div id="fly01btngrp" class="btn-group input-field">
             <?php $pagina = $_SERVER['PHP_SELF'];?>
-            <a href="{{ url('/financeiro/fluxodecaixa/day') }}"   id="btnDia" name="btnDia" class="btn btn-default col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/day') active @endif" value="Dia">Dia</a>
-            <a href="{{ url('/financeiro/fluxodecaixa/week') }}"  id="btnSemana" name="btnSemana" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/week') active @endif" value="Semana" >Semana</a>
-            <a href="{{ url('/financeiro/fluxodecaixa') }}"  id="btnMes" name="btnMes" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa') active @endif" value="Mês">Mês</a>
+              <div id="fly01btngrp" class="btn-group input-field">
+                <input id="btnDia" name="btnDia" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/day') active @endif" onclick="dayInterval()" value="Dia" type="button">
+                <input id="btnSemana" name="btnSemana" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/week') active @endif" onclick="weekInterval()" value="Semana" type="button">
+                <input id="btnMes" name="btnMes" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa') active @endif" onclick="monthInterval()" value="Mês" type="button">
+            </div>
             </div>
         </div>
         </form>
@@ -155,6 +157,23 @@
     @include('financeiro.fluxo_de_caixa.datachart')
 
     @include('financeiro.fluxo_de_caixa.tour')
+
+    <script>
+    function dayInterval()
+    {
+        window.location.href = "{{ url('/financeiro/fluxodecaixa/day') }}";
+    }
+
+    function weekInterval()
+    {
+        window.location.href = "{{ url('/financeiro/fluxodecaixa/week') }}";
+    }
+
+    function monthInterval()
+    {
+        window.location.href = "{{ url('/financeiro/fluxodecaixa') }}";
+    }
+    </script>
 
 @endsection
 										
