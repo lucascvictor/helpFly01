@@ -17,36 +17,28 @@
 
 <div class="container" style="margin-top:5%;">      
    <div class="row">
-      <div class="col s4 m9">
-      </div>
-      <div class="col s4 m3">
+      <div class="col s4 offset-s8 m3 offset-m9">
          <div class="video-container">
             <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
          </div>
       </div>
    </div>
    <div class="row">
-      <div class="col s4 m9">
-      </div>
-      <div class="col s4 m3">
+      <div class="col s4 offset-s8 m3 offset-m9">
          <div class="video-container">
             <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
          </div>
       </div>
    </div>
    <div class="row">
-      <div class="col s4 m9">
-      </div>
-      <div class="col s4 m3">
+      <div class="col s4 offset-s8 m3 offset-m9">
          <div class="video-container">
             <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
          </div>
       </div>
    </div>
    <div class="row">
-      <div class="col s4 m9">
-      </div>
-      <div class="col s4 m3">
+      <div class="col s4 offset-s8 m3 offset-m9">
          <div class="video-container">
             <iframe width="853" height="480" src="https://www.youtube.com/embed/KuxLypSoIWo" frameborder="0" allowfullscreen></iframe>
          </div>
