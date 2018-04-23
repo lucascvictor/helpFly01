@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Cadastros;
+
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
@@ -13,10 +15,10 @@ class ContasBancariasController extends Controller
   public function index(){
     $banksRepository = new BanksRepository;
     $banks = $banksRepository->listBanks();
-    return view('cadastros.contas_bancarias.index')->with('banks', $banks);
+    return view('cadastros.financeiro.contas_bancarias.index')->with('banks', $banks);
   }
 
   public function create(){
-    return view('cadastros.contas_bancarias.create');
+    return view('cadastros.financeiro.contas_bancarias.create');
   }
 }

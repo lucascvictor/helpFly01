@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Cadastros;
+
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
@@ -14,23 +16,22 @@ class FornecedoresController extends Controller
     {
       $personsRepository = new PersonsRepository;
       $suppliers = $personsRepository->listSuppliers();
-    	return view('cadastros.fornecedores.index')->with('suppliers', $suppliers);
+    	return view('cadastros.gerais.fornecedores.index')->with('suppliers', $suppliers);
     }
 
     public function create()
     {
-      return view('cadastros.fornecedores.create');
+      return view('cadastros.gerais.fornecedores.create');
     }
 
     public function pageTour()
     {
-      return view('cadastros.fornecedores.pagetour');
+      return view('cadastros.gerais.fornecedores.pagetour');
     }
-
 
     public function import()
     {
-      return view('cadastros.fornecedores.import');
+      return view('cadastros.gerais.fornecedores.import');
     }
 
 

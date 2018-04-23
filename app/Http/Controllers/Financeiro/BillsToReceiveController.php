@@ -1,29 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Financeiro;
 
 use Illuminate\Http\Request;
 
-class BillsToPayController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+use App\Http\Controllers\Controller;
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+class BillsToReceiveController extends Controller
+{
+    public function index(){
+        return view('financeiro.contas_a_receber.index');
+      }
+
+    public function create(){
+        return view('financeiro.contas_a_receber.create');
     }
 
     /**

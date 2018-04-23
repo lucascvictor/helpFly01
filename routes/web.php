@@ -8,33 +8,33 @@ Route::post('/send', 'EmailController@send')->name('email.send');
 
 //Controle de rotas da parte finaceira
 Route::group(['prefix' => 'financeiro'], function () {
-    Route::get('', 'FluxoDeCaixaController@index')->name('fluodecaixa');
+    Route::get('', 'Financeiro\FluxoDeCaixaController@index')->name('fluodecaixa');
 
     Route::group(['prefix' => 'fluxodecaixa'], function () {
-        Route::get('/', 'FluxoDeCaixaController@index')->name('fluodecaixa');
-        Route::get('/week', 'FluxoDeCaixaController@getByWeek')->name('fluodecaixa.week');
-        Route::get('/day', 'FluxoDeCaixaController@getByDay')->name('fluodecaixa.day');
+        Route::get('/', 'Financeiro\FluxoDeCaixaController@index')->name('fluodecaixa');
+        Route::get('/week', 'Financeiro\FluxoDeCaixaController@getByWeek')->name('fluodecaixa.week');
+        Route::get('/day', 'Financeiro\FluxoDeCaixaController@getByDay')->name('fluodecaixa.day');
     });
     Route::group(['prefix' => 'extrato'], function () {
-        Route::get('/', 'ExtratoController@index')->name('extrato');
+        Route::get('/', 'Financeiro\ExtratoController@index')->name('extrato');
     });
     Route::group(['prefix' => 'contasapagar'], function () {
-     Route::get('/', 'ContasAPagarController@index')->name('contasapagar');
-     Route::get('/create', 'ContasAPagarController@create')->name('contasapagar.create');
-     Route::get('/renegotiation', 'ContasAPagarController@renegotiation')->name('contasapagar.renegotiation');
-     Route::get('/pagetourrenegotiation', 'ContasAPagarController@pageTourRenegotiation')->name('contasapagar.pageTourRenegotiation');
+     Route::get('/', 'Financeiro\BillsToPayController@index')->name('contasapagar');
+     Route::get('/create', 'Financeiro\BillsToPayController@create')->name('contasapagar.create');
+     Route::get('/renegotiation', 'Financeiro\BillsToPayController@renegotiation')->name('contasapagar.renegotiation');
+     Route::get('/pagetourrenegotiation', 'Financeiro\BillsToPayController@pageTourRenegotiation')->name('contasapagar.pageTourRenegotiation');
     });
     
     Route::group(['prefix' => 'contasareceber'], function () {
-        Route::get('/', 'ContasAReceberController@index')->name('contasareceber');
-        Route::get('/create', 'ContasAReceberController@create')->name('contasareceber.create');
+        Route::get('/', 'Financeiro\BillsToreceiveController@index')->name('contasareceber');
+        Route::get('/create', 'Financeiro\BillsToreceiveController@create')->name('contasareceber.create');
     });
     Route::group(['prefix' => 'relatoriodre'], function () {
-        Route::get('/', 'DreController@index')->name('dre');
+        Route::get('/', 'Financeiro\DreController@index')->name('dre');
     });
     Route::group(['prefix' => 'conciliacaobancaria'], function () {
-        Route::get('/', 'ConciliacaoController@index')->name('conciliacao');
-        Route::get('/create', 'ConciliacaoController@create')->name('concilicao.create');
+        Route::get('/', 'Financeiro\ConciliacaoController@index')->name('conciliacao');
+        Route::get('/create', 'Financeiro\ConciliacaoController@create')->name('concilicao.create');
     });
 
 
@@ -42,45 +42,63 @@ Route::group(['prefix' => 'financeiro'], function () {
     Route::group(['prefix' => 'cadastros'], function () {
 
         Route::group(['prefix' => 'clientes'], function () {
-            Route::get('/', 'ClientesController@index')->name('clientes');
-            Route::get('/search', 'ClientesController@search')->name('clientes.search');
-            Route::get('/create', 'ClientesController@create')->name('clientes.create');
-            Route::get('/import', 'ClientesController@import')->name('clientes.import');
-            Route::get('/edit/{id}', 'ClientesController@edit')->name('clientes.edit');
+            Route::get('/', 'Cadastros\ClientesController@index')->name('clientes');
+            Route::get('/search', 'Cadastros\ClientesController@search')->name('clientes.search');
+            Route::get('/create', 'Cadastros\ClientesController@create')->name('clientes.create');
+            Route::get('/import', 'Cadastros\ClientesController@import')->name('clientes.import');
+            Route::get('/edit/{id}', 'Cadastros\ClientesController@edit')->name('clientes.edit');
         });
 
         Route::group(['prefix' => 'fornecedores'], function () {
-            Route::get('', 'FornecedoresController@index')->name('fornecedores');
-            Route::get('/create', 'FornecedoresController@create')->name('fornecedores.create');
-            Route::get('/edit/{id}', 'FornecedoresController@edit')->name('fornecedores.edit');
-            Route::get('/import', 'FornecedoresController@import')->name('fornecedores.import');
-            Route::get('/pagetour', 'FornecedoresController@pageTour')->name('fornecedores.pagetour');
+            Route::get('', 'Cadastros\FornecedoresController@index')->name('fornecedores');
+            Route::get('/create', 'Cadastros\FornecedoresController@create')->name('fornecedores.create');
+            Route::get('/edit/{id}', 'Cadastros\FornecedoresController@edit')->name('fornecedores.edit');
+            Route::get('/import', 'Cadastros\FornecedoresController@import')->name('fornecedores.import');
+            Route::get('/pagetour', 'Cadastros\FornecedoresController@pageTour')->name('fornecedores.pagetour');
         });
 
         Route::group(['prefix' => 'condicoesdeparcelamento'], function () {
-            Route::get('/', 'CondicoesDeParcelamentoController@index')->name('condicoesdeparcelamento');
-            Route::get('/create', 'CondicoesDeParcelamentoController@create')->name('condicoesdeparcelamento.create');
-            Route::get('/edit/{id}', 'CondicoesDeParcelamentoController@edit')->name('condicoesdeparcelamento.edit');
+            Route::get('/', 'Cadastros\CondicoesDeParcelamentoController@index')->name('condicoesdeparcelamento');
+            Route::get('/create', 'Cadastros\CondicoesDeParcelamentoController@create')->name('condicoesdeparcelamento.create');
+            Route::get('/edit/{id}', 'Cadastros\CondicoesDeParcelamentoController@edit')->name('condicoesdeparcelamento.edit');
         });
 
         Route::group(['prefix' => 'categoriasfinanceiras'], function () {
-            Route::get('/', 'CategoriasFinanceirasController@index')->name('categoriasfinanceiras');
-            Route::get('/create', 'CategoriasFinanceirasController@create')->name('categoriasfinanceiras.create');
-            Route::get('/edit/{id}', 'CategoriasFinanceirasController@edit')->name('categoriasfinanceiras.edit');
+            Route::get('/', 'Cadastros\CategoriasFinanceirasController@index')->name('categoriasfinanceiras');
+            Route::get('/create', 'Cadastros\CategoriasFinanceirasController@create')->name('categoriasfinanceiras.create');
+            Route::get('/edit/{id}', 'Cadastros\CategoriasFinanceirasController@edit')->name('categoriasfinanceiras.edit');
         });
 
         Route::group(['prefix' => 'formasdepagamento'], function () {    
-            Route::get('/', 'FormasDePagamentoController@index')->name('formasdepagamento');
-            Route::get('/create', 'FormasDePagamentoController@create')->name('formasdepagamento.create');
-            Route::get('/edit/{id}', 'FormasDePagamentoController@edit')->name('formasdepagamento.edit');
+            Route::get('/', 'Cadastros\FormasDePagamentoController@index')->name('formasdepagamento');
+            Route::get('/create', 'Cadastros\FormasDePagamentoController@create')->name('formasdepagamento.create');
+            Route::get('/edit/{id}', 'Cadastros\FormasDePagamentoController@edit')->name('formasdepagamento.edit');
         });
 
         Route::group(['prefix' => 'contasbancarias'], function () {   
-            Route::get('/', 'ContasBancariasController@index')->name('contasbancarias');
-            Route::get('/create', 'ContasBancariasController@create')->name('contasbancarias.create');
-            Route::get('/edit/{id}', 'ContasBancariasController@edit')->name('contasbancarias.edit');
+            Route::get('/', 'Cadastros\ContasBancariasController@index')->name('contasbancarias');
+            Route::get('/create', 'Cadastros\ContasBancariasController@create')->name('contasbancarias.create');
+            Route::get('/edit/{id}', 'Cadastros\ContasBancariasController@edit')->name('contasbancarias.edit');
         });
     });
+});
+
+//Modulo de Faturamento
+
+Route::group(['prefix' => 'faturamento'], function () {
+    Route::get('', 'Faturamento/FaturamentoController@index')->name('faturamento');
+});
+
+//Modulo de Estoque
+
+Route::group(['prefix' => 'estoque'], function () {
+    Route::get('', 'Estoque/EstoqueController@index')->name('faturamento');
+});
+
+//Modulo de Compras
+
+Route::group(['prefix' => 'compras'], function () {
+    Route::get('', 'Compras/ComprasController@index')->name('faturamento');
 });
 
 //Abaixo rotas para teste

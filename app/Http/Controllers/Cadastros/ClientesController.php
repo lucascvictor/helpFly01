@@ -1,11 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Cadastros;
+
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class BillsToReceiveController extends Controller
+use App\Fly01\Repositories\PersonsRepository;
+
+use DB;
+
+use Response;
+
+class ClientesController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +22,9 @@ class BillsToReceiveController extends Controller
      */
     public function index()
     {
-        //
+        $personsRepository = new PersonsRepository;
+        $customers = $personsRepository->listCustomers();
+        return view('cadastros.gerais.clientes.index')->with('customers', $customers);
     }
 
     /**
@@ -23,7 +34,12 @@ class BillsToReceiveController extends Controller
      */
     public function create()
     {
-        //
+      return view('cadastros.gerais.clientes.create');
+    }
+
+    public function import()
+    {
+      return view('cadastros.gerais.clientes.import');
     }
 
     /**
@@ -81,4 +97,15 @@ class BillsToReceiveController extends Controller
     {
         //
     }
+
+    public function search(Request $request)
+    {     
+            $query= $request->search; 
+            $personsRepository = new PersonsRepository;
+            $customers = $personsRepository->searchByName($query);    
+            return Response::json(['customers'   => $customers]); 
+
+    }
+
+
 }

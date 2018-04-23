@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Cadastros;
+
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
@@ -11,11 +13,11 @@ class FormasDePagamentoController extends Controller
   public function index(){
     $paymentsMethodsRepository = new PaymentsMethodsRepository;
     $paymentsMethods = $paymentsMethodsRepository->getPaymentsMethods();
-    return view('cadastros.formas_de_pagamento.index')->with('paymentsMethods', $paymentsMethods);
+    return view('cadastros.financeiro.formas_de_pagamento.index')->with('paymentsMethods', $paymentsMethods);
   }
 
   public function create(){
-    return view('cadastros.formas_de_pagamento.create');
+    return view('cadastros.financeiro.formas_de_pagamento.create');
   }
 
   /**
@@ -28,7 +30,7 @@ class FormasDePagamentoController extends Controller
     {
       $paymentsMethodsRepository = new PaymentsMethodsRepository;
       $paymentMethod = $paymentsMethodsRepository->getPaymentMethod($id);    
-      return view('cadastros.formas_de_pagamento.edit')->with('paymentMethod', $paymentMethod);
+      return view('cadastros.financeiro.formas_de_pagamento.edit')->with('paymentMethod', $paymentMethod);
  
     }
 

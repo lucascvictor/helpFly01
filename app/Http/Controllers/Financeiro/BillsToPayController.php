@@ -1,43 +1,33 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Financeiro;
 
 use Illuminate\Http\Request;
 
 use App\Fly01\Repositories\PersonsRepository;
 
-use DB;
+use App\Http\Controllers\Controller;
 
-use Response;
-
-class ClientesController extends Controller
+class BillsToPayController extends Controller
 {
+    public function index(){
+        return view('financeiro.contas_a_pagar.index');
+      }
+  
+    public function create(){
+        return view('financeiro.contas_a_pagar.create');
+    }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
+    public function renegotiation(){
         $personsRepository = new PersonsRepository;
-        $customers = $personsRepository->listCustomers();
-        return view('cadastros.clientes.index')->with('customers', $customers);
+        $suppliers = $personsRepository->listSuppliers();
+
+        return view('financeiro.contas_a_pagar.renegotiation')->with('dados', $suppliers);
+        //dados são para o filtro de nomes do autocompletar
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-      return view('cadastros.clientes.create');
-    }
-
-    public function import()
-    {
-      return view('cadastros.clientes.import');
+    public function pageTourRenegotiation(){
+        return view('financeiro.contas_a_pagar.pageTourRenegotiation');
     }
 
     /**
@@ -96,14 +86,5 @@ class ClientesController extends Controller
         //
     }
 
-    public function search(Request $request)
-    {     
-            $query= $request->search; 
-            $personsRepository = new PersonsRepository;
-            $customers = $personsRepository->searchByName($query);    
-            return Response::json(['customers'   => $customers]); 
-
-    }
-
-
+    
 }
