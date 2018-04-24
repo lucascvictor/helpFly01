@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
 
-use App\Fly01\Repositories\BanksRepository;
+use App\Fly01\Repositories\Financeiro\BanksRepository;
 
-use App\Fly01\Repositories\BTPRepository;
+use App\Fly01\Repositories\Financeiro\BillsToPayRepository;
 
-use App\Fly01\Repositories\BTRRepository;
+use App\Fly01\Repositories\Financeiro\BillsToReceiveRepository;
 
 use DB;
 

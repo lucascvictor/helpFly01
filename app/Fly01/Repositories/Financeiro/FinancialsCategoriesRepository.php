@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Fly01\Repositories;
+namespace App\Fly01\Repositories\Financeiro;
 
 
 use App\Http\Requests;
