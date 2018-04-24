@@ -17,8 +17,20 @@
 
 <body>
   <header>
-    @include('partials.menu')
-    @include('partials.sidebar')
+    <?php $pagina = $_SERVER['PHP_SELF'];?>
+    @if(strpos($pagina, '/financeiro'))
+      @include('partials.financeiro.menu')
+      @include('partials.financeiro.sidebar')
+    @elseif(strpos($pagina, '/faturamento'))
+      @include('partials.faturamento.menu')
+      @include('partials.faturamento.sidebar')
+    @elseif(strpos($pagina, '/compras'))
+      @include('partials.compras.menu')
+      @include('partials.compras.sidebar')
+    @elseif(strpos($pagina, '/estoque'))
+      @include('partials.estoque.menu')
+      @include('partials.estoque.sidebar')
+    @endif
   </header>
   <main style="height: 1500px;">
         @yield('content')
