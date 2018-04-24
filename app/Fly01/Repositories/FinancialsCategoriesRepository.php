@@ -14,9 +14,9 @@ use DB;
 class FinancialsCategoriesRepository
 {
 
-public function getCategories()
-{
-  return FinancialCategory::all();
-}
+  public function getCategories()
+  {
+    return FinancialCategory::all();
+  }
 
 }

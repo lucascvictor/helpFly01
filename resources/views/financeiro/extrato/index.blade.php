@@ -150,14 +150,16 @@
                   </tr>
                </tfoot>
                <tbody>
+                @foreach($billsToPay as $billToPay)
                   <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">09/03/2018</td>
-                     <td nowrap="nowrap">asdsadsdasd</td>
+                     <td tabindex="0" nowrap="nowrap">{{ $billToPay->dueDate }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->description }}</td>
                      <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">BANCO MODAL</td>
-                     <td nowrap="nowrap">R$ 50,00</td>
+                     <td nowrap="nowrap">{{ $billToPay->bank }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->value }}</td>
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
                   </tr>
+                @endforeach
                   <tr role="row" class="even">
                      <td tabindex="0" nowrap="nowrap">09/03/2018</td>
                      <td nowrap="nowrap">teste123</td>

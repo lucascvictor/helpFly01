@@ -449,6 +449,8 @@ class ComposerStaticInitbe8d7a81ee03b9966e922c0ce582a9ee
         'App\\Fly01\\Models\\TermOfPayment' => __DIR__ . '/../..' . '/app/Fly01/Models/TermOfPayment.php',
         'App\\Fly01\\Models\\User' => __DIR__ . '/../..' . '/app/Fly01/Models/User.php',
         'App\\Fly01\\Repositories\\BanksRepository' => __DIR__ . '/../..' . '/app/Fly01/Repositories/BanksRepository.php',
+        'App\\Fly01\\Repositories\\BillsToPayRespository' => __DIR__ . '/../..' . '/app/Fly01/Repositories/BillsToPayRepository.php',
+        'App\\Fly01\\Repositories\\BillsToReceiveRespository' => __DIR__ . '/../..' . '/app/Fly01/Repositories/BillsToReceiveRepository.php',
         'App\\Fly01\\Repositories\\Blog\\CategoryRepository' => __DIR__ . '/../..' . '/app/Fly01/Repositories/Blog/CategoryRepository.php',
         'App\\Fly01\\Repositories\\Blog\\CommentRepository' => __DIR__ . '/../..' . '/app/Fly01/Repositories/Blog/CommentRepository.php',
         'App\\Fly01\\Repositories\\Blog\\PostRepository' => __DIR__ . '/../..' . '/app/Fly01/Repositories/Blog/PostRepository.php',

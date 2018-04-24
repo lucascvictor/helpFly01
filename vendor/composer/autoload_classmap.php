@@ -34,6 +34,8 @@ return array(
     'App\\Fly01\\Models\\TermOfPayment' => $baseDir . '/app/Fly01/Models/TermOfPayment.php',
     'App\\Fly01\\Models\\User' => $baseDir . '/app/Fly01/Models/User.php',
     'App\\Fly01\\Repositories\\BanksRepository' => $baseDir . '/app/Fly01/Repositories/BanksRepository.php',
+    'App\\Fly01\\Repositories\\BillsToPayRespository' => $baseDir . '/app/Fly01/Repositories/BillsToPayRepository.php',
+    'App\\Fly01\\Repositories\\BillsToReceiveRespository' => $baseDir . '/app/Fly01/Repositories/BillsToReceiveRepository.php',
     'App\\Fly01\\Repositories\\Blog\\CategoryRepository' => $baseDir . '/app/Fly01/Repositories/Blog/CategoryRepository.php',
     'App\\Fly01\\Repositories\\Blog\\CommentRepository' => $baseDir . '/app/Fly01/Repositories/Blog/CommentRepository.php',
     'App\\Fly01\\Repositories\\Blog\\PostRepository' => $baseDir . '/app/Fly01/Repositories/Blog/PostRepository.php',
