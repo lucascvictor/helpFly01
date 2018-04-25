@@ -87,19 +87,19 @@ Route::group(['prefix' => 'financeiro'], function () {
 //Modulo de Faturamento
 
 Route::group(['prefix' => 'faturamento'], function () {
-    Route::get('', 'Faturamento/FaturamentoController@index')->name('faturamento');
+    Route::get('', 'Faturamento\FaturamentoController@index')->name('faturamento');
 });
 
 //Modulo de Estoque
 
 Route::group(['prefix' => 'estoque'], function () {
-    Route::get('', 'Estoque/EstoqueController@index')->name('faturamento');
+    Route::get('', 'Estoque\EstoqueController@index')->name('faturamento');
 });
 
 //Modulo de Compras
 
 Route::group(['prefix' => 'compras'], function () {
-    Route::get('', 'Compras/ComprasController@index')->name('faturamento');
+    Route::get('', 'Compras\ComprasController@index')->name('faturamento');
 });
 
 //Abaixo rotas para teste
