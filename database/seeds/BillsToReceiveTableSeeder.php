@@ -21,7 +21,8 @@ class BillsToReceiveTableSeeder extends Seeder
             'duedate' => '26/04/2018',
             'value' => 2500,
             'bank' => 2,
-            'payment_method' => 1
+            'payment_method' => 1,
+            'person' => 1
             ],
         1=> [
             'id' => 2,
@@ -31,7 +32,8 @@ class BillsToReceiveTableSeeder extends Seeder
             'duedate' => '26/04/2018',
             'value' => 5000,
             'bank' => 1,
-            'payment_method' => 1
+            'payment_method' => 1,
+            'person' => 1
             ],
         2=> [
             'id' => 3,
@@ -41,7 +43,8 @@ class BillsToReceiveTableSeeder extends Seeder
             'duedate' => '26/04/2018',
             'value' => 250,
             'bank' => 3,
-            'payment_method' => 1
+            'payment_method' => 1,
+            'person' => 1
             ],
         3=> [
             'id' => 4,
@@ -51,7 +54,8 @@ class BillsToReceiveTableSeeder extends Seeder
             'duedate' => '26/04/2018',
             'value' => 100,
             'bank' => 1,
-            'payment_method' => 1
+            'payment_method' => 1,
+            'person' => 1
             ],
         4=> [
             'id' => 5,
@@ -61,7 +65,8 @@ class BillsToReceiveTableSeeder extends Seeder
             'duedate' => '26/04/2018',
             'value' => 250,
             'bank' => 1,
-            'payment_method' => 1
+            'payment_method' => 1,
+            'person' => 1
             ],
         ]);
     }
