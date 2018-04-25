@@ -27,8 +27,8 @@ Route::group(['prefix' => 'financeiro'], function () {
     });
     
     Route::group(['prefix' => 'contasareceber'], function () {
-        Route::get('/', 'Financeiro\BillsToreceiveController@index')->name('contasareceber');
-        Route::get('/create', 'Financeiro\BillsToreceiveController@create')->name('contasareceber.create');
+        Route::get('/', 'Financeiro\BillsToReceiveController@index')->name('contasareceber');
+        Route::get('/create', 'Financeiro\BillsToReceiveController@create')->name('contasareceber.create');
     });
     Route::group(['prefix' => 'relatoriodre'], function () {
         Route::get('/', 'Financeiro\DreController@index')->name('dre');

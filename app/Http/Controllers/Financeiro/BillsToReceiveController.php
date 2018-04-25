@@ -4,12 +4,17 @@ namespace App\Http\Controllers\Financeiro;
 
 use Illuminate\Http\Request;
 
+use App\Fly01\Repositories\Financeiro\BillsToReceiveRepository;
+
 use App\Http\Controllers\Controller;
 
 class BillsToReceiveController extends Controller
 {
     public function index(){
-        return view('financeiro.contas_a_receber.index');
+        $btrRepository = new BillsToReceiveRepository;
+        $billsToReceive = $btrRepository->listAll();
+ 
+        return view('financeiro.contas_a_receber.index')->with('billsToReceive', $billsToReceive);
       }
 
     public function create(){
