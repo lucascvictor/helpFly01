@@ -4,7 +4,7 @@
  <nav class="z-depth-1">
     <div class="nav-wrapper">
       <a href="#!" class="Módulos" style="margin-left:2%">Escolha seu Módulo</a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right">
         <li><a href="{{ url('/compras') }}"><i class="material-icons left">shopping_cart</i>Fly01 Compras</a></li>
         <li><a href="{{ url('/estoque') }}"><i class="material-icons left">archive</i>Fly01 Estoque</a></li>
         <li><a href="{{ url('/faturamento') }}l"><i class="material-icons left">insert_chart</i>Fly01 Faturamento</a></li>
