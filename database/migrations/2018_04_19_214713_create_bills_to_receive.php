@@ -22,6 +22,7 @@ class CreateBillsToReceive extends Migration
             $table->float('value')->nullable();
             $table->integer('bank');
             $table->integer('payment_method');
+            $table->integer('person');
        });
    }
 

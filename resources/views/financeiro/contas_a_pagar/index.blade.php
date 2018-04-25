@@ -179,15 +179,16 @@
                   </tr>
                </tfoot>
                <tbody>
+               @foreach($billsToPay as $billToPay)
                   <tr role="row" class="odd">
                      <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">19/03/2018</td>
-                     <td nowrap="nowrap">TITULO SEMANAL</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Camila Silva</td>
+                     <td nowrap="nowrap">{{ $billToPay->duedate }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->description }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->value }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->duedate }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->value }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->value }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->person }}</td>
                      <td nowrap="nowrap">
                         <input class="rowRecordId" value="1cc08ba4-d697-4730-b0b3-1e5d53621ed1" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown0"><i class="material-icons">more_vert</i></a>
                         <ul id="dropfly01dtdown0" class="dropdown-content">
@@ -198,174 +199,7 @@
                         </ul>
                      </td>
                   </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">05/03/2018</td>
-                     <td nowrap="nowrap">TITULO SEMANAL</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Camila Silva</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="74f43069-821d-4ed7-86f6-3c3224e4fbe8" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown1"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown1" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('74f43069-821d-4ed7-86f6-3c3224e4fbe8')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('74f43069-821d-4ed7-86f6-3c3224e4fbe8')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('74f43069-821d-4ed7-86f6-3c3224e4fbe8')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('74f43069-821d-4ed7-86f6-3c3224e4fbe8')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">16/03/2018</td>
-                     <td nowrap="nowrap">TITULO A PAGAR</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Fábio Fernandes Correia</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="f9c93da1-1dea-4ee5-a53f-3f61ffd9261a" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown2"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown2" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('f9c93da1-1dea-4ee5-a53f-3f61ffd9261a')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('f9c93da1-1dea-4ee5-a53f-3f61ffd9261a')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('f9c93da1-1dea-4ee5-a53f-3f61ffd9261a')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('f9c93da1-1dea-4ee5-a53f-3f61ffd9261a')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">01/03/2018</td>
-                     <td nowrap="nowrap">RECURSO SEMANAL</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Clara Cavalcanti Pereira</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="6a1c513b-d193-4da6-9ed4-443e0477377a" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown3"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown3" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('6a1c513b-d193-4da6-9ed4-443e0477377a')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('6a1c513b-d193-4da6-9ed4-443e0477377a')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('6a1c513b-d193-4da6-9ed4-443e0477377a')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('6a1c513b-d193-4da6-9ed4-443e0477377a')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">12/03/2018</td>
-                     <td nowrap="nowrap">TITULO SEMANAL</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Camila Silva</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="610a4933-f54b-4d7a-a07b-8f219295d4f5" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown4"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown4" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('610a4933-f54b-4d7a-a07b-8f219295d4f5')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('610a4933-f54b-4d7a-a07b-8f219295d4f5')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('610a4933-f54b-4d7a-a07b-8f219295d4f5')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('610a4933-f54b-4d7a-a07b-8f219295d4f5')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">15/03/2018</td>
-                     <td nowrap="nowrap">A</td>
-                     <td nowrap="nowrap">R$ 1,00</td>
-                     <td nowrap="nowrap">R$ 1,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Camila Silva</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="c79728b8-50c4-490f-ad6c-9372dcd2b4ba" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown5"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown5" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('c79728b8-50c4-490f-ad6c-9372dcd2b4ba')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('c79728b8-50c4-490f-ad6c-9372dcd2b4ba')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('c79728b8-50c4-490f-ad6c-9372dcd2b4ba')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('c79728b8-50c4-490f-ad6c-9372dcd2b4ba')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">30/03/2018</td>
-                     <td nowrap="nowrap">TITULO A PAGAR</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Fábio Fernandes Correia</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="b8af70fe-bc42-4c63-9fb8-97367b868422" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown6"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown6" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('b8af70fe-bc42-4c63-9fb8-97367b868422')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('b8af70fe-bc42-4c63-9fb8-97367b868422')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('b8af70fe-bc42-4c63-9fb8-97367b868422')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('b8af70fe-bc42-4c63-9fb8-97367b868422')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">26/03/2018</td>
-                     <td nowrap="nowrap">TITULO SEMANAL</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">R$ 10,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Camila Silva</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="3945f6c8-3aa9-4502-93a7-cc47deec6c49" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown7"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown7" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('3945f6c8-3aa9-4502-93a7-cc47deec6c49')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('3945f6c8-3aa9-4502-93a7-cc47deec6c49')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('3945f6c8-3aa9-4502-93a7-cc47deec6c49')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('3945f6c8-3aa9-4502-93a7-cc47deec6c49')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge orange left" data-badge-caption=" ">ABER</span></td>
-                     <td nowrap="nowrap">23/03/2018</td>
-                     <td nowrap="nowrap">TITULO A PAGAR</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">R$ 100,00</td>
-                     <td nowrap="nowrap">A VISTA</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">Fábio Fernandes Correia</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="6c5e04c9-60bd-4a7e-82ed-e63c69683cab" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown8"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown8" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnEditar('6c5e04c9-60bd-4a7e-82ed-e63c69683cab')">Editar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('6c5e04c9-60bd-4a7e-82ed-e63c69683cab')">Visualizar</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnExcluir('6c5e04c9-60bd-4a7e-82ed-e63c69683cab')">Excluir</a></li>
-                           <li><a href="javascript:void(0)" onclick="fnNovaBaixa('6c5e04c9-60bd-4a7e-82ed-e63c69683cab')">Nova baixa</a></li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td class="sorting_1" tabindex="0" nowrap="nowrap"><span class="new badge red left" data-badge-caption=" ">RENG</span></td>
-                     <td nowrap="nowrap">10/03/2018</td>
-                     <td nowrap="nowrap">Aluguel</td>
-                     <td nowrap="nowrap">R$ 3.000,00</td>
-                     <td nowrap="nowrap">R$ 2.000,00</td>
-                     <td nowrap="nowrap">Boleto</td>
-                     <td nowrap="nowrap">01/01</td>
-                     <td nowrap="nowrap">TESTE</td>
-                     <td nowrap="nowrap">
-                        <input class="rowRecordId" value="d827ed28-9520-4a34-bcd5-4551e3e401ee" type="hidden"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropfly01dtdown9"><i class="material-icons">more_vert</i></a>
-                        <ul id="dropfly01dtdown9" class="dropdown-content">
-                           <li><a href="javascript:void(0)" onclick="fnVisualizar('d827ed28-9520-4a34-bcd5-4551e3e401ee')">Visualizar</a></li>
-                        </ul>
-                     </td>
-                  </tr>
+                @endforeach
                </tbody>
             </table>
             <div class="">

@@ -6,12 +6,17 @@ use Illuminate\Http\Request;
 
 use App\Fly01\Repositories\PersonsRepository;
 
+use App\Fly01\Repositories\Financeiro\BillsToPayRepository;
+
 use App\Http\Controllers\Controller;
 
 class BillsToPayController extends Controller
 {
     public function index(){
-        return view('financeiro.contas_a_pagar.index');
+        $btpRepository = new BillsToPayRepository;
+        $billsToPay = $btpRepository->listAll();
+
+        return view('financeiro.contas_a_pagar.index')->with('billsToPay', $billsToPay);
       }
   
     public function create(){
