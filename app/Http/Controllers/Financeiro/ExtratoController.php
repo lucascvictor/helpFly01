@@ -18,8 +18,8 @@ class ExtratoController extends Controller
 {
   public function index(){
     $banksRepository = new BanksRepository;
-    $btpRepository = new BTPRepository;
-    $btrRepository = new BTRRepository;
+    $btpRepository = new BillsToPayRepository;
+    $btrRepository = new BillsToReceiveRepository;
 
     $billsToPay = $btpRepository->listAll();
     $billsToReceive = $btrRepository->listAll();
@@ -31,13 +31,13 @@ class ExtratoController extends Controller
     ->with('billsToReceive', $billsToReceive);;
   }
 
-  public function bills() {
+  public function billsByBank($bank) {
     
     $btpRepository = new BillsToPayRepository;
     $btrRepository = new BillsToReceiveRepository;
 
-    $billsToPay = $btpRepository->listAll();
-    $billsToReceive = $btrRepository->listAll();
+    $billsToPay = $btpRepository->listByBank($bank);
+    $billsToReceive = $btrRepository->listByBank($bank);
 
     return view('financeiro.extrato.index')
     ->with('billsToPay', $billsToPay)

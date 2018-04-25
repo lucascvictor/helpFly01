@@ -4,7 +4,7 @@ namespace App\Fly01\Repositories\Financeiro;
 
 use App\Http\Requests;
 
-use App\Fly01\Models\Bank;
+use App\Fly01\Models\Financeiro\Bank;
 
 use Auth;
 

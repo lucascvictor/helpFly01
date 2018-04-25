@@ -150,9 +150,19 @@
                   </tr>
                </tfoot>
                <tbody>
+               @foreach($billsToReceive as $billToReceive)
+                  <tr role="row" class="odd">
+                     <td tabindex="0" nowrap="nowrap">{{ $billToReceive->duedate }}</td>
+                     <td nowrap="nowrap">{{ $billToReceive->description }}</td>
+                     <td nowrap="nowrap"></td>
+                     <td nowrap="nowrap">{{ $billToReceive->bank }}</td>
+                     <td nowrap="nowrap">{{ $billToReceive->value }}</td>
+                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
+                  </tr>
+                @endforeach
                 @foreach($billsToPay as $billToPay)
                   <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">{{ $billToPay->dueDate }}</td>
+                     <td tabindex="0" nowrap="nowrap">{{ $billToPay->duedate }}</td>
                      <td nowrap="nowrap">{{ $billToPay->description }}</td>
                      <td nowrap="nowrap"></td>
                      <td nowrap="nowrap">{{ $billToPay->bank }}</td>
@@ -160,134 +170,6 @@
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
                   </tr>
                 @endforeach
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">09/03/2018</td>
-                     <td nowrap="nowrap">teste123</td>
-                     <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">BANCO MODAL</td>
-                     <td nowrap="nowrap">-R$ 50,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">09/03/2018</td>
-                     <td nowrap="nowrap">Transf. de </td>
-                     <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">BANCO VOLVO</td>
-                     <td nowrap="nowrap">R$ 50,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">09/03/2018</td>
-                     <td nowrap="nowrap">Transf. para </td>
-                     <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">BANCO MODAL</td>
-                     <td nowrap="nowrap">-R$ 50,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">13/03/2018</td>
-                     <td nowrap="nowrap">Comissão </td>
-                     <td nowrap="nowrap">Vinícius Rocha Cunha</td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">R$ 450,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">13/03/2018</td>
-                     <td nowrap="nowrap">Teste</td>
-                     <td nowrap="nowrap">FRAGA ALTERADO</td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">R$ 33,34</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">13/03/2018</td>
-                     <td nowrap="nowrap">Estorno* Comissão </td>
-                     <td nowrap="nowrap">Vinícius Rocha Cunha</td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">-R$ 450,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">13/03/2018</td>
-                     <td nowrap="nowrap">Comissão </td>
-                     <td nowrap="nowrap">Vinícius Rocha Cunha</td>
-                     <td nowrap="nowrap">BANCO VOLVO</td>
-                     <td nowrap="nowrap">R$ 400,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">14/03/2018</td>
-                     <td nowrap="nowrap">INICIALIZACAO</td>
-                     <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">-R$ 100,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">14/03/2018</td>
-                     <td nowrap="nowrap">Aluguel</td>
-                     <td nowrap="nowrap">TESTE</td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">-R$ 1.000,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">14/03/2018</td>
-                     <td nowrap="nowrap">CATEGORIA RABBIT EXTRATO</td>
-                     <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">R$ 1,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">14/03/2018</td>
-                     <td nowrap="nowrap">INICIALIZACAO </td>
-                     <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">BANCO INICIALIZAÇÃO</td>
-                     <td nowrap="nowrap">R$ 1.000,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">15/03/2018</td>
-                     <td nowrap="nowrap">Primeiro pagamento</td>
-                     <td nowrap="nowrap">ABC ABC</td>
-                     <td nowrap="nowrap">Minha</td>
-                     <td nowrap="nowrap">R$ 9,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">15/03/2018</td>
-                     <td nowrap="nowrap">SDFSDFDF</td>
-                     <td nowrap="nowrap">Camila Silva</td>
-                     <td nowrap="nowrap">BANCO MODAL</td>
-                     <td nowrap="nowrap">-R$ 6,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">15/03/2018</td>
-                     <td nowrap="nowrap">Pagamento </td>
-                     <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">Minha</td>
-                     <td nowrap="nowrap">-R$ 9,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="even">
-                     <td tabindex="0" nowrap="nowrap">15/03/2018</td>
-                     <td nowrap="nowrap">RENEGOCIADA</td>
-                     <td nowrap="nowrap">TESTE</td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">-R$ 200,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
-                  <tr role="row" class="odd">
-                     <td tabindex="0" nowrap="nowrap">15/03/2018</td>
-                     <td nowrap="nowrap">SDFSDFDF</td>
-                     <td nowrap="nowrap">Camila Silva</td>
-                     <td nowrap="nowrap">BANCO CNH</td>
-                     <td nowrap="nowrap">-R$ 10,00</td>
-                     <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
-                  </tr>
                </tbody>
             </table>
             <div class="">
