@@ -17,7 +17,6 @@ Route::group(['prefix' => 'financeiro'], function () {
     });
     Route::group(['prefix' => 'extrato'], function () {
         Route::get('/', 'Financeiro\ExtratoController@index')->name('extrato');
-        Route::get('/{bank}', 'Fianceiro\ExtratoController@billsByBank')->name('extrato.bank');
     });
     Route::group(['prefix' => 'contasapagar'], function () {
      Route::get('/', 'Financeiro\BillsToPayController@index')->name('contasapagar');
@@ -93,7 +92,9 @@ Route::group(['prefix' => 'faturamento'], function () {
 //Modulo de Estoque
 
 Route::group(['prefix' => 'estoque'], function () {
-    Route::get('', 'Estoque/EstoqueController@index')->name('faturamento');
+    Route::get('', 'Estoque\EstoqueController@index')->name('faturamento');
+
+    Route::get('/visaogeral', 'Estoque\VisaoGeralController@index')->name('visaogeral');
 });
 
 //Modulo de Compras
