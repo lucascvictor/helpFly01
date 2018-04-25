@@ -19,7 +19,11 @@ class BillsToPayRepository
 
   public function listByBank($bank)
   {
-    return BillToPay::select('*')->where('bank', $bank)->get();
+    return DB::table('bills_to_pay')
+    ->join('banks', 'bills_to_pay.bank', '=', 'bank.id')
+    ->select('bills_to_pay.*', 'banks.bancoNome')
+    ->where('bills_to_pay.bank', $bank)
+    ->get();
   }
 
 }

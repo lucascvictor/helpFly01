@@ -19,7 +19,11 @@ class BillsToReceiveRepository
 
   public function listByBank($bank)
   {
-    return BillToPay::select('*')->where('bank', $bank)->get();
+    return DB::table('bills_to_receive')
+    ->join('banks', 'bills_to_receive.bank', '=', 'bank.id')
+    ->select('bills_to_receive.*', 'banks.bancoNome')
+    ->where('bills_to_receive.bank', $bank)
+    ->get();
   }
 
 }
