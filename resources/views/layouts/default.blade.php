@@ -18,16 +18,17 @@
 <body>
   <header>
     <?php $pagina = $_SERVER['PHP_SELF'];?>
-    @if(strpos($pagina, '/financeiro'))
+
+    @if(strpos($pagina, 'index.php/financeiro'))
       @include('partials.financeiro.menu')
       @include('partials.financeiro.sidebar')
-    @elseif(strpos($pagina, '/faturamento'))
+    @elseif(strpos($pagina, 'index.php/faturamento'))
       @include('partials.faturamento.menu')
       @include('partials.faturamento.sidebar')
-    @elseif(strpos($pagina, '/compras'))
+    @elseif(strpos($pagina, 'index.php/compras'))
       @include('partials.compras.menu')
       @include('partials.compras.sidebar')
-    @elseif(strpos($pagina, '/estoque'))
+    @elseif(strpos($pagina, 'index.php/estoque'))
       @include('partials.estoque.menu')
       @include('partials.estoque.sidebar')
     @endif
