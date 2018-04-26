@@ -1,15 +1,14 @@
 <script>
-    
      var barChartData = {
             <?php $intervalo = 0;?>
-            @if($pagina == '/index.php/financeiro/fluxodecaixa/day' || $pagina == '/index.php/financeiro/fluxodecaixa/day/')
+            @if(strpos($pagina, '/financeiro/fluxodecaixa/day'))
                 <?php $intervalo = 0;?>
-            @elseif($pagina == '/index.php/financeiro/fluxodecaixa/week' || $pagina == '/index.php/financeiro/fluxodecaixa/week/')
+            @elseif(strpos($pagina, '/financeiro/fluxodecaixa/week'))
                 <?php $intervalo = 4;?>
-            @elseif($pagina == '/index.php/financeiro/fluxodecaixa' || $pagina == '/index.php/financeiro/fluxodecaixa/')
+            @elseif(strpos($pagina, '/financeiro/fluxodecaixa'))
                 <?php $intervalo = 4;?>
-            @elseif($pagina == '/index.php/financeiro' || $pagina == '/index.php/financeiro/')
-            <?php $intervalo = 4;?>
+            @elseif(strpos($pagina, '/financeiro'))
+                <?php $intervalo = 4;?>
             @endif
             
             <?php $i = 0; ?>
