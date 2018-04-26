@@ -1,5 +1,5 @@
 <ul id="nav-mobile" class="side-nav fixed ps" style="transform: translateX(0%);">
-   <li class="logo"><a id="logo-container" href="/" class="brand-logo"><img src="https://cdnfly01.azureedge.net/img/fly01branco.png"></a></li>
+   <li class="logo"><a id="logo-container" href="/faturamento" class="brand-logo"><img src="https://cdnfly01.azureedge.net/img/fly01branco.png"></a></li>
    <li class="no-padding">
       <ul class="side collapsible">
          <li class="">
