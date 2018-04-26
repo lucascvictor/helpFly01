@@ -23,6 +23,7 @@ class ExtratoController extends Controller
 
     $billsToPay = $btpRepository->listAll();
     $billsToReceive = $btrRepository->listAll();
+
     $banks = $banksRepository->listBanks();
     
     return view('financeiro.extrato.index')

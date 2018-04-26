@@ -15,7 +15,7 @@ class BillsToPayController extends Controller
     public function index(){
         $btpRepository = new BillsToPayRepository;
         $billsToPay = $btpRepository->listAll();
-
+        
         return view('financeiro.contas_a_pagar.index')->with('billsToPay', $billsToPay);
       }
   

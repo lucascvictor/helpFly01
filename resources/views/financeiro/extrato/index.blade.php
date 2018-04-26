@@ -155,7 +155,7 @@
                      <td tabindex="0" nowrap="nowrap">{{ $billToReceive->duedate }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->description }}</td>
                      <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">{{ $billToReceive->bank }}</td>
+                     <td nowrap="nowrap">{{ $billToReceive->bancoNome }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->value }}</td>
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
                   </tr>
@@ -165,7 +165,7 @@
                      <td tabindex="0" nowrap="nowrap">{{ $billToPay->duedate }}</td>
                      <td nowrap="nowrap">{{ $billToPay->description }}</td>
                      <td nowrap="nowrap"></td>
-                     <td nowrap="nowrap">{{ $billToPay->bank }}</td>
+                     <td nowrap="nowrap">{{ $billToPay->bancoNome }}</td>
                      <td nowrap="nowrap">{{ $billToPay->value }}</td>
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
                   </tr>
