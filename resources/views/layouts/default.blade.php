@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,7 @@
 <body>
   <header>
     <?php $pagina = $_SERVER['PHP_SELF'];?>
-
+    <?php dd($pagina); ?>
     @if(strpos($pagina, 'index.php/financeiro'))
       @include('partials.financeiro.menu')
       @include('partials.financeiro.sidebar')
