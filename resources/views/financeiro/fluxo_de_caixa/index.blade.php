@@ -35,11 +35,11 @@
         <div id="fly01btngrpField" class="input-field col s12 m6 l4">
             <label class="truncate active" for="fly01btngrp">Selecione o período</label>
             <div id="fly01btngrp" class="btn-group input-field">
-            <?php $pagina = $_SERVER['PHP_SELF'];?>
+            <?php $pagina = $_SERVER['REQUEST_URI'];?>
               <div id="fly01btngrp" class="btn-group input-field">
-                <input id="btnDia" name="btnDia" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/day') active @endif" onclick="dayInterval()" value="Dia" type="button">
-                <input id="btnSemana" name="btnSemana" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa/week') active @endif" onclick="weekInterval()" value="Semana" type="button">
-                <input id="btnMes" name="btnMes" class="btn col s4 @if($pagina == '/index.php/financeiro/fluxodecaixa') active @endif" onclick="monthInterval()" value="Mês" type="button">
+                <input id="btnDia" name="btnDia" class="btn col s4 @if($pagina == '/financeiro/fluxodecaixa/day') active @endif" onclick="dayInterval()" value="Dia" type="button">
+                <input id="btnSemana" name="btnSemana" class="btn col s4 @if($pagina == '/financeiro/fluxodecaixa/week') active @endif" onclick="weekInterval()" value="Semana" type="button">
+                <input id="btnMes" name="btnMes" class="btn col s4 @if($pagina == '/financeiro/fluxodecaixa') active @endif" onclick="monthInterval()" value="Mês" type="button">
             </div>
             </div>
         </div>

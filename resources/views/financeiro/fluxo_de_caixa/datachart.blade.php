@@ -3,11 +3,11 @@
             <?php $intervalo = 0;?>
             @if(strpos($pagina, '/financeiro/fluxodecaixa/day'))
                 <?php $intervalo = 0;?>
-            @elseif(strpos($pagina, '/financeiro/fluxodecaixa/week'))
+            @elseif(!strpos($pagina, '/financeiro/fluxodecaixa/week'))
                 <?php $intervalo = 4;?>
-            @elseif(strpos($pagina, '/financeiro/fluxodecaixa'))
+            @elseif(!strpos($pagina, '/financeiro/fluxodecaixa'))
                 <?php $intervalo = 4;?>
-            @elseif(strpos($pagina, '/financeiro'))
+            @elseif(!strpos($pagina, '/financeiro'))
                 <?php $intervalo = 4;?>
             @endif
             
