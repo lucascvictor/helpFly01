@@ -19,6 +19,7 @@ Route::group(['prefix' => 'financeiro'], function () {
         Route::get('/', 'Financeiro\ExtratoController@index')->name('extrato');
         Route::get('/{bank}', 'Financeiro\ExtratoController@billsByBank')->name('extrato.billsByBank');
     });
+    
     Route::group(['prefix' => 'contasapagar'], function () {
      Route::get('/', 'Financeiro\BillsToPayController@index')->name('contasapagar');
      Route::get('/create', 'Financeiro\BillsToPayController@create')->name('contasapagar.create');
