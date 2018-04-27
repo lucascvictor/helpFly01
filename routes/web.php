@@ -97,6 +97,7 @@ Route::group(['prefix' => 'estoque'], function () {
     Route::get('', 'Estoque\VisaoGeralController@index')->name('faturamento');
 
     Route::get('/visaogeral', 'Estoque\VisaoGeralController@index')->name('visaogeral');
+    Route::get('/ajustemanual', 'Estoque\AjusteManualController@index')->name('ajustemanual');
 });
 
 //Modulo de Compras
