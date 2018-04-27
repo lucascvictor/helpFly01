@@ -18,30 +18,40 @@ class ExtratoController extends Controller
 {
   public function index(){
     $banksRepository = new BanksRepository;
-    $btpRepository = new BillsToPayRepository;
-    $btrRepository = new BillsToReceiveRepository;
-
-    $billsToPay = $btpRepository->listAll();
-    $billsToReceive = $btrRepository->listAll();
+    $billsToPayByBank = array();
+    $billsToReceiveByBank = array();
 
     $banks = $banksRepository->listBanks();
-    
+
+    foreach($banks as $bank)
+    {
+      array_push($billsToPayByBank, array($banksRepository->billsToPayByBank($bank->id)));
+      array_push($billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
+    }
+
+    dd($billsToPayByBank);
     return view('financeiro.extrato.index')
     ->with('banks', $banks)
-    ->with('billsToPay', $billsToPay)
-    ->with('billsToReceive', $billsToReceive);;
+    ->with('billsToPay', $this->listBillsToPay())
+    ->with('billsToReceive', $this->listBillsToReceive());
   }
 
   public function billsByBank($bank) {
-    
-    $btpRepository = new BillsToPayRepository;
-    $btrRepository = new BillsToReceiveRepository;
-
-    $billsToPay = $btpRepository->listByBank($bank);
-    $billsToReceive = $btrRepository->listByBank($bank);
 
     return view('financeiro.extrato.index')
-    ->with('billsToPay', $billsToPay)
-    ->with('billsToReceive', $billsToReceive);
+    ->with('billsToPay', $this->listBillsToPay())
+    ->with('billsToReceive', $this->listBillsToReceive());
+  }
+
+  public function listBillsToPay()
+  {
+    $btpRepository = new BillsToPayRepository;
+    return $btpRepository->listByBank($bank);
+  }
+
+  public function listBillsToReceive()
+  {
+    $btrRepository = new BillsToReceiveRepository;
+    return $btrRepository->listByBank($bank);
   }
 }
