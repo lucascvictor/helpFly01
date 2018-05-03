@@ -18,16 +18,18 @@
   <header>
     <?php $pagina = $_SERVER['REQUEST_URI'];?>
     <?php $pagina = $pagina . '/'; ?>
-    @if(preg_match($pagina, "compras"))
+    <?php $pagina = explode('/', $pagina);?>
+
+    @if(in_array("compras", $pagina))
       @include('partials.compras.menu')
       @include('partials.compras.sidebar')
-    @elseif(preg_match($pagina, 'estoque'))
+    @elseif(in_array('estoque', $pagina))
       @include('partials.estoque.menu')
       @include('partials.estoque.sidebar')
-    @elseif(preg_match($pagina, 'financeiro') )
+    @elseif(in_array('financeiro', $pagina) )
       @include('partials.financeiro.menu')
       @include('partials.financeiro.sidebar')
-    @elseif(preg_match($pagina, 'faturamento') )
+    @elseif(in_array('faturamento', $pagina) )
       @include('partials.faturamento.menu')
       @include('partials.faturamento.sidebar')
     @endif
