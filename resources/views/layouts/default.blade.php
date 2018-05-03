@@ -17,7 +17,6 @@
 <body>
   <header>
     <?php $pagina = $_SERVER['REQUEST_URI'];?>
-    <?php $pagina = $pagina . '/'; ?>
     <?php $pagina = explode('/', $pagina);?>
 
     @if(in_array("compras", $pagina))
