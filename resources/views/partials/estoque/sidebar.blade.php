@@ -8,8 +8,8 @@
                <ul>
                   <li class=""><a href="{{ url('/estoque/visaogeral') }}" >Visão Geral</a></li>
                   <li class=""><a href="{{ url('/estoque/ajustemanual') }}" >Ajuste Manual</a></li>
-                  <li class=""><a href="{{ url('/estoque/posiçãoatual') }}" >Posição Atual</a></li>
-                  <li class=""><a href="{{ url('/estoque/iventario') }}" >Iventário</a></li>
+                  <li class=""><a href="{{ url('/estoque/posicaoatual') }}" >Posição Atual</a></li>
+                  <li class=""><a href="{{ url('/estoque/inventario') }}" >Inventário</a></li>
               </ul>
             </div>
          </li>

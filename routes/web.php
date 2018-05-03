@@ -98,6 +98,17 @@ Route::group(['prefix' => 'estoque'], function () {
 
     Route::get('/visaogeral', 'Estoque\VisaoGeralController@index')->name('visaogeral');
     Route::get('/ajustemanual', 'Estoque\AjusteManualController@index')->name('ajustemanual');
+    Route::get('/posicaoatual', 'Estoque\PosicaoAtualController@index')->name('posicaoatual');
+    Route::get('/inventario', 'Estoque\InventarioController@index')->name('inventario');
+
+     //Controle de rotas para cadastros
+     Route::group(['prefix' => 'cadastros'], function () {
+
+        Route::group(['prefix' => 'clientes'], function () {
+            Route::get('/produto', 'Cadastros\ProdutoController@index')->name('produto');
+           
+        });
+    });
 });
 
 //Modulo de Compras
