@@ -26,7 +26,7 @@ class ExtratoController extends Controller
     foreach($banks as $bank)
     {
       array_push($billsToPayByBank, array($banksRepository->billsToPayByBank($bank->id)));
-      array_push($billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
+      arrayl_push($billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
     }
 
     dd($billsToPayByBank);
