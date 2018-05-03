@@ -154,17 +154,18 @@
                   <tr role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap">{{ $billToReceive->duedate }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->description }}</td>
-                     <td nowrap="nowrap"></td>
+                     <td nowrap="nowrap">{{ $billToReceive->name }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->bancoNome }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->value }}</td>
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
                   </tr>
                 @endforeach
+                
                 @foreach($billsToPay as $billToPay)
                   <tr role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap">{{ $billToPay->duedate }}</td>
                      <td nowrap="nowrap">{{ $billToPay->description }}</td>
-                     <td nowrap="nowrap"></td>
+                     <td nowrap="nowrap">{{ $billToPay->name }}</td>
                      <td nowrap="nowrap">{{ $billToPay->bancoNome }}</td>
                      <td nowrap="nowrap">{{ $billToPay->value }}</td>
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>

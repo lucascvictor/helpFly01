@@ -22,7 +22,9 @@ class BanksRepository
   {
     return DB::table('bills_to_pay')
     ->join('banks', 'banks.id', '=', 'bills_to_pay.bank')
-    ->select('bills_to_pay.*')
+    ->join('person', 'person.id', '=', 'bills_to_pay.person')
+    ->select('bills_to_pay.*', 'banks.bancoNome', 'person.name')
+    //->where('bills_to_pay.bank', $bank)
     ->get();
   }
 
@@ -30,7 +32,9 @@ class BanksRepository
   {
     return DB::table('bills_to_receive')
     ->join('banks', 'banks.id', '=', 'bills_to_receive.bank')
-    ->select('bills_to_receive.*')
+    ->join('person', 'person.id', '=', 'bills_to_receive.person')
+    ->select('bills_to_receive.*', 'banks.bancoNome', 'person.name')
+    //->where('bills_to_receive.bank', $bank)
     ->get();
   }
 

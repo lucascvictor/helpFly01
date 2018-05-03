@@ -26,30 +26,28 @@ class ExtratoController extends Controller
     foreach($banks as $bank)
     {
       array_push($billsToPayByBank, array($banksRepository->billsToPayByBank($bank->id)));
-      arrayl_push($billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
+      array_push($billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
     }
-
-    dd($billsToPayByBank);
+  
     return view('financeiro.extrato.index')
     ->with('banks', $banks)
-    ->with('billsToPay', $this->listBillsToPay())
-    ->with('billsToReceive', $this->listBillsToReceive());
+    ->with('billsToPay', $billsToPayByBank[0][0])
+    ->with('billsToReceive', $billsToReceiveByBank[0][0]);
   }
 
   public function billsByBank($bank) {
-
     return view('financeiro.extrato.index')
     ->with('billsToPay', $this->listBillsToPay())
     ->with('billsToReceive', $this->listBillsToReceive());
   }
 
-  public function listBillsToPay()
+  public function listBillsToPay($bank)
   {
     $btpRepository = new BillsToPayRepository;
     return $btpRepository->listByBank($bank);
   }
 
-  public function listBillsToReceive()
+  public function listBillsToReceive($bank)
   {
     $btrRepository = new BillsToReceiveRepository;
     return $btrRepository->listByBank($bank);
