@@ -39,6 +39,4 @@ class PersonsRepository
     return Person::select('*')->where('name', 'LIKE', '%'.$query.'%')->get();
   }
   
-
-
 }
