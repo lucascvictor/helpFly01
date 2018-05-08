@@ -103,11 +103,7 @@ Route::group(['prefix' => 'estoque'], function () {
 
      //Controle de rotas para cadastros
      Route::group(['prefix' => 'cadastros'], function () {
-
-        Route::group(['prefix' => 'clientes'], function () {
-            Route::get('/produto', 'Cadastros\ProdutoController@index')->name('produto');
-           
-        });
+            Route::get('/produtos', 'Cadastros\ProdutosController@index')->name('produtos');  
     });
 });
 
