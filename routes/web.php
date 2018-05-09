@@ -89,6 +89,12 @@ Route::group(['prefix' => 'financeiro'], function () {
 
 Route::group(['prefix' => 'faturamento'], function () {
     Route::get('', 'Faturamento\FaturamentoController@index')->name('faturamento');
+
+    //Controle de rotas para cadastros
+    Route::group(['prefix' => 'cadastros'], function () {
+        Route::get('/produtos', 'Cadastros\ProdutosController@index')->name('produtos');  
+    });
+
 });
 
 //Modulo de Estoque
