@@ -79,7 +79,25 @@
                         <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
                               <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
-                                 <span class="left">{{ $bank->nomeConta }}</span><strong class="right green-text">R$ 0</strong>
+                                 <span class="left">{{ $bank->nomeConta }}</span><strong class="right green-text">
+                                 <?php $totalToReceive = 0; $totalToPay = 0; $totalBank = 0; ?>
+                                 @foreach($billsToReceive as $billToReceive)
+                                 <?php 
+                                 if ($billToReceive->bank == $bank->id) {
+                                    $totalToReceive += $billToReceive->value;
+                                 }
+                                 ?>
+                                 @endforeach
+                                 @foreach($billsToPay as $billToPay)
+                                 <?php 
+                                 if ($billToPay->bank == $bank->id) {
+                                    $totalToPay += $billToPay->value;
+                                 }
+                                 ?>
+                                 @endforeach
+                                 <?php $totalBank = $totalToReceive - $totalToPay;?>
+                                 R${{ $totalBank }}
+                                 </strong>
                                  <div class="progress">
                                     <div class="determinate" style="width: 100%"></div>
                                  </div>
@@ -156,7 +174,7 @@
                      <td nowrap="nowrap">{{ $billToReceive->description }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->name }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->bancoNome }}</td>
-                     <td nowrap="nowrap">{{ $billToReceive->value }}</td>
+                     <td nowrap="nowrap">R${{ $billToReceive->value }}</td>
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
                   </tr>
                 @endforeach
@@ -167,7 +185,7 @@
                      <td nowrap="nowrap">{{ $billToPay->description }}</td>
                      <td nowrap="nowrap">{{ $billToPay->name }}</td>
                      <td nowrap="nowrap">{{ $billToPay->bancoNome }}</td>
-                     <td nowrap="nowrap">{{ $billToPay->value }}</td>
+                     <td nowrap="nowrap">-R${{ $billToPay->value }}</td>
                      <td nowrap="nowrap"><input class="rowRecordId" value="undefined" type="hidden"></td>
                   </tr>
                 @endforeach
