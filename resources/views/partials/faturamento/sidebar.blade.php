@@ -22,7 +22,7 @@
                <li class=""><a href="{{ url('/faturamento/cadastros/produtos') }}" >Produtos</a></li>
                <li class=""><a href="{{ url('/faturamento/cadastros/grupodeprodutos') }}" >Grupo de Produtos</a></li>
                <li class=""><a href="{{ url('/faturamento/cadastros/servicos') }}" >Serviços</a></li>
-                <li class=""><a href="{{ url('/faturamento/cadastros/condicaoparcelamento') }}" >Condição Parcelamento</a></li>
+                <li class=""><a href="{{ url('/faturamento/cadastros/condicoesdeparcelamento') }}" >Condição Parcelamento</a></li>
                 <li class=""><a href="{{ url('/faturamento/cadastros/formadepagamentos') }}" >Forma de Pagamentos</a></li>
                 <li class=""><a href="{{ url('/faturamento/cadastros/categoria') }}" >Categoria</a></li>
                 <li class=""><a href="{{ url('/faturamento/cadastros/substituicaotributaria') }}" >Substituição Tributária</a></li>
