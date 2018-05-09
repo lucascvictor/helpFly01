@@ -68,7 +68,7 @@
                      <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
                               <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
-                                 <span class="left">Todas as contas</span><strong class="right green-text">R$ resultado da soma</strong>
+                                 <span class="left">Todas as contas</span><strong class="right green-text">R${{ $totalGeral }}</strong>
                                  <div class="progress">
                                     <div class="determinate" style="width: 100%"></div>
                                  </div>
@@ -80,23 +80,7 @@
                            <td tabindex="0" nowrap="nowrap">
                               <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
                                  <span class="left">{{ $bank->nomeConta }}</span><strong class="right green-text">
-                                 <?php $totalToReceive = 0; $totalToPay = 0; $totalBank = 0; ?>
-                                 @foreach($billsToReceive as $billToReceive)
-                                 <?php 
-                                 if ($billToReceive->bank == $bank->id) {
-                                    $totalToReceive += $billToReceive->value;
-                                 }
-                                 ?>
-                                 @endforeach
-                                 @foreach($billsToPay as $billToPay)
-                                 <?php 
-                                 if ($billToPay->bank == $bank->id) {
-                                    $totalToPay += $billToPay->value;
-                                 }
-                                 ?>
-                                 @endforeach
-                                 <?php $totalBank = $totalToReceive - $totalToPay;?>
-                                 R${{ $totalBank }}
+                                R${{ $totalBank[$bank->id] }}
                                  </strong>
                                  <div class="progress">
                                     <div class="determinate" style="width: 100%"></div>
