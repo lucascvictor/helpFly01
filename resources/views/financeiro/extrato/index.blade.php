@@ -78,12 +78,13 @@
                      @foreach($banks as $bank)
                         <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
+                           <?php $porcentagem = 100 * ($totalBank[$bank->id]/$totalGeral) ?>
+                              <div class="tooltipped" data-position="top" data-tooltip="Representação: {{ $porcentagem }}%" data-conta-id="">
                                  <span class="left">{{ $bank->nomeConta }}</span><strong class="right green-text">
                                 R${{ $totalBank[$bank->id] }}
                                  </strong>
                                  <div class="progress">
-                                    <div class="determinate" style="width: 100%"></div>
+                                    <div class="determinate" style="width: {{ $porcentagem }}%"></div>
                                  </div>
                               </div>
                            </td>
