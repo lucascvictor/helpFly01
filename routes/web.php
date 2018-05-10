@@ -95,6 +95,8 @@ Route::group(['prefix' => 'faturamento'], function () {
         Route::get('/produtos', 'Cadastros\ProdutosController@index')->name('produtos');  
         Route::get('/grupodeprodutos', 'Cadastros\GrupoDeProdutosController@index')->name('grupodeprodutos');
         Route::get('/servicos', 'Cadastros\ServicosController@index')->name('servicos');  
+        Route::get('/substituicaotributaria', 'Cadastros\SubstituicaoTributariaController@index')->name('substituicaotributaria');  
+        Route::get('/grupotributariosaida', 'Cadastros\GrupoTributarioSaidaController@index')->name('grupotributariosaida');  
 
         Route::group(['prefix' => 'clientes'], function () {
             Route::get('/', 'Cadastros\ClientesController@index')->name('clientes');
