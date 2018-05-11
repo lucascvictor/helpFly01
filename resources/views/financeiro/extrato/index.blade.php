@@ -79,12 +79,12 @@
                         <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
                            <?php $porcentagem = 100 * ($totalBank[$bank->id]/$totalGeral) ?>
-                              <div class="tooltipped" data-position="top" data-tooltip="Representação: {{ $porcentagem }}%" data-conta-id="">
+                              <div class="tooltipped" data-position="top" data-tooltip="Representação: {{ round($porcentagem, 2) }}%" data-conta-id="">
                                  <span class="left">{{ $bank->nomeConta }}</span><strong class="right green-text">
                                 R${{ $totalBank[$bank->id] }}
                                  </strong>
                                  <div class="progress">
-                                    <div class="determinate" style="width: {{ $porcentagem }}%"></div>
+                                    <div class="determinate" style="width: {{ round($porcentagem, 2) }}%"></div>
                                  </div>
                               </div>
                            </td>
