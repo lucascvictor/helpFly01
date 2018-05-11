@@ -60,8 +60,8 @@ class ExtratoController extends Controller
 
   public function billsByBank($bank) {
     return view('financeiro.extrato.index')
-    ->with('billsToPay', $this->listBillsToPay())
-    ->with('billsToReceive', $this->listBillsToReceive());
+    ->with('billsToPay', $this->listBillsToPay($bank))
+    ->with('billsToReceive', $this->listBillsToReceive($bank));
   }
 
   public function listAllBillsToPay() {
