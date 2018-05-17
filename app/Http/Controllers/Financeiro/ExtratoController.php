@@ -16,54 +16,137 @@ use DB;
 
 class ExtratoController extends Controller
 {
-  public function index(){
-    $banksRepository = new BanksRepository;
-    $billsToPayByBank = array();
-    $billsToReceiveByBank = array();
-    $billsToReceive;
-    $billsToPay;
-    $totalBank = array();
-    $totalGeral = 0;
-    $banks = $banksRepository->listBanks();
-    $billsToReceive = $this->listAllBillsToReceive();
-    $billsToPay = $this->listAllBillsToPay();
+  public $billsToPayByBank = array();
+  public $billsToReceiveByBank = array();
+  private $billsToReceive;
+  private $billsToPay;
+  private $totalBank = array();
+  private $totalGeral;
+  private $banks;
 
-    foreach($banks as $bank)
-    {
-      array_push($billsToPayByBank, array($banksRepository->billsToPayByBank($bank->id)));
-      array_push($billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
-      $totalToReceive = 0;
-      $totalToPay = 0;
-      foreach($billsToReceive as $billToReceive) {
-        if ($billToReceive->bank == $bank->id) {
-          $totalToReceive += $billToReceive->value;
-        }
-      }
-  
-      foreach($billsToPay as $billToPay) { 
-        if ($billToPay->bank == $bank->id) {
-          $totalToPay += $billToPay->value;
-        }
-      }
-      
-      $totalBank[$bank->id] = $totalToReceive - $totalToPay;
-      $totalGeral += $totalBank[$bank->id];
-    }
- 
+  public function __construct() {
+    $banksRepository = new BanksRepository;
+    $this->setTotalGeral(0);
+    $this->banks = $banksRepository->listBanks();
+  }
+
+  public function setTotalGeral($total) {
+    $this->totalGeral += $total;
+  }
+
+  public function getTotalgeral() {
+    return $this->totalGeral;
+  }
+
+  public function setTotalBank($total, $indice) {
+    $this->totalBank[$indice] = $total;
+  }
+
+  public function getTotalBank() {
+    return $this->totalBank;
+  }
+
+  public function getBillsToPay() {
+    return $this->billsToPay;
+  }
+
+  public function setBillsToPay($value) {
+     $this->billsToPay = $value;
+  }
+
+  public function getBillsToReceive() {
+    return $this->billsToReceive;
+  }
+
+  public function setBillsToReceive($value) {
+     $this->billsToReceive = $value;
+  }
+
+  public function getBanks() {
+    return $this->banks;
+  }
+
+  public function index(){
+    
+    $this->motor();
     return view('financeiro.extrato.index')
-    ->with('banks', $banks)
-    ->with('billsToPay', $billsToPayByBank[0][0])
-    ->with('billsToReceive', $billsToReceiveByBank[0][0])
-    ->with('totalGeral', $totalGeral) //soma dos totais por banco
-    ->with('totalBank', $totalBank); //total por banco
+    ->with('banks', $this->getBanks())
+    ->with('billsToPay', $this->billsToPayByBank[0][0])
+    ->with('billsToReceive', $this->billsToReceiveByBank[0][0])
+    ->with('totalGeral', $this->getTotalGeral()) //soma dos totais por banco
+    ->with('totalBank', $this->getTotalBank()); //total por banco
+  }
+
+  public function motor() {
+    
+    foreach($this->getBanks() as $bank)
+    {
+      array_push($this->$billsToPayByBank, array($banksRepository->billsToPayByBank($bank->id)));
+      array_push($this->$billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
+      $this->setBillsToReceive($this->totalToReceiveByBank($bank));
+      $this->setBillsToPay($this->totalToPayByBank($bank));
+
+      $this->setTotalBank($this->totalByBank($bank), $bank->id);
+      $this->setTotalGeral($totalBank[$bank->id]); 
+    }
+    
   }
 
   public function billsByBank($bank) {
     return view('financeiro.extrato.index')
     ->with('billsToPay', $this->listBillsToPay($bank))
-    ->with('billsToReceive', $this->listBillsToReceive($bank));
+    ->with('billsToReceive', $this->listBillsToReceive($bank))
+    ->with('totalGeral', $this->getTotalGeral()) //soma dos totais por banco
+    ->with('totalBank', $this->getTotalBank()); //total por banco;
   }
 
+  public function totalGeral($bank) {
+    $totalGeral = 0;
+    $totalGeral += $totalBank[$bank->id];
+    return $totalGeral;
+  }
+
+  public function totalByBank($bank) {
+    $totalToReceive = 0;
+    $totalToPay = 0;
+    $totalBank = 0;
+    
+    $totalToPay = $this->totalToPayByBank($bank);
+    $totalToReceive = $this->totalToReceiveByBank($bank);
+    
+    $totalBank = $totalToReceive - $totalToPay;
+
+    return $totalBank;
+  }
+
+  public function totalToReceiveByBank($bank) {
+    $billsToReceive = $this->listAllBillsToReceive();
+    $totalToReceive = 0;
+
+    foreach($billsToReceive as $billToReceive) {
+      if ($billToReceive->bank == $bank->id) {
+        $totalToReceive += $billToReceive->value;
+      }
+    }
+
+    return $totalToReceive;
+  }
+
+  public function totalToPayByBank($bank) {
+    $billsToPay = $this->listAllBillsToPay();
+    $totalToPay = 0;
+
+    foreach($billsToPay as $billToPay) { 
+      if ($billToPay->bank == $bank->id) {
+        $totalToPay += $billToPay->value;
+      }
+    }
+
+    return $totalToPay;
+  }
+
+
+  
   public function listAllBillsToPay() {
     $btp = new BillsToPayRepository;
     return $btp->listAll();
