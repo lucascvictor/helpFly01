@@ -83,11 +83,12 @@ class ExtratoController extends Controller
     {
       array_push($this->$billsToPayByBank, array($banksRepository->billsToPayByBank($bank->id)));
       array_push($this->$billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
+      
       $this->setBillsToReceive($this->totalToReceiveByBank($bank));
       $this->setBillsToPay($this->totalToPayByBank($bank));
-
       $this->setTotalBank($this->totalByBank($bank), $bank->id);
-      $this->setTotalGeral($totalBank[$bank->id]); 
+      $this->setTotalBank($this->totalBank[$bank->id], $bank->id);
+      $this->setTotalGeral($this->$totalBank[$bank->id]); 
     }
     
   }
