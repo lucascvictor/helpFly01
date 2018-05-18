@@ -38,8 +38,12 @@ class ExtratoController extends Controller
     return $this->totalGeral;
   }
 
-  public function setTotalBank($total, $indice) {
+  public function setTotalByBank($total, $indice) {
     $this->totalBank[$indice] = $total;
+  }
+
+  public function getTotalByBank($indice) {
+    return $this->totalBank[$indice];
   }
 
   public function getTotalBank() {
@@ -66,6 +70,22 @@ class ExtratoController extends Controller
     return $this->banks;
   }
 
+  public function getBillsToPayByBank() {
+    return $this->billsToPayByBank;
+  }
+
+  public function setBillsToPayByBank($bills) {
+    array_push($this->billsToPayByBank, $bills);
+  }
+
+  public function getBillsToReceiveByBank() {
+    return $this->billsToReceiveByBank;
+  }
+
+  public function setBillsToReceiveByBank($bills) {
+    array_push($this->billsToReceiveByBank, $bills);
+  }
+
   public function index(){
     
     $this->motor();
@@ -78,17 +98,17 @@ class ExtratoController extends Controller
   }
 
   public function motor() {
-    
+    $banksRepository = new BanksRepository;
     foreach($this->getBanks() as $bank)
     {
-      array_push($this->$billsToPayByBank, array($banksRepository->billsToPayByBank($bank->id)));
-      array_push($this->$billsToReceiveByBank, array($banksRepository->billsToReceiveByBank($bank->id)));
+      $this->setBillsToPayByBank($banksRepository->billsToPayByBank($bank->id));
+      $this->setBillsToReceiveByBank($banksRepository->billsToReceiveByBank($bank->id));
       
       $this->setBillsToReceive($this->totalToReceiveByBank($bank));
       $this->setBillsToPay($this->totalToPayByBank($bank));
-      $this->setTotalBank($this->totalByBank($bank), $bank->id);
-      $this->setTotalBank($this->totalBank[$bank->id], $bank->id);
-      $this->setTotalGeral($this->$totalBank[$bank->id]); 
+      $this->setTotalByBank($this->totalByBank($bank), $bank->id);
+      $this->setTotalByBank($this->totalBank[$bank->id], $bank->id);
+      $this->setTotalGeral($this->getTotalByBank($bank->id)); 
     }
     
   }
