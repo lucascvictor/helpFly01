@@ -35,7 +35,7 @@
                <ul>
                   <li class=""><a href="{{ url('/faturamento/certificadodigital') }}" >Certificado Digital</a></li>
                   <li class=""><a href="{{ url('/faturamento/parametrostributarios') }}" >Parametrôs Tributários</a></li>
-                  <li class=""><a href="{{ url('/faturamento/seriedenotasficais') }}" >Série de Notas Fiscais</a></li>
+                  <li class=""><a href="{{ url('/faturamento/serienotafiscal') }}" >Série de Notas Fiscais</a></li>
               </ul>
             </div>
          </li>
