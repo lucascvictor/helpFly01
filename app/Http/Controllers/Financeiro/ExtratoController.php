@@ -114,7 +114,9 @@ class ExtratoController extends Controller
   }
 
   public function billsByBank($bank) {
+    $this->motor();
     return view('financeiro.extrato.index')
+    ->with('banks', $this->getBanks())
     ->with('billsToPay', $this->listBillsToPay($bank))
     ->with('billsToReceive', $this->listBillsToReceive($bank))
     ->with('totalGeral', $this->getTotalGeral()) //soma dos totais por banco

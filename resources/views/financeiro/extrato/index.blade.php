@@ -75,7 +75,9 @@
                               </div>
                            </td>
                         </tr>
+
                      @foreach($banks as $bank)
+                     
                         <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
                            <?php $porcentagem = 100 * ($totalBank[$bank->id]/$totalGeral) ?>
@@ -155,7 +157,9 @@
                   </tr>
                </tfoot>
                <tbody>
+               
                @foreach($billsToReceive as $billToReceive)
+               
                   <tr role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap">{{ $billToReceive->duedate }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->description }}</td>
