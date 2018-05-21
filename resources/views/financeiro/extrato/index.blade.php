@@ -157,9 +157,8 @@
                   </tr>
                </tfoot>
                <tbody>
-               
+
                @foreach($billsToReceive as $billToReceive)
-               
                   <tr role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap">{{ $billToReceive->duedate }}</td>
                      <td nowrap="nowrap">{{ $billToReceive->description }}</td>
