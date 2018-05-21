@@ -43,7 +43,7 @@
             <a class="collapsible-header"><i class="material-icons expand right">expand_more</i>Ajuda</a>
             <div class="collapsible-body">
                <ul>
-               <li class=""><a href="{{ url('/suporte') }}" onclick="">Solicitar Suporte</a>
+               <li class=""><a href="{{ url('/faturamento/suporte') }}" onclick="">Solicitar Suporte</a>
                </ul>
             </div>
          </li>
