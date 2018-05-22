@@ -5,7 +5,7 @@ namespace App\Fly01\Repositories\Financeiro;
 
 use App\Http\Requests;
 
-use App\Fly01\Models\FinancialCategory;
+use App\Fly01\Models\Financeiro\FinancialCategory;
 
 use Auth;
 

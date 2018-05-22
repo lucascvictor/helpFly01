@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-use App\Fly01\Repositories\FinancialsCategoriesRepository;
+use App\Fly01\Repositories\Financeiro\FinancialsCategoriesRepository;
 
 use DB;
 
