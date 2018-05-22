@@ -157,7 +157,7 @@
                   </tr>
                </tfoot>
                <tbody>
-
+                
                @foreach($billsToReceive as $billToReceive)
                   <tr role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap">{{ $billToReceive->duedate }}</td>
@@ -272,15 +272,18 @@
 	@include('financeiro.extrato.datachart')
 
 	@include('financeiro.extrato.tour')
+    <?php $pagina = $_SERVER['REQUEST_URI'];?>
+    <?php $pagina = explode('/', $pagina);?>
 
-    <script>
-
-        $(document).ready(function(){
-            $('.modal').modal();
-            document.getElementById("modalIndex").click();
-        });
-
-    </script>
+        @if(!$pagina[3] > 0)
+            <script>
+                $(document).ready(function(){
+                    $('.modal').modal();
+                    document.getElementById("modalIndex").click();
+                });
+            </script>
+        @endif
+r
 
 @endsection
 
