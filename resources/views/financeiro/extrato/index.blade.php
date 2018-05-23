@@ -275,7 +275,7 @@
     <?php $pagina = $_SERVER['REQUEST_URI'];?>
     <?php $pagina = explode('/', $pagina);?>
 
-        @if(!$pagina[3] > 0)
+        @if(!isSet($pagina[3]) || !$pagina[3] > 0)
             <script>
                 $(document).ready(function(){
                     $('.modal').modal();
