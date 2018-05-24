@@ -24,7 +24,8 @@ class BillsToPayRepository
   {
     return DB::table('bills_to_pay')
     ->join('banks', 'banks.id', '=', 'bills_to_pay.bank')
-    ->select('bills_to_pay.*', 'banks.bancoNome')
+    ->join('person', 'person.id', '=', 'bills_to_pay.person')
+    ->select('bills_to_pay.*', 'banks.bancoNome', 'person.name')
     ->where('bills_to_pay.bank', $bank)
     ->get();
   }

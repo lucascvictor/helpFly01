@@ -8,6 +8,7 @@ Route::post('/send', 'EmailController@send')->name('email.send');
 
 //Controle de rotas da parte finaceira
 Route::group(['prefix' => 'financeiro'], function () {
+    Route::get('/suporte', 'HomeController@suporte')->name('suporte');
     Route::get('', 'Financeiro\FluxoDeCaixaController@index')->name('fluodecaixa');
 
     Route::group(['prefix' => 'fluxodecaixa'], function () {
@@ -88,6 +89,7 @@ Route::group(['prefix' => 'financeiro'], function () {
 //Modulo de Faturamento
 
 Route::group(['prefix' => 'faturamento'], function () {
+    Route::get('/suporte', 'HomeController@suporte')->name('suporte');
     Route::get('', 'Faturamento\FaturamentoController@index')->name('faturamento');
 
     //Controle de rotas para cadastros
@@ -167,7 +169,6 @@ Route::group(['prefix' => 'compras'], function () {
 
 Route::get('/chart', 'FluxoDeCaixaController@getChart')->name('chart');
 Route::get('/voltar', 'HomeController@voltar')->name('voltar');
-Route::get('/suporte', 'HomeController@suporte')->name('suporte');
 Route::get('/teste/{$teste}', 'HomeController@teste')->name('teste');
 Route::get('/teste', 'HomeController@teste');
 

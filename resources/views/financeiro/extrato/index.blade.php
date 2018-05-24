@@ -67,15 +67,19 @@
                      <tbody>
                      <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
+                           <a href="{{ url('/financeiro/extrato') }}">
                               <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
                                  <span class="left">Todas as contas</span><strong class="right green-text">R${{ $totalGeral }}</strong>
                                  <div class="progress">
                                     <div class="determinate" style="width: 100%"></div>
                                  </div>
                               </div>
+                            </a>
                            </td>
                         </tr>
+
                      @foreach($banks as $bank)
+                     
                         <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
                            <?php $porcentagem = 100 * ($totalBank[$bank->id]/$totalGeral) ?>
@@ -155,6 +159,7 @@
                   </tr>
                </tfoot>
                <tbody>
+                
                @foreach($billsToReceive as $billToReceive)
                   <tr role="row" class="odd">
                      <td tabindex="0" nowrap="nowrap">{{ $billToReceive->duedate }}</td>
@@ -269,15 +274,18 @@
 	@include('financeiro.extrato.datachart')
 
 	@include('financeiro.extrato.tour')
+    <?php $pagina = $_SERVER['REQUEST_URI'];?>
+    <?php $pagina = explode('/', $pagina);?>
 
-    <script>
-
-        $(document).ready(function(){
-            $('.modal').modal();
-            document.getElementById("modalIndex").click();
-        });
-
-    </script>
+        @if(!isSet($pagina[3]) || !$pagina[3] > 0)
+            <script>
+                $(document).ready(function(){
+                    $('.modal').modal();
+                    document.getElementById("modalIndex").click();
+                });
+            </script>
+        @endif
+r
 
 @endsection
 
