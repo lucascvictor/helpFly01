@@ -67,12 +67,14 @@
                      <tbody>
                      <tr role="row" class="odd">
                            <td tabindex="0" nowrap="nowrap">
+                           <a href="{{ url('/financeiro/extrato') }}">
                               <div class="tooltipped" data-position="top" data-tooltip="Representação: 100%" data-conta-id="">
                                  <span class="left">Todas as contas</span><strong class="right green-text">R${{ $totalGeral }}</strong>
                                  <div class="progress">
                                     <div class="determinate" style="width: 100%"></div>
                                  </div>
                               </div>
+                            </a>
                            </td>
                         </tr>
 
