@@ -127,9 +127,10 @@ Route::group(['prefix' => 'faturamento'], function () {
             Route::get('/edit/{id}', 'Cadastros\FormasDePagamentoController@edit')->name('formasdepagamento.edit');
         });
     });
-
+    
     Route::get('/serienotafiscal', 'Faturamento\Configuracoes\SerieNotaFiscalController@index')->name('serienotafiscal');    
-
+    Route::get('/parametrostributarios', 'Faturamento\Configuracoes\ParametrosTributariosController@index')->name('parametrostributarios');  
+    Route::get('/certificadodigital', 'Faturamento\Configuracoes\CertificadoDigitalController@index')->name('certificadodigital');      
 });
 
 //Modulo de Estoque
