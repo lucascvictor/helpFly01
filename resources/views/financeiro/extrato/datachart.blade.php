@@ -42,7 +42,8 @@
                 fill: false,
                 data: [
                     @if(!isSet($pagina[3]) || !$pagina[3] > 0)
-                        {{ $totalBank[$bank->id] }}
+                        <?php $totalChart = $totalChartReceive - $totalChartPay;?>
+                        {{ $totalChart }}
                     @else
                         {{ $totalGeral }}
                     @endif
