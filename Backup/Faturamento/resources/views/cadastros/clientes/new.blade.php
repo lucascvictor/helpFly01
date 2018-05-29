@@ -31,7 +31,7 @@ $('#start-tour').on('click', PageTour.open);
   <div class="col s12 fly01-main-header">
     <h4 class="thin inline-block">Dados do Cliente</h4>
   <ul class="right valign-wrapper fly01-buttons">
-  <li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li>
+  <li><a id="cancel" class="btn " href="{{ url('/faturamento/cadastros/clientes') }}">Cancelar</a></li>
   <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
   <li><button id="start-tour" class="btn">Iniciar o Tour</button></li>
 </ul>

@@ -10,7 +10,7 @@
 												<h4 class="thin inline-block">Dados da forma de pagamento</h4>
 												<ul class="right valign-wrapper fly01-buttons">
 													<li>
-														<a id="cancel" class="btn " href="{{ url('/voltar') }}">Cancelar</a>
+														<a id="cancel" class="btn " href="{{ url('/financeiro/cadastros/formasdepagamento') }}">Cancelar</a>
 													</li>
 													<li>
 														<a id="salvar" class="btn" onclick="fnSalvar();">Salvar</a>

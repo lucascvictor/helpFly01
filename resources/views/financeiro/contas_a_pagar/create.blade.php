@@ -9,7 +9,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block fly01-main-title">Dados do título a pagar</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="cancel" class="btn " onclick="fnCancelar();">Cancelar</a></li>
+                  <li><a id="cancel" class="btn " href="{{ url('/financeiro/contasareceber') }}">Cancelar</a></li>
                   <li><a id="save" class="btn " onclick="fnSalvar();">Salvar</a></li>
                   <li>
                     <div class="fixed-action-btn"> 

@@ -9,7 +9,7 @@
             <div class="col s12 fly01-main-header">
                <h4 class="thin inline-block fly01-main-title">Importar clientes</h4>
                <ul class="right valign-wrapper fly01-buttons">
-                  <li><a id="cancel" class="btn " onclick="fnCancelar();">Voltar</a></li>
+                  <li><a id="cancel" class="btn " href="{{ url('/financeiro/cadastros/clientes')}}">Voltar</a></li>
                   <li><a id="save" class="btn " href="{{ url('/financeiro/cadastros/clientes/import') }}">Importar</a></li>
                </ul>
             </div>
