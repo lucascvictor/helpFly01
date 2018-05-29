@@ -1,7 +1,7 @@
 <nav class="top-nav">
   <div class="container">
     <div class="nav-wrapper">
-      <a id="page-title" class="page-title">Financeiro</a>
+      <a id="page-title" class="page-title">Home</a>
       <ul class="right">
         <li><a class="dropdown-button" href="" data-activates="user-menu" data-beloworigin="true" data-alignment="right" data-vivaldi-spatnav-clickable="1"><i class="material-icons  ">perm_identity</i></a>
           <ul id="user-menu" class="dropdown-content">
