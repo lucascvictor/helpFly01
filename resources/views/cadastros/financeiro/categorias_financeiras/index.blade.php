@@ -102,7 +102,7 @@
 
 @section('extrascript')
 
-@include('cadastros.categorias_financeiras.tourIndex')
+@include('cadastros.financeiro.categorias_financeiras.tourIndex')
 
 <script>
 
