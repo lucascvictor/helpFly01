@@ -57,7 +57,6 @@
                      <option value="Anual">Anual</option>
                   </select>
                </div>
-            </div>
                <label class="truncate active" for="tipoPeriodicidade">Periodicidade</label>
             </div>
             <div id="tipoRepeticaoField" class="input-field col s6 m3 l3" >
