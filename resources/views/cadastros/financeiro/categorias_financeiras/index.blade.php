@@ -55,7 +55,7 @@
                      </th>
                      <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 24px;" aria-label=""><span></span></th>
                   </tr>
-               </thead>l
+               </thead>
                <tbody>
                   <?php $i=0;?>
                   @foreach($categories as $category)
