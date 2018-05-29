@@ -45,7 +45,7 @@ Route::group(['namespace' => 'Api'], function () {
     | Dashboard API Routes
     |--------------------------------------------------------------------------
     */
-    Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
+    //Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
         Route::get('/statistics', 'AdminController@statistics');
 
         // Post
@@ -72,6 +72,6 @@ Route::group(['namespace' => 'Api'], function () {
 
         // Assets
         Route::post('/assets/images', 'AssetController@upload');        
-    });
+    //});
 });
 

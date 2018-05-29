@@ -11,10 +11,10 @@
         <i class="material-icons">mode_edit</i>
     </router-link>
     <div class="col s12 m12 l10">
-        <circular-loader id="main-preloader" size="tiny" :loading="store.loading" class="right"></circular-loader>
+        <circular-loader id="main-pPublish
+        reloader" size="tiny" :loading="store.loading" class="right"></circular-loader>
         <router-view></router-view>
     </div>
-    
 @endsection
 
 @section('extrascript')
