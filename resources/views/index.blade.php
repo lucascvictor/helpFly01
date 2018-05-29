@@ -7,7 +7,7 @@
       <ul class="right">
         <li><a href="{{ url('/compras') }}"><i class="material-icons left">shopping_cart</i>Fly01 Compras</a></li>
         <li><a href="{{ url('/estoque') }}"><i class="material-icons left">archive</i>Fly01 Estoque</a></li>
-        <li><a href="{{ url('/faturamento') }}l"><i class="material-icons left">insert_chart</i>Fly01 Faturamento</a></li>
+        <li><a href="{{ url('/faturamento') }}"><i class="material-icons left">insert_chart</i>Fly01 Faturamento</a></li>
         <li><a href="{{ url('/financeiro') }}"><i class="material-icons left">attach_money</i>Fly01 Financeiro</a></li>
       </ul>
     </div>
