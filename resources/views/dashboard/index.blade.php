@@ -25,5 +25,5 @@
     ]) !!};
     window.dictionary = {!! json_encode(trans('app')) !!};
 </script>
-<script src="{{ asset(elixir('js/dashboard.js')) }}"></script>
+<script src="{{ url('js/dashboard.js') }}"></script>
 @endsection

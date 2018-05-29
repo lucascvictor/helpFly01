@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
-    <link rel="stylesheet" href="{{ asset(elixir('css/dashboard.css')) }}">
- 
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url('css/dashboard.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -32,7 +32,7 @@
     ]) !!};
     window.dictionary = {!! json_encode(trans('app')) !!};
 </script>
-<script src="{{ asset(elixir('js/dashboard.js')) }}"></script>
+<script src="{{ url('js/dashboard.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
             
 </body>
