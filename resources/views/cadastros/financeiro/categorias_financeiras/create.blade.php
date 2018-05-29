@@ -85,7 +85,7 @@
 
 @section('extrascript')
 
-@include('cadastros.categorias_financeiras.tour')
+@include('cadastros.financeiro.categorias_financeiras.tour')
 
 <script>
 var catTour = JSON.parse(sessionStorage.getItem('tour'));

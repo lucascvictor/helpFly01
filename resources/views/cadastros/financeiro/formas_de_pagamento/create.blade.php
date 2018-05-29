@@ -76,6 +76,6 @@
 
 @section('extrascript')
 
-	@include('cadastros.formas_de_pagamento.tour')
+	@include('cadastros.financeiro.formas_de_pagamento.tour')
 
 @endsection

@@ -61,6 +61,6 @@
 
 @section('extrascript')
 
-@include('cadastros.contas_bancarias.tour')
+@include('cadastros.financeiro.contas_bancarias.tour')
 
 @endsection
