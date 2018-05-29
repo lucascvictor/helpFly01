@@ -14,6 +14,7 @@
         <circular-loader id="main-preloader" size="tiny" :loading="store.loading" class="right"></circular-loader>
         <router-view></router-view>
     </div>
+    
 @endsection
 
 @section('extrascript')
