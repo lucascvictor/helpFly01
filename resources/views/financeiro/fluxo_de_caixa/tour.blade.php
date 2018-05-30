@@ -59,11 +59,10 @@
           'ou entre em contato utilizado o menu Ajuda',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-          onBeforeStart:function(){
-            $('#menuMobile').click();
-          }
-  
-        },
+        /*onBeforeStart:function(){
+            //$('#menuMobile').click();
+        }*/
+        }
       ];
 
    
