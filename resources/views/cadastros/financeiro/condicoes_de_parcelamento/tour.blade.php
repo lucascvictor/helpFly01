@@ -4,7 +4,7 @@
       var enjoyhint_script_data = [
        {
           'next #descricao': 'Preencha o nome da condição a qual você vai criar',
-          'top': -20,
+
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
 
@@ -12,7 +12,7 @@
 
         {
           'next #descricao': 'Lembre-se que este é o nome da condição, você irá sempre referencia-la nas criações de títulos financeiro.',
-          'top': -20,
+
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
 
@@ -58,13 +58,13 @@
         },
 
            {
-          'next #valorReferenciaField': 'Insira um valor para realizar a simulação',
+          'next #valorReferencia': 'Insira um valor para realizar a simulação',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
 
         {
-          'next #dataReferenciaField': 'Insira a data de referência de sua venda ou compra',
+          'next #dataReferencia': 'Insira a data de referência de sua venda ou compra',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
         },
