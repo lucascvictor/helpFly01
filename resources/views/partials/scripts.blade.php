@@ -66,11 +66,11 @@
                 @endforeach
             @endif
         },
-        limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+        limit: 20, // O maximo de resultados. Padrão: Infinito.
         onAutocomplete: function(val) {
-        // Callback function when value is autcompleted.
+        // Callback function quando a funcao é autocomplete.
         },
-        minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+        minLength: 1, // O tamanho minimo de inserção para devoluão de autocomplete. Padrão: 1.
     });
         
   });

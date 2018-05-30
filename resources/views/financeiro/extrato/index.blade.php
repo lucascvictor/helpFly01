@@ -11,6 +11,11 @@
                <h4 class="thin inline-block fly01-main-title">Extrato</h4>
                <ul class="right valign-wrapper fly01-buttons">
                   <li><a id="save" class="btn " onclick="atualizar();">Atualizar</a></li>
+                  <li>
+						<div class="fixed-action-btn"> 
+							<a id="tour" class="btn pulse orange btn-medium" onclick="initTour();" style="border-radius: 80px;"><i class="material-icons small left"/>help</i>Iniciar Tour</a>
+						</div>
+			      </li>
                </ul>
             </div>
          </div>
@@ -274,6 +279,7 @@
 	@include('financeiro.extrato.datachart')
 
 	@include('financeiro.extrato.tour')
+
     <?php $pagina = $_SERVER['REQUEST_URI'];?>
     <?php $pagina = explode('/', $pagina);?>
 
@@ -285,7 +291,6 @@
                 });
             </script>
         @endif
-r
 
 @endsection
 

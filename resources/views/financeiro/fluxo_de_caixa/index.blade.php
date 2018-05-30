@@ -148,7 +148,6 @@
          </div>
       </div>
    </div>
-    @include('financeiro.fluxo_de_caixa.enjoyhint')
 @endsection
 
 
