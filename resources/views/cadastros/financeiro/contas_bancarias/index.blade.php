@@ -42,7 +42,7 @@
                   <td nowrap="nowrap">
                      <input type="hidden" class="rowRecordId" value="d365c361-55d3-44f4-bdb5-d185486e27fe"><a class="fly01-dt-menu right dropdown-button" href="javascript:void(0)" data-activates="dropdown0"><i class="material-icons">more_vert</i></a>
                      <ul id="dropdown0" class="dropdown-content">
-                        <li><a href="{{ url('') }}" >Editar</a></li>
+                        <li><a href="{{ url('/financeiro/cadastros/contasbancarias/editar') }}/{{ $bank->id }}" >Editar</a></li>
                         <li><a href="{{ url('') }}" >Excluir</a></li>
                      </ul>
                   </td>
