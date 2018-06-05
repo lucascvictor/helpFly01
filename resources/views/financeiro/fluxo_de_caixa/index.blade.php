@@ -32,15 +32,17 @@
             <a href="javascript:void(0)" class="" onclick="fly01._.dataFinal.open(event)"><i class="material-icons picking">date_range</i></a>
             <input id="dataFinal" name="dataFinal" class="datepicker date picker__input valid" value="30/04/2018" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataFinal_root" aria-invalid="false" type="text"><label class="truncate active" for="dataFinal">Data Final</label>
         </div>
-        <div id="fly01btngrpField" class="input-field col s12 m6 l4">
-            <label class="truncate active" for="fly01btngrp">Selecione o período</label>
-            <div id="fly01btngrp" class="btn-group input-field">
+
+
+        <div id="fly01btngrpField" class="input-field col s12 hide-on-print">
+            <label class="truncate active" for="fly01btngrp">Tipo de Visualização</label>
             <?php $pagina = $_SERVER['REQUEST_URI'];?>
-              <div id="fly01btngrp" class="btn-group input-field">
-                <input id="btnDia" name="btnDia" class="btn col s4 @if($pagina == '/financeiro/fluxodecaixa/day') active @endif" onclick="dayInterval()" value="Dia" type="button">
-                <input id="btnSemana" name="btnSemana" class="btn col s4 @if($pagina == '/financeiro/fluxodecaixa/week') active @endif" onclick="weekInterval()" value="Semana" type="button">
-                <input id="btnMes" name="btnMes" class="btn col s4 @if($pagina == '/financeiro/fluxodecaixa') active @endif" onclick="monthInterval()" value="Mês" type="button">
-            </div>
+            <div id="fly01btngrp" class="btn-group input-field">
+                <input id="btnDia" name="btnDia" class="btn col s4 m2 @if($pagina == '/financeiro/fluxodecaixa/day') active @endif" onclick="dayInterval()" value="Dia" type="button">
+                <input id="btnMes" name="btnMes" class="btn col s4 m2 @if($pagina == '/financeiro/fluxodecaixa') active @endif" onclick="monthInterval()" value="Mês" type="button">
+                <input id="btnAno" name="btnAno" class="btn col s4 m2" onclick="fnAtualizaAgrupamento(&quot;6&quot;)" value="Ano" type="button">
+                <input id="btnTri" name="btnTri" class="btn col s6 m3 valid" onclick="fnAtualizaAgrupamento(&quot;4&quot;)" value="Trimestre" aria-invalid="false" type="button">
+                <input id="btnSem" name="btnSem" class="btn col s6 m3" onclick="fnAtualizaAgrupamento(&quot;5&quot;)" value="Semestre" type="button">
             </div>
         </div>
         </form>
