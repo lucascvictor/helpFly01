@@ -24,7 +24,8 @@
       <div class="row fly01areatotal">
          
         <form id="fly01frm" class="col s12" method="post" novalidate="novalidate">
-        <div id="dataInicialField" class="input-field col s6 m3 l4">
+        <div id="dataInicialField" class="input-field col s6 m3 l4 offset-l2 offset-m3">
+        
             <a href="javascript:void(0)" class="" onclick="fly01._.dataInicial.open(event)"><i class="material-icons picking">date_range</i></a>
             <input id="dataInicial" name="dataInicial" class="datepicker date picker__input valid" value="21/03/2018" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="dataInicial_root" aria-invalid="false" type="text"><label class="truncate active" for="dataInicial" data-error="Digite uma data válida.">Data Inicial</label>
         </div>
