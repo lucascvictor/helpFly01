@@ -14,7 +14,7 @@
           'next #fly01Cards': 'Da mesma forma que no fluxo de caixa, é nesses blocos que sempre poderemos ver a soma de nossas receitas, despetas e o lucro de nossa empresa no período selecionado.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
+          'bottom': -300,
 
         },
 
@@ -22,7 +22,7 @@
           'next #fly01dtreceitas': 'Por fim, é necessário entender que o relatório se consiste na soma de valores de cada categoria financeira, seja de receita...',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
+          'top': -100,
 
         },
         
@@ -30,7 +30,7 @@
           'next #fly01dtdespesas': 'ou de despesas.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
+          'top': 200,
 
         },
 
@@ -39,7 +39,7 @@
           'next #fly01dtreceitas': 'Caso você não saiba cadastrar categorias financeiras <CLIQUE AQUI> e te levaremos ao tour de categorias.',
           'nextButton' : {className: 'myNext', text: 'Próximo'},
           'skipButton' : {className: 'mySkip', text: 'Sair'},
-
+          'top': 200,
 
         },
 

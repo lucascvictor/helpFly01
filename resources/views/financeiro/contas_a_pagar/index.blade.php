@@ -26,97 +26,101 @@
 
    <div class="container">
       <div class="row">
-         <form id="fly01frm" class="col s12" method="post" novalidate="novalidate">
-            <div id="mesPickerField" class="input-field col s12 m6 offset-m3 l4 offset-l4">
-               <button type="button" class="col s2 btn zero-border-radius-left" id="mesPickerprev" onclick="fly01._.mesPicker.prev()"><i class="material-icons">chevron_left</i></button>
-               <div id="mesPickercontainer" class="col s8 btn zero-border-radius">
-                  <div class="picker" id="mesPicker_root" tabindex="0" aria-hidden="true">
-                     <div class="picker__holder">
-                        <div class="picker__frame">
-                           <div class="picker__wrap">
-                              <div class="picker__box">
-                                 <div class="picker__date-display">
-                                    <div class="picker__year-display">
-                                       <div>2018</div>
-                                    </div>
-                                    <span class="picker__month-display">Maio </span>
-                                 </div>
-                                 <div class="picker__container__wrapper">
-                                    <div class="picker__calendar-container">
-                                       <div class="picker__header">
-                                          <div class="picker__year">2018</div>
-                                          <div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="mesPicker_table" title="Anterior"> </div>
-                                          <div class="picker__nav--next" data-nav="1" role="button" aria-controls="mesPicker_table" title="Proximo"> </div>
-                                       </div>
-                                       <table class="picker__table" id="mesPicker_table" role="grid" aria-controls="mesPicker" aria-readonly="true">
-                                          <thead>
-                                             <tr>
-                                                <th class="picker__weekday" scope="col" title="Domingo"> </th>
-                                                <th class="picker__weekday" scope="col" title="Segunda"> </th>
-                                                <th class="picker__weekday" scope="col" title="Terça"> </th>
-                                             </tr>
-                                          </thead>
-                                          <tbody>
-                                             <tr>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1514772000000" role="gridcell" aria-label="Janeiro, 2018" tabindex="0">Jan</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1517450400000" role="gridcell" aria-label="Fevereiro, 2018" tabindex="0">Fev</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1519873200000" role="gridcell" aria-label="Março, 2018" tabindex="0">Mar</div>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1522551600000" role="gridcell" aria-label="Abril, 2018" tabindex="0">Abr</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus picker__day--today picker__day--selected picker__day--highlighted" data-pick="1525143600000" role="gridcell" aria-label="Maio, 2018" aria-activedescendant="true" tabindex="0">Mai</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1527822000000" role="gridcell" aria-label="Junho, 2018" tabindex="0">Jun</div>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1530414000000" role="gridcell" aria-label="Julho, 2018" tabindex="0">Jul</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1533092400000" role="gridcell" aria-label="Agosto, 2018" tabindex="0">Ago</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1535770800000" role="gridcell" aria-label="Setembro, 2018" tabindex="0">Set</div>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1538362800000" role="gridcell" aria-label="Outubro, 2018" tabindex="0">Out</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1541037600000" role="gridcell" aria-label="Novembro, 2018" tabindex="0">Nov</div>
-                                                </td>
-                                                <td role="presentation">
-                                                   <div class="picker__month picker__day--infocus" data-pick="1543629600000" role="gridcell" aria-label="Dezembro, 2018" tabindex="0">Dez</div>
-                                                </td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </div>
-                                    <div class="picker__footer"><button class="picker__today btn-flat" type="button" data-pick="1525143600000" disabled="" aria-controls="mesPicker">Hoje</button><button class="picker__clear btn-flat" type="button" data-clear="1" disabled="" aria-controls="mesPicker">Limpar</button><button class="picker__close btn-flat" type="button" data-close="true" disabled="" aria-controls="mesPicker">Fechar</button></div>
-                                 </div>
-                              </div>
+         
+
+<form id="fly01frm" class="col s12" method="post" novalidate="novalidate">
+   <div id="mesPickerField" class="input-field col s12 m6 offset-m3 l4 offset-l4">
+      <button type="button" class="col s2 btn zero-border-radius-left" id="mesPickerprev" onclick="fly01._.mesPicker.prev()"><i class="material-icons">chevron_left</i></button>
+      <div id="mesPickercontainer" class="col s8 btn zero-border-radius">
+         <div class="picker" id="mesPicker_root" tabindex="0" aria-hidden="true">
+            <div class="picker__holder">
+               <div class="picker__frame">
+                  <div class="picker__wrap">
+                     <div class="picker__box">
+                        <div class="picker__date-display">
+                           <div class="picker__year-display">
+                              <div>2018</div>
                            </div>
+                           <span class="picker__month-display">Junho </span>
+                        </div>
+                        <div class="picker__container__wrapper">
+                           <div class="picker__calendar-container">
+                              <div class="picker__header">
+                                 <div class="picker__year">2018</div>
+                                 <div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="mesPicker_table" title="Anterior"> </div>
+                                 <div class="picker__nav--next" data-nav="1" role="button" aria-controls="mesPicker_table" title="Proximo"> </div>
+                              </div>
+                              <table class="picker__table" id="mesPicker_table" role="grid" aria-controls="mesPicker" aria-readonly="true">
+                                 <thead>
+                                    <tr>
+                                       <th class="picker__weekday" scope="col" title="Domingo"> </th>
+                                       <th class="picker__weekday" scope="col" title="Segunda"> </th>
+                                       <th class="picker__weekday" scope="col" title="Terça"> </th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1514772000000" role="gridcell" aria-label="Janeiro, 2018" tabindex="0">Jan</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1517450400000" role="gridcell" aria-label="Fevereiro, 2018" tabindex="0">Fev</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1519873200000" role="gridcell" aria-label="Março, 2018" tabindex="0">Mar</div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1522551600000" role="gridcell" aria-label="Abril, 2018" tabindex="0">Abr</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1525143600000" role="gridcell" aria-label="Maio, 2018" tabindex="0">Mai</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus picker__day--today picker__day--selected picker__day--highlighted" data-pick="1527822000000" role="gridcell" aria-label="Junho, 2018" aria-selected="true" aria-activedescendant="true" tabindex="0">Jun</div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1530414000000" role="gridcell" aria-label="Julho, 2018" tabindex="0">Jul</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1533092400000" role="gridcell" aria-label="Agosto, 2018" tabindex="0">Ago</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1535770800000" role="gridcell" aria-label="Setembro, 2018" tabindex="0">Set</div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1538362800000" role="gridcell" aria-label="Outubro, 2018" tabindex="0">Out</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1541037600000" role="gridcell" aria-label="Novembro, 2018" tabindex="0">Nov</div>
+                                       </td>
+                                       <td role="presentation">
+                                          <div class="picker__month picker__day--infocus" data-pick="1543629600000" role="gridcell" aria-label="Dezembro, 2018" tabindex="0">Dez</div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div class="picker__footer"><button class="picker__today btn-flat" type="button" data-pick="1527822000000" aria-controls="mesPicker" disabled="disabled">Hoje</button><button class="picker__clear btn-flat" type="button" data-clear="1" aria-controls="mesPicker" disabled="disabled">Limpar</button><button class="picker__close btn-flat" type="button" data-close="true" aria-controls="mesPicker" disabled="disabled">Fechar</button></div>
                         </div>
                      </div>
                   </div>
-                  <input id="mesPicker" name="mesPicker" class="btn truncate periodpicker picker__input" data-value="Tue May 01 2018 00:00:00 GMT-0300 (BRT)" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="mesPicker_root" type="text">
                </div>
-               <button type="button" class="col s2 btn zero-border-radius-right" id="mesPickernext" onclick="fly01._.mesPicker.next()"><i class="material-icons">chevron_right</i></button>
             </div>
-            <input id="dataFinal" name="dataFinal" value="2018-05-31" type="hidden"><input id="dataInicial" name="dataInicial" value="2018-05-01" type="hidden">
-         </form>
+         </div>
+         <input id="mesPicker" name="mesPicker" class="btn truncate periodpicker picker__input valid" data-value="Fri Jun 01 2018 00:00:00 GMT-0300 (BRT)" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="mesPicker_root" aria-invalid="false" type="text">
+      </div>
+      <button type="button" class="col s2 btn zero-border-radius-right" id="mesPickernext" onclick="fly01._.mesPicker.next()"><i class="material-icons">chevron_right</i></button>
+   </div>
+   <input id="dataFinal" name="dataFinal" value="2018-06-30" type="hidden"><input id="dataInicial" name="dataInicial" value="2018-06-01" type="hidden">
+</form>
+
+
          <div id="fly01dt_wrapper" class="col s12">
             <div class=""></div>
             <div id="fly01dt_processing" class="dataTables_processing" style="display: none;"></div>
