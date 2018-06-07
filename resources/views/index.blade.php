@@ -44,6 +44,28 @@
    </div>
 </div>
 </div>
+
+<!-- BEGIN OF DROZ SCRIPT - POWERED BY AKTIENOW -->
+
+        <!-- Inicio Opcional -->
+        <script type="text/javascript">
+        var prechat_inputs = [];
+        prechat_inputs['name'] = 'Nome do Cliente';
+        </script>
+        <!-- Fim Opcional -->
+
+        <script type="text/javascript">
+        (function(d,r,o,z,a,k,t){
+          a=d.getElementsByTagName('head')[0];
+          k=d.createElement('script');k.async=1;
+          t=(Math.floor(Math.random()*1000000)+1);
+          k.src=r+'/'+o+'/droz.js?i='+z+'&u='+r+'&v='+t;
+          a.appendChild(k);
+        })(document,'https://chat-app.meudroz.com','v1','3e9ee6c5c4656822f19621bfbf8416972400751b');
+        </script>
+        <!-- END OF DROZ SCRIPT - POWERED BY AKTIENOW -->
+
+
 @endsection
 
 
