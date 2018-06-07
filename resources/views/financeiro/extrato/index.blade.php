@@ -134,7 +134,7 @@
             <h6></h6>
             <canvas id="fly01chart" style="display: block; width: 813px; height: 406px;" width="813" height="406" class="chartjs-render-monitor"></canvas>
          </div>
-         <form id="fly01frm" class="col s12" method="post">
+         <form id="fly01frmTitulos" class="col s12" method="post">
             <div id="btnNovoPagamentoField" class="input-field col s12 m4 l4"><input id="btnNovoPagamento" name="btnNovoPagamento" style="color:#FFF;" class="btn modal-trigger green" value="Novo pagamento" type="button" data-target="fly01frmNovoPgt"></div>
             <div id="btnNovoRecebimentoField" class="input-field col s12 m4 l4"><input id="btnNovoRecebimento" name="btnNovoRecebimento" style="color:#FFF;" class="btn modal-trigger green" value="Novo recebimento" type="button" data-target="fly01frmNovoReceb"></div>
             <div id="btnNovaTransferenciaField" class="input-field col s12 m4 l4"><input id="btnNovaTransferencia" name="btnNovaTransferencia" style="color:#FFF;" class="btn modal-trigger green" value="Nova transferência" type="button" data-target="fly01frmNovaTransf"></div>
