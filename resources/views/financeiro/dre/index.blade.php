@@ -381,6 +381,8 @@
          </div>
       </div>
    </div>
+   @include('financeiro.dre.modals.index')
+
 @endsection
 
 
@@ -388,5 +390,12 @@
 @section('extrascript')
 
 @include('financeiro.dre.tour')
+
+<script>
+  $(document).ready(function(){
+    $('.modal').modal();
+    document.getElementById("modalIndex").click();
+  });
+</script>
 
 @endsection
